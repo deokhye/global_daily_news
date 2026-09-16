@@ -1,0 +1,680 @@
+[
+  {
+    "code": "KR",
+    "name_ko": "한국",
+    "name_en": "South Korea",
+    "currency": "KRW",
+    "curr_unit": "원",
+    "capital": "서울",
+    "population": "약 5,170만 명",
+    "gdp": "약 1.87조 달러",
+    "inflation": "2.0%",
+    "unemployment": "3.0%",
+    "min_wage": { "display": "10,320원 / 시간", "note": "2026년 기준" },
+    "region": "KR",
+    "offices": [
+      "Hankook Tire Global Headquarters (판교)",
+      "Hankook Technodome, Central R&D Center (대전)",
+      "Daejeon Plant (대전)",
+      "Geumsan Plant (금산)",
+      "Hankook Technoring, Proving Ground (태안)"
+    ]
+  },
+  {
+    "code": "US",
+    "name_ko": "미국",
+    "name_en": "United States",
+    "currency": "USD",
+    "curr_unit": "$",
+    "capital": "워싱턴 D.C.",
+    "population": "약 3억 4,200만 명",
+    "gdp": "약 27.4조 달러",
+    "inflation": "3.0%",
+    "unemployment": "4.1%",
+    "min_wage": { "display": "$7.25 / 시간", "note": "연방 기준, 2009-07-24 이후 동결·테네시주 별도 기준 없음" },
+    "region": "AMER",
+    "offices": [
+      "Hankook Tire America Corp., Regional Headquarters (내슈빌)",
+      "Akron Technical Center, ATC (오하이오)",
+      "Clarksville Plant (테네시)"
+    ]
+  },
+  {
+    "code": "DE",
+    "name_ko": "독일",
+    "name_en": "Germany",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "베를린",
+    "population": "약 8,450만 명",
+    "gdp": "약 4.71조 달러",
+    "inflation": "2.3%",
+    "unemployment": "6.0%",
+    "min_wage": { "display": "€13.90 / 시간", "note": "2026년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Europe GmbH, European Headquarters (노이이젠부르크)",
+      "Hannover Technical Center, ETC (하노버)",
+      "Hankook Reifen Deutschland GmbH (노이이젠부르크)"
+    ]
+  },
+  {
+    "code": "CN",
+    "name_ko": "중국",
+    "name_en": "China",
+    "currency": "CNY",
+    "curr_unit": "위안",
+    "capital": "베이징",
+    "population": "약 14억 900만 명",
+    "gdp": "약 18.5조 달러",
+    "inflation": "0.3%",
+    "unemployment": "5.1%",
+    "min_wage": { "display": "약 25위안 / 시간", "note": "지역별 상이(참고치), 상하이 등 대도시 기준" },
+    "region": "CN",
+    "offices": [
+      "Hankook Tire China Co., Ltd., China Headquarters (상하이)",
+      "China Technical Center, CTC (가흥)",
+      "Jiaxing Plant (가흥)",
+      "Jiangsu Plant (강소)",
+      "Chongqing Plant (중경)",
+      "11개 영업지사 (전국)"
+    ]
+  },
+  {
+    "code": "HU",
+    "name_ko": "헝가리",
+    "name_en": "Hungary",
+    "currency": "HUF",
+    "curr_unit": "포린트",
+    "capital": "부다페스트",
+    "population": "약 970만 명",
+    "gdp": "약 2,230억 달러",
+    "inflation": "4.4%",
+    "unemployment": "4.2%",
+    "min_wage": { "display": "약 290,800포린트 / 월", "note": "비숙련 기준, 2025년 기준" },
+    "region": "EU",
+    "offices": [
+      "Dunaújváros Plant (두나우이바로시)",
+      "Hankook Tire Budapest Kereskedelmi Kft. (부다페스트)"
+    ]
+  },
+  {
+    "code": "ID",
+    "name_ko": "인도네시아",
+    "name_en": "Indonesia",
+    "currency": "IDR",
+    "curr_unit": "루피아",
+    "capital": "자카르타",
+    "population": "약 2억 8,000만 명",
+    "gdp": "약 1.40조 달러",
+    "inflation": "1.8%",
+    "unemployment": "4.9%",
+    "min_wage": { "display": "약 5,396,761루피아 / 월", "note": "자카르타(DKI) 기준, 지역별 상이" },
+    "region": "APAC",
+    "offices": [
+      "Indonesia Plant (찌카랑)",
+      "PT. Hankook Tire Sales Indonesia (자카르타)"
+    ]
+  },
+  {
+    "code": "NL",
+    "name_ko": "네덜란드",
+    "name_en": "Netherlands",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "암스테르담",
+    "population": "약 1,800만 명",
+    "gdp": "약 1.14조 달러",
+    "inflation": "3.2%",
+    "unemployment": "3.7%",
+    "min_wage": { "display": "€14.71 / 시간", "note": "2026년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tyre Benelux B.V. (암스테르담)"
+    ]
+  },
+  {
+    "code": "TW",
+    "name_ko": "대만",
+    "name_en": "Taiwan",
+    "currency": "TWD",
+    "curr_unit": "대만달러",
+    "capital": "타이베이",
+    "population": "약 2,340만 명",
+    "gdp": "약 8,000억 달러",
+    "inflation": "2.0%",
+    "unemployment": "3.4%",
+    "min_wage": { "display": "NT$190 / 시간", "note": "월 NT$29,500, 2026년 기준" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Taiwan Branch (타이베이)"
+    ]
+  },
+  {
+    "code": "RU",
+    "name_ko": "러시아",
+    "name_en": "Russia",
+    "currency": "RUB",
+    "curr_unit": "루블",
+    "capital": "모스크바",
+    "population": "약 1억 4,400만 명",
+    "gdp": "약 2.24조 달러",
+    "inflation": "8.9%",
+    "unemployment": "2.4%",
+    "min_wage": { "display": "약 22,440루블 / 월", "note": "MROT 기준, 2025년" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Rus LLC (모스크바)"
+    ]
+  },
+  {
+    "code": "RO",
+    "name_ko": "루마니아",
+    "name_en": "Romania",
+    "currency": "RON",
+    "curr_unit": "레우",
+    "capital": "부쿠레슈티",
+    "population": "약 1,900만 명",
+    "gdp": "약 3,600억 달러",
+    "inflation": "5.7%",
+    "unemployment": "5.4%",
+    "min_wage": { "display": "약 €814 / 월", "note": "2025.1 Eurostat 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Romania S.R.L. (부쿠레슈티)"
+    ]
+  },
+  {
+    "code": "MY",
+    "name_ko": "말레이시아",
+    "name_en": "Malaysia",
+    "currency": "MYR",
+    "curr_unit": "링깃",
+    "capital": "쿠알라룸푸르",
+    "population": "약 3,450만 명",
+    "gdp": "약 4,450억 달러",
+    "inflation": "1.9%",
+    "unemployment": "3.2%",
+    "min_wage": { "display": "RM8.72 / 시간", "note": "월 RM1,700 기준, 2025.2 시행" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Malaysia Sdn. Bhd. (쿠알라룸푸르)"
+    ]
+  },
+  {
+    "code": "MX",
+    "name_ko": "멕시코",
+    "name_en": "Mexico",
+    "currency": "MXN",
+    "curr_unit": "페소",
+    "capital": "멕시코시티",
+    "population": "약 1억 2,900만 명",
+    "gdp": "약 1.85조 달러",
+    "inflation": "4.6%",
+    "unemployment": "2.7%",
+    "min_wage": { "display": "약 9,583.52페소 / 월", "note": "일반지역 기준, 2026년, 국경지대는 더 높음" },
+    "region": "LATAM",
+    "offices": [
+      "Hankook Tire Mexico, S.A. de C.V. (멕시코시티)"
+    ]
+  },
+  {
+    "code": "MA",
+    "name_ko": "모로코",
+    "name_en": "Morocco",
+    "currency": "MAD",
+    "curr_unit": "디르함",
+    "capital": "라바트",
+    "population": "약 3,780만 명",
+    "gdp": "약 1,510억 달러",
+    "inflation": "1.5%",
+    "unemployment": "13.3%",
+    "min_wage": { "display": "약 17.07디르함 / 시간", "note": "참고치" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Morocco Sales Office (카사블랑카)"
+    ]
+  },
+  {
+    "code": "VN",
+    "name_ko": "베트남",
+    "name_en": "Vietnam",
+    "currency": "VND",
+    "curr_unit": "동",
+    "capital": "하노이",
+    "population": "약 1억 10만 명",
+    "gdp": "약 5,000억 달러",
+    "inflation": "3.6%",
+    "unemployment": "2.0%",
+    "min_wage": { "display": "약 5,310,000동 / 월", "note": "1지역(하노이·호치민 등) 기준, 2026.1, 지역별 상이" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Vietnam Sales Corp. (호치민)"
+    ]
+  },
+  {
+    "code": "BR",
+    "name_ko": "브라질",
+    "name_en": "Brazil",
+    "currency": "BRL",
+    "curr_unit": "헤알",
+    "capital": "브라질리아",
+    "population": "약 2억 1,700만 명",
+    "gdp": "약 2.33조 달러",
+    "inflation": "4.5%",
+    "unemployment": "6.4%",
+    "min_wage": { "display": "약 1,631헤알 / 월", "note": "2026년 기준(참고치), 13번째 급여 별도 지급 관행" },
+    "region": "LATAM",
+    "offices": [
+      "Hankook Tire do Brasil Ltda. (상파울루)"
+    ]
+  },
+  {
+    "code": "SA",
+    "name_ko": "사우디아라비아",
+    "name_en": "Saudi Arabia",
+    "currency": "SAR",
+    "curr_unit": "리얄",
+    "capital": "리야드",
+    "population": "약 3,700만 명",
+    "gdp": "약 1.11조 달러",
+    "inflation": "2.0%",
+    "unemployment": "3.7%",
+    "min_wage": { "display": "SAR23.08 / 시간", "note": "공공부문 기준, 외국인 근로자 미적용" },
+    "region": "MEA",
+    "offices": [
+      "Hankook Tire Co., Ltd. Jeddah Office (제다)"
+    ]
+  },
+  {
+    "code": "RS",
+    "name_ko": "세르비아",
+    "name_en": "Serbia",
+    "currency": "RSD",
+    "curr_unit": "디나르",
+    "capital": "베오그라드",
+    "population": "약 660만 명",
+    "gdp": "약 900억 달러",
+    "inflation": "4.2%",
+    "unemployment": "8.6%",
+    "min_wage": { "display": "약 308디나르 / 시간", "note": "참고치" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Serbia Sales Office (베오그라드)"
+    ]
+  },
+  {
+    "code": "SE",
+    "name_ko": "스웨덴",
+    "name_en": "Sweden",
+    "currency": "SEK",
+    "curr_unit": "크로나",
+    "capital": "스톡홀름",
+    "population": "약 1,060만 명",
+    "gdp": "약 5,930억 달러",
+    "inflation": "1.9%",
+    "unemployment": "8.2%",
+    "min_wage": { "display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Sweden Sales Corp. (스톡홀름)"
+    ]
+  },
+  {
+    "code": "ES",
+    "name_ko": "스페인",
+    "name_en": "Spain",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "마드리드",
+    "population": "약 4,850만 명",
+    "gdp": "약 1.72조 달러",
+    "inflation": "2.8%",
+    "unemployment": "11.2%",
+    "min_wage": { "display": "약 €1,381 / 월", "note": "연 14회 분할 지급 관행, 2025.1 Eurostat 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire España, S.A. (마드리드)"
+    ]
+  },
+  {
+    "code": "SG",
+    "name_ko": "싱가포르",
+    "name_en": "Singapore",
+    "currency": "SGD",
+    "curr_unit": "싱가포르달러",
+    "capital": "싱가포르",
+    "population": "약 600만 명",
+    "gdp": "약 5,300억 달러",
+    "inflation": "2.5%",
+    "unemployment": "2.0%",
+    "min_wage": { "display": "법정 최저임금 없음", "note": "Progressive Wage Model로 업종별 하한선 운영" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Singapore Corp. (싱가포르)"
+    ]
+  },
+  {
+    "code": "AE",
+    "name_ko": "아랍에미리트",
+    "name_en": "United Arab Emirates",
+    "currency": "AED",
+    "curr_unit": "디르함",
+    "capital": "아부다비",
+    "population": "약 1,010만 명",
+    "gdp": "약 5,350억 달러",
+    "inflation": "2.3%",
+    "unemployment": "2.6%",
+    "min_wage": { "display": "법정 최저임금 없음", "note": "-" },
+    "region": "MEA",
+    "offices": [
+      "Hankook Tire Co., Ltd. Dubai Office, Middle East Headquarters (두바이)"
+    ]
+  },
+  {
+    "code": "GB",
+    "name_ko": "영국",
+    "name_en": "United Kingdom",
+    "currency": "GBP",
+    "curr_unit": "파운드",
+    "capital": "런던",
+    "population": "약 6,850만 명",
+    "gdp": "약 3.59조 달러",
+    "inflation": "2.6%",
+    "unemployment": "4.4%",
+    "min_wage": { "display": "£12.71 / 시간", "note": "National Living Wage(21세 이상), 2025~26년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tyre U.K. Ltd. (다번트리)"
+    ]
+  },
+  {
+    "code": "AT",
+    "name_ko": "오스트리아",
+    "name_en": "Austria",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "비엔나",
+    "population": "약 910만 명",
+    "gdp": "약 5,400억 달러",
+    "inflation": "2.9%",
+    "unemployment": "5.3%",
+    "min_wage": { "display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정" },
+    "region": "EU",
+    "offices": [
+      "Hankook Reifen Austria GmbH (비엔나)"
+    ]
+  },
+  {
+    "code": "UA",
+    "name_ko": "우크라이나",
+    "name_en": "Ukraine",
+    "currency": "UAH",
+    "curr_unit": "흐리브냐",
+    "capital": "키이우",
+    "population": "약 3,650만 명",
+    "gdp": "약 1,900억 달러",
+    "inflation": "11.5%",
+    "unemployment": "13.5%",
+    "min_wage": { "display": "약 8,000흐리브냐 / 월", "note": "2025년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Ukraine LLC (키이우)"
+    ]
+  },
+  {
+    "code": "EG",
+    "name_ko": "이집트",
+    "name_en": "Egypt",
+    "currency": "EGP",
+    "curr_unit": "파운드",
+    "capital": "카이로",
+    "population": "약 1억 1,700만 명",
+    "gdp": "약 3,900억 달러",
+    "inflation": "12.0%",
+    "unemployment": "6.9%",
+    "min_wage": { "display": "약 7,000파운드 / 월", "note": "공공부문 기준(참고치)" },
+    "region": "MEA",
+    "offices": [
+      "Hankook Tire Egypt Branch (카이로)"
+    ]
+  },
+  {
+    "code": "IT",
+    "name_ko": "이탈리아",
+    "name_en": "Italy",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "로마",
+    "population": "약 5,870만 명",
+    "gdp": "약 2.30조 달러",
+    "inflation": "1.7%",
+    "unemployment": "6.1%",
+    "min_wage": { "display": "법정 최저임금 없음", "note": "업종별 단체협약(CBA)으로 결정" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Italia S.R.L. (밀라노)"
+    ]
+  },
+  {
+    "code": "JP",
+    "name_ko": "일본",
+    "name_en": "Japan",
+    "currency": "JPY",
+    "curr_unit": "엔",
+    "capital": "도쿄",
+    "population": "약 1억 2,400만 명",
+    "gdp": "약 4.10조 달러",
+    "inflation": "2.8%",
+    "unemployment": "2.4%",
+    "min_wage": { "display": "¥1,121 / 시간", "note": "2026년 전국 가중평균, 지역별 상이(도쿄 ¥1,226)" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Japan Corp. (오사카)"
+    ]
+  },
+  {
+    "code": "CZ",
+    "name_ko": "체코",
+    "name_en": "Czech Republic",
+    "currency": "CZK",
+    "curr_unit": "코루나",
+    "capital": "프라하",
+    "population": "약 1,070만 명",
+    "gdp": "약 3,400억 달러",
+    "inflation": "2.6%",
+    "unemployment": "2.7%",
+    "min_wage": { "display": "약 20,800코루나 / 월", "note": "2025년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Ceska Republika s.r.o. (프라하)"
+    ]
+  },
+  {
+    "code": "CL",
+    "name_ko": "칠레",
+    "name_en": "Chile",
+    "currency": "CLP",
+    "curr_unit": "페소",
+    "capital": "산티아고",
+    "population": "약 1,980만 명",
+    "gdp": "약 3,300억 달러",
+    "inflation": "4.1%",
+    "unemployment": "8.5%",
+    "min_wage": { "display": "약 539,000페소 / 월", "note": "2025년 기준(참고치)" },
+    "region": "LATAM",
+    "offices": [
+      "Hankook Tire Chile Sales Corp. (산티아고)"
+    ]
+  },
+  {
+    "code": "KZ",
+    "name_ko": "카자흐스탄",
+    "name_en": "Kazakhstan",
+    "currency": "KZT",
+    "curr_unit": "텐게",
+    "capital": "아스타나",
+    "population": "약 2,020만 명",
+    "gdp": "약 2,700억 달러",
+    "inflation": "8.4%",
+    "unemployment": "4.7%",
+    "min_wage": { "display": "약 85,000텐게 / 월", "note": "2025년 기준" },
+    "region": "MEA",
+    "offices": [
+      "Hankook Tire Kazakhstan Branch (알마티)"
+    ]
+  },
+  {
+    "code": "CA",
+    "name_ko": "캐나다",
+    "name_en": "Canada",
+    "currency": "CAD",
+    "curr_unit": "캐나다달러",
+    "capital": "오타와",
+    "population": "약 4,100만 명",
+    "gdp": "약 2.24조 달러",
+    "inflation": "2.4%",
+    "unemployment": "6.9%",
+    "min_wage": { "display": "약 CAD 17.75 / 시간", "note": "연방부문 기준, 주(州)별로 상이" },
+    "region": "AMER",
+    "offices": [
+      "Hankook Tire Canada Corp. (온타리오)"
+    ]
+  },
+  {
+    "code": "CO",
+    "name_ko": "콜롬비아",
+    "name_en": "Colombia",
+    "currency": "COP",
+    "curr_unit": "페소",
+    "capital": "보고타",
+    "population": "약 5,240만 명",
+    "gdp": "약 3,630억 달러",
+    "inflation": "5.2%",
+    "unemployment": "9.3%",
+    "min_wage": { "display": "1,423,500페소 / 월", "note": "2025년 기준" },
+    "region": "LATAM",
+    "offices": [
+      "Hankook Tire Co., Ltd. Bogota Office (보고타)"
+    ]
+  },
+  {
+    "code": "HR",
+    "name_ko": "크로아티아",
+    "name_en": "Croatia",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "자그레브",
+    "population": "약 380만 명",
+    "gdp": "약 900억 달러",
+    "inflation": "3.8%",
+    "unemployment": "6.0%",
+    "min_wage": { "display": "약 €970 / 월", "note": "2025.1 Eurostat 기준, 2023년부터 유로 사용" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Croatia Sales Office (자그레브)"
+    ]
+  },
+  {
+    "code": "TH",
+    "name_ko": "태국",
+    "name_en": "Thailand",
+    "currency": "THB",
+    "curr_unit": "바트",
+    "capital": "방콕",
+    "population": "약 7,160만 명",
+    "gdp": "약 5,400억 달러",
+    "inflation": "0.8%",
+    "unemployment": "1.0%",
+    "min_wage": { "display": "1일 400바트", "note": "2025년 기준, 지역별 상이" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tire Thailand Co., Ltd. (방콕)"
+    ]
+  },
+  {
+    "code": "TR",
+    "name_ko": "튀르키예",
+    "name_en": "Turkey",
+    "currency": "TRY",
+    "curr_unit": "리라",
+    "capital": "앙카라",
+    "population": "약 8,570만 명",
+    "gdp": "약 1.34조 달러",
+    "inflation": "38.0%",
+    "unemployment": "8.6%",
+    "min_wage": { "display": "₺164.94 / 시간", "note": "2026년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Turkey Sales Corp. (이스탄불)"
+    ]
+  },
+  {
+    "code": "PA",
+    "name_ko": "파나마",
+    "name_en": "Panama",
+    "currency": "PAB",
+    "curr_unit": "발보아",
+    "capital": "파나마시티",
+    "population": "약 450만 명",
+    "gdp": "약 860억 달러",
+    "inflation": "1.0%",
+    "unemployment": "7.4%",
+    "min_wage": { "display": "업종별 상이", "note": "참고치, 업종·지역별 세분화된 고시" },
+    "region": "LATAM",
+    "offices": [
+      "Hankook Tire Co., Ltd. Panama Office (파나마시티)"
+    ]
+  },
+  {
+    "code": "PL",
+    "name_ko": "폴란드",
+    "name_en": "Poland",
+    "currency": "PLN",
+    "curr_unit": "즈워티",
+    "capital": "바르샤바",
+    "population": "약 3,760만 명",
+    "gdp": "약 8,400억 달러",
+    "inflation": "3.9%",
+    "unemployment": "2.9%",
+    "min_wage": { "display": "zł31.4 / 시간", "note": "2026년 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire Polska Sp. z o.o. (바르샤바)"
+    ]
+  },
+  {
+    "code": "FR",
+    "name_ko": "프랑스",
+    "name_en": "France",
+    "currency": "EUR",
+    "curr_unit": "€",
+    "capital": "파리",
+    "population": "약 6,830만 명",
+    "gdp": "약 3.13조 달러",
+    "inflation": "1.4%",
+    "unemployment": "7.4%",
+    "min_wage": { "display": "€12.02 / 시간", "note": "SMIC 기준" },
+    "region": "EU",
+    "offices": [
+      "Hankook Tire France S.A.S. (리옹)"
+    ]
+  },
+  {
+    "code": "AU",
+    "name_ko": "호주",
+    "name_en": "Australia",
+    "currency": "AUD",
+    "curr_unit": "호주달러",
+    "capital": "캔버라",
+    "population": "약 2,700만 명",
+    "gdp": "약 1.79조 달러",
+    "inflation": "2.8%",
+    "unemployment": "4.2%",
+    "min_wage": { "display": "A$26.44 / 시간", "note": "2025~26년 기준" },
+    "region": "APAC",
+    "offices": [
+      "Hankook Tyre Australia Pty. Ltd. (시드니)"
+    ]
+  }
+]

@@ -1,4 +1,3 @@
-python
 """
 build_site.py
 --------------
@@ -21,8 +20,8 @@ template.html 에 임베드하여 docs/index.html 을 생성한다.
      유효한 HTML 파일을 남기고 정상 종료한다.
 
 실행:
-    python src/collector.py    # 39개국 수집 -> data/countries_data.json + docs/archive/*.json
-    python src/build_site.py   # 템플릿에 데이터 임베드 -> docs/index.html
+    python src/collector.py
+    python src/build_site.py
 """
 
 import os
@@ -48,8 +47,6 @@ BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
 DATA_PATH = os.path.join(BASE_DIR, "data", "countries_data.json")
 ARCHIVE_INDEX_PATH = os.path.join(BASE_DIR, "docs", "archive", "index.json")
 
-# 저장소 구조상 템플릿 폴더가 단수형(template/) 일 수도, 복수형(templates/) 일 수도
-# 있으므로 둘 다 후보 디렉토리로 등록해 TemplateNotFound를 원천 차단한다.
 TEMPLATE_DIR_SINGULAR = os.path.join(BASE_DIR, "template")
 TEMPLATE_DIR_PLURAL = os.path.join(BASE_DIR, "templates")
 TEMPLATE_NAME = "template.html"
@@ -125,9 +122,6 @@ def _now_display() -> str:
 
 
 def _empty_skeleton_data() -> dict:
-    """data/countries_data.json 이 없거나/비었거나/깨졌을 때 사용하는 안전한 골격 데이터.
-    countries가 빈 배열이면 template.html 내장 JS의 '데이터를 불러오지 못했습니다' 배너가
-    자연스럽게 뜨므로, 완전히 빈 화면이나 파이썬 크래시보다 훨씬 안전한 결과다."""
     now_dt = datetime.now(_KST) if _KST is not None else datetime.now(timezone.utc)
     date_str = now_dt.strftime("%Y-%m-%d")
     return {
@@ -140,9 +134,6 @@ def _empty_skeleton_data() -> dict:
 
 
 def load_data() -> dict:
-    """data/countries_data.json 을 안전하게 로드한다.
-    파일이 없거나/비었거나/JSON 파싱에 실패하거나/기대한 형태(dict)가 아니면
-    예외를 던지지 않고 빈 골격 데이터로 폴백하며, 전체 traceback을 표준 출력에 남긴다."""
     if not os.path.exists(DATA_PATH):
         msg = f"[build_site] {DATA_PATH} 파일이 존재하지 않습니다. 빈 골격 데이터로 진행합니다."
         print(msg)
@@ -205,8 +196,6 @@ def load_data() -> dict:
 
 
 def load_archive_range(today_str: str) -> tuple:
-    """아카이브 인덱스에서 (최소 날짜, 최대 날짜)를 읽는다. 없거나 오류가 나면 오늘 하루만
-    유효 범위로 안전하게 폴백한다 (절대 예외를 던지지 않음)."""
     try:
         if os.path.exists(ARCHIVE_INDEX_PATH):
             with open(ARCHIVE_INDEX_PATH, "r", encoding="utf-8") as f:
@@ -232,7 +221,6 @@ def _is_bad_value(v) -> bool:
 
 
 def _validate(data: dict) -> None:
-    """진단용 경고만 남기는 검증 — 어떤 경우에도 예외를 던지지 않는다."""
     try:
         if not isinstance(data, dict):
             print(f"[build_site] _validate: data가 dict가 아닙니다(type={type(data).__name__}), 검증을 건너뜁니다.")
@@ -281,9 +269,6 @@ def _validate(data: dict) -> None:
 
 
 def _write_minimal_fallback(error_message: str) -> None:
-    """Jinja2 템플릿 로딩/렌더링 자체가 실패했을 때, 템플릿에 의존하지 않는
-    최소한의 순수 HTML을 대신 기록해 docs/index.html 이 항상 존재하도록 보장한다.
-    이 함수 자체가 실패하는 극단적인 경우까지 대비해 내부도 try-except로 감싼다."""
     try:
         html = MINIMAL_FALLBACK_HTML_TEMPLATE.format(
             timestamp=_now_display(),
@@ -301,22 +286,14 @@ def _write_minimal_fallback(error_message: str) -> None:
 
 
 def _resolve_template_env() -> Environment:
-    """template/ 와 templates/ 두 경로를 모두 로더 후보로 등록해, 폴더명이
-    단수형이든 복수형이든 TemplateNotFound 없이 template.html 을 찾아낸다."""
     candidate_dirs = [d for d in (TEMPLATE_DIR_SINGULAR, TEMPLATE_DIR_PLURAL) if os.path.isdir(d)]
     if not candidate_dirs:
-        # 디렉토리 자체가 둘 다 없더라도 FileSystemLoader에 그대로 넘겨
-        # get_template() 시점에 TemplateNotFound로 자연스럽게 이어지게 한다.
         candidate_dirs = [TEMPLATE_DIR_SINGULAR, TEMPLATE_DIR_PLURAL]
-
     loader = ChoiceLoader([FileSystemLoader(d) for d in candidate_dirs])
     return Environment(loader=loader, autoescape=select_autoescape(["html"]))
 
 
 def build(data: dict) -> bool:
-    """docs/index.html 생성을 시도한다. 성공하면 True, 최소 안내 페이지로 대체했으면
-    False를 반환한다(그래도 파일 자체는 항상 기록됨). 디스크에 아무것도 쓸 수 없는
-    진짜 복구 불가능한 상황에서만 예외를 던진다."""
     _validate(data)
 
     try:
@@ -331,9 +308,6 @@ def build(data: dict) -> bool:
     except Exception:
         as_of_display = f"{today_str} 06:00 KST 기준"
 
-    # ------------------------------------------------------------------
-    # 1) Jinja2 템플릿 로딩 (template/ 또는 templates/ 양쪽 다 탐색)
-    # ------------------------------------------------------------------
     try:
         env = _resolve_template_env()
         template = env.get_template(TEMPLATE_NAME)
@@ -355,17 +329,6 @@ def build(data: dict) -> bool:
         _write_minimal_fallback(err)
         return False
 
-    # ------------------------------------------------------------------
-    # 2) 대시보드 JSON 직렬화
-    #    - ensure_ascii=False : 한글이 \uXXXX 로 깨지지 않고 그대로 저장되도록 보장
-    #    - default=str        : datetime 등 직렬화 불가능한 값이 섞여도 TypeError로
-    #                           죽지 않고 문자열로 강제 변환해 저장을 계속함
-    #    - </script> → <\/script> 치환: 기사 제목 등에 우연히 "</script>" 문자열이
-    #                           섞여도 HTML 파싱이 깨지지 않도록 방어
-    #    - Markup() 래핑       : Jinja2 autoescape가 JSON의 큰따옴표를 다시
-    #                           &quot; 등으로 이중 이스케이프하지 않도록 방지
-    #                           (템플릿에서도 {{ dashboard_json|safe }} 로 이중 방어)
-    # ------------------------------------------------------------------
     try:
         raw_json = json.dumps(
             {
@@ -385,9 +348,6 @@ def build(data: dict) -> bool:
             json.dumps({"as_of_display": as_of_display, "regions": [], "countries": []}, ensure_ascii=False)
         )
 
-    # ------------------------------------------------------------------
-    # 3) 템플릿 렌더링
-    # ------------------------------------------------------------------
     ctx = {
         "as_of_display": as_of_display,
         "generated_at_date": today_str,
@@ -413,9 +373,6 @@ def build(data: dict) -> bool:
         _write_minimal_fallback(err)
         return False
 
-    # ------------------------------------------------------------------
-    # 4) 파일 기록 — 이 단계가 실패하면 정말로 할 수 있는 것이 없으므로 예외를 다시 던진다.
-    # ------------------------------------------------------------------
     try:
         os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
         with open(OUTPUT_PATH, "w", encoding="utf-8") as f:

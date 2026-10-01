@@ -1,34 +1,30 @@
 """
 build_site.py
 --------------
-data/countries_data.json (오늘자 데이터) 을 template/template.html 에 임베드하여
-docs/index.html 을 생성한다.
+data/countries_data.json (collector.py가 생성한 오늘자 데이터) 을
+template/template.html 에 임베드하여 docs/index.html 을 생성한다.
 
-v2 변경점 — GitHub Actions "Process completed with exit code 1" 크래시 수정
-  이전 버전은 다음 세 지점에 아무런 방어 로직이 없어, 조건이 맞으면 그대로 죽었다.
+v3 변경점
+  - collector.py v3의 스키마(profile.min_wage가 {"display":..., "note":...} 딕셔너리,
+    exchange_rate에 unit_base/url 포함, hr_trends가 2대 카테고리 × items 리스트)를
+    그대로 전제한다.
+  - json.dumps(..., default=str) 로 안전 직렬화하여, 혹시라도 직렬화 불가능한 값이
+    섞이거나(예: datetime, 커스텀 객체 등) min_wage 딕셔너리처럼 중첩 구조가 있어도
+    TypeError로 죽지 않고 문자열로 강제 변환해 저장을 계속한다. min_wage 같은 중첩
+    dict/list 구조는 ensure_ascii=False 와 함께 있는 그대로(키/값 전부) 정밀하게
+    보존되며, 깨지는 것은 오직 json 모듈이 원천적으로 직렬화할 수 없는 타입(예:
+    datetime, set 등)뿐이고 그 경우에만 default=str 가 개입한다.
 
-    1) load_data() — data/countries_data.json 이 존재하지 않거나(collector.py가 아직
-       한 번도 실행되지 않은 저장소, 혹은 이전 단계 실패로 파일이 안 만들어진 경우)
-       빈 파일이거나 JSON 문법이 깨져 있으면 open()/json.load() 가 그대로 예외를 던졌다.
-    2) env.get_template(TEMPLATE_NAME) / template.render(**ctx) — template.html 자체가
-       없거나 문법 오류가 있으면 TemplateNotFound/TemplateSyntaxError 로 죽었다.
-    3) json.dumps(...) — 데이터 안에 직렬화 불가능한 값이 섞이면 TypeError 로 죽었다.
-
-  이번 버전은 이 세 지점 모두를 세밀한 try-except로 감싸고, 다음 원칙으로 항상
-  "docs/index.html 이 존재하는 상태"를 보장한다.
-
-    - data/countries_data.json 이 없거나 비었거나 깨졌으면 → 빈 골격 데이터(국가 0개)로
-      대체해 계속 진행한다. 화면에는 template.html 자체에 내장된 "데이터를 불러오지
-      못했습니다" 배너가 뜨는 정도로 그친다(완전히 빈 화면이나 스크립트 크래시보다 낫다).
-    - Jinja2 템플릿 로딩/렌더링 자체가 실패하면 → 템플릿에 의존하지 않는 최소한의
-      순수 HTML(MINIMAL_FALLBACK_HTML_TEMPLATE)을 대신 기록한다.
-    - json.dumps(..., default=str) 로 직렬화 불가능한 값이 섞여도 문자열로 강제
-      변환해 저장을 계속한다.
-    - 모든 실패 지점에서 print()로 표준 출력에 구체적인 에러 메시지를 남긴다
-      (GitHub Actions 로그에서 바로 원인을 확인할 수 있도록).
-    - 그럼에도 불구하고 docs/index.html 자체를 디스크에 쓰는 것조차 실패하는
-      경우(디스크 권한/용량 등, 진짜로 복구 불가능한 상황)에만 최종적으로 실패를
-      알린다.
+안전성 원칙 (이전 버전과 동일하게 유지)
+  - data/countries_data.json 이 없거나/비었거나/깨졌으면 → 빈 골격 데이터(국가 0개)로
+    대체해 계속 진행한다. 화면에는 template.html 내장 "데이터를 불러오지 못했습니다"
+    배너가 뜨는 정도로 그친다(완전히 빈 화면이나 스크립트 크래시보다 낫다).
+  - Jinja2 템플릿 로딩/렌더링 자체가 실패하면 → 템플릿에 의존하지 않는 최소한의
+    순수 HTML(MINIMAL_FALLBACK_HTML_TEMPLATE)을 대신 기록한다.
+  - 모든 실패 지점에서 print()로 표준 출력에 구체적인 에러 메시지를 남긴다
+    (GitHub Actions 로그에서 바로 원인을 확인할 수 있도록).
+  - docs/index.html 자체를 디스크에 쓰는 것조차 실패하는 경우(디스크 권한/용량 등,
+    진짜로 복구 불가능한 상황)에만 최종적으로 실패를 알린다.
 
 실행:
     python src/collector.py    # 39개국 수집 -> data/countries_data.json + docs/archive/*.json
@@ -63,8 +59,6 @@ OUTPUT_PATH = os.path.join(BASE_DIR, "docs", "index.html")
 
 REQUIRED_PROFILE_FIELDS = ["capital", "population", "gdp", "inflation", "unemployment", "min_wage"]
 
-# Jinja2 템플릿 로딩/렌더링 자체가 실패했을 때 대신 기록하는, 템플릿 파일에 전혀
-# 의존하지 않는 순수 HTML. docs/index.html 이 항상 존재하도록 보장하기 위한 최후 수단이다.
 MINIMAL_FALLBACK_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -191,7 +185,6 @@ def load_data() -> dict:
         log.error(msg)
         return _empty_skeleton_data()
 
-    # 필수 최상위 키 보정 (부분적으로만 깨진 파일도 최대한 살려서 사용)
     try:
         default_generated_at = datetime.now(_KST).isoformat() if _KST is not None else datetime.now(timezone.utc).isoformat()
     except Exception:
@@ -231,8 +224,18 @@ def load_archive_range(today_str: str) -> tuple:
     return today_str, today_str
 
 
+def _is_bad_min_wage(v) -> bool:
+    if v is None:
+        return True
+    if isinstance(v, str) and v.strip().lower() in {"error", "err", "undefined", "null", "none", "nan", "n/a", "", "[object object]"}:
+        return True
+    return False
+
+
 def _validate(data: dict) -> None:
-    """진단용 경고만 남기는 검증 — 어떤 경우에도 예외를 던지지 않는다."""
+    """진단용 경고만 남기는 검증 — 어떤 경우에도 예외를 던지지 않는다.
+    min_wage는 {"display":..., "note":...} 딕셔너리이거나 단순 문자열일 수 있으므로
+    두 형태 모두 허용하되, 비어 있거나 손상된 값이면 경고만 남긴다."""
     try:
         if not isinstance(data, dict):
             print(f"[build_site] _validate: data가 dict가 아닙니다(type={type(data).__name__}), 검증을 건너뜁니다.")
@@ -256,20 +259,35 @@ def _validate(data: dict) -> None:
                 missing = [f for f in REQUIRED_PROFILE_FIELDS if not profile.get(f)]
                 if missing:
                     log.warning(f"[{c.get('code')}] profile 필드 누락: {missing} — 화면에는 '-'로 표시됩니다.")
+
+                min_wage = profile.get("min_wage")
+                if isinstance(min_wage, dict):
+                    if _is_bad_min_wage(min_wage.get("display")):
+                        log.warning(f"[{c.get('code')}] min_wage.display 값이 비어있거나 손상됨: {min_wage}")
+                elif _is_bad_min_wage(min_wage):
+                    log.warning(f"[{c.get('code')}] min_wage 값이 비어있거나 손상됨: {min_wage!r}")
+
                 if "exchange_rate" not in c:
                     log.warning(f"[{c.get('code')}] exchange_rate 필드 자체가 없습니다.")
+                else:
+                    fx = c.get("exchange_rate") or {}
+                    if not fx.get("is_base") and "url" not in fx:
+                        log.warning(f"[{c.get('code')}] exchange_rate.url 필드가 없습니다(야후 파이낸스 링크 미노출).")
+
                 headlines = c.get("headlines", []) or []
                 hr_trends = c.get("hr_trends", []) or []
                 if not headlines:
                     log.warning(f"[{c.get('code')}] headlines가 비어 있습니다.")
-                if len(hr_trends) < 4:
-                    log.warning(f"[{c.get('code')}] hr_trends가 4개 미만입니다 ({len(hr_trends)}개) — Fallback 항목 확인 필요.")
+                if len(hr_trends) != 2:
+                    log.warning(f"[{c.get('code')}] hr_trends 카테고리 수가 2가 아닙니다 ({len(hr_trends)}개) — AUTO MARKET/HR & LABOR 2대 구조 확인 필요.")
+                else:
+                    for t in hr_trends:
+                        if not isinstance(t, dict) or not isinstance(t.get("items"), list) or not t.get("items"):
+                            log.warning(f"[{c.get('code')}] '{t.get('category') if isinstance(t, dict) else '?'}' 카테고리에 items가 비어 있습니다.")
             except Exception as e:
-                # 국가 1건의 검증 실패가 전체 빌드를 막아서는 안 된다.
                 print(f"[build_site] _validate: 국가 항목 검증 중 오류(무시하고 계속): {e}")
                 continue
     except Exception as e:
-        # _validate 자체는 어떤 경우에도 build()를 막아서는 안 된다.
         print(f"[build_site] _validate 전체 실패(무시하고 빌드 계속): {e}")
 
 
@@ -329,7 +347,12 @@ def build(data: dict) -> bool:
         return False
 
     # ------------------------------------------------------------------
-    # 2) 대시보드 JSON 직렬화 (default=str 로 직렬화 불가능한 값도 안전하게 처리)
+    # 2) 대시보드 JSON 직렬화
+    #    default=str 로 직렬화 불가능한 값(예: datetime)이 섞여도 안전하게 처리한다.
+    #    min_wage가 {"display":..., "note":...} 딕셔너리든 단순 문자열이든 json.dumps는
+    #    두 구조 모두 네이티브로 완전하게(정밀도 손실 없이) 직렬화하므로 별도 변환 없이
+    #    countries 리스트를 그대로 넘긴다 — 프론트엔드(template.html)가
+    #    formatMinWage()로 두 형태 모두 안전하게 렌더링한다.
     # ------------------------------------------------------------------
     try:
         raw_json = json.dumps(
@@ -346,7 +369,6 @@ def build(data: dict) -> bool:
         err = f"대시보드 JSON 직렬화 실패: {e}"
         print(f"[build_site] ERROR: {err}")
         log.error(err)
-        # 직렬화조차 실패하면 최소한 빈 데이터로라도 페이지가 뜨도록 한다.
         dashboard_json = Markup(json.dumps({"as_of_display": as_of_display, "regions": [], "countries": []}))
 
     # ------------------------------------------------------------------
@@ -401,7 +423,6 @@ def main() -> None:
     try:
         data = load_data()
     except Exception as e:
-        # load_data() 자체는 내부적으로 이미 모든 예외를 흡수하지만, 방어적으로 한 번 더 감싼다.
         print(f"[build_site] load_data() 호출 중 예기치 못한 오류: {e}")
         print(traceback.format_exc())
         data = _empty_skeleton_data()
@@ -409,8 +430,6 @@ def main() -> None:
     try:
         build(data)
     except Exception as e:
-        # 여기까지 도달했다는 것은 docs/index.html 파일 기록 자체가 실패했다는 뜻으로,
-        # 정말로 복구 불가능한 상황이다. 표준 출력에 원인을 명확히 남긴 뒤 실패를 알린다.
         print(f"[build_site] FATAL: build_site.py 실행이 복구 불가능한 오류로 중단되었습니다: {e}")
         print(traceback.format_exc())
         log.exception("build_site.py 실행 중 처리되지 않은 예외가 발생했습니다")

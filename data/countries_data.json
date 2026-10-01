@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-01T15:50:05.840704+09:00",
-  "generated_at_display": "2026-10-01 15:50 KST",
+  "generated_at": "2026-10-01T16:03:56.198788+09:00",
+  "generated_at_display": "2026-10-01 16:03 KST",
   "as_of_display": "2026-10-01 06:00 KST 기준",
   "regions": [
     {
@@ -85,9 +85,18 @@
       "headlines": [
         {
           "title": "이 대통령, 김지용 임명수순…청 “곧 국회 청문 요청”",
-          "source": "주간경향",
+          "source": "weekly.khan.co.kr",
           "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1JNDNIUGNzNVl2TUNLUlJXbVB0eVpBcWNaUmh1d21UY19rb1FkbUpEdzJrV3ZhS05yaTJiUnk2SjNSeWdpQWYyeHFyUkNHaHhzWmpILVc5dmdhUkxMNHc?oc=5",
-          "summary": "이 대통령, 김지용 임명수순…청 “곧 국회 청문 요청”&nbsp;&nbsp;주간경향[속보] 이 대통령, 김지용 중수청장 인사청문요청안 국회 제출 예정&nbsp;&…",
+          "summary": "이 대통령, 김지용 임명수순…청 “곧 국회 청문 요청”&nbsp;&nbsp;weekly.khan.co.kr[속보] 청 “김지용 인사청문안 곧 제출…제기된 의혹,…",
+          "lang": "ko",
+          "translated": false,
+          "original_title": ""
+        },
+        {
+          "title": "청와대 신임 정책실장에 하준경, 경제성장수석 문신학",
+          "source": "한겨레",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9uUG9LemFZNUVGTGV0NkZVRDRzZFdJLVRWSVVJc094dUs5dk5JUVNEbHB3dTFISE1sdGl5XzhGTGFEb0I3bzBjclozYW5YaU9LbFMxd2oxR2lIUHBnVHdtSEJIUVB0UGJDaGNr?oc=5",
+          "summary": "청와대 신임 정책실장에 하준경, 경제성장수석 문신학&nbsp;&nbsp;한겨레靑 정책실장에 하준경, 경제수석엔 문신학&nbsp;&nbsp;조선일보[그래픽] 청와대…",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -97,15 +106,6 @@
           "source": "한겨레",
           "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBNeXpETGdDcmdKRlREWm54aXB5OWhfZDJzSlJuR0QwblpSZzlnZm5BRUR4dFVLYU50aVdOeWwwUXdWc1FSZWN5eEQ3dWJOLWw3RXI5X0lfQ2g1RDhHUlhvYlRFLUZ1Vjd3dmZB?oc=5",
           "summary": "이 대통령 “DMZ 사고 마음 아파…남북 군사긴장 낮추겠다”&nbsp;&nbsp;한겨레北 지뢰도발 비판 없이…李대통령 “대화복원 기대”&nbsp;&nbsp;문화일…",
-          "lang": "ko",
-          "translated": false,
-          "original_title": ""
-        },
-        {
-          "title": "국민의힘 “DMZ 지뢰 ‘불의의 사고’라는 이 대통령, 군 통수권자 맞나”",
-          "source": "KBS 뉴스",
-          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Rb1IwcnhFRFc3Uy0tQTJUbnJmMFhHUWJKckZOZ3FLWUFQUDRwRk1xMVdfaDRTUTRhalN4ZkF5d0RVeFpHbjU2M1o0dDNobTM3X2V5T2tzWmRCeFE?oc=5",
-          "summary": "국민의힘 “DMZ 지뢰 ‘불의의 사고’라는 이 대통령, 군 통수권자 맞나”&nbsp;&nbsp;KBS 뉴스Google 뉴스에서 헤드라인 및 의견 더보기",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -189,8 +189,8 @@
             },
             {
               "title": "Global Workforce Hopes and Fears Survey 2026",
-              "desc": "Global Workforce Hopes and Fears Survey 2026&nbsp;&nbsp;PwC",
-              "source": "PwC",
+              "desc": "Global Workforce Hopes and Fears Survey 2026&nbsp;&nbsp;pwc.com",
+              "source": "pwc.com",
               "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aV3dYRFBnaklTYXlrbThLa3RybjJNTDBEajlxRkkyMWlaOEFRZ2VUbE1qZHVrUWozY19YVWdYdkJJVUE5WnZObWphcEpEdkZLeTBUZzlOckVobXdoWWtBUHBlS1BpUDgtR1RaLWx0dlMzdVk?oc=5",
               "lang": "en",
               "translated": false,
@@ -234,8 +234,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1358.6,
-        "change_pct": 0.6,
+        "current_rate": 1358.9,
+        "change_pct": 0.62,
         "history_labels": [
           "11월",
           "12월",
@@ -262,7 +262,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1358.6
+          1358.9
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -288,7 +288,7 @@
         },
         {
           "title": "‘President of the Unites States’: White House’s AI accord includes spelling error",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOazdXZ2VENmg5LU10TmNZVUpxbVhOclJzQnBkcVlCOUNGMWRCbUowQlhMNEFCWlY2U0Y1dUtaODN2VTVBYVd3LWpSZ0hyeHBOUWdCellpVTZOWVFrZ2ZQb0ZJVE5uUk1qSzRNVEFEUFlmcVdBQXFRNlBkSlNjc1h0RElXTXE?oc=5",
           "summary": "‘President of the Unites States’: White House’s AI accord includes spelling error&nbsp;&nb…",
           "lang": "en",
@@ -312,6 +312,15 @@
               "original_title": ""
             },
             {
+              "title": "GM, 미국 시장 경쟁 심화 경고… 구조적 비용 절감 및 전기차 가격 경쟁력 확보 추진",
+              "desc": "GM, 미국 시장 경쟁 심화 경고… 구조적 비용 절감 및 전기차 가격 경쟁력 확보 추진&nbsp;&nbsp;다나와 자동차",
+              "source": "다나와 자동차",
+              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5HaG93dGRPSEhjV19TVl9UYk4xUDVpNXA3MEFwTER1NFJrQXdiMW93TWZuaDZwM2ZxeW1vMXdBVDNTQno5QWlZRzZNSkhQQVRCVm1PWTl0dk9nSkVTQlBfVXhWSEJZTUk3Y3JicQ?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": ""
+            },
+            {
               "title": "한국타이어, 미국 레이싱 아메리카에 5년간 타이어 독점 공급",
               "desc": "한국타이어, 미국 레이싱 아메리카에 5년간 타이어 독점 공급&nbsp;&nbsp;메트로신문",
               "source": "메트로신문",
@@ -328,15 +337,6 @@
               "lang": "ko",
               "translated": false,
               "original_title": ""
-            },
-            {
-              "title": "미국, 중국차 문턱 낮추나…시진핑 방미에 촉각",
-              "desc": "미국, 중국차 문턱 낮추나…시진핑 방미에 촉각&nbsp;&nbsp;MTN 머니투데이방송",
-              "source": "MTN 머니투데이방송",
-              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9va2VkeHhHX0NCRDFXXzRacUdBTktQeUZ4V0ZQMjdpNll3RU5yYzE5VWk0NVFwX0NkSmZnZGt2X0M5VncwMG10WHZYUm1JWXJual9yWWZuYTZ1aVRBanNwYy1kZUM?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
             }
           ]
         },
@@ -347,8 +347,8 @@
           "items": [
             {
               "title": "New Bill Would Create a 32-Hour Workweek in the US. Here’s What to Kno…",
-              "desc": "New Bill Would Create a 32-Hour Workweek in the US. Here’s What to Know&nbsp;&nbsp;news.wt…",
-              "source": "news.wttw.com",
+              "desc": "New Bill Would Create a 32-Hour Workweek in the US. Here’s What to Know&nbsp;&nbsp;WTTW Ne…",
+              "source": "WTTW News",
               "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTDZmWWpIM1pwMUpfUzNrQldWTGRUZlVXaXBfcU5LUnFnVWJvU19DZVdZeHdTNUUtNEt3NzExOU0tNjJ5T3RaeXFwVjNfeXo2TXFFQWhJSDJvaTZTMGRwTVFtR3lKZ2Y2SzNiZEFhbkZHTFVWQTZ3TWtycW5SS0dNVjJ4R1dPeWJJQmptaGdxcHdFUkhDUVE?oc=5",
               "lang": "en",
               "translated": false,
@@ -419,8 +419,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -447,7 +447,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -472,13 +472,13 @@
           "original_title": "Germany vs Serbia: UEFA Nations League stats & head-to-head"
         },
         {
-          "title": "Germany news: Berlin leftists seek to pave way for coalition",
-          "source": "DW.com",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcWNPM0N1bkllMDZ0cXA4LXh3OGt3ZEVlT082d0diRHZEd2owd0laSjMtSjg5bk9EYWFiTm4xVVpPNmh1ZXhHYVl5Z0d2a2VUQ1JuN0N5ZVB2LW5fRExDYW8wQVoyOFVoTTBxSkpFWXdWUUc1MVR5ZDdVQkJQSWNCVlVDeFlINmlPRFBwVFFlYUNUQUp3VWNacTFsZw?oc=5",
-          "summary": "Germany news: Berlin leftists seek to pave way for coalition&nbsp;&nbsp;DW.com",
+          "title": "Nations League Matchday Preview: Germany vs. Serbia",
+          "source": "Bavarian Football Works",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTEtsYTBScUpPVFQ3cm5PUmFJSzlsX2FPcVZPajNTbzJiMGV6aXFkbXg3UkhVQjBweXBGcjEzd1dyd1BUdlBodjBNYWxXVFN3bjdQV1dnS1FSYUl1dFZaWG52dWk2TGhVQnZ1Wld5U01IcGJIU2VlYnJFZnEtWEw3clpydGFzWVRMcmRZWE03QmEycXVfRHBodVBybmR3a05QcTJoc2YycGd0VzlnT3daNnpid1BqX2FjRnc0VDBUeUM?oc=5",
+          "summary": "Nations League Matchday Preview: Germany vs. Serbia&nbsp;&nbsp;Bavarian Football Works",
           "lang": "en",
           "translated": false,
-          "original_title": "Germany news: Berlin leftists seek to pave way for coalition"
+          "original_title": "Nations League Matchday Preview: Germany vs. Serbia"
         }
       ],
       "hr_trends": [
@@ -507,8 +507,8 @@
             },
             {
               "title": "엔진으로 펄펄 날던 독일 3사...테슬라 BYD 무기에 당했다",
-              "desc": "엔진으로 펄펄 날던 독일 3사...테슬라 BYD 무기에 당했다&nbsp;&nbsp;gpkorea.com",
-              "source": "gpkorea.com",
+              "desc": "엔진으로 펄펄 날던 독일 3사...테슬라 BYD 무기에 당했다&nbsp;&nbsp;지피코리아",
+              "source": "지피코리아",
               "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TU3JEWHMtbVFwZ1h2MnFHaXB2R2M0Ml9WakI5Yk4td1V4WVF6VnNDNk5abTRPYzlFeGxMRlI3YWtKWWpiYlBVVFNDVGRDTnJsRldOWlZkUUpNS3llRlZJSC1JTHRkT2M3eVHSAW5BVV95cUxOcmhDTnBCcVVHcjZ5eVhrSzdJLVFERE9Hb3hFQWowSlctejNSc2p6OEl2dUQyMDRobHNZaVY3bi01VnJfdW5KR3IyOFpPNlo3TWJqbGE3YW0yc3BXcHBibS1YWVVCM016dmdEdTJLQQ?oc=5",
               "lang": "ko",
               "translated": false,
@@ -558,13 +558,13 @@
               "original_title": "German dockworkers reject contract for a fourth time"
             },
             {
-              "title": "32-Hour Workweek Proposal: How Likely Is It For RI Employees?",
-              "desc": "32-Hour Workweek Proposal: How Likely Is It For RI Employees?&nbsp;&nbsp;Patch",
-              "source": "Patch",
-              "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb1ZxeFlCeHVGbXQ1TnNWMTd6cURocGo2TGZmekhuSENwcXk0eW9pZS1jN3hocWVHeW55YjVjblpCaDU5SzAyTmJLcjMxSmdaVEpqbzNCdmM5TEUzeHEyN2FpRlAzdXJNTEI0WXRHZWxwMlhfQXRUTW9zSTJmVG9qa0JUS05FYXo2OENSSUQtSFFueFhQd3czTA?oc=5",
+              "title": "32-Hour Workweek Proposal: How Likely Is It For WI Employees?",
+              "desc": "32-Hour Workweek Proposal: How Likely Is It For WI Employees?&nbsp;&nbsp;patch.com",
+              "source": "patch.com",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNU0JDS3NtVTA0SkN4Ml8yQ19qdUU0WmlnM1ZXM01EbVZMUUlUZ3JGOUxLcjlYSVVkNDZnNGQ0cmYxUWxHOUFXS2NBQjd2SzFzLUxDN015UU1qM2RzcjByMHNyMnRjMjVEbEQ3bk00aldVeWY2YXNvdEFpUjFKb0dvZnNvUEs1RmptdzRHYTQxMXMySGZKM2fSAbABQVVfeXFMT0J4aTgzSThOeFUtX0RRSmpPbHpHOVR5ck4wb01QWTBGNHF3VnYySjlTVWlyaTRheDFMcVB3d2Q2RWpzazM1OVB1N2FfM3dEQnp6V293VGthQ3c1bUM5MVZ4ZC1XV2FaZ1dHSTV2c2NiT0VGVzcwTGJlX3dBUWdUSTJHZ2JwT3gyZnU1eUZaUzRubWtzNWt1QUFSUV9tQmFQQVYzWmE1WHVnRW14NE1DTEk?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "32-Hour Workweek Proposal: How Likely Is It For RI Employees?"
+              "original_title": "32-Hour Workweek Proposal: How Likely Is It For WI Employees?"
             }
           ]
         }
@@ -610,8 +610,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 202.8,
-        "change_pct": 0.66,
+        "current_rate": 202.7,
+        "change_pct": 0.59,
         "history_labels": [
           "11월",
           "12월",
@@ -638,20 +638,20 @@
           210.3,
           204.7,
           201.5,
-          202.8
+          202.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
       },
       "headlines": [
         {
-          "title": "China’s Tencent leases 100,000 chips from Oracle to accelerate AI push, FT reports",
+          "title": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, sources say",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNR3F1ZTMtVFZsOVNXOEU4X09jTTI0RDVYNUJmQUNVVUhJQkV6YlRmdldFaWwyVzU1UnZLQl9Ia0tqTHlBZ09SUXZ6VC1kcEx6bjQyQlgxXzI1YVpwYldSV3NwNXZRRkFPSWQzclhFbE04anBtbnRZV2FwRUlIMmU2eVV3M0VscEE1Znd5bU5rNEhwWVVXdlR0c2tIbnlnald3VVBJdVFiTDZMUmhqV0x1bE1jVVR2STZ5bHdF?oc=5",
-          "summary": "China’s Tencent leases 100,000 chips from Oracle to accelerate AI push, FT reports&nbsp;&n…",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUndXVDZTcEFDQWtURXgyY2xhOUh2OTYyQml2YWNSTVN0Unh0cVZfMElHOFo4RnRSZG9OTzR6QzhySElfendhdnVYZDlkM0pwZXd3RkJaaFhjbm95RVBZWHZ1TExod3JUZFZ5WVVrUnBQZ2ZSanZ3cHVla3A2XzZqdGZ2MUtGejNZcG8xczFER2JraHFyUV84RGd2SmxWOEFhYm9vdnI5RkZnSkQzTGhKcEpfUWpCbWp6TTVFbE5KbTNXd19SOUxn?oc=5",
+          "summary": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, so…",
           "lang": "en",
           "translated": false,
-          "original_title": "China’s Tencent leases 100,000 chips from Oracle to accelerate AI push, FT reports"
+          "original_title": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, sources say"
         },
         {
           "title": "In photos: China's Xi hardens Taiwan warning as country celebrates week-long National Day holiday",
@@ -794,7 +794,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.2,
-        "change_pct": 0.24,
+        "change_pct": 0.35,
         "history_labels": [
           "11월",
           "12월",
@@ -829,9 +829,9 @@
       "headlines": [
         {
           "title": "Hungary lifts immunity of Prime Minister Magyar, two Orban-era ministers",
-          "source": "Al Jazeera",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWlNIWW1iOWFRaHpva2hxdWtYUXNENThDY3YxWFRiWEE5MFlLV0o4Q0o2YnNjQ3d0QTBOcE1GSzhDQUl3MHp3djZJZ3luTjdMY0p2WF9YR1QtaVhUS0xkZGg1SjlDWHVfU0tUTjJWYUxpLVUwYUlZdVZxWFhfZDFEVEoySFpjdnRCbjc3ZnlnQUo4YnJGWWstMzQ3TlctQk5TQ2syQnZuUHp3dVRIWm5qZXJn0gG3AUFVX3lxTE1vengta0xZTUNLMW00ck1yVmc2aGZ6Snlfd3laRXQ4eDI2TmZVZEg3WXpIQ3F3MDgzRDJzU0RTb3UxQlFGbGtua2NEeXJDbnlXclVMem43SnI5b2gtdzQ1dWowVmR6eWFTc3owSGh3UlQ5M2FTS1VtMTdLdW9SQ3h1aHhDcVJvMjFEUVk5UEU3Z18tX21xZmNYSnJVUTVrZjV5ZVNwY19obFFONWxmRlE4QXlJVF9DWQ?oc=5",
-          "summary": "Hungary lifts immunity of Prime Minister Magyar, two Orban-era ministers&nbsp;&nbsp;Al Jaz…",
+          "summary": "Hungary lifts immunity of Prime Minister Magyar, two Orban-era ministers&nbsp;&nbsp;aljaze…",
           "lang": "en",
           "translated": false,
           "original_title": "Hungary lifts immunity of Prime Minister Magyar, two Orban-era ministers"
@@ -941,7 +941,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 7.6,
-        "change_pct": 0.69,
+        "change_pct": 0.68,
         "history_labels": [
           "11월",
           "12월",
@@ -994,7 +994,7 @@
         },
         {
           "title": "‘The toll is huge’: El Niño-driven wildfires overwhelm Indonesia’s orangutan population",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxONXVXZ21RZ1doTFdNZkJmUE84MHY5MElfR0hkbHZqd1A0VkM3TlozZTYycERReWpOd3JhMmpmMTRRWm5lLWoyZ1pDa0lreGRNMEI5VTZpOVEzeGZBbUJnMHgzX3hmMGlmRDhFc25qTlpRSkRhVGFDWFBLQUUxQkJnWlQxaUU1TzRnZ243X2p5OTZsM0VmNTVFT1E0SmlJdksweTVBTXUyQjc?oc=5",
           "summary": "‘The toll is huge’: El Niño-driven wildfires overwhelm Indonesia’s orangutan population&nb…",
           "lang": "en",
@@ -1094,8 +1094,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -1122,7 +1122,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -1170,6 +1170,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "TUHU Car Acquires Australia's Largest Tire Chain mycar for HK$2.25 Billion"
+            },
+            {
+              "title": "Cambodia’s tyre exports surge 72% to $1.5B",
+              "desc": "Cambodia’s tyre exports surge 72% to $1.5B&nbsp;&nbsp;Khmer Times",
+              "source": "Khmer Times",
+              "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQOXVadGU1NFhzSnc2RzM0WEE5QVJTQWlrNU5TOUxFZ1htanRxYk1obno4aUR5WGVoVE00bzk1a01nYjV1eTNNODNGM0xQbnczaEJlVUlYUHBYVTkzMXk0X2FPeDdoMmZnQ3owUmV3LU9WNFVJQVU1c1h5Q29VY3ZrdU4zR0g0dw?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Cambodia’s tyre exports surge 72% to $1.5B"
             }
           ]
         },
@@ -1240,7 +1249,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 42.5,
-        "change_pct": 0.25,
+        "change_pct": 0.3,
         "history_labels": [
           "11월",
           "12월",
@@ -1274,13 +1283,13 @@
       },
       "headlines": [
         {
-          "title": "Taiwan transfers naval commander to Coast Guard to boost deterrence against China",
+          "title": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, sources say",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZnFvSkZSdG5JRmRiNzZtU0ZXYVVrakc3b1N4Qjd0TGhWMGw2cHFqREFtQk9jZTdUc2NnazVHaS1sVnI4TzFEZEVlUzJZRkZaN0E0T0tGalVHbFE1YklfVFVwdkdjQm9RTW1sTG9nU2g5eDNIQzc1NHVLQTI5V2d4OVhNM0N5aWJ2ZnFJTTFnT21nNXhsZG5Vd19NWko0WkNmZmc5QWdsb2t5ZExFakRrYXZBa25iX0NYSkJSQWhRYTA?oc=5",
-          "summary": "Taiwan transfers naval commander to Coast Guard to boost deterrence against China&nbsp;&nb…",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUndXVDZTcEFDQWtURXgyY2xhOUh2OTYyQml2YWNSTVN0Unh0cVZfMElHOFo4RnRSZG9OTzR6QzhySElfendhdnVYZDlkM0pwZXd3RkJaaFhjbm95RVBZWHZ1TExod3JUZFZ5WVVrUnBQZ2ZSanZ3cHVla3A2XzZqdGZ2MUtGejNZcG8xczFER2JraHFyUV84RGd2SmxWOEFhYm9vdnI5RkZnSkQzTGhKcEpfUWpCbWp6TTVFbE5KbTNXd19SOUxn?oc=5",
+          "summary": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, so…",
           "lang": "en",
           "translated": false,
-          "original_title": "Taiwan transfers naval commander to Coast Guard to boost deterrence against China"
+          "original_title": "EXCLUSIVE: US sees Chinese invasion of Taiwan unlikely next year despite 2027 timeline, sources say"
         },
         {
           "title": "In photos: China's Xi hardens Taiwan warning as country celebrates week-long National Day holiday",
@@ -1385,7 +1394,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 16.4,
-        "change_pct": 1.52,
+        "change_pct": 1.53,
         "history_labels": [
           "11월",
           "12월",
@@ -1429,7 +1438,7 @@
         },
         {
           "title": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack in months",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcW9waG9IWVhYZTI5MkV4SjJhTzBzTkFjZ2lNTWNEZUNZeDhTSVlNZ0xwTHNOWnhxVEpvUXc0Rk5tUExSbVVOT0h5R3Z6aXFvNEN6QWxZWm4xMFVsVFFwLTVFSk9WemxjOFVQNlVzUHRUYUoycnluTWQ3SDZtdFRlYXptN2p0M2djOVRfRXJXYkd1bE1BRHZ2bllRcHJ2WU1NSXkxSklWQkpXN3hMQ3d2ZnBUalFLMDR2MnNqa1JPT1hzQzFLZ3UxTkRKVkNHdEtONDNDRnJ3VlFLenp2?oc=5",
           "summary": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack…",
           "lang": "en",
@@ -1437,13 +1446,13 @@
           "original_title": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack in months"
         },
         {
-          "title": "The Russia-Ukraine War Report Card, Sept. 30, 2026",
-          "source": "Russia Matters",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWlRhaGRzVzhFNllTcGU4c0NleFk4LXFMLVVERHlvcUQ2NGM4YXUwV2hQQklIcjZ1ZmZ4eXBpWTdlbldoRUdpS05jUWNFbHQ2QXNNODZRdlhBNk44aENWRVNCNXdaMWl1V2Z1Y1Y4TE0tUUZXbzhKU29tZ2k5U3FndUIyQzFHNWlUbFYtMFlyZlVXT2s1NFJHb1llLXc2M3lYSTlPUnl0VVZoM3BPWUE?oc=5",
-          "summary": "The Russia-Ukraine War Report Card, Sept. 30, 2026&nbsp;&nbsp;Russia Matters",
+          "title": "Explainer: Why Russia's Kaliningrad is a potential flashpoint with NATO",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVGRva3h3V0lWbDliSXVPWmt1aWV2UTFlN1l2cGhvSENmX3BQSDVZbDJQMjdGYmRDYjRqbThKNDlHZmV4NjNJWFdFSm9FQUtkcGFwNWhuOG9TR01LcWIzNXpwNm1ITW5QNEVXVW1OSzZTRXR3czEzMlVhU215bS16NXgyZDBWVjdqN1BVR1pFSVBFWUd1aWZSbEUyTFUzWHRGY3k1MmR5WllFWGNYRnhfNWYxS09URF9UamNxdg?oc=5",
+          "summary": "Explainer: Why Russia's Kaliningrad is a potential flashpoint with NATO&nbsp;&nbsp;Reuters",
           "lang": "en",
           "translated": false,
-          "original_title": "The Russia-Ukraine War Report Card, Sept. 30, 2026"
+          "original_title": "Explainer: Why Russia's Kaliningrad is a potential flashpoint with NATO"
         }
       ],
       "hr_trends": [
@@ -1529,8 +1538,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 291.4,
-        "change_pct": 0.31,
+        "current_rate": 291.6,
+        "change_pct": 0.37,
         "history_labels": [
           "11월",
           "12월",
@@ -1557,7 +1566,7 @@
           312.4,
           303.8,
           290.5,
-          291.4
+          291.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -1574,9 +1583,9 @@
         },
         {
           "title": "Romania’s political crisis intensifies as Parliament rejects pro-EU PM",
-          "source": "Al Jazeera",
+          "source": "aljazeera.com",
           "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVC11V2J1WkhLekVkMFdZdWJxT3dDYUQyRVdJaVlDaHpHWmFpNVVIdFBvWGxDby1SQjZsWTljUFRxd1V2LTNsc0VMcWFWRHJNcXFZdnRjMF9mbVV4WDRibFVrMEEyVk9WRG1CcDhoT1hSd2hIZTR3RVNORXFmcmYwc3NCWm9DQWpxdUZEdmtZRTJCN3BhYWczTTZDZmNMVGN0Y3JrTHFXU3FNSnQ1bERV0gG0AUFVX3lxTFA2bXIwUDJkNi15aVRlWU5BdWNOdFpLOHNKMERCTzMtd3Naeml4VF80dC1WNjQtNTcwQ0VmYzBzX0laSm81WS1GaTlDNmd2dmJTdHF0UXV5dGQ5TC1aN1VMTjlBaS1nTG14ajVGQVpmWlNBVTZfcWxma3NMdUU1N2xoUWJKM0w5TmQzNVlRbG91QWNrXzFUWUcyN0s3bjcxN2RSQmV1eGJnZmV5RnV0My1ETEtncg?oc=5",
-          "summary": "Romania’s political crisis intensifies as Parliament rejects pro-EU PM&nbsp;&nbsp;Al Jazee…",
+          "summary": "Romania’s political crisis intensifies as Parliament rejects pro-EU PM&nbsp;&nbsp;aljazeer…",
           "lang": "en",
           "translated": false,
           "original_title": "Romania’s political crisis intensifies as Parliament rejects pro-EU PM"
@@ -1665,8 +1674,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 332.7,
-        "change_pct": 0.53,
+        "current_rate": 333.0,
+        "change_pct": 0.62,
         "history_labels": [
           "11월",
           "12월",
@@ -1693,7 +1702,7 @@
           348.6,
           342.1,
           330.9,
-          332.7
+          333.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/MYRKRW=X"
@@ -1820,7 +1829,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 75.0,
-        "change_pct": 0.27,
+        "change_pct": 0.2,
         "history_labels": [
           "11월",
           "12월",
@@ -1907,8 +1916,8 @@
             },
             {
               "title": "타이어코드 1위 넘어 우주항공·방산까지…HS효성, 멕시코 거점 확보",
-              "desc": "타이어코드 1위 넘어 우주항공·방산까지…HS효성, 멕시코 거점 확보&nbsp;&nbsp;financialpost.co.kr",
-              "source": "financialpost.co.kr",
+              "desc": "타이어코드 1위 넘어 우주항공·방산까지…HS효성, 멕시코 거점 확보&nbsp;&nbsp;파이낸셜포스트",
+              "source": "파이낸셜포스트",
               "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9zQV85ODQ2emJ3Ums4UGNTeW1qbmthRGtXdWNrZnJKVlZvQ0syNkJ2OE9IUDFsZ294bnpmY21qQmlLODB3cjRaaDN4T3kyNmQ3aDNoYjhIejZONGJxTl80MXNwd0NlaDFyUUV0STduYVNISDJq?oc=5",
               "lang": "ko",
               "translated": false,
@@ -1930,15 +1939,6 @@
           "tag": "노동법·HR·임금",
           "tag_class": "bg-indigo-100 text-indigo-700",
           "items": [
-            {
-              "title": "Congress Takes Up 32-Hour Workweek Bill That Would Expand Overtime Pay",
-              "desc": "Congress Takes Up 32-Hour Workweek Bill That Would Expand Overtime Pay&nbsp;&nbsp;lawcomme…",
-              "source": "lawcommentary.com",
-              "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR0NVM2pHdzIydHg4WllhbXBkWi1HOHdtWkVsUEZJU3ljQTVOSm5DV1dRRUFKT1A0VHFGYWRZaVIwdExrU2phSUYtNGcwMkVPUTdaS1Jtc1I5X1BZRkQ4VWt0bGRWZTBuQ3NUeTZhUEpJN2M0aWg0Qm5kTy12amlVLUF4VFBac1VPaEE?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Congress Takes Up 32-Hour Workweek Bill That Would Expand Overtime Pay"
-            },
             {
               "title": "Mexico's Female Labor Participation Rises to 41%: INEGI",
               "desc": "Mexico's Female Labor Participation Rises to 41%: INEGI&nbsp;&nbsp;Mexico Business News",
@@ -1991,8 +1991,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 139.8,
-        "change_pct": -2.84,
+        "current_rate": 140.0,
+        "change_pct": -2.68,
         "history_labels": [
           "11월",
           "12월",
@@ -2019,7 +2019,7 @@
           151.4,
           153.1,
           143.9,
-          139.8
+          140.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -2036,9 +2036,9 @@
         },
         {
           "title": "Morocco’s King Names a Female Prime Minister, in a Historic First",
-          "source": "nytimes.com",
+          "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQOWQwOWtUQTUwM1lsNjFhSU55dTVXWUlsTFVremUxdnMzTE9lNTRzbDNNTkw2UTk1UUtQb0NmOHdod1piTmNLZ0VRTnN1MmFSOWw2Q0lSekQ5c0ZzRVRrRlJzd08xN3Q0dU05dmRubklXZE1yU2VXMk42Ql9BUXRnT3ZNMXhpODcwZ3BaYllYVFFvZ24tNmc?oc=5",
-          "summary": "Morocco’s King Names a Female Prime Minister, in a Historic First&nbsp;&nbsp;nytimes.com",
+          "summary": "Morocco’s King Names a Female Prime Minister, in a Historic First&nbsp;&nbsp;The New York…",
           "lang": "en",
           "translated": false,
           "original_title": "Morocco’s King Names a Female Prime Minister, in a Historic First"
@@ -2119,7 +2119,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "change_pct": 0.65,
+        "change_pct": 0.66,
         "history_labels": [
           "11월",
           "12월",
@@ -2172,9 +2172,9 @@
         },
         {
           "title": "Landmark POW-MIA Vietnam Era Collection Acquired by Hoover",
-          "source": "hoover.org",
+          "source": "Hoover Institution",
           "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVWZ0amowazNBcVdjMmtoVVRVaEIwYVFHV192d0g4djg4V2hreVV1NzdwRjY5V01LOGlfdTRTdGdEX2QwYTcteFhSUWozVmVISzRtTDlLbGwwbng4cV84dXJqM2xfdkplUV80YXlLaWVYYjRsdEVueWRmQTI2dW1QTDNiRzF2RFdhbmNr?oc=5",
-          "summary": "Landmark POW-MIA Vietnam Era Collection Acquired by Hoover&nbsp;&nbsp;hoover.org",
+          "summary": "Landmark POW-MIA Vietnam Era Collection Acquired by Hoover&nbsp;&nbsp;Hoover Institution",
           "lang": "en",
           "translated": false,
           "original_title": "Landmark POW-MIA Vietnam Era Collection Acquired by Hoover"
@@ -2291,7 +2291,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 262.3,
-        "change_pct": 1.04,
+        "change_pct": 1.07,
         "history_labels": [
           "11월",
           "12월",
@@ -2386,13 +2386,13 @@
               "original_title": ""
             },
             {
-              "title": "rest-of-europe Off the Road Tires Market Size, Share,Trends, Growth An…",
-              "desc": "rest-of-europe Off the Road Tires Market Size, Share,Trends, Growth Analysis Report, 2031&…",
-              "source": "MarketsandMarkets",
-              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMk85akZRVzVXUUNyeWxMTExpZUFYalV6RURyeldNb0Y1RXhRMmhMTUpGOVZSdndKanM2M2xKR09SdUU1bF93R2hTalQyMWZqYnVqQ2hoUi0yYWdFVVhQTUplcEV0eU05OW5QSG12SjFCMnZ3eDZqS0Y2cDFoM0lQOVg3aUl4b0I0TU5Ic0o0Uk1QOU0?oc=5",
-              "lang": "en",
+              "title": "고무 가황용 황 시장 2035년 전망: 타이어 수요와 전자 정밀도가 성장 견인",
+              "desc": "고무 가황용 황 시장 2035년 전망: 타이어 수요와 전자 정밀도가 성장 견인&nbsp;&nbsp;IndexBox",
+              "source": "IndexBox",
+              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMGxySkJLdHB1ZWZ1d3lTRG9xQ2ktaXdnVlltRUdFN2xXby0xdTd6cG9wRlM4QjVzNEE4UER3WktaaUl3NXBDRGpubzU4eWp1U3FfS1hMTlgycEF4NUhnRGZkU1gyX0pMTVBxakJjeW5kZ3F3c1pFaXExekJVYlBHbWtPZUMwcHR6aWw1ckQxQWZzUDA2LTRvbENhcVVWY0lYYlFBZXJkbTg2LUlCRTd4eXg2aW5rSnpfR3FyR2RvdTVNdVNVLXZCWE9POXBjSmxkdDFVbXdn?oc=5",
+              "lang": "ko",
               "translated": false,
-              "original_title": "rest-of-europe Off the Road Tires Market Size, Share,Trends, Growth Analysis Report, 2031"
+              "original_title": ""
             }
           ]
         },
@@ -2445,7 +2445,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 361.9,
-        "change_pct": -2.4,
+        "change_pct": -2.41,
         "history_labels": [
           "11월",
           "12월",
@@ -2514,8 +2514,8 @@
           "items": [
             {
               "title": "[CAR 브리프] 한국타이어ㆍ넥센타이어ㆍ롯데렌탈ㆍKG모빌리티플랫폼ㆍ롤스로이스ㆍ코렌스ㆍ헤이딜러ㆍ타이어뱅크",
-              "desc": "[CAR 브리프] 한국타이어ㆍ넥센타이어ㆍ롯데렌탈ㆍKG모빌리티플랫폼ㆍ롤스로이스ㆍ코렌스ㆍ헤이딜러ㆍ타이어뱅크&nbsp;&nbsp;dnews.co.kr",
-              "source": "dnews.co.kr",
+              "desc": "[CAR 브리프] 한국타이어ㆍ넥센타이어ㆍ롯데렌탈ㆍKG모빌리티플랫폼ㆍ롤스로이스ㆍ코렌스ㆍ헤이딜러ㆍ타이어뱅크&nbsp;&nbsp;대한경제",
+              "source": "대한경제",
               "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1tXzNSWDRYeVJ0VmhIdnVhY1l3RTlZd3ktaWVralN3ZVM4aHpVQ0huTWUtWWRCbHhyRU5Vd19idjZCMHk4NGJFMjBCa1UzZW12SWEySDNQLWo3aC05eVpuX18teWNDNjg5aXppQ1JBeTMxOFU?oc=5",
               "lang": "ko",
               "translated": false,
@@ -2523,8 +2523,8 @@
             },
             {
               "title": "한국타이어, 사우디서 열리는 ‘2026 걸프컵’ 공식 파트너 참여",
-              "desc": "한국타이어, 사우디서 열리는 ‘2026 걸프컵’ 공식 파트너 참여&nbsp;&nbsp;서울경제TV",
-              "source": "서울경제TV",
+              "desc": "한국타이어, 사우디서 열리는 ‘2026 걸프컵’ 공식 파트너 참여&nbsp;&nbsp;sentv.co.kr",
+              "source": "sentv.co.kr",
               "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Sa3F1OHRtanFJemhZa2FXSzMzOHJhNHdTZXBmNHYwUmVVSDhid0NtYTN5TTVmRnBtZXlDOWxXbjVXTUJEXzFjUExVb0lJMGFncmhldkYwQkNpbnUwelZ0VjZkWEw?oc=5",
               "lang": "ko",
               "translated": false,
@@ -2585,7 +2585,7 @@
             {
               "title": "Saudi Arabia deports more than 12,600 residency and labour law violato…",
               "desc": "Saudi Arabia deports more than 12,600 residency and labour law violators in a week&nbsp;&n…",
-              "source": "People Matters Global",
+              "source": "me.peoplemattersglobal.com",
               "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPT1JFOUlQV0V1TFRrOFpoUDM5TjdnXzc0WWpzWkZrVXhsMDF4aXBBY2RtcGx4d0NkSExNWE5hZ1dqUGxPaHgyVi1pNFBsSWdxWU9LNDl5U2NaMzRpRklhempSMmU4TEVCMkJwQzJmMjRJYmtPei14U1dYSzhsUVRpajRncl9UelhCZjhobm42YXZBc1RMUDdiUDRJRldweWx1YU1ZSko5eEtuV2Z1eGtvV3VCTUNZV3JKNUVXRlNKLTVLeHY5aWdNRTZDYUFZVnNkRjBqVEk2czlSQQ?oc=5",
               "lang": "en",
               "translated": false,
@@ -2678,13 +2678,13 @@
           "original_title": "Not your everyday coffee in a Serbia cafe. Enjoy it in the company of alpacas"
         },
         {
-          "title": "Not your everyday coffee in a Serbia cafe. Enjoy it in the company of alpacas",
-          "source": "Marietta Daily Journal",
-          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQQWR6M0UwM0Nzd3ZBbkY2OGkxcTFJT2loZ1FzRnhTTWdyUlQtN01tZEYzQWFRdGdra0FfUUZXWmF4cFZDUXQ0cjh2enJPblowZ0Q5b0tQM0hEUDNBQnFpMkxHTmh2NTlNNTZaZG1HMTNacVdwSzI3OTZaS0xfS0ZrTlNudWtOT1JDVFVTdElPOVYtMHhWNWttVk1WUm9EajZTUll0dkxoUlJqNkVadHBoTnlJTEZPVThuUHo3WTFfVTlqVThicW95U3VhWHhEZ1NWdjZpT2tlNjk5bU42NFk1N2xUVXJockZfVzRyWVRrNl9Ia19WX0oxY0dB?oc=5",
-          "summary": "Not your everyday coffee in a Serbia cafe. Enjoy it in the company of alpacas&nbsp;&nbsp;M…",
+          "title": "Nations League Matchday Preview: Germany vs. Serbia",
+          "source": "Bavarian Football Works",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTEtsYTBScUpPVFQ3cm5PUmFJSzlsX2FPcVZPajNTbzJiMGV6aXFkbXg3UkhVQjBweXBGcjEzd1dyd1BUdlBodjBNYWxXVFN3bjdQV1dnS1FSYUl1dFZaWG52dWk2TGhVQnZ1Wld5U01IcGJIU2VlYnJFZnEtWEw3clpydGFzWVRMcmRZWE03QmEycXVfRHBodVBybmR3a05QcTJoc2YycGd0VzlnT3daNnpid1BqX2FjRnc0VDBUeUM?oc=5",
+          "summary": "Nations League Matchday Preview: Germany vs. Serbia&nbsp;&nbsp;Bavarian Football Works",
           "lang": "en",
           "translated": false,
-          "original_title": "Not your everyday coffee in a Serbia cafe. Enjoy it in the company of alpacas"
+          "original_title": "Nations League Matchday Preview: Germany vs. Serbia"
         }
       ],
       "hr_trends": [
@@ -2761,8 +2761,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 136.0,
-        "change_pct": 0.64,
+        "current_rate": 135.5,
+        "change_pct": 0.27,
         "history_labels": [
           "11월",
           "12월",
@@ -2789,7 +2789,7 @@
           148.9,
           143.4,
           135.2,
-          136.0
+          135.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SEKKRW=X"
@@ -2797,9 +2797,9 @@
       "headlines": [
         {
           "title": "Sweden must apologise for harm done to Sami people, says state-backed report",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUzg2SFVRQ3RhVG10QlNHc1NWSnFqSnVmZFRLWEVmMWJNV21FaU4ybVAtcWdVRHN5dHl0VkwyTVA5eDFpMmhUTkJmN0tNTGFwMWNLQWpid0Z6N3JkUmVUeklrVDd2UnFLelhWbUp0S2xxX2hmVjdSSWhMVmhIbmIwZG9qYw?oc=5",
-          "summary": "Sweden must apologise for harm done to Sami people, says state-backed report&nbsp;&nbsp;Th…",
+          "summary": "Sweden must apologise for harm done to Sami people, says state-backed report&nbsp;&nbsp;th…",
           "lang": "en",
           "translated": false,
           "original_title": "Sweden must apologise for harm done to Sami people, says state-backed report"
@@ -2924,8 +2924,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -2952,7 +2952,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -3105,8 +3105,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1061.7,
-        "change_pct": 0.41,
+        "current_rate": 1062.4,
+        "change_pct": 0.48,
         "history_labels": [
           "11월",
           "12월",
@@ -3133,7 +3133,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1061.7
+          1062.4
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -3199,6 +3199,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "What a Custom Bronco Actually Costs, and Why the Range Is So Wide"
+            },
+            {
+              "title": "BYD To Launch Certified Pre-Owned Programme In Singapore",
+              "desc": "BYD To Launch Certified Pre-Owned Programme In Singapore&nbsp;&nbsp;OneShift by Carousell",
+              "source": "OneShift by Carousell",
+              "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNSC1TSlZMZW41a3VIamNOUEF3eDdrMFFKRnEyT0RQX1V4QUNBWVNWS2t4bEJEenIwcEJMS1dTTlYzaC1xdGFGSlAwTTVEWVJMZ1lVSy1tVFdtMmFOSDlKN01aTW1zNDhWSmViMTFzVVdaVFc1d1Q1R0xuOTRaeEhhR2FDNF9xVEVFeXVaTldnSlU1ZllxNmlxeF9neXg?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "BYD To Launch Certified Pre-Owned Programme In Singapore"
             }
           ]
         },
@@ -3209,8 +3218,8 @@
           "items": [
             {
               "title": "US employers face raft of Trump-flavoured labour law changes – Littler…",
-              "desc": "US employers face raft of Trump-flavoured labour law changes – Littler report&nbsp;&nbsp;g…",
-              "source": "globallegalpost.com",
+              "desc": "US employers face raft of Trump-flavoured labour law changes – Littler report&nbsp;&nbsp;T…",
+              "source": "The Global Legal Post",
               "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUm5OSzRxVlpKMmRXamdIMDhMVDRaLXRuWEw3ZmlSSER4b0NDSE5QcWZ0aUxQbDAxNDNEajMwS2RGcTFvdUQxdkV1TzUxMy1wWS1JUzRFMWg0dE9sS2xBYlhaajBzdTJHOEFPbkV0R0lFU0dWd3hKNGdXN0JPWmo0ZmJvNmJ5V3JBYlFxVnhxSmY1VVFtYUp6OHk1WkFkazJuLWVyNENUY19wTm1xOXYzMlhjSDhhRndrclF3dWxyalc?oc=5",
               "lang": "en",
               "translated": false,
@@ -3235,13 +3244,13 @@
               "original_title": "India EPFO Wage Ceiling Hike: Who Is Covered and How Payroll Changes"
             },
             {
-              "title": "Is Singapore ready for inclusive workplaces? ‘I don’t think we are’: H…",
-              "desc": "Is Singapore ready for inclusive workplaces? ‘I don’t think we are’: HR institute’s chief&…",
-              "source": "The Business Times",
-              "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQRm1mdTBGR2RFMDdNblQ5cnBlWVFseGJKOXNlTW1kam83OHRLcEI2OEh6cGNzS1ZZLUF0UXhFZEhIQWE2a0V1MEpjNXlobVdvcUpRTW5uUEVqWWVQZWdtOXFtZGxOaS1fMkd2di1BZzBUVU9Qc0Z3YlRHQk9ocUV5QmlFa3BXTHRwVEI5QUM4cFVxSEVZXy1zaUdvVWpRalRnQm1RVnVCSFUza0NsSFVsY1Y5SWpiQjlBUnh6dzZ5R3FORnQ0dk5WVUJtWkl2cmc?oc=5",
+              "title": "She failed her PIP, resigned",
+              "desc": "She failed her PIP, resigned - and still lost her case&nbsp;&nbsp;hcamag.com",
+              "source": "hcamag.com",
+              "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOeVFGMWhnUy1DdWhnbHR6M3A1TmRlRXg4dDFabE9uV2RBN0hONklhNmlpRDFlMTBwZGkxU1c3UzJUUDV5Q0JBT1hsUVAtbDBmVDVXcFF5azgtRXNkbzFlSVlaQ2Ffc3ZLUnJKS3FMS2l2M1IxZUlTSVlUR1VadERYdUdWYlkxbmc3UndBZTZvSjlIYk1oZU56NjE5Vjl4SHM4TTNnREJCakZHalM4bXhueE41eDRQSW8?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Is Singapore ready for inclusive workplaces? ‘I don’t think we are’: HR institute’s chief"
+              "original_title": "She failed her PIP, resigned"
             }
           ]
         }
@@ -3277,8 +3286,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 370.2,
-        "change_pct": 0.63,
+        "current_rate": 370.0,
+        "change_pct": 0.58,
         "history_labels": [
           "11월",
           "12월",
@@ -3305,12 +3314,21 @@
           386.9,
           375.1,
           367.8,
-          370.2
+          370.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
       },
       "headlines": [
+        {
+          "title": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia",
+          "source": "PBS",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGZRRTBhNUdxTm4xNnNBd2swbldvamVscXNWNnZQaGR2RHJpR0Z2Q3hobld3SXpYNlhmSVNVUk9lWXViT0UxMzhNRG04QkJRY1ZCd0lqLXhzVkM1NlVQN2hueEE0aTFDTzBjMURVMHh1dXBOX2ZrcWhCczhLd1lMeGFzYmRocXZqY1c0NHRtQW85SzJCYjVpSEQ1LWEzajduZGNiLVJJc1lXVmJqbjA5X1pvNENZQdIBuwFBVV95cUxOSWFpSEtENW9FS3hldnRPQ3VITGtrdWluOVVRYnFlWTYzX3lMd1RaS3pRM2hNenlTY0U3ajhPU19RTlNCQ0VPc1FyOFlNX3dMQWF6RXlyVHdESWZJa2VDSEo5aTVkSVRWNklLVFcyMncyeFlsUTJFQ01FLUZwcVo2elN3cUx0VkFlaXNCMEhmSUl3Z1ZUMFI2VzhDSWZZQzMyY3dYcEpPaUplVlZZd2xqTmU1bG0wRWI3NjJV?oc=5",
+          "summary": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia&nbsp;&nbs…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia"
+        },
         {
           "title": "Netanyahu says Israel will get to the 'root' of co-pilot in foiled bid to crash flydubai flight",
           "source": "Reuters",
@@ -3328,15 +3346,6 @@
           "lang": "en",
           "translated": false,
           "original_title": "United Arab Emirates August 2026: Mitsubishi (+123%) ignores market down -15.1%"
-        },
-        {
-          "title": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia",
-          "source": "PBS",
-          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGZRRTBhNUdxTm4xNnNBd2swbldvamVscXNWNnZQaGR2RHJpR0Z2Q3hobld3SXpYNlhmSVNVUk9lWXViT0UxMzhNRG04QkJRY1ZCd0lqLXhzVkM1NlVQN2hueEE0aTFDTzBjMURVMHh1dXBOX2ZrcWhCczhLd1lMeGFzYmRocXZqY1c0NHRtQW85SzJCYjVpSEQ1LWEzajduZGNiLVJJc1lXVmJqbjA5X1pvNENZQdIBuwFBVV95cUxOSWFpSEtENW9FS3hldnRPQ3VITGtrdWluOVVRYnFlWTYzX3lMd1RaS3pRM2hNenlTY0U3ajhPU19RTlNCQ0VPc1FyOFlNX3dMQWF6RXlyVHdESWZJa2VDSEo5aTVkSVRWNklLVFcyMncyeFlsUTJFQ01FLUZwcVo2elN3cUx0VkFlaXNCMEhmSUl3Z1ZUMFI2VzhDSWZZQzMyY3dYcEpPaUplVlZZd2xqTmU1bG0wRWI3NjJV?oc=5",
-          "summary": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia&nbsp;&nbs…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "What to know about the terrifying FlyDubai flight forced to land in Saudi Arabia"
         }
       ],
       "hr_trends": [
@@ -3449,8 +3458,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1798.8,
-        "change_pct": 0.62,
+        "current_rate": 1800.7,
+        "change_pct": 0.73,
         "history_labels": [
           "11월",
           "12월",
@@ -3477,7 +3486,7 @@
           1912.2,
           1864.7,
           1787.6,
-          1798.8
+          1800.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/GBPKRW=X"
@@ -3485,9 +3494,9 @@
       "headlines": [
         {
           "title": "No 10 gathering evidence on public support for UK rejoining EU",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOGR0NkxuWEJGVmh6YmVXM2xxWFVDa08tRGhSTHU0eVNXQWlGQVpMbzRHMHBSb2h2eHprZXYyNHhRWmljN3BGcGp6YTM2MXMyTjd6YkljY3hfR3Y1U0pWSG93QjhVeVVCMF9jWDlsR3B0UlVEMFFHeVBDdmlSZFNEU0lidGFrN3g2OUZ5azQ4Y09ET2JGWkNvbVhaZU5WLWdPNjFrRkV3TTlNLU14cWR4YUkwaXlkMGtNS1E?oc=5",
-          "summary": "No 10 gathering evidence on public support for UK rejoining EU&nbsp;&nbsp;The Guardian",
+          "summary": "No 10 gathering evidence on public support for UK rejoining EU&nbsp;&nbsp;theguardian.com",
           "lang": "en",
           "translated": false,
           "original_title": "No 10 gathering evidence on public support for UK rejoining EU"
@@ -3561,9 +3570,18 @@
           "tag_class": "bg-indigo-100 text-indigo-700",
           "items": [
             {
+              "title": "A World of Difference in Immigration",
+              "desc": "A World of Difference in Immigration - Immigration attorneys, solicitors, and consultants…",
+              "source": "Fragomen",
+              "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOdkRNVC1YRmNBSDlBakFlR1daWWU1Mk1YWjY1UVR5MFN5SmJIOGMwakZwcUZVaTNZUXRjS2Q4dVM2VTl5d2dIdnJKcGt3Y3RrUUJJWU91Q04yeEtXN3E3ZVBDdEZjQUREa3dUb0hCMVdiMW5TZ2dGYlJPaWxlNWl5bVdmMk4yMzZGSmJOQkZpdmwwWjdWcWhV?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "A World of Difference in Immigration"
+            },
+            {
               "title": "Global Workforce Hopes and Fears Survey 2026",
-              "desc": "Global Workforce Hopes and Fears Survey 2026&nbsp;&nbsp;PwC",
-              "source": "PwC",
+              "desc": "Global Workforce Hopes and Fears Survey 2026&nbsp;&nbsp;pwc.com",
+              "source": "pwc.com",
               "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9aV3dYRFBnaklTYXlrbThLa3RybjJNTDBEajlxRkkyMWlaOEFRZ2VUbE1qZHVrUWozY19YVWdYdkJJVUE5WnZObWphcEpEdkZLeTBUZzlOckVobXdoWWtBUHBlS1BpUDgtR1RaLWx0dlMzdVk?oc=5",
               "lang": "en",
               "translated": false,
@@ -3580,21 +3598,12 @@
             },
             {
               "title": "32-Hour Workweek Proposal: How Likely Is It For CA Employees?",
-              "desc": "32-Hour Workweek Proposal: How Likely Is It For CA Employees?&nbsp;&nbsp;Patch",
-              "source": "Patch",
+              "desc": "32-Hour Workweek Proposal: How Likely Is It For CA Employees?&nbsp;&nbsp;patch.com",
+              "source": "patch.com",
               "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNa0hYWWFFU0hzSHFlVGZQd0FIY0NfVVhtd0ljQ0RoVmg0clh1Q2ZvbWx4YTdrXzd0d19KdzJheDV2eDVRcWt0WWp0b3pMYXpMVGR1Wkh6TER5aEpCXzV3MWZJS0U0aFJzWHg1enpfOEpQT0diOWJrQUtsNUZYbXVESlhPbFowTExmQ3hIdFU4dWt2cktWY3c?oc=5",
               "lang": "en",
               "translated": false,
               "original_title": "32-Hour Workweek Proposal: How Likely Is It For CA Employees?"
-            },
-            {
-              "title": "UK Industry Fast Facts",
-              "desc": "UK Industry Fast Facts&nbsp;&nbsp;ibisworld.com",
-              "source": "ibisworld.com",
-              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5IMzd1Rm1YNFRvbVdfTThDeDBPREx4QzdDT0NHdkJFOXJxcnZTb2hRWGNqRm5BTEtpbFUyYUNZZ1Q3ak1velVUNmNkOS1FQUxQRkpHaWROUkgtUDlsSmRkbHduOW1VN1BZSnVpMkRTQQ?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "UK Industry Fast Facts"
             }
           ]
         }
@@ -3630,8 +3639,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -3658,7 +3667,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -3683,13 +3692,13 @@
           "original_title": "Biennale Arte 2026 | Opening hours of the Austrian Pavilion"
         },
         {
-          "title": "Austria Wien vs Internazionale Box Score",
-          "source": "nytimes.com",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNYi10RlZHZVdLWERpU05SNHplbGpwd1RjTkJfMFVyOExVaHdaY0tKMF9URXlBTndrdXJidldQQVhNaXJQeVFvb1hNSE54TTZBQk53Uk8wVWhfZEd2cnBvZEV3cWN1RzNnZG9tX2VPR1lheGZDWFQtX0hQdWNvZThIYXBWcHJVejEzcDdyUHhmOEpyYWJkemdjVkUxRQ?oc=5",
-          "summary": "Austria Wien vs Internazionale Box Score - October 01, 2026 - The Athletic&nbsp;&nbsp;nyti…",
+          "title": "Eaton Strengthens European Manufacturing With Expanded Production Facility in Austria",
+          "source": "Business Wire",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNalhHZVNGSWx6bXVFLXI2VmhXU3BKODN2aE9ESHpaRl9hX3kzYzhBMjVrT25OZmxjdmpvUmQxelhqU3VfVVgxRnluMHpXakNzMDVBUU0tQ2Y3cEFIQ01oVktJNXVQNkMwUk9VQmhlX1o2RFFxTi15SkVNRnQxeUhDdXAyaEZtcW9RSmVRblRzX0lFT3YxdXZGdms3Y1h4R1k2Z2hMRUplX3FXQzVpUVZmY25SSTBOZ1ZEMmxVRE9qSmp5V3pUcHBtdUNGcUZ4NUZsSHpGYnFROWN2Zw?oc=5",
+          "summary": "Eaton Strengthens European Manufacturing With Expanded Production Facility in Austria&nbsp…",
           "lang": "en",
           "translated": false,
-          "original_title": "Austria Wien vs Internazionale Box Score"
+          "original_title": "Eaton Strengthens European Manufacturing With Expanded Production Facility in Austria"
         }
       ],
       "hr_trends": [
@@ -3758,7 +3767,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.3,
-        "change_pct": -2.39,
+        "change_pct": -2.41,
         "history_labels": [
           "11월",
           "12월",
@@ -3802,7 +3811,7 @@
         },
         {
           "title": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack in months",
-          "source": "The Guardian",
+          "source": "theguardian.com",
           "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNcW9waG9IWVhYZTI5MkV4SjJhTzBzTkFjZ2lNTWNEZUNZeDhTSVlNZ0xwTHNOWnhxVEpvUXc0Rk5tUExSbVVOT0h5R3Z6aXFvNEN6QWxZWm4xMFVsVFFwLTVFSk9WemxjOFVQNlVzUHRUYUoycnluTWQ3SDZtdFRlYXptN2p0M2djOVRfRXJXYkd1bE1BRHZ2bllRcHJ2WU1NSXkxSklWQkpXN3hMQ3d2ZnBUalFLMDR2MnNqa1JPT1hzQzFLZ3UxTkRKVkNHdEtONDNDRnJ3VlFLenp2?oc=5",
           "summary": "Ukraine war briefing: Russia pounds power grid with seven killed in biggest energy attack…",
           "lang": "en",
@@ -3825,6 +3834,15 @@
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
+            {
+              "title": "ERJ Business Briefing",
+              "desc": "ERJ Business Briefing - 2026&nbsp;&nbsp;European Rubber Journal",
+              "source": "European Rubber Journal",
+              "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPckNVQlgyWkw2UVhGT0FYUmNPcENsTHlkREZWOEJfMUo1UUtlS0EzbFlsMzlnT2VCdGdoQ0dXVGhKMTFreGVoaDh3MldvUzVVenVmRVFiR1RIS1ozVGpCQWp2MTNuTnA4N243R0tvVWp0bzdRa0hNQl9wZkU2N0RvSjl2YVZpN051Rm5WMi1oOA?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "ERJ Business Briefing"
+            },
             {
               "title": "Is it really possible to save on fuel? Key takeaways from the broadcas…",
               "desc": "Is it really possible to save on fuel? Key takeaways from the broadcas...&nbsp;&nbsp;Інсти…",
@@ -3912,7 +3930,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 26.2,
-        "change_pct": 0.88,
+        "change_pct": 0.81,
         "history_labels": [
           "11월",
           "12월",
@@ -3965,7 +3983,7 @@
         },
         {
           "title": "Global Call for the Release of Entire Newsroom at Egyptian Investigative Journalism Platform Matsadaash",
-          "source": "timep.org",
+          "source": "The Tahrir Institute for Middle East Policy -",
           "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOWXVjaUZNRU5Gdm5iakVuMTlydXJod0Z5MnhqQ1RKOEpEX1dHN1BkOUlwT1VUcEIyaE1BVVpob1dtXy1vazVwUmY0aU9YMjZEdm1BS1Juc2xKSGI3RFJPY1IwZUdJeUZYZVBwNlpzZkhtbEQxS2U4NElneThRcWFLSFE1cWVaa1dEVHJYMWdGWEVZMnpkcDRNdEU5Nlp6ZmJ2d3VhMnktWnNMdHFHN0VWSVF0ZXhlNE1GWF95NHJKT3d0TURQYkM3LXptY1Ewdw?oc=5",
           "summary": "Global Call for the Release of Entire Newsroom at Egyptian Investigative Journalism Platfo…",
           "lang": "en",
@@ -3981,8 +3999,8 @@
           "items": [
             {
               "title": "Linglong invests US$270m in EMEA plant in Egypt",
-              "desc": "Linglong invests US$270m in EMEA plant in Egypt&nbsp;&nbsp;tiretechnologyinternational.com",
-              "source": "tiretechnologyinternational.com",
+              "desc": "Linglong invests US$270m in EMEA plant in Egypt&nbsp;&nbsp;Tire Technology International",
+              "source": "Tire Technology International",
               "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRG9FYmw2VGRjOGxEZ1RfdHZIR194V2pBWVRmdnROMlJIX1lqMk9TNWhtS2tacGhmX1VoWHNXWng2SnZmRjZNVkxVdGZEVi1BdXVLQWxBME5Ub28yRFRSeHZwdnhadlRrM3l1Yldzc3phcGJrTGxzYTBaQTl6Y2NQQ0R4N0xidjN3UGVkcGxXV1lEeGU0MGx1dmFLWnVKVTBYSEs4Z3N0cWkzMTZBVG5MYUlVR2txcXZxT2ZXWFppbzMyTXc?oc=5",
               "lang": "en",
               "translated": false,
@@ -3996,6 +4014,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "Insoluble Sulfur Market To 2035: Tire Demand Drives Growth"
+            },
+            {
+              "title": "Linglong approves $270 million PCR plant in Egypt",
+              "desc": "Linglong approves $270 million PCR plant in Egypt&nbsp;&nbsp;Tyrepress",
+              "source": "Tyrepress",
+              "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOM3BQb1dzTXdiQ1J4SDRIN1B5LU03VzdwRDFMSDdzajBoTU9Xa2x2UlZHNWJXa0Z4Mzk5N0FLcm11WjVQWHBBS2cxLXdwZmVKSjFfLUJqZFpCYjRnQ21wVndfemtwdXhQUjBSdFVTWjYzcEJCcDVnLWlSd24zLU9oVU9USlFocHAzZkN3?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Linglong approves $270 million PCR plant in Egypt"
             }
           ]
         },
@@ -4047,8 +4074,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -4075,7 +4102,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -4186,13 +4213,13 @@
               "original_title": "Ogden woman charged with collecting $50K in disability pay while hiking in Italy"
             },
             {
-              "title": "US consulate builder to pay $35 million after Italy labor exploitation…",
-              "desc": "US consulate builder to pay $35 million after Italy labor exploitation probe&nbsp;&nbsp;Bi…",
-              "source": "Bilyonaryo Business",
-              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNEtqTllwWDV0bzVEUUFRYVlXSlMtbjZBZWhKek9ZSFNKOC1MQ0hPcXFFcC0tdzFUd1J0Nl9zYjBvcE11SHRhd25NRWNwWmwzSGZFcEttcFNzck9Td0dBWEJmM3c3RkcxOTg0R2xWWE5yQW9GVUczbzFJTzRiM081aVVzaDhrQkp2MS1ZWjBNbmJjdU9rdVhobWhiUmU3VDdN?oc=5",
+              "title": "Caddell to Pay $35M in Milan Labor Probe Over US Consulate Project",
+              "desc": "Caddell to Pay $35M in Milan Labor Probe Over US Consulate Project&nbsp;&nbsp;Global Banki…",
+              "source": "Global Banking & Finance Review",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcV9OUV9BN2Z1UlZjNmJCUk5ENG5PYUlINEo5SDRZcjRQNWZEMkI5a3NzM2VwbTNDcVpIc3dNM2MyX1JYTFJVdVIyNkZ5dHNkdDlIc3ZrdmFGaVBQVWI4RGZ1NW42U3FwVjF5UTN5Nkxpb1FZYlZiRzNsd2w0eExmTHZJVWhPcS1pZ2pkdGg0Nk9XRWpWaTlWbW4zenJEdElfR1E?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "US consulate builder to pay $35 million after Italy labor exploitation probe"
+              "original_title": "Caddell to Pay $35M in Milan Labor Probe Over US Consulate Project"
             }
           ]
         }
@@ -4228,8 +4255,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 856.7,
-        "change_pct": -0.19,
+        "current_rate": 857.3,
+        "change_pct": -0.12,
         "history_labels": [
           "11월",
           "12월",
@@ -4256,12 +4283,21 @@
           886.8,
           860.1,
           858.3,
-          856.7
+          857.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/JPYKRW=X"
       },
       "headlines": [
+        {
+          "title": "Japan raises permanent residency fees for foreign nationals by twenty-fold",
+          "source": "BBC",
+          "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBXUHdHb2kyQkloYlhrZkd2Y05GU1dBa0RpQ1k5bl9FVmFJbDdHaWZBZzl3Zi1yeTU2eDIxbGk5SnFTM0FjNVFCVS16TG1lY2ZjX2dhQW5XSDZZVDA?oc=5",
+          "summary": "Japan raises permanent residency fees for foreign nationals by twenty-fold&nbsp;&nbsp;BBC",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Japan raises permanent residency fees for foreign nationals by twenty-fold"
+        },
         {
           "title": "UH Hilo alumna Brooklyn Geiger now teaching English in Japan",
           "source": "University of Hawaii at Hilo",
@@ -4273,21 +4309,12 @@
         },
         {
           "title": "Japan Raises Residency Fees 2,000 Percent Amid ‘Anxiety’ Over Foreigners",
-          "source": "nytimes.com",
+          "source": "The New York Times",
           "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOOXpma2N0ZVNndEJENEQ4NTdmT3Y3WlI1eXBDOG9Ib3JHRHRQRENQVndqODZzNXFqdkZ4REtianJaSVNiU2lZNnYzcUdzMldNQlNpeXp4ZFI5SGFXQjhDR19tcXFYRC1YU2dNRklUMTBXNzdOTUlTeWFLS05yWC1CbnhseVpWeDR5bTFEb0M0NDFXbk1MUmtQZlB5cUJJX2VKZEhjNUVYUmQxZmxyQ2NVYWdrREI5Z1JfSDc5Sg?oc=5",
-          "summary": "Japan Raises Residency Fees 2,000 Percent Amid ‘Anxiety’ Over Foreigners&nbsp;&nbsp;nytime…",
+          "summary": "Japan Raises Residency Fees 2,000 Percent Amid ‘Anxiety’ Over Foreigners&nbsp;&nbsp;The Ne…",
           "lang": "en",
           "translated": false,
           "original_title": "Japan Raises Residency Fees 2,000 Percent Amid ‘Anxiety’ Over Foreigners"
-        },
-        {
-          "title": "Japan officially overhauls permanent residency rules",
-          "source": "The Japan Times",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQdjNqdDgzeEFhdnJxNGhpWjdESFJSWTU3SU45TkpKY3RFWWdRc3NsVWMzOHgxdVZxMEZyMm9NckFPME1icTV6bU5QTzBGbE1vWVlrbGpDMVNBaTE4Vk5heE9YcnZobUpYN195TnBjU1VaNThWSFhzUmJmZU5GTkd0MmozaHcxTDE2R1NSck5jZUV1a3dyM3c?oc=5",
-          "summary": "Japan officially overhauls permanent residency rules&nbsp;&nbsp;The Japan Times",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Japan officially overhauls permanent residency rules"
         }
       ],
       "hr_trends": [
@@ -4409,8 +4436,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 62.9,
-        "change_pct": 0.23,
+        "current_rate": 63.1,
+        "change_pct": 0.61,
         "history_labels": [
           "11월",
           "12월",
@@ -4437,7 +4464,7 @@
           67.7,
           66.2,
           62.8,
-          62.9
+          63.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CZKKRW=X"
@@ -4445,9 +4472,9 @@
       "headlines": [
         {
           "title": "Helping Ukraine is in Czechia's national interest – Czech general",
-          "source": "Ukrinform",
-          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeG01QzFGa1VZc19KSlg5VUNtblA3U3dsSmdYSHFPeGJLdm83Z3pDMV9EbXJ0NVVYRllSOU1HakQ1cXlTaXczZ1JiUjEwQjk2MDUtTmQ0WlFQa2Y4c0xaZXA0R1M1MWw4T0FhbW13cGRDRFhXQzlqdnVIQjlOdWxWRU1xc0pZTTN0cy0zcTdXWkJkX0oxNERILS1OSmw0ZW1zVTl5a1ZWRkZTbmcxN0tTQWdWS0dSSGfSAbcBQVVfeXFMT3htNUMxRmtVWXNfSkpYOVVDbW5QN1N3bEpnWEhxT3hiS3ZvN2d6QzFfRG1ydDVVWEZZUjlNR2pENXF5U2l3M2dSYlIxMEI5NjA1LU5kNFpRUGtmOHNMWmVwNEdTNTFsOE9BYW1td3BkQ0RYV0M5anZ1SEI5TnVsVkVNcXNKWU0zdHMtM3E3V1pCZF9KMTRESC0tTkpsNGVtc1U5eWtWVkZGU25nMTdLU0FnVktHUkhn?oc=5",
-          "summary": "Helping Ukraine is in Czechia's national interest – Czech general&nbsp;&nbsp;Ukrinform",
+          "source": "ukrinform.net",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPS2RaY0xsZEE5WkdxVWtpVy04NzY0Z0JYVmp0QURpZlhIQWxPV1o3QVpaWi1IOWxqTWh5c1pOTkxXTVVFZ3k3ZmRlRjlMbHRkTFpTOG9YSThlSUg1SUpLSkZTZFM5QUNqMUtEYlhXb08yZXhwYnJoQ2RGa0lUYjl0V0U0MDYwM0prbENoMzB1SlY0N2YwdEh5b0ZzLU1zODZrcU1aNC1tMzJHaUFjQVl5ckRB0gG3AUFVX3lxTE94bTVDMUZrVVlzX0pKWDlVQ21uUDdTd2xKZ1hIcU94Ykt2bzdnekMxX0RtcnQ1VVhGWVI5TUdqRDVxeVNpdzNnUmJSMTBCOTYwNS1OZDRaUVBrZjhzTFplcDRHUzUxbDhPQWFtbXdwZENEWFdDOWp2dUhCOU51bFZFTXFzSllNM3RzLTNxN1daQmRfSjE0REgtLU5KbDRlbXNVOXlrVlZGRlNuZzE3S1NBZ1ZLR1JIZw?oc=5",
+          "summary": "Helping Ukraine is in Czechia's national interest – Czech general&nbsp;&nbsp;ukrinform.net",
           "lang": "en",
           "translated": false,
           "original_title": "Helping Ukraine is in Czechia's national interest – Czech general"
@@ -4546,7 +4573,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1.4,
-        "change_pct": 0.64,
+        "change_pct": 0.61,
         "history_labels": [
           "11월",
           "12월",
@@ -4581,21 +4608,21 @@
       "headlines": [
         {
           "title": "USA vs Chile Predictions: Hosts to defend solid home record?",
-          "source": "Goal.com",
+          "source": "goal.com",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSlJKelpMdTZ3RlNQbTYwZm9RQ1U5QlZPVGVQU05XRm1rUVhXQ0NTVEgtYmYxMTZFNmxFczBqZkZvSVBEckxrWWcwOEUwUVV0eWJEU1VNTktwRWlMaV9faVFnTUJGZWc1OEdCSzBFZG1rc1dSWGx2SU0xbnhkS0Z5cWNuQWVIcDZHclRJUHczSldEQUtBbUlzSmFCSFJGZXc?oc=5",
-          "summary": "USA vs Chile Predictions: Hosts to defend solid home record?&nbsp;&nbsp;Goal.com",
+          "summary": "USA vs Chile Predictions: Hosts to defend solid home record?&nbsp;&nbsp;goal.com",
           "lang": "en",
           "translated": false,
           "original_title": "USA vs Chile Predictions: Hosts to defend solid home record?"
         },
         {
-          "title": "Westfield, Pierre earn first USMNT starts in win over Chile",
-          "source": "Philadelphia Union",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcmt4bFRWY1dpQ2g4aGVnLVpUODFEc0ZZeU5zSmNYa1hsMHUxZUVpcjB5ak5pRE5pdDdURndNbUc3Wi1yUVdpbGZmc1Y2RFF1ZTRHZkVDNm9OREZHYVp2Z1pxYWZkNTRtQmc5TU5vNHIxd1REcl9pS2kxT1V4Qmw5OFJNNzBRTEhCRjg4RWhpN3U0RWRlNllXTVVPVWNlZw?oc=5",
-          "summary": "Westfield, Pierre earn first USMNT starts in win over Chile&nbsp;&nbsp;Philadelphia Union",
+          "title": "USMNT vs. Chile: Match Recap & Highlights | International Match",
+          "source": "US Soccer",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMVU1THhicnNTS2NoTWNQZm0xcXg0eXVTMGktOUl5RmxrV1RqSmVwV25iakdYM1AxOU5WYVJzX3d0NlhWV1p4TjlUT01kdzFGTkpmU18zWHU4Y0o1UkVaUGpweEdYSTg0ellDMXlZVjhKandBZmJJckgzNlBNMGdwUnVzcXdJWXZQMFhr?oc=5",
+          "summary": "USMNT vs. Chile: Match Recap & Highlights | International Match&nbsp;&nbsp;US Soccer",
           "lang": "en",
           "translated": false,
-          "original_title": "Westfield, Pierre earn first USMNT starts in win over Chile"
+          "original_title": "USMNT vs. Chile: Match Recap & Highlights | International Match"
         },
         {
           "title": "Tallahassee protesters rally outside Chile and Chili’s food truck after ICE detainment of three employees",
@@ -4649,8 +4676,8 @@
           "items": [
             {
               "title": "Key data missing for half of US child labor deaths, official report fi…",
-              "desc": "Key data missing for half of US child labor deaths, official report finds&nbsp;&nbsp;The G…",
-              "source": "The Guardian",
+              "desc": "Key data missing for half of US child labor deaths, official report finds&nbsp;&nbsp;thegu…",
+              "source": "theguardian.com",
               "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOcmlpYU1vcGx6Q2ljcUx0dDN4QTlNQnJwZVFxVUtyVURRZk5CTU9QaWlfeUFkc1pMblpIcnB2b2dDZHRxZF9VZVFPNzRXQ2hucFlMZ25MaVlJUFlkRzhFVDZvUUwzWDNsYTU1MUQ0SU5vZ1Ffc1FWQ1lzeGFnZzhJSE9zNWJQSGM?oc=5",
               "lang": "en",
               "translated": false,
@@ -4718,7 +4745,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 3.1,
-        "change_pct": -3.3,
+        "change_pct": -3.32,
         "history_labels": [
           "11월",
           "12월",
@@ -4844,8 +4871,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 953.9,
-        "change_pct": 0.19,
+        "current_rate": 954.5,
+        "change_pct": 0.26,
         "history_labels": [
           "11월",
           "12월",
@@ -4872,7 +4899,7 @@
           1013.9,
           990.8,
           952.0,
-          953.9
+          954.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -4898,9 +4925,9 @@
         },
         {
           "title": "AI agents tried to hack a Canadian government website, researchers say",
-          "source": "The Washington Post",
+          "source": "washingtonpost.com",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeEVjbGN0N2NJSC1vQ3FPTUNmZFdLSWhlVmhiZVJ4TnhISFh2VjJZZzJrdEFka2IwUTdGaW5aY3FzZ3dQRk9UQnF3dHhhbXA3a0NlVW82Q0JXSFA1ak9keHdydVBXdnZURXlVWmx6MDdHbzFxOGo3V3hOazEtb2F0Vko3VHhoUVZmM1M3b2J3b0RoZUp4c3FqZHRNN1phaGdXLVlzdFlLTnJGNXpOeUl4dTBCU3A?oc=5",
-          "summary": "AI agents tried to hack a Canadian government website, researchers say&nbsp;&nbsp;The Wash…",
+          "summary": "AI agents tried to hack a Canadian government website, researchers say&nbsp;&nbsp;washingt…",
           "lang": "en",
           "translated": false,
           "original_title": "AI agents tried to hack a Canadian government website, researchers say"
@@ -4957,8 +4984,8 @@
           "items": [
             {
               "title": "We Just Won the First Union Contract at a Walmart in North America",
-              "desc": "We Just Won the First Union Contract at a Walmart in North America&nbsp;&nbsp;inequality.o…",
-              "source": "inequality.org",
+              "desc": "We Just Won the First Union Contract at a Walmart in North America&nbsp;&nbsp;Inequality.o…",
+              "source": "Inequality.org",
               "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPWlZ5ZUNuQXFidG81bGk3YkFDbEdfUEJNbmhWTzdnbTFUWGV3SU16LVVFZ3VyT1JOYlhWVG9kaDhGdnZycjdOLU5GNUNNajQ1Wk5rdFk3Y0liMWV2eUdFUXQ5UGE0SG1PSGVBTXNCbG9naDY4M2kyM1ltR09lYllxTVY0aw?oc=5",
               "lang": "en",
               "translated": false,
@@ -4967,7 +4994,7 @@
             {
               "title": "New York’s Proposed Wage Payment Integrity Act: What Employers Should…",
               "desc": "New York’s Proposed Wage Payment Integrity Act: What Employers Should Be Doing Now&nbsp;&n…",
-              "source": "jdsupra.com",
+              "source": "JDSupra",
               "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZjFuQWVKVmVUYzZSYWNxNjZjdkg0RGpxNW9uZUtiMjdVNko1dUNLNmk2QkJrR3hhQ3RqaWF6bXI1TUVaZXN3Yi1jQmRMenlzUmZYd1lDeXRrNk5YNG5CRGRJU0w5SFJNZ0pCSEgzc2dXc08xUkN5Z0xORFdLVVZIUw?oc=5",
               "lang": "en",
               "translated": false,
@@ -4983,13 +5010,13 @@
               "original_title": "Independent Contractors or Employees? New Court Ruling Focuses on Control"
             },
             {
-              "title": "Underpaid or overpaid workers: 'You can't outsource responsibility or…",
-              "desc": "Underpaid or overpaid workers: 'You can't outsource responsibility or liability'&nbsp;&nbs…",
-              "source": "Canadian HR Reporter",
-              "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYlNEZm5MOTFXU3RBbHlXbndrbHBlQTlFM2VLcXFQc1Nxby1VazA2aVJ1Y1YySGpsV2NPVVk3OElPbm5jOGVYVVpoTDB1eEFvZENJYnhZbTYyaVg5NDBrMHJaM05lOHhBWUtxLUgwa1hoZERyZ3hlaFhoUjBhbDktUFIxMUQtbWFXMURJYTZINUR6U0RHR2thYWFmSDU4WlE4cWRSRU1jYk04aVRBMGdWV05HZVVXeTUyS1F2dHg4aGhVTlQ0V3JDZHFDd3ZwSU90ZlE?oc=5",
+              "title": "Secretary of Labor applied wrong law in roofing firm's overtime case",
+              "desc": "Secretary of Labor applied wrong law in roofing firm's overtime case&nbsp;&nbsp;hcamag.com",
+              "source": "hcamag.com",
+              "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNMW82SnhYc2V2ZzhhaGl1VWZnTUtsUG1XZzFXaHBaSzZyazJBbDdVSGtNNTJkdUVEczRRMlJLVjFSaUJrWTF4QUJRNGhMOHJBRVpyWU5kZktGSjY2YzVBQWh6Uzd0VjhaTG5oNmtmdURncXVzdmZjY0hPQW9RVHlNV1J6OGJsZXNiV1ZFN2N2T1RQOEItSndaUnVXY0Y1S1ZWU0k0dFFJSFV6VlZXM0JjRDZpcVhtck9sVWdDUnJNRFcyUWlMTVZ1WEdB?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Underpaid or overpaid workers: 'You can't outsource responsibility or liability'"
+              "original_title": "Secretary of Labor applied wrong law in roofing firm's overtime case"
             }
           ]
         }
@@ -5026,7 +5053,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 0.4,
-        "change_pct": 1.9,
+        "change_pct": 1.86,
         "history_labels": [
           "11월",
           "12월",
@@ -5061,9 +5088,9 @@
       "headlines": [
         {
           "title": "Fito’s Wife and Daughter Captured in Colombia | On the Radar",
-          "source": "insightcrime.org",
+          "source": "InSight Crime",
           "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVWRSV3ZYMnFwbHBRVzlQcFNJWGFHcko2V3pzNFBrb1g2YWl3WHlTdGNOQ0lqcGpxY1JnVUJZSnJTdHRHU0xkVnZ4MFp5YzhLRG5XLVU1clY2YWN6a3BGeENmWncyMEI1WF84U0R4UUlJSFBzeEJvdGdGTWZTaXhHNmQ5UUFqeGIwNklWU3d1TVFQZw?oc=5",
-          "summary": "Fito’s Wife and Daughter Captured in Colombia | On the Radar&nbsp;&nbsp;insightcrime.org",
+          "summary": "Fito’s Wife and Daughter Captured in Colombia | On the Radar&nbsp;&nbsp;InSight Crime",
           "lang": "en",
           "translated": false,
           "original_title": "Fito’s Wife and Daughter Captured in Colombia | On the Radar"
@@ -5161,8 +5188,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -5189,7 +5216,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -5289,7 +5316,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 40.4,
-        "change_pct": 0.36,
+        "change_pct": 0.41,
         "history_labels": [
           "11월",
           "12월",
@@ -5366,15 +5393,6 @@
               "original_title": ""
             },
             {
-              "title": "Yokohama Rubber targets BYD, other China automakers with lower-cost ti…",
-              "desc": "Yokohama Rubber targets BYD, other China automakers with lower-cost tire plant&nbsp;&nbsp;…",
-              "source": "Nikkei Asia",
-              "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQN0lUTDNHV00teXVDYkltSG9mOFlZOVVsWjI5dldMZk8zRFpQY1dKcm15TTM3eHZ5eDk3MnVHMWx3eGFxVVZNYzcwMU5tWHZhLUNrLXpMalV6Y0tCX0NRdnJUNUdWcEdNRXdPV21hRjNoSjZlM1V6T3FVZ2V4THZFQzNKeElVMTEzTnZqQmJxMldfdlFRYkRHZU5wQW5haVB1X3Bwbk90Yi0wcWRiU3VzcHRWY091OW93elRXWGRUOA?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Yokohama Rubber targets BYD, other China automakers with lower-cost tire plant"
-            },
-            {
               "title": "Insoluble Sulfur Market To 2035: Tire Demand Drives Growth",
               "desc": "Insoluble Sulfur Market To 2035: Tire Demand Drives Growth - News and Statistics&nbsp;&nbs…",
               "source": "IndexBox",
@@ -5391,6 +5409,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "Rubber Fillers Market Size, Share & Growth Report, 2026-2035"
+            },
+            {
+              "title": "ERJ Business Briefing",
+              "desc": "ERJ Business Briefing - 2026&nbsp;&nbsp;European Rubber Journal",
+              "source": "European Rubber Journal",
+              "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPckNVQlgyWkw2UVhGT0FYUmNPcENsTHlkREZWOEJfMUo1UUtlS0EzbFlsMzlnT2VCdGdoQ0dXVGhKMTFreGVoaDh3MldvUzVVenVmRVFiR1RIS1ozVGpCQWp2MTNuTnA4N243R0tvVWp0bzdRa0hNQl9wZkU2N0RvSjl2YVZpN051Rm5WMi1oOA?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "ERJ Business Briefing"
             }
           ]
         },
@@ -5442,8 +5469,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 27.7,
-        "change_pct": 0.59,
+        "current_rate": 27.8,
+        "change_pct": 0.73,
         "history_labels": [
           "11월",
           "12월",
@@ -5470,7 +5497,7 @@
           29.9,
           28.5,
           27.6,
-          27.7
+          27.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/TRYKRW=X"
@@ -5596,8 +5623,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1359.2,
-        "change_pct": -1.55,
+        "current_rate": 1358.7,
+        "change_pct": -1.59,
         "history_labels": [
           "11월",
           "12월",
@@ -5624,7 +5651,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1359.2
+          1358.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -5723,8 +5750,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 353.2,
-        "change_pct": 0.65,
+        "current_rate": 352.1,
+        "change_pct": 0.35,
         "history_labels": [
           "11월",
           "12월",
@@ -5751,7 +5778,7 @@
           380.3,
           367.9,
           350.9,
-          353.2
+          352.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -5895,8 +5922,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1536.1,
-        "change_pct": 0.3,
+        "current_rate": 1537.6,
+        "change_pct": 0.4,
         "history_labels": [
           "11월",
           "12월",
@@ -5923,21 +5950,12 @@
           1636.7,
           1580.0,
           1531.4,
-          1536.1
+          1537.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
       },
       "headlines": [
-        {
-          "title": "Hundreds Detained in France as Some Student Protests Turn Violent",
-          "source": "nytimes.com",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPck9rZHFtaWNkSV9EX2lfb3hZalJSbS1OUThTWmRfU2VOcUlBUlYyUTZROGJyN0lVdW0yQmR0RU12dWEwWFVldVZwVzExVExjYmhpWkxRa3ROZHZBMFdFaGNpOEE4Q2NVd3ZlYUVIWmxZZkpxblZDaGxNZUhzR2pBTDk5SndMdi16V0Nr?oc=5",
-          "summary": "Hundreds Detained in France as Some Student Protests Turn Violent&nbsp;&nbsp;nytimes.com",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Hundreds Detained in France as Some Student Protests Turn Violent"
-        },
         {
           "title": "France: Hundreds of students arrested as protests over school conditions escalate",
           "source": "DW.com",
@@ -5946,6 +5964,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "France: Hundreds of students arrested as protests over school conditions escalate"
+        },
+        {
+          "title": "Hundreds Detained in France as Some Student Protests Turn Violent",
+          "source": "The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPck9rZHFtaWNkSV9EX2lfb3hZalJSbS1OUThTWmRfU2VOcUlBUlYyUTZROGJyN0lVdW0yQmR0RU12dWEwWFVldVZwVzExVExjYmhpWkxRa3ROZHZBMFdFaGNpOEE4Q2NVd3ZlYUVIWmxZZkpxblZDaGxNZUhzR2pBTDk5SndMdi16V0Nr?oc=5",
+          "summary": "Hundreds Detained in France as Some Student Protests Turn Violent&nbsp;&nbsp;The New York…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Hundreds Detained in France as Some Student Protests Turn Violent"
         },
         {
           "title": "France and Britain in talks to end 'one in, one out' migrant deal",
@@ -6049,8 +6076,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 944.3,
-        "change_pct": 0.01,
+        "current_rate": 945.0,
+        "change_pct": 0.09,
         "history_labels": [
           "11월",
           "12월",
@@ -6077,7 +6104,7 @@
           998.1,
           986.1,
           944.2,
-          944.3
+          945.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/AUDKRW=X"
@@ -6102,13 +6129,13 @@
           "original_title": "Australia's Suncorp denies takeover talks with Tokio Marine; shares fall"
         },
         {
-          "title": "Women's Basketball's Taryn Bond to Play for Australia in U18 Asia Cup",
-          "source": "Hawaii athletics",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNzRJVXdmd3dIei1yTEtIN2xNVEdtbjM1RFhVdmF1SkJSMjZqNDVZOWFYWFlRb1hVd0wtX05EYUs2c1BVc0VoUU1nc2xfa1VjTzRxd21vaWJ6WExDWF91WTVoR2F2WGplbzMtbFE3OGo4ZjE2Ml9WUHhWUmZlV3RRSDg3R3Y5dy1sQS1kblI0Nkd0U28ta3N1NzhRYk12alRVSTVJVmJWWGtZajZF?oc=5",
-          "summary": "Women's Basketball's Taryn Bond to Play for Australia in U18 Asia Cup&nbsp;&nbsp;Hawaii at…",
+          "title": "The Avalanches Set 2027 Tour of Australia",
+          "source": "Billboard",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMUZSTUdmcGVNdU4wWUZhNm1LVFlaYW9wWWgySnBhcy1TSUxlV3hyN1BRWWUtaXBvdmlxVHBCZGZWaW1HYTk5eTMzWVJwUUpSeG5HYWRFRTNyLXp6U25sb0l2NVhpVGx2MUxmOVNrNVlXTkdGd3VLNlo5Vk5vOXgtU0RMQVBWOFlydTNQMFFpQTNuTzFucFE?oc=5",
+          "summary": "The Avalanches Set 2027 Tour of Australia&nbsp;&nbsp;Billboard",
           "lang": "en",
           "translated": false,
-          "original_title": "Women's Basketball's Taryn Bond to Play for Australia in U18 Asia Cup"
+          "original_title": "The Avalanches Set 2027 Tour of Australia"
         }
       ],
       "hr_trends": [

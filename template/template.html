@@ -69,6 +69,19 @@
             box-shadow: 0 2px 8px rgba(30,41,59,0.25);
         }
         .country-chip img { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; }
+        .country-chip .tier-badge {
+            font-size: 8px;
+            font-weight: 800;
+            padding: 0 4px;
+            border-radius: 3px;
+            background: rgba(242,122,24,0.15);
+            color: #F27A18;
+            line-height: 1.4;
+        }
+        .country-chip.active .tier-badge {
+            background: rgba(255,255,255,0.2);
+            color: #FFF0E6;
+        }
         .scroll-row { overflow-x: auto; scrollbar-width: thin; }
         .scroll-row::-webkit-scrollbar { height: 6px; }
         .scroll-row::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 999px; }
@@ -125,6 +138,14 @@
             box-shadow: 0 0 0 3px rgba(242,122,24,0.15);
             background: white;
         }
+        .trend-item {
+            display: block;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #F1F5F9;
+            transition: background .15s ease;
+        }
+        .trend-item:last-child { border-bottom: none; }
+        .trend-item:hover { background: #FFF7EF; border-radius: 0.6rem; padding-left: 0.4rem; padding-right: 0.4rem; margin-left: -0.4rem; margin-right: -0.4rem; }
         /* 토스트 알림 */
         #toast-container {
             position: fixed;
@@ -226,7 +247,7 @@
             </div>
         </div>
 
-        <!-- Cards Grid -->
+        <!-- Cards Grid: 프로필 / 환율+계산기 / 현지 뉴스 -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
             <!-- Card 1: Country Profile -->
@@ -244,7 +265,7 @@
                         <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">연간 GDP 규모</span><span id="profile-gdp" class="font-bold text-slate-800 text-sm">-</span></div>
                         <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">인플레이션 (CPI YoY)</span><span id="profile-inflation" class="font-bold text-slate-800 text-sm">-</span></div>
                         <div class="flex justify-between items-center pb-2 border-b border-slate-100"><span class="text-slate-500 text-sm">실업률</span><span id="profile-unemployment" class="font-bold text-slate-800 text-sm">-</span></div>
-                        <div id="profile-minwage-row" class="flex justify-between items-center pb-2 border-b border-slate-100 hidden">
+                        <div class="flex justify-between items-center pb-2 border-b border-slate-100">
                             <span class="text-slate-500 text-sm">최저임금</span><span id="profile-minwage" class="font-bold text-slate-800 text-sm text-right">-</span>
                         </div>
                         <div class="pt-2">
@@ -256,7 +277,7 @@
                     </div>
                 </div>
                 <div id="profile-stats-source" class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
-                    * 인구·GDP·수도: World Bank Open API
+                    * 인구·GDP·수도·최저임금: Hankook Tire Global HR 자체 조사
                 </div>
             </div>
 
@@ -292,8 +313,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400 flex items-center justify-between gap-2">
                      <span id="exchange-source-note">Yahoo Finance 기준</span>
+                     <a id="exchange-yahoo-link" href="#" target="_blank" rel="noopener" class="hidden text-[#F27A18] font-bold hover:underline whitespace-nowrap">원문 보기 →</a>
                 </div>
             </div>
 
@@ -310,23 +332,40 @@
                 </div>
             </div>
 
-            <!-- Card 4: Industry & HR Trends -->
-            <div class="card lg:col-span-3">
-                <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-4">
+        </div>
+
+        <!-- 3. 주요 비즈니스 동향 — AUTO MARKET / HR & LABOR 2대 카드 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="card">
+                <div class="flex items-center justify-between mb-2 border-b border-slate-100 pb-4">
                     <div class="flex items-center gap-2.5">
                         <div class="icon-wrapper">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 17h2m-2-4h2M3 5h2m14 0h2M3 9h2m14 0h2M3 13h2M5 21V3h14v18H5z" /></svg>
                         </div>
                         <div>
-                            <h3 class="font-bold text-base text-slate-900">주요 산업 및 비즈니스 동향</h3>
-                            <p class="text-[10px] text-slate-400">완성차·타이어 / 노동·인력 / 경기 / 관세·공급망 — 4대 핵심 분야</p>
+                            <h3 class="font-bold text-base text-slate-900">완성차 및 타이어 시장</h3>
+                            <p class="text-[10px] text-slate-400">AUTO MARKET</p>
                         </div>
                     </div>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#FFF0E6] text-[#F27A18] border border-[#F27A18]/20">HR &amp; BIZ INTELLIGENCE</span>
+                    <span id="auto-market-badge" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-rose-100 text-rose-700">AUTO MARKET</span>
                 </div>
-                <div id="industry-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+                <div id="auto-market-list" class="divide-y divide-transparent"></div>
             </div>
-
+            <div class="card">
+                <div class="flex items-center justify-between mb-2 border-b border-slate-100 pb-4">
+                    <div class="flex items-center gap-2.5">
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-base text-slate-900">노동법 및 HR·임금</h3>
+                            <p class="text-[10px] text-slate-400">HR &amp; LABOR</p>
+                        </div>
+                    </div>
+                    <span id="hr-labor-badge" class="px-2.5 py-1 rounded-lg text-xs font-bold bg-indigo-100 text-indigo-700">HR &amp; LABOR</span>
+                </div>
+                <div id="hr-labor-list" class="divide-y divide-transparent"></div>
+            </div>
         </div>
     </main>
 
@@ -346,6 +385,11 @@
     (function () {
         const INITIAL_DATE = "{{ generated_at_date }}";
         const ARCHIVE_MIN_DATE = "{{ archive_min_date }}";
+
+        // 한국타이어 비즈니스 위계 정렬 기준 — 인덱스가 작을수록 상위 우선순위
+        // 1순위: 한국(Global HQ) / 2순위: 미국·독일·중국(지역본부) / 3순위: 헝가리·인도네시아(생산공장)
+        // 그 외(4순위, 기타 33개 지법인/오피스)는 이 목록에 없으므로 동일 순위로 묶여 가나다순으로 정렬된다.
+        const HIERARCHY_PRIORITY = ["KR", "US", "DE", "CN", "HU", "ID"];
 
         let DASHBOARD, REGIONS, COUNTRIES;
         try {
@@ -369,10 +413,28 @@
         let currentFx = null;                // 계산기가 참조하는 현재 국가의 환율 정보
 
         // ---------------------------------------------------------------
-        // 한글 가나다순 정렬 유틸
+        // 위계 정렬 유틸 — 1.한국 → 2.미국/독일/중국 → 3.헝가리/인도네시아 → 4.나머지(가나다순)
         // ---------------------------------------------------------------
-        function sortByKoreanName(list, nameKey) {
-            return [...list].sort((a, b) => (a[nameKey] || '').localeCompare(b[nameKey] || '', 'ko-KR'));
+        function hierarchyRank(code) {
+            const idx = HIERARCHY_PRIORITY.indexOf(code);
+            return idx === -1 ? HIERARCHY_PRIORITY.length : idx;
+        }
+
+        function sortByHierarchy(list) {
+            return [...list].sort((a, b) => {
+                const ra = hierarchyRank(a.code);
+                const rb = hierarchyRank(b.code);
+                if (ra !== rb) return ra - rb;
+                // 동일 순위(둘 다 4순위 기타 지법인)인 경우에만 한글 가나다순으로 정렬
+                return (a.name_kr || '').localeCompare(b.name_kr || '', 'ko-KR');
+            });
+        }
+
+        function tierLabel(code) {
+            if (code === 'KR') return 'HQ';
+            if (['US', 'DE', 'CN'].includes(code)) return '본부';
+            if (['HU', 'ID'].includes(code)) return '공장';
+            return '';
         }
 
         // ---------------------------------------------------------------
@@ -393,24 +455,17 @@
         }
 
         // ---------------------------------------------------------------
-        // 권역 탭 / 국가 칩 (한글 가나다순 정렬 적용)
+        // 권역 탭 / 국가 칩 (비즈니스 위계 정렬 적용)
         // ---------------------------------------------------------------
         function countriesInRegion(regionKey) {
             const list = regionKey === 'ALL' ? COUNTRIES : COUNTRIES.filter(c => c.region === regionKey);
-            return sortByKoreanName(list, 'name_kr');
-        }
-
-        function sortedRegionTabs() {
-            // '전체'는 항상 맨 앞 고정, 나머지 권역 라벨은 가나다순 정렬
-            const all = REGIONS.find(r => r.key === 'ALL');
-            const rest = sortByKoreanName(REGIONS.filter(r => r.key !== 'ALL'), 'label');
-            return all ? [all, ...rest] : rest;
+            return sortByHierarchy(list);
         }
 
         function renderRegionTabs() {
             const el = document.getElementById('region-nav');
             el.innerHTML = '';
-            sortedRegionTabs().forEach(r => {
+            REGIONS.forEach(r => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'region-tab' + (r.key === currentRegion ? ' active' : '');
@@ -428,7 +483,8 @@
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'country-chip' + (c.code === currentCode ? ' active' : '');
-                btn.innerHTML = `<img src="https://flagcdn.com/w40/${c.flag}.png" alt="${c.code}"><span>${c.name_kr}</span>`;
+                const tier = tierLabel(c.code);
+                btn.innerHTML = `<img src="https://flagcdn.com/w40/${c.flag}.png" alt="${c.code}"><span>${c.name_kr}</span>${tier ? `<span class="tier-badge">${tier}</span>` : ''}`;
                 btn.onclick = () => selectCountry(c.code);
                 el.appendChild(btn);
             });
@@ -526,6 +582,28 @@
         }
 
         // ---------------------------------------------------------------
+        // 최저임금 안전 포맷터 — 백엔드가 문자열(min_wage)이든 {display, note} 객체든
+        // 어떤 형태로 와도 [object Object] 노출 없이 항상 사람이 읽을 수 있는 문자열로 변환한다.
+        // ---------------------------------------------------------------
+        function formatMinWage(mw) {
+            if (mw === null || mw === undefined) return '-';
+            if (typeof mw === 'string') {
+                const trimmed = mw.trim();
+                return trimmed ? trimmed : '-';
+            }
+            if (typeof mw === 'object') {
+                const display = mw.display;
+                const note = mw.note;
+                if (display && String(display).trim()) {
+                    const displayStr = String(display).trim();
+                    return (note && String(note).trim()) ? `${displayStr} (${String(note).trim()})` : displayStr;
+                }
+                return '-';
+            }
+            return '-';
+        }
+
+        // ---------------------------------------------------------------
         // 실시간 환율 계산기
         // ---------------------------------------------------------------
         function updateCalculator(c) {
@@ -580,19 +658,12 @@
             document.getElementById('profile-gdp').textContent = p.gdp || '-';
             document.getElementById('profile-inflation').textContent = p.inflation || '-';
             document.getElementById('profile-unemployment').textContent = p.unemployment || '-';
+            document.getElementById('profile-minwage').textContent = formatMinWage(p.min_wage);
 
-            const wageRow = document.getElementById('profile-minwage-row');
-            if (p.min_wage) {
-                wageRow.classList.remove('hidden');
-                document.getElementById('profile-minwage').textContent =
-                    p.min_wage_note ? `${p.min_wage} (${p.min_wage_note})` : p.min_wage;
-            } else {
-                wageRow.classList.add('hidden');
-            }
-
-            document.getElementById('country-hubs').textContent = (c.hubs && c.hubs.length) ? c.hubs.join(', ') : '-';
+            const hubs = (c.hubs && c.hubs.length) ? c.hubs : (c.offices && c.offices.length ? c.offices : null);
+            document.getElementById('country-hubs').textContent = hubs ? hubs.join(', ') : '-';
             document.getElementById('profile-stats-source').textContent =
-                `* 인구·GDP·수도: World Bank Open API ｜ 물가·고용: ${p.stats_source || '-'} (${p.stats_asof || '-'} 기준)`;
+                `* 인구·GDP·수도·최저임금: ${p.stats_source || 'Hankook Tire Global HR 자체 조사'} (${p.stats_asof || '-'} 기준)`;
         }
 
         function renderExchange(c) {
@@ -606,6 +677,7 @@
             const chartWrap = document.getElementById('exchange-chart-wrap');
             const chartCaption = document.getElementById('exchange-chart-caption');
             const sourceNote = document.getElementById('exchange-source-note');
+            const yahooLink = document.getElementById('exchange-yahoo-link');
 
             title.textContent = unitBase > 1
                 ? `기준 ${unitBase} ${c.currency || ''} / KRW 환율`
@@ -618,6 +690,7 @@
                 badge.textContent = '환산 불필요';
                 chartWrap.classList.add('hidden');
                 sourceNote.textContent = '원화(KRW)는 자국 통화이므로 별도 환율 정보가 없습니다.';
+                yahooLink.classList.add('hidden');
                 if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
                 updateCalculator(c);
                 return;
@@ -638,6 +711,13 @@
                 ? `최근 1년 환율 추이 (${unitBase} ${c.currency} 기준)`
                 : '최근 1년 환율 추이';
             sourceNote.textContent = `${fx.source || 'Yahoo Finance'} 기준`;
+
+            if (fx.url) {
+                yahooLink.href = fx.url;
+                yahooLink.classList.remove('hidden');
+            } else {
+                yahooLink.classList.add('hidden');
+            }
 
             renderChart(fx.history_labels || [], fx.history_values || []);
             updateCalculator(c);
@@ -732,32 +812,43 @@
             });
         }
 
-        function renderIndustry(c) {
-            const el = document.getElementById('industry-grid');
+        // 2대 비즈니스 동향 카드(AUTO MARKET / HR & LABOR) — 각각 최대 4건을 세로 목록으로 렌더링
+        function renderTrendList(containerId, items) {
+            const el = document.getElementById(containerId);
             el.innerHTML = '';
-            const list = c.hr_trends || [];
+            const list = Array.isArray(items) ? items : [];
             if (list.length === 0) {
-                el.innerHTML = '<p class="text-xs text-slate-400 col-span-4">수집된 동향이 없습니다.</p>';
+                el.innerHTML = '<p class="text-xs text-slate-400 py-3">수집된 동향이 없습니다.</p>';
                 return;
             }
-            list.forEach(t => {
+            list.slice(0, 4).forEach(item => {
+                const dateLabel = item.published || item.date || '';
                 const a = document.createElement('a');
-                a.href = t.link || '#';
+                a.href = item.link || '#';
                 a.target = '_blank';
                 a.rel = 'noopener';
-                a.className = 'bg-slate-50 border border-slate-100 rounded-2xl p-4 hover:bg-orange-50/40 hover:border-orange-200 transition-all cursor-pointer group block';
+                a.className = 'trend-item group';
                 a.innerHTML = `
-                    <div class="flex items-center justify-between mb-2">
-                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold ${t.tag_class || 'bg-slate-100 text-slate-700'}">${t.category || ''}</span>
-                        ${translatedBadge(t)}
+                    <div class="flex items-center justify-between text-[10px] text-slate-400 mb-1">
+                        <span class="font-bold text-slate-500">${item.source || 'Google News'}</span>
+                        <span class="flex items-center gap-1">
+                            ${dateLabel ? `<span>${dateLabel}</span>` : ''}
+                            ${translatedBadge(item)}
+                        </span>
                     </div>
-                    <p class="text-[10px] font-bold text-slate-400 mb-1">${t.tag || ''}</p>
-                    <h4 class="font-bold text-sm text-slate-900 mb-1 leading-snug">${t.title || ''}</h4>
-                    <p class="text-xs text-slate-600 leading-snug">${t.desc || ''}</p>
-                    <p class="text-[10px] text-slate-400 mt-2">${t.source || ''}</p>
+                    <h4 class="font-bold text-sm text-slate-900 mb-1 leading-snug group-hover:text-[#F27A18] transition-colors">${item.title || ''}</h4>
+                    ${item.desc ? `<p class="text-xs text-slate-600 leading-snug">${item.desc}</p>` : ''}
                 `;
                 el.appendChild(a);
             });
+        }
+
+        function renderIndustry(c) {
+            const trends = Array.isArray(c.hr_trends) ? c.hr_trends : [];
+            const autoMarket = trends.find(t => t.category === 'AUTO MARKET');
+            const hrLabor = trends.find(t => t.category === 'HR & LABOR');
+            renderTrendList('auto-market-list', autoMarket ? autoMarket.items : []);
+            renderTrendList('hr-labor-list', hrLabor ? hrLabor.items : []);
         }
 
         function renderCountry(code) {

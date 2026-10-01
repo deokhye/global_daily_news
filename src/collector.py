@@ -1,35 +1,34 @@
 """
 collector.py
 ------------
-Global Daily News — 39개 진출국 데이터 수집기 (경량화 버전).
+Global Daily News — 39개 진출국 데이터 수집기 (경량화 버전, v3).
 
-이전 버전과의 가장 큰 차이: 39개국 기본 메타데이터(국가명/통화/수도/인구/GDP/
-물가/실업률/최저임금/공식 거점)를 Python 코드에 하드코딩하지 않고
-data/countries_metadata.json 에서 읽어온다. 이 파일은 코드 크기를 크게 줄여
-토큰 초과 문제를 방지하고, 메타데이터 갱신 시 코드를 건드리지 않고 JSON
-파일만 수정하면 되도록 관심사를 분리한다.
+data/countries_metadata.json 에서 39개국 기본 메타데이터(국가명/통화/수도/인구/GDP/
+물가/실업률/최저임금/공식 거점)를 읽어온다. 이 스크립트가 매 실행마다 "살아있는"
+데이터로 새로 수집하는 것은 환율(yfinance)과 뉴스(Google News RSS) 두 가지뿐이다.
 
-이 스크립트가 매 실행마다 "살아있는" 데이터로 새로 수집하는 것은 다음 두 가지뿐이다.
-  1) 환율 (현지통화/KRW) — yfinance 기반 실시간 시세 + 최근 12개월 추이
-  2) 뉴스 — 현지 주요 뉴스 3건, 비즈니스/HR 동향 4건 (Google News RSS)
-나머지(수도/인구/GDP/물가/실업률/최저임금/공식 거점)는 countries_metadata.json의
-값을 그대로 프로필에 반영한다.
-
-핵심 보장 사항
-  - 국가별 수집은 완전히 격리된다: 루프/스레드마다 country_code, country_currency,
-    seen_titles 등을 매번 새로 초기화하므로, 예를 들어 일본(JP) 수집 결과에
-    중국(CN) 뉴스가 섞여 들어가는 일이 구조적으로 불가능하다.
-  - 환율 수집이 완전히 실패해 캐시조차 없는 극단적 상황에서도, 12개월 모두
-    같은 값을 반복하는 일자선(flatline) 대신 현실적인 월별 변동(±0.5~1.5%)을
-    가진 합성 시계열을 생성한다. 모든 환율 응답에는 야후 파이낸스 원문 링크
-    (exchange_rate.url)가 포함된다.
-  - 한국(KR) 뉴스는 번역 없이 국내 언론사 한국어 피드(hl=ko&gl=KR)에서 직접
-    수집한다. 해외 38개국은 영문으로 수집한 뒤 deep-translator로 번역하며,
-    번역이 실패하거나 빈 값이면 절대 'Error' 텍스트를 만들지 않고 수집된
-    영문 원문을 그대로 사용한다.
-  - docs/archive/*.json 을 스캔해 구버전 스키마(예: 9/8, 9/9 등 과거 포맷) 파일을
-    발견하면 현재 스키마로 자동 변환해 덮어쓴다.
-  - 180일이 지난 아카이브는 자동 삭제된다(Retention Policy).
+이번 버전(v3) 수정 사항
+  1) 번역 실패 시 영어 원문 노출(Critical) — translate_to_ko가 deep-translator 예외나
+     빈 반환값을 만나도 절대 크래시하거나 'Error'를 만들지 않고, 수집된 영어 원문을
+     그대로 반환한다.
+  2) 100단위(VND/IDR/JPY 등) 소액 통화 1년 추이 flatline 버그 완전 해결 — 이전에는
+     "일별 → 월별 리샘플" 단계에서 unit_base를 곱하기 전에 소수점 1자리로 먼저
+     반올림해버려서, 예를 들어 JPY처럼 1단위당 원화 환산값이 9.x원대로 작은 통화는
+     반올림 과정에서 월별 미세한 변동폭이 통째로 사라져(예: 9.234/9.187/9.301원이
+     전부 9.2원으로 뭉개짐) 100을 곱해도 920/920/930처럼 사실상 2~3개 값만 반복되는
+     일자선 그래프가 나왔다. 이번 버전은 리샘플 단계에서는 반올림하지 않고 원본
+     정밀도를 그대로 유지한 뒤, "unit_base를 곱한 다음에만" 최종 반올림하도록
+     순서를 바로잡아 12개월 모두 고유한 값을 갖는 매끄러운 곡선을 보장한다.
+  3) 비즈니스 동향을 기존 4개 카테고리에서 당사 핵심 2대 카테고리로 개편했다.
+       - AUTO MARKET: 완성차 및 타이어 시장 동향
+       - HR & LABOR : 노동법 및 HR/임금 규제 동향
+     각 카테고리는 최대 4개의 뉴스를 담은 items 리스트를 가지며(기존의 카테고리당
+     1개 헤드라인에서 확장), 국가 내 헤드라인(3개) + 두 카테고리(최대 4개씩)
+     전체 구간에서 seen_titles로 기사 중복을 방지한다. 수집이 하나도 안 되면
+     안전한 Fallback 문구 1건으로 채운다.
+  4) 예외 안전 처리(번역/피드 파싱/환율/저장 전 구간 try-except), 구버전 아카이브
+     (9/8, 9/9 등 과거 포맷 및 구버전 4카테고리 동향 스키마 포함) 자동 마이그레이션,
+     180일 Retention 관리 로직을 그대로 유지한다.
 """
 
 import os
@@ -80,6 +79,9 @@ REGIONS = [
     {"key": "MEA", "label": "중아"},
 ]
 
+# 환율 완전 수집 실패(캐시조차 없음) 시 합성 시계열을 만들 때 시드로 쓰는 대략적인
+# 통화별 기준 환율(1단위당 KRW, 참고치). 실제 표시값이 아니라 "그럴듯한 곡선"을
+# 만들기 위한 최후의 수단용 시드일 뿐이며, 정상 수집이 되면 전혀 사용되지 않는다.
 REFERENCE_RATE_PER_UNIT = {
     "USD": 1380.0, "EUR": 1500.0, "GBP": 1750.0, "JPY": 9.2, "CNY": 190.0,
     "CAD": 1010.0, "HUF": 3.8, "PLN": 345.0, "CZK": 61.0, "RON": 300.0,
@@ -91,7 +93,11 @@ REFERENCE_RATE_PER_UNIT = {
 }
 
 
+# ---------------------------------------------------------------------------
+# 0. 39개국 메타데이터 로드 (data/countries_metadata.json)
+# ---------------------------------------------------------------------------
 def _is_bad_value(value) -> bool:
+    """None, 빈 문자열, 'Error'/'undefined' 등 손상된 값으로 볼 수 있는 케이스를 판별."""
     if value is None:
         return True
     if isinstance(value, str) and value.strip().lower() in {"error", "err", "undefined", "null", "none", "nan", "n/a", ""}:
@@ -100,6 +106,9 @@ def _is_bad_value(value) -> bool:
 
 
 def load_countries_metadata() -> list:
+    """data/countries_metadata.json 을 읽어 내부 수집 로직이 쓰는 형태(code/region/
+    name_kr/name_en/currency/flag/offices/hubs/meta_profile)의 국가 리스트로 변환한다.
+    파일이 없거나 깨져 있으면 예외를 던져 main()에서 명확한 오류로 알리게 한다."""
     if not os.path.exists(METADATA_PATH):
         raise FileNotFoundError(f"{METADATA_PATH} 파일이 없습니다. 39개국 메타데이터 파일을 먼저 준비하세요.")
 
@@ -128,7 +137,7 @@ def load_countries_metadata() -> list:
             "currency": row.get("currency", "USD"),
             "flag": code.lower(),
             "offices": offices,
-            "hubs": offices,
+            "hubs": offices,  # template.html 하위 호환용 별칭(동일 리스트)
             "meta_profile": {
                 "capital": row.get("capital", "-"),
                 "population": row.get("population", "-"),
@@ -155,6 +164,9 @@ except Exception:
     METADATA_ASOF = "-"
 
 
+# ---------------------------------------------------------------------------
+# 공용 유틸
+# ---------------------------------------------------------------------------
 def _strip_html(text: str) -> str:
     try:
         return re.sub(r"<[^>]+>", "", text or "").strip()
@@ -171,6 +183,10 @@ def _shorten(text: str, max_len: int) -> str:
 
 
 def _round_won(value: float) -> float:
+    """원화 환산값을 소수점 1자리로 통일 반올림 — 반드시 단위(unit_base) 곱셈이
+    끝난 "최종" 값에 대해서만 호출해야 한다. 곱셈 전에 호출하면 소액 통화의
+    미세한 월별 변동폭이 반올림 과정에서 소실되어 그래프가 일자선처럼 보이는
+    버그가 재발한다."""
     try:
         return round(float(value), WON_DECIMALS)
     except Exception:
@@ -178,12 +194,19 @@ def _round_won(value: float) -> float:
 
 
 def _yahoo_finance_url(currency: str) -> str:
+    """야후 파이낸스 원문 페이지 링크. KRW(기준통화)는 자기 자신과의 페어라 의미가 없어 빈 문자열을 반환한다."""
     if not currency or currency == "KRW":
         return ""
     return f"https://finance.yahoo.com/quote/{currency}KRW=X"
 
 
+# ---------------------------------------------------------------------------
+# 1. 국가 프로필 — countries_metadata.json의 값을 그대로 반영
+# ---------------------------------------------------------------------------
 def build_profile(country: dict, cached: dict) -> dict:
+    """capital/population/gdp/inflation/unemployment/min_wage는 매 실행 새로
+    수집하지 않고 countries_metadata.json에 적재된 값을 그대로 사용한다
+    (해당 수치들은 자주 바뀌지 않는 참고성 메타데이터이기 때문)."""
     meta = country.get("meta_profile", {})
     cached_profile = (cached or {}).get("profile", {})
 
@@ -206,6 +229,11 @@ def build_profile(country: dict, cached: dict) -> dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# 2. 환율 (현지통화 / KRW) — 일별 종가 기반 수집 + 자체 월별 리샘플
+#    + 소액 통화 flatline 버그 수정(unit_base 곱셈 후에만 반올림) + 소수점 1자리 통일
+#    + 완전 실패 시 flatline 대신 합성 시계열 생성 + 야후 파이낸스 링크(url) 포함
+# ---------------------------------------------------------------------------
 MIN_RELIABLE_TRADING_DAYS = 30
 
 
@@ -222,12 +250,16 @@ def _yf_daily_close(ticker: str, days: int = 400) -> pd.Series:
 
 
 def _monthly_from_daily(daily: pd.Series, months: int = 12):
+    """일별 종가 시리즈 → (연,월) 그룹의 마지막 종가로 월별 시리즈 생성, 최근 months개월 반환.
+    ⚠️ 여기서는 절대 반올림하지 않는다(원본 정밀도 유지). unit_base를 곱한 뒤
+    get_exchange_rate()에서 한 번만 _round_won()을 호출해야 소액 통화의 월별
+    변동폭이 반올림 과정에서 소실되지 않는다(flatline 버그 방지)."""
     if daily.empty:
         return [], []
     try:
         grouped = daily.groupby(daily.index.to_period("M")).last().tail(months)
         labels = [str(MONTH_KR[int(p.month) - 1]) for p in grouped.index]
-        values = [_round_won(v) for v in grouped]
+        values = [float(v) for v in grouped]  # 반올림 금지 — 원본 정밀도 그대로 반환
         return labels, values
     except Exception as e:
         log.warning(f"월별 리샘플 실패: {e}")
@@ -239,6 +271,7 @@ def _direct_pair_series(currency: str) -> pd.Series:
 
 
 def _cross_pair_series(currency: str) -> pd.Series:
+    """직접 페어가 부실한 통화는 USD 경유 교차 환산: CUR/KRW = (USD당 1CUR 값) × (KRW당 1USD 값)."""
     cur_usd = _yf_daily_close(f"{currency}USD=X")
     usd_krw = _yf_daily_close("USDKRW=X")
     if cur_usd.empty or usd_krw.empty:
@@ -254,6 +287,7 @@ def _cross_pair_series(currency: str) -> pd.Series:
 
 
 def _recent_month_labels(months: int = 12) -> list:
+    """오늘 기준 최근 months개월의 한글 월 라벨을 과거→현재 순으로 생성."""
     now = datetime.now(KST)
     labels = []
     y, m = now.year, now.month
@@ -267,12 +301,16 @@ def _recent_month_labels(months: int = 12) -> list:
 
 
 def _synthetic_monthly_series(currency: str, unit_base: int, months: int = 12) -> tuple:
+    """환율 수집이 완전히 실패해 캐시조차 없을 때, 단일 고정값을 반복하는 일자선(flatline)
+    대신 현실적인 월별 변동(±0.5~1.5%)을 가진 합성 시계열을 생성한다. 같은 통화·같은
+    날짜에 대해서는 항상 같은 곡선이 나오도록 결정론적 시드를 사용한다. base_rate 자체가
+    이미 unit_base가 곱해진 값이므로, 반올림은 각 스텝 계산이 모두 끝난 뒤 한 번만 한다."""
     base_rate = REFERENCE_RATE_PER_UNIT.get(currency, 1000.0) * unit_base
     seed_key = f"{currency}-{datetime.now(KST).strftime('%Y-%m-%d')}"
     rng = random.Random(seed_key)
 
     values = [0.0] * months
-    values[-1] = base_rate
+    values[-1] = base_rate  # 이번 달(가장 최근)을 기준 환율로 고정
     for i in range(months - 2, -1, -1):
         change_pct = rng.uniform(-1.5, 1.5) / 100.0
         values[i] = values[i + 1] / (1 + change_pct)
@@ -313,11 +351,14 @@ def get_exchange_rate(country: dict, cached: dict) -> dict:
         if not history_labels:
             raise ValueError("월별 히스토리 생성 실패")
 
+        # ⚠️ 핵심 수정: unit_base를 먼저 곱한 "최종값"에 대해서만 _round_won()을 호출한다.
+        # 이전 버전은 _monthly_from_daily() 내부에서 곱셈 전에 반올림해버려 JPY/VND/IDR
+        # 같은 소액 통화의 월별 미세 변동이 소실되고 차트가 일자선처럼 보이는 버그가 있었다.
         return {
             "is_base": False,
             "unit_base": unit_base,
             "current_rate": _round_won(current_rate_raw * unit_base),
-            "change_pct": change_pct,
+            "change_pct": change_pct,  # 비율이므로 단위 환산의 영향을 받지 않음
             "history_labels": history_labels,
             "history_values": [_round_won(v * unit_base) for v in history_values_raw],
             "source": source,
@@ -348,8 +389,13 @@ def get_exchange_rate(country: dict, cached: dict) -> dict:
         }
 
 
+# ---------------------------------------------------------------------------
+# 3. 자동 번역 — 실패/빈 값 시 절대 Error 텍스트 없이 영문 원문 그대로 반환 (Critical)
+# ---------------------------------------------------------------------------
 @lru_cache(maxsize=2048)
 def translate_to_ko(text: str) -> str:
+    """deep-translator 예외가 발생하거나 빈 값이 반환되면, 어떤 경우에도 크래시하거나
+    'Error' 텍스트를 만들지 않고 수집된 원래의 영어 원문(original text)을 그대로 반환한다."""
     original = text if isinstance(text, str) else ("" if text is None else str(text))
     if not original.strip():
         return original
@@ -357,6 +403,7 @@ def translate_to_ko(text: str) -> str:
         from deep_translator import GoogleTranslator
         translated = GoogleTranslator(source="auto", target="ko").translate(original)
         if not translated or not str(translated).strip():
+            # 번역 결과가 비어 있으면 원문(영문)을 그대로 사용
             return original
         return translated
     except Exception as e:
@@ -364,11 +411,15 @@ def translate_to_ko(text: str) -> str:
         return original
 
 
+# ---------------------------------------------------------------------------
+# 4. 뉴스 공용 유틸 — Google News RSS
+# ---------------------------------------------------------------------------
 def _google_news_url_ko(query: str) -> str:
     return f"https://news.google.com/rss/search?q={requests.utils.quote(query)}&hl=ko&gl=KR&ceid=KR:ko"
 
 
 def _google_news_top_url_ko() -> str:
+    """국내 주요 언론사 상위 헤드라인 (검색어 없이 Google News 한국어 기본 피드)."""
     return "https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
 
 
@@ -377,6 +428,7 @@ def _google_news_url_en(query: str) -> str:
 
 
 def _google_news_search_link(query_en: str) -> str:
+    """수집 실패 시 화면에 노출할 공식 Google News 검색 링크(항상 유효)."""
     try:
         return f"https://news.google.com/search?q={requests.utils.quote(query_en)}&hl=en-US&gl=US&ceid=US:en"
     except Exception:
@@ -384,6 +436,7 @@ def _google_news_search_link(query_en: str) -> str:
 
 
 def _parse_entry(entry) -> dict:
+    """개별 기사 항목 파싱. 실패해도 예외를 위로 던져 호출부에서 해당 기사만 건너뛰게 한다."""
     title_raw = getattr(entry, "title", "") or ""
     link = getattr(entry, "link", "") or ""
     if not title_raw or not link:
@@ -410,6 +463,7 @@ def _parse_entry(entry) -> dict:
 
 
 def _fetch_feed(url: str, limit: int) -> list:
+    """RSS를 파싱하되, 개별 기사 파싱 실패는 건너뛰고 유효한 기사만 최대 limit개 모은다."""
     try:
         feed = feedparser.parse(url)
     except Exception as e:
@@ -444,6 +498,14 @@ def _dedup_key(item: dict) -> str:
         return ""
 
 
+# ---------------------------------------------------------------------------
+# 5. 현지 주요 뉴스 (Local Headlines)
+#    — KR: 100% 순수 한국어 (번역 파이프라인 없음, hl=ko&gl=KR)
+#    — 그 외 38개국: 정확도 우선 글로벌 영문 검색 → 한국어로 100% 자동 번역
+#      (번역 실패 시 원문 영문 그대로 노출, 절대 Error 텍스트 없음)
+#    이 섹션의 모든 함수는 호출 시점에 전달받은 country/seen_titles 인자만 사용하며,
+#    country 딕셔너리 자체를 변형하지 않는다 — 국가 간 데이터 오염이 구조적으로 불가능하다.
+# ---------------------------------------------------------------------------
 def _fallback_headline_item(country: dict) -> dict:
     try:
         query_en = country.get("name_en", "")
@@ -464,6 +526,7 @@ def _fallback_headline_item(country: dict) -> dict:
 
 
 def _get_headlines_kr_native(country: dict, cached: dict, seen_titles: set) -> list:
+    """한국(KR) 전용 — 번역 없이 국내 언론사 한국어 기사를 그대로 수집 (hl=ko&gl=KR&ceid=KR:ko)."""
     limit = 3
     selected = []
     try:
@@ -488,16 +551,22 @@ def _get_headlines_kr_native(country: dict, cached: dict, seen_titles: set) -> l
 
     if selected:
         return selected
-    cached_headlines = (cached or {}).get("headlines", [])
+
+    try:
+        cached_headlines = (cached or {}).get("headlines", [])
+    except Exception:
+        cached_headlines = []
     if cached_headlines:
         return cached_headlines
     return [_fallback_headline_item(country)]
 
 
 def _get_headlines_global_translated(country: dict, cached: dict, seen_titles: set) -> list:
+    """해외 38개국 — 정확도 우선 글로벌 영문 검색 → 항상 한국어로 번역해 표출.
+    번역이 실패하거나 빈 값이면 영문 원문을 그대로 사용한다(절대 Error 텍스트 없음)."""
     limit = 3
     selected = []
-    country_name_en = country["name_en"]
+    country_name_en = country["name_en"]  # 이 호출 프레임에만 존재하는 로컬 변수
     country_code = country["code"]
     try:
         candidates = _fetch_feed(_google_news_url_en(f"{country_name_en} when:3d"), limit=limit * 8)
@@ -533,9 +602,14 @@ def _get_headlines_global_translated(country: dict, cached: dict, seen_titles: s
 
     if selected:
         return selected
-    cached_headlines = (cached or {}).get("headlines", [])
+
+    try:
+        cached_headlines = (cached or {}).get("headlines", [])
+    except Exception:
+        cached_headlines = []
     if cached_headlines:
         return cached_headlines
+
     return [_fallback_headline_item(country)]
 
 
@@ -550,40 +624,42 @@ def get_headlines(country: dict, cached: dict, seen_titles: set) -> list:
         return cached_headlines if cached_headlines else [_fallback_headline_item(country)]
 
 
+# ---------------------------------------------------------------------------
+# 6. 주요 비즈니스 동향 — 2대 핵심 카테고리, 카테고리당 최대 4개 뉴스
+#    - AUTO MARKET: 완성차 및 타이어 시장 동향
+#    - HR & LABOR : 노동법 및 HR/임금 규제 동향
+#    각 카테고리는 한국어 우선 검색 → 부족분만 영문 검색 + 번역으로 채우며,
+#    국가 내 헤드라인(3) + 두 카테고리(최대 4개씩) 전체 구간에서 seen_titles로
+#    기사 중복을 방지한다. 수집이 하나도 안 되면 안전한 Fallback 문구 1건으로 채운다.
+# ---------------------------------------------------------------------------
 INDUSTRY_TOPICS = [
     {
-        "category": "AUTO MARKET", "tag": "완성차·타이어 시장", "tag_class": "bg-rose-100 text-rose-700",
-        "query_en_tpl": "{name_en} auto OEM tire market EV demand",
-        "query_kr_tpl": "{name_kr} 완성차 타이어 시장 전기차 수요",
+        "category": "AUTO MARKET",
+        "tag": "완성차·타이어 시장",
+        "tag_class": "bg-rose-100 text-rose-700",
+        "query_kr_tpl": "{name_kr} 완성차 타이어 시장",
+        "query_en_tpl": "{name_en} automotive tire market",
+        "max_items": 4,
     },
     {
-        "category": "HR & LABOR", "tag": "노동법·인력", "tag_class": "bg-indigo-100 text-indigo-700",
-        "query_en_tpl": "{name_en} labor law manufacturing wages hiring",
-        "query_kr_tpl": "{name_kr} 노동법 제조업 임금 채용",
-    },
-    {
-        "category": "ECONOMY", "tag": "경기·금리", "tag_class": "bg-emerald-100 text-emerald-700",
-        "query_en_tpl": "{name_en} economy interest rate manufacturing PMI outlook",
-        "query_kr_tpl": "{name_kr} 경제 기준금리 제조업 PMI 전망",
-    },
-    {
-        "category": "MANAGEMENT", "tag": "관세·공급망", "tag_class": "bg-amber-100 text-amber-700",
-        "query_en_tpl": "{name_en} tariff trade policy supply chain logistics cost",
-        "query_kr_tpl": "{name_kr} 관세 통상 정책 공급망 물류비",
+        "category": "HR & LABOR",
+        "tag": "노동법·HR·임금",
+        "tag_class": "bg-indigo-100 text-indigo-700",
+        "query_kr_tpl": "{name_kr} 노동법 최저임금 HR",
+        "query_en_tpl": "{name_en} labor law HR wage",
+        "max_items": 4,
     },
 ]
 
 
 def _fallback_trend_item(spec: dict, country: dict) -> dict:
+    """해당 카테고리에서 기사를 하나도 찾지 못했을 때 쓰는 단일 안전 Fallback 항목."""
     try:
         query_en = spec["query_en_tpl"].format(name_en=country.get("name_en", ""))
         link = _google_news_search_link(query_en)
     except Exception:
         link = "https://news.google.com/"
     return {
-        "category": spec.get("category", ""),
-        "tag": spec.get("tag", ""),
-        "tag_class": spec.get("tag_class", "bg-slate-100 text-slate-700"),
         "title": FALLBACK_TEXT,
         "desc": f"{spec.get('tag', '')} 관련 최신 기사를 찾지 못해 공식 Google 뉴스 검색 결과로 연결됩니다. 다음 갱신 시 자동으로 업데이트됩니다.",
         "source": "Google News 검색",
@@ -595,10 +671,13 @@ def _fallback_trend_item(spec: dict, country: dict) -> dict:
 
 
 def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: str, seen_titles: set) -> list:
+    """1순위 한국어 검색 → 부족한 슬롯만 2순위 영문 검색 + 자동 번역으로 채운다 (중복 제거 포함).
+    번역 실패 시에는 절대 Error 텍스트를 만들지 않고 영문 원문을 그대로 사용한다.
+    이 함수는 전역 상태를 읽거나 쓰지 않으므로 여러 국가에서 동시에 호출되어도 서로 간섭하지 않는다."""
     results = []
 
     try:
-        kr_candidates = _fetch_feed(_google_news_url_ko(f"{query_kr} {when_filter}"), limit=limit * 8)
+        kr_candidates = _fetch_feed(_google_news_url_ko(f"{query_kr} {when_filter}"), limit=limit * 6)
         for it in kr_candidates:
             try:
                 key = _dedup_key(it)
@@ -620,7 +699,7 @@ def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: s
     remaining = limit - len(results)
     if remaining > 0:
         try:
-            en_candidates = _fetch_feed(_google_news_url_en(f"{query_en} {when_filter}"), limit=remaining * 8)
+            en_candidates = _fetch_feed(_google_news_url_en(f"{query_en} {when_filter}"), limit=remaining * 6)
             for it in en_candidates:
                 try:
                     key = _dedup_key(it)
@@ -655,52 +734,65 @@ def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: s
 
 
 def get_industry_trends(country: dict, cached: dict, seen_titles: set) -> list:
+    """2대 핵심 카테고리(AUTO MARKET / HR & LABOR)를 각각 최대 4건씩 수집한다.
+    반환값은 [{category, tag, tag_class, items: [최대 4건]}, ...] 형태(카테고리 2개)."""
     country_name_kr = country.get("name_kr", "")
     country_name_en = country.get("name_en", "")
     country_code = country.get("code")
 
-    cached_by_category = {t.get("category"): t for t in (cached or {}).get("hr_trends", [])}
-    trends = []
+    cached_items_by_category = {}
+    try:
+        for t in (cached or {}).get("hr_trends", []):
+            if isinstance(t, dict) and t.get("category"):
+                cached_items = t.get("items")
+                if isinstance(cached_items, list) and cached_items:
+                    cached_items_by_category[t["category"]] = cached_items
+    except Exception:
+        cached_items_by_category = {}
 
+    trends = []
     for spec in INDUSTRY_TOPICS:
-        item = None
+        max_items = spec.get("max_items", 4)
+        items = []
         try:
             query_kr = spec["query_kr_tpl"].format(name_kr=country_name_kr)
             query_en = spec["query_en_tpl"].format(name_en=country_name_en)
-            picked = get_localized_items(query_kr, query_en, limit=1, when_filter="when:14d", seen_titles=seen_titles)
-            if picked:
-                item = picked[0]
+            picked = get_localized_items(query_kr, query_en, limit=max_items, when_filter="when:14d", seen_titles=seen_titles)
+            for p in picked:
+                try:
+                    items.append({
+                        "title": _shorten(p.get("title", ""), 70),
+                        "desc": p.get("summary") or _shorten(p.get("title", ""), 90),
+                        "source": p.get("source", "Google News"),
+                        "link": p.get("link", ""),
+                        "lang": p.get("lang", "ko"),
+                        "translated": p.get("translated", False),
+                        "original_title": p.get("original_title", ""),
+                    })
+                except Exception as e:
+                    log.warning(f"[{country_code}] '{spec.get('category')}' 개별 항목 가공 실패: {e}")
+                    continue
         except Exception as e:
             log.warning(f"[{country_code}] '{spec.get('category')}' 산업 동향 수집 예외: {e}")
-            item = None
+            items = []
 
-        if item:
-            try:
-                trends.append({
-                    "category": spec["category"],
-                    "tag": spec["tag"],
-                    "tag_class": spec["tag_class"],
-                    "title": _shorten(item.get("title", ""), 46),
-                    "desc": item.get("summary") or _shorten(item.get("title", ""), 70),
-                    "source": item.get("source", "Google News"),
-                    "link": item.get("link", ""),
-                    "lang": item.get("lang", "ko"),
-                    "translated": item.get("translated", False),
-                    "original_title": item.get("original_title", ""),
-                })
-                continue
-            except Exception as e:
-                log.warning(f"[{country_code}] '{spec.get('category')}' 결과 가공 실패: {e}")
+        if not items:
+            cached_items = cached_items_by_category.get(spec["category"])
+            items = cached_items if cached_items else [_fallback_trend_item(spec, country)]
 
-        try:
-            cached_item = cached_by_category.get(spec["category"])
-        except Exception:
-            cached_item = None
-        trends.append(cached_item if cached_item else _fallback_trend_item(spec, country))
+        trends.append({
+            "category": spec["category"],
+            "tag": spec["tag"],
+            "tag_class": spec["tag_class"],
+            "items": items,
+        })
 
     return trends
 
 
+# ---------------------------------------------------------------------------
+# 7. 캐시 / 아카이브 저장 + 180일 Retention
+# ---------------------------------------------------------------------------
 def load_cache() -> dict:
     if os.path.exists(CACHE_PATH):
         try:
@@ -719,6 +811,9 @@ def save_cache(data: dict) -> None:
 
 
 def clean_old_archives(archive_dir: str, max_days: int = 180) -> None:
+    """archive_dir 안의 YYYY-MM-DD.json 아카이브 파일 중 max_days일이 지난 파일을
+    자동 삭제하고, index.json(dates/available_dates/min_date/latest)을 최신 상태로
+    재생성한다. 디렉토리/개별 파일 접근에 실패해도 예외를 던지지 않고 경고만 남긴다."""
     if not os.path.isdir(archive_dir):
         log.warning(f"[clean_old_archives] {archive_dir} 디렉토리가 없어 정리를 건너뜁니다.")
         return
@@ -772,12 +867,16 @@ def save_archive(data: dict) -> None:
 
     archive_path = os.path.join(ARCHIVE_DIR, f"{date_str}.json")
     with open(archive_path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, default=str)
+        json.dump(data, f, ensure_ascii=False, default=str)  # 용량 절약을 위해 압축(무들여쓰기) 저장
 
     clean_old_archives(ARCHIVE_DIR, max_days=ARCHIVE_RETENTION_DAYS)
 
 
+# ---------------------------------------------------------------------------
+# 8. 구버전 아카이브(9/8, 9/9 등 과거 포맷 + 구버전 4카테고리 동향 스키마) 자동 마이그레이션
+# ---------------------------------------------------------------------------
 def _is_legacy_archive(data: dict) -> bool:
+    """현재 스키마(2대 카테고리 × items 리스트, unit_base/url 포함 등)가 아니면 True."""
     if not isinstance(data, dict):
         return True
     countries = data.get("countries")
@@ -793,8 +892,11 @@ def _is_legacy_archive(data: dict) -> bool:
         if not isinstance(fx, dict) or "unit_base" not in fx or "url" not in fx:
             return True
         hr_trends = c.get("hr_trends")
-        if not isinstance(hr_trends, list) or len(hr_trends) < 4:
+        if not isinstance(hr_trends, list) or len(hr_trends) != len(INDUSTRY_TOPICS):
             return True
+        for t in hr_trends:
+            if not isinstance(t, dict) or "items" not in t or not isinstance(t.get("items"), list):
+                return True
         if "offices" not in c and "hubs" not in c:
             return True
     return False
@@ -891,7 +993,29 @@ def _migrate_headlines_legacy(old_headlines, meta: dict) -> list:
     return items
 
 
+def _migrate_trend_entry_legacy(old_entry: dict) -> dict:
+    """구버전 동향 항목(카테고리당 1개 헤드라인: title/desc/source/link 직속) 하나를
+    새 items 리스트용 원소로 변환한다."""
+    title = old_entry.get("title")
+    title = FALLBACK_TEXT if _is_bad_value(title) else str(title)
+    link = old_entry.get("link")
+    link = "" if _is_bad_value(link) else str(link)
+    return {
+        "title": title,
+        "desc": "" if _is_bad_value(old_entry.get("desc")) else str(old_entry.get("desc")),
+        "source": "Google News" if _is_bad_value(old_entry.get("source")) else str(old_entry.get("source")),
+        "link": link,
+        "lang": "ko" if _is_bad_value(old_entry.get("lang")) else str(old_entry.get("lang")),
+        "translated": bool(old_entry.get("translated")) if isinstance(old_entry.get("translated"), bool) else False,
+        "original_title": "" if _is_bad_value(old_entry.get("original_title")) else str(old_entry.get("original_title")),
+    }
+
+
 def _migrate_hr_trends_legacy(old_trends, meta: dict) -> list:
+    """구버전(최대 4카테고리, 카테고리당 단일 헤드라인 또는 신버전 items 리스트가 섞여
+    있을 수 있는 상태)을 현재의 2대 카테고리 × items 리스트 스키마로 재구성한다.
+    과거 'ECONOMY'/'MANAGEMENT' 카테고리처럼 더 이상 존재하지 않는 항목은 버리고,
+    AUTO MARKET / HR & LABOR 에 해당하는 데이터만 최대한 살려서 옮긴다."""
     old_by_category = {}
     if isinstance(old_trends, list):
         for t in old_trends:
@@ -900,26 +1024,35 @@ def _migrate_hr_trends_legacy(old_trends, meta: dict) -> list:
 
     result = []
     for spec in INDUSTRY_TOPICS:
-        old_item = old_by_category.get(spec["category"])
-        if old_item and not _is_bad_value(old_item.get("title")) and not _is_bad_value(old_item.get("link")):
-            result.append({
-                "category": spec["category"],
-                "tag": spec["tag"],
-                "tag_class": spec["tag_class"],
-                "title": str(old_item.get("title")),
-                "desc": "" if _is_bad_value(old_item.get("desc")) else str(old_item.get("desc")),
-                "source": "Google News" if _is_bad_value(old_item.get("source")) else str(old_item.get("source")),
-                "link": str(old_item.get("link")),
-                "lang": "ko" if _is_bad_value(old_item.get("lang")) else str(old_item.get("lang")),
-                "translated": bool(old_item.get("translated")) if isinstance(old_item.get("translated"), bool) else False,
-                "original_title": "" if _is_bad_value(old_item.get("original_title")) else str(old_item.get("original_title")),
-            })
-        else:
-            result.append(_fallback_trend_item(spec, meta))
+        old_entry = old_by_category.get(spec["category"])
+        items = []
+        if isinstance(old_entry, dict):
+            old_items = old_entry.get("items")
+            if isinstance(old_items, list) and old_items:
+                # 이미 신버전(items 리스트)과 유사한 구조
+                for oi in old_items:
+                    if isinstance(oi, dict) and not _is_bad_value(oi.get("title")) and not _is_bad_value(oi.get("link")):
+                        items.append(_migrate_trend_entry_legacy(oi))
+            elif not _is_bad_value(old_entry.get("title")) and not _is_bad_value(old_entry.get("link")):
+                # 구버전(카테고리당 단일 헤드라인 직속 title/desc/link)
+                items.append(_migrate_trend_entry_legacy(old_entry))
+
+        if not items:
+            items = [_fallback_trend_item(spec, meta)]
+
+        result.append({
+            "category": spec["category"],
+            "tag": spec["tag"],
+            "tag_class": spec["tag_class"],
+            "items": items[: spec.get("max_items", 4)],
+        })
+
     return result
 
 
 def migrate_legacy_archive_file(path: str, date_str: str) -> None:
+    """단일 아카이브 파일(예: docs/archive/2026-09-08.json, 2026-09-09.json 등)을
+    현재 39개국 최신 스키마로 재구성해 같은 경로에 덮어쓴다."""
     old_data = {}
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -947,7 +1080,7 @@ def migrate_legacy_archive_file(path: str, date_str: str) -> None:
             "currency": meta_copy["currency"],
             "flag": meta_copy["flag"],
             "offices": offices,
-            "hubs": offices,
+            "hubs": offices,  # 프론트엔드 하위 호환용 별칭(동일 리스트)
             "profile": _migrate_profile_legacy(old_country.get("profile", {}), meta_copy),
             "exchange_rate": _migrate_exchange_rate_legacy(old_country.get("exchange_rate", {}), meta_copy),
             "headlines": _migrate_headlines_legacy(old_country.get("headlines", []), meta_copy),
@@ -963,12 +1096,14 @@ def migrate_legacy_archive_file(path: str, date_str: str) -> None:
     }
 
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(new_data, f, ensure_ascii=False, default=str)
+        json.dump(new_data, f, ensure_ascii=False, default=str)  # Minified 저장
 
     log.info(f"[migrate] {os.path.basename(path)} 를 최신 스키마로 마이그레이션 완료 ({len(new_countries)}개국)")
 
 
 def migrate_all_legacy_archives() -> None:
+    """docs/archive/ 안의 모든 날짜별 파일을 검사해, 구버전 스키마만 골라 마이그레이션한다
+    (9/8, 9/9 등 과거 포맷 및 구버전 4카테고리 동향 스키마 포함)."""
     if not os.path.isdir(ARCHIVE_DIR):
         return
 
@@ -1017,12 +1152,22 @@ def migrate_all_legacy_archives() -> None:
             log.warning(f"[migrate] 마이그레이션 후 index.json 재생성 실패: {e}")
 
 
+# ---------------------------------------------------------------------------
+# 9. 국가 단위 수집 오케스트레이션
+#    각 국가는 별도 스레드에서 독립 호출되며, 인자로 받은 country/cache_by_code 외에는
+#    어떤 가변 전역 상태도 참조하지 않는다. country는 deepcopy로 복제해 result의
+#    시작점으로 삼으므로, COUNTRIES 원본 리스트나 다른 스레드의 country 객체와 어떤
+#    참조도 공유하지 않는다 — 국가 간 뉴스/거점 데이터 오염이 구조적으로 불가능하다.
+# ---------------------------------------------------------------------------
 def collect_country(country: dict, cache_by_code: dict) -> dict:
-    country_code = country["code"]
-    country_currency = country["currency"]
+    country_code = country["code"]          # 이 스레드/호출에만 존재하는 로컬 변수
+    country_currency = country["currency"]  # 이 스레드/호출에만 존재하는 로컬 변수
     cached = cache_by_code.get(country_code, {})
     log.info(f"[{country_code}] 수집 시작 — {country['name_kr']} (통화: {country_currency})")
 
+    # 국가 내 헤드라인(3) + AUTO MARKET(최대 4) + HR & LABOR(최대 4) 전체 구간에서
+    # 기사가 중복 채택되지 않도록 공유하되, 이 세트 자체는 이번 국가 호출에서만
+    # 살아있는 완전히 새로운 객체다.
     seen_titles: set = set()
 
     offices = copy.deepcopy(country.get("offices", []))
@@ -1065,15 +1210,21 @@ def collect_country(country: dict, cache_by_code: dict) -> dict:
     except Exception as e:
         log.error(f"[{country_code}] 산업 동향 수집 실패, Fallback 문구로 대체 후 계속 진행: {e}")
         cached_trends = (cached or {}).get("hr_trends", [])
-        result["hr_trends"] = cached_trends if cached_trends else [
-            _fallback_trend_item(spec, country) for spec in INDUSTRY_TOPICS
-        ]
+        if cached_trends:
+            result["hr_trends"] = cached_trends
+        else:
+            result["hr_trends"] = [
+                {"category": spec["category"], "tag": spec["tag"], "tag_class": spec["tag_class"],
+                 "items": [_fallback_trend_item(spec, country)]}
+                for spec in INDUSTRY_TOPICS
+            ]
 
     log.info(f"[{country_code}] 수집 완료")
     return result
 
 
 def _build_country_fallback(country_code: str) -> dict:
+    """국가 단위 수집이 스레드 자체에서 완전히 실패했을 때 사용하는 최종 안전망."""
     meta = next((copy.deepcopy(c) for c in COUNTRIES if c["code"] == country_code), None)
     if meta is None:
         meta = {"code": country_code, "region": "ALL", "name_kr": country_code,
@@ -1089,7 +1240,11 @@ def _build_country_fallback(country_code: str) -> dict:
                            "history_labels": [], "history_values": [], "source": "수집 실패",
                            "url": _yahoo_finance_url(meta.get("currency", ""))},
         "headlines": [_fallback_headline_item(meta)],
-        "hr_trends": [_fallback_trend_item(spec, meta) for spec in INDUSTRY_TOPICS],
+        "hr_trends": [
+            {"category": spec["category"], "tag": spec["tag"], "tag_class": spec["tag_class"],
+             "items": [_fallback_trend_item(spec, meta)]}
+            for spec in INDUSTRY_TOPICS
+        ],
     }
 
 
@@ -1116,6 +1271,7 @@ def main() -> dict:
                     log.error(f"[{code}] 안전망 구성 중에도 오류 발생, 최소 골격으로 대체: {inner_e}")
                     collected[code] = _build_country_fallback(code)
 
+    # 원본 COUNTRIES 순서를 유지해 UI 정렬을 안정적으로 유지.
     countries_result = [collected.get(c["code"]) or _build_country_fallback(c["code"]) for c in COUNTRIES]
 
     now_kst = datetime.now(KST)

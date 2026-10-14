@@ -13,6 +13,10 @@ Global Daily News — 39개 진출국 데이터 수집기 (공식 출처 전용 
      source / year 를 함께 표기. 법정 최저임금이 없는 국가는 display = "-".
   4) 모든 외부 호출은 7초 타임아웃 + try/except, 국가 순회 시 0.2~0.3초 지연.
 
+  5) 뉴스 제목 언어 감지(langdetect) → 한국어가 아니면 deep-translator 로 번역하고
+     original_lang / original_title / is_translated 를 함께 저장 (링크는 항상 원문 URL 유지).
+     requirements.txt 에 langdetect 가 필요하다 (미설치 시 한글 포함 여부로 ko/en 만 판별).
+
 뉴스 / 환율 / 국가 정렬 / 아카이브 마이그레이션 / 180일 보존 로직은 기존과 동일하다.
 """
 
@@ -1049,6 +1053,68 @@ def translate_to_ko(text: str) -> str:
         return original
 
 
+def detect_language(text: str) -> str:
+    """제목의 원문 언어 코드를 반환. 감지 실패 시 'en'."""
+    try:
+        t = (text or "").strip()
+        if not t:
+            return "en"
+        if len(re.findall(r"[가-힣]", t)) >= 2:
+            return "ko"
+        try:
+            from langdetect import detect, DetectorFactory
+            DetectorFactory.seed = 0
+            code = str(detect(t)).lower()
+            if code.startswith("zh"):
+                return "zh"
+            return code or "en"
+        except Exception:
+            return "en"
+    except Exception:
+        return "en"
+
+
+def _localize_item(item: dict, allow_translate: bool = True) -> dict:
+    """
+    기사 dict 에 original_lang / original_title / is_translated 를 채우고,
+    원문이 한국어가 아니면 제목(과 요약)을 한국어로 번역한다. link 는 건드리지 않는다.
+    번역 실패/예외 시 원문을 그대로 사용하고 is_translated = False.
+    """
+    original_title = item.get("title", "") or ""
+    original_summary = item.get("summary", "") or ""
+    lang = "en"
+    title = original_title
+    summary = original_summary
+    is_translated = False
+    try:
+        lang = detect_language(original_title)
+        if allow_translate and lang != "ko":
+            try:
+                translated_title = translate_to_ko(original_title)
+                if translated_title and str(translated_title).strip() and translated_title != original_title:
+                    title = translated_title
+                    is_translated = True
+                if original_summary:
+                    translated_summary = translate_to_ko(original_summary)
+                    if translated_summary and str(translated_summary).strip():
+                        summary = translated_summary
+            except Exception as e:
+                log.warning(f"기사 번역 실패, 원문 그대로 사용: {e}")
+                title, summary, is_translated = original_title, original_summary, False
+    except Exception as e:
+        log.warning(f"기사 언어 처리 실패, 원문 그대로 사용: {e}")
+        title, summary, is_translated, lang = original_title, original_summary, False, "en"
+
+    item["title"] = title
+    item["summary"] = summary
+    item["original_title"] = original_title
+    item["original_lang"] = lang
+    item["is_translated"] = is_translated
+    item["lang"] = lang
+    item["translated"] = is_translated
+    return item
+
+
 def _google_news_url_ko(query: str) -> str:
     return f"https://news.google.com/rss/search?q={requests.utils.quote(query)}&hl=ko&gl=KR&ceid=KR:ko"
 
@@ -1149,6 +1215,8 @@ def _fallback_headline_item(country: dict) -> dict:
         "lang": "ko",
         "translated": False,
         "original_title": "",
+        "original_lang": "ko",
+        "is_translated": False,
     }
 
 
@@ -1162,9 +1230,7 @@ def _get_headlines_kr_native(country: dict, cached: dict, seen_titles: set) -> l
                 key = _dedup_key(item)
                 if not key or key in seen_titles:
                     continue
-                item["lang"] = "ko"
-                item["translated"] = False
-                item["original_title"] = ""
+                _localize_item(item, allow_translate=False)
                 selected.append(item)
                 seen_titles.add(key)
                 if len(selected) >= limit:
@@ -1195,21 +1261,7 @@ def _get_headlines_global_translated(country: dict, cached: dict, seen_titles: s
                 key = _dedup_key(item)
                 if not key or key in seen_titles:
                     continue
-                original_title = item.get("title", "")
-                original_summary = item.get("summary", "")
-                try:
-                    item["title"] = translate_to_ko(original_title)
-                    item["summary"] = translate_to_ko(original_summary) if original_summary else ""
-                    item["lang"] = "en"
-                    item["translated"] = (item["title"] != original_title)
-                    item["original_title"] = original_title
-                except Exception as e:
-                    log.warning(f"[{country_code}] 헤드라인 번역 실패, 원문 유지: {e}")
-                    item["title"] = original_title
-                    item["summary"] = original_summary
-                    item["lang"] = "en"
-                    item["translated"] = False
-                    item["original_title"] = original_title
+                _localize_item(item)
                 selected.append(item)
                 seen_titles.add(key)
                 if len(selected) >= limit:
@@ -1272,6 +1324,8 @@ def _fallback_trend_item(spec: dict, country: dict) -> dict:
         "lang": "ko",
         "translated": False,
         "original_title": "",
+        "original_lang": "ko",
+        "is_translated": False,
     }
 
 
@@ -1295,9 +1349,7 @@ def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: s
                 key = _dedup_key(it)
                 if not key or key in seen_titles:
                     continue
-                it["lang"] = "ko"
-                it["translated"] = False
-                it["original_title"] = ""
+                _localize_item(it, allow_translate=not kr_only)
                 results.append(it)
                 seen_titles.add(key)
                 if len(results) >= limit:
@@ -1317,21 +1369,7 @@ def get_localized_items(query_kr: str, query_en: str, limit: int, when_filter: s
                     key = _dedup_key(it)
                     if not key or key in seen_titles:
                         continue
-                    original_title = it.get("title", "")
-                    original_summary = it.get("summary", "")
-                    try:
-                        it["title"] = translate_to_ko(original_title)
-                        it["summary"] = translate_to_ko(original_summary) if original_summary else ""
-                        it["lang"] = "en"
-                        it["translated"] = (it["title"] != original_title)
-                        it["original_title"] = original_title
-                    except Exception as e:
-                        log.warning(f"번역 단계 실패, 원문(영문) 그대로 사용: {e}")
-                        it["title"] = original_title
-                        it["summary"] = original_summary
-                        it["lang"] = "en"
-                        it["translated"] = False
-                        it["original_title"] = original_title
+                    _localize_item(it)
                     results.append(it)
                     seen_titles.add(key)
                     if len(results) >= limit:
@@ -1361,6 +1399,8 @@ def _cached_trend_items(cached_cat) -> list:
                 "lang": "ko" if _is_bad_value(cached_cat.get("lang")) else str(cached_cat.get("lang")),
                 "translated": bool(cached_cat.get("translated")) if isinstance(cached_cat.get("translated"), bool) else False,
                 "original_title": "" if _is_bad_value(cached_cat.get("original_title")) else str(cached_cat.get("original_title")),
+                "original_lang": "ko" if _is_bad_value(cached_cat.get("original_lang")) else str(cached_cat.get("original_lang")),
+                "is_translated": bool(cached_cat.get("is_translated", cached_cat.get("translated"))) if isinstance(cached_cat.get("is_translated", cached_cat.get("translated")), bool) else False,
             }]
     except Exception:
         pass
@@ -1395,9 +1435,11 @@ def get_industry_trends(country: dict, cached: dict, seen_titles: set) -> list:
                         "desc": it.get("summary") or _shorten(it.get("title", ""), 70),
                         "source": it.get("source", "Google News"),
                         "link": it.get("link", ""),
-                        "lang": it.get("lang", "ko"),
-                        "translated": it.get("translated", False),
+                        "lang": it.get("original_lang", it.get("lang", "ko")),
+                        "translated": it.get("is_translated", False),
                         "original_title": it.get("original_title", ""),
+                        "original_lang": it.get("original_lang", "ko"),
+                        "is_translated": it.get("is_translated", False),
                     })
                 except Exception as e:
                     log.warning(f"[{country_code}] '{spec.get('category')}' 항목 가공 실패, 건너뜀: {e}")
@@ -1621,6 +1663,8 @@ def _migrate_headline_item_legacy(old_item: dict) -> dict:
         "lang": "ko" if _is_bad_value(old_item.get("lang")) else str(old_item.get("lang")),
         "translated": bool(old_item.get("translated")) if isinstance(old_item.get("translated"), bool) else False,
         "original_title": "" if _is_bad_value(old_item.get("original_title")) else str(old_item.get("original_title")),
+        "original_lang": "ko" if _is_bad_value(old_item.get("original_lang", old_item.get("lang"))) else str(old_item.get("original_lang", old_item.get("lang"))),
+        "is_translated": bool(old_item.get("is_translated", old_item.get("translated"))) if isinstance(old_item.get("is_translated", old_item.get("translated")), bool) else False,
     }
 
 

@@ -6,10 +6,6 @@ on:
   workflow_dispatch:        # 수동 실행 (Actions 탭 > Run workflow)
   push:
     branches: [main]
-    paths-ignore:           # 결과물 커밋으로 무한 반복되는 것을 방지
-      - 'docs/**'
-      - 'data/**'
-      - 'README.md'
 
 permissions:
   contents: write

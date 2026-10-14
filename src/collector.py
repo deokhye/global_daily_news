@@ -6,13 +6,18 @@ Global Daily News — 39개 진출국 데이터 수집기 (공식 출처 전용 
   1) 한국타이어 공식 거점명: 글로벌 네트워크 페이지 원문을 "{공식 조직명} ({도시})" 그대로 저장.
      data/hankook_offices_cache.json 이 있으면 재크롤링 없이 재사용(최초 1회만 수집).
      캐시가 없고 파싱도 실패할 때만 "공식 거점 정보 확인 중" 문구 사용 (수기 거점 리스트 없음).
-  2) 인구/GDP/물가/실업률/수도: 내부 메타데이터를 사용하지 않고 공식 API에서만 수집.
-       World Bank → (GDP·물가 실패 시) IMF WEO / 수도·인구 보조: REST Countries
-     모든 지표에 source / year 포함, 실패 시 "데이터 확인 중". data/economic_cache.json 7일 캐시.
-  3) 최저임금: 정부 고시·ILO·Eurostat 기준 공식 수치 표(MIN_WAGE_TABLE)를 코드에 내장하고
-     source / year 를 함께 표기. 법정 최저임금이 없는 국가는 display = "-".
-  4) 모든 외부 호출은 7초 타임아웃 + try/except, 국가 순회 시 0.2~0.3초 지연.
-
+  2) 국가 기본정보: 내부 메타데이터의 수기값을 읽지 않고 항목별 1순위 공식 API 로 수집한다.
+       수도        REST Countries                        data/cache_capital.json   (최초 1회, 영구 재사용)
+       총 인구     World Bank SP.POP.TOTL                data/cache_economic.json  (항목별 30일)
+       GDP         World Bank NY.GDP.MKTP.CD + IMF WEO 교차확인 (더 최신 기준연도 채택)
+       인플레이션  IMF WEO PCPIPCH → World Bank FP.CPI.TOTL.ZG
+       실업률      ILOSTAT → World Bank SL.UEM.TOTL.ZS
+       최저임금    OECD Data API → data/minwage_manual.json (수동 보완)
+     모든 항목은 {display, source, year, last_updated} 구조이며, 항목마다 last_updated 를 따로 관리해
+     30일이 지난 항목만 다시 호출한다. 전부 실패한 항목만 "데이터 확인 중" 으로 표시한다.
+  3) 법정 최저임금이 없는 국가(스웨덴·오스트리아·이탈리아·싱가포르·UAE·사우디)는
+     display = "-", note = "단체협약(CBA)으로 결정".
+  4) 모든 외부 호출은 7초 타임아웃 + try/except, 국가 순회 시 호출 간 0.2~0.3초 지연.
   5) 뉴스 제목 언어 감지(langdetect) → 한국어가 아니면 deep-translator 로 번역하고
      original_lang / original_title / is_translated 를 함께 저장 (링크는 항상 원문 URL 유지).
      requirements.txt 에 langdetect 가 필요하다 (미설치 시 한글 포함 여부로 ko/en 만 판별).
@@ -45,7 +50,9 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 METADATA_PATH = os.path.join(DATA_DIR, "countries_metadata.json")
 CACHE_PATH = os.path.join(DATA_DIR, "countries_data.json")
 HANKOOK_CACHE_PATH = os.path.join(DATA_DIR, "hankook_offices_cache.json")
-ECONOMIC_CACHE_PATH = os.path.join(DATA_DIR, "economic_cache.json")
+CAPITAL_CACHE_PATH = os.path.join(DATA_DIR, "cache_capital.json")
+ECONOMIC_CACHE_PATH = os.path.join(DATA_DIR, "cache_economic.json")
+MINWAGE_MANUAL_PATH = os.path.join(DATA_DIR, "minwage_manual.json")
 ARCHIVE_DIR = os.path.join(BASE_DIR, "docs", "archive")
 ARCHIVE_INDEX_PATH = os.path.join(ARCHIVE_DIR, "index.json")
 ARCHIVE_RETENTION_DAYS = 180
@@ -57,7 +64,8 @@ HANKOOK_NETWORK_URLS = [
 ]
 HANKOOK_MIN_COUNTRIES = 5
 
-ECONOMIC_CACHE_TTL_DAYS = 7
+ECONOMIC_REFRESH_DAYS = 30
+ECONOMIC_ITEMS = ("population", "gdp", "inflation", "unemployment", "min_wage")
 API_TIMEOUT = 7
 API_DELAY_MIN = 0.2
 API_DELAY_MAX = 0.3
@@ -73,7 +81,7 @@ WON_DECIMALS = 1
 FALLBACK_TEXT = "현지 산업 및 정책 모니터링 중"
 PLACEHOLDER_TEXT = "데이터 확인 중"
 OFFICE_PLACEHOLDER = "공식 거점 정보 확인 중"
-API_SOURCES = {"World Bank", "IMF WEO", "REST Countries"}
+API_SOURCES = {"World Bank", "IMF WEO", "ILOSTAT", "OECD", "REST Countries", "수동 보완"}
 
 HTTP_HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -114,50 +122,57 @@ ISO3_MAP = {
     "JP": "JPN", "SG": "SGP", "MY": "MYS", "TH": "THA", "VN": "VNM", "TW": "TWN",
     "AE": "ARE", "SA": "SAU", "EG": "EGY", "KZ": "KAZ",
 }
-# 법정 최저임금 제도가 없는 국가 (display = "-")
-NO_STATUTORY_MIN_WAGE = {
-    "SE": "법정 최저임금 없음 (산별 단체협약으로 결정)",
-    "AT": "법정 최저임금 없음 (산별 단체협약으로 결정)",
-    "IT": "법정 최저임금 없음 (단체협약 중심)",
-    "SG": "법정 최저임금 없음 (점진적 임금모델 PWM 적용)",
-    "AE": "법정 일반 최저임금 없음",
-    "SA": "법정 일반 최저임금 없음",
+# 최저임금 수동 보완 기본값. OECD Data API 에 없는 국가를 위한 것이며,
+# 최초 실행 시 data/minwage_manual.json 으로 저장되어 이후에는 그 파일을 직접 수정해 관리한다.
+# 법정 최저임금이 없는 국가는 display = "-" 이다.
+MIN_WAGE_MANUAL_DEFAULT = {
+    "KR": {"display": "10,320원 / 시간", "note": "2026년 최저임금", "year": 2026, "basis": "고용노동부 고시"},
+    "CN": {"display": "2,740위안 / 월", "note": "상하이시 기준 (지역별 상이)", "year": 2025, "basis": "상하이시 인력자원사회보장국 고시"},
+    "US": {"display": "7.25달러 / 시간", "note": "연방 기준 (주별 상이)", "year": 2025, "basis": "U.S. Department of Labor"},
+    "CA": {"display": "17.20캐나다달러 / 시간", "note": "온타리오주 기준", "year": 2025, "basis": "Ontario Ministry of Labour"},
+    "DE": {"display": "13.90유로 / 시간", "note": "법정 최저임금", "year": 2026, "basis": "Eurostat"},
+    "HU": {"display": "322,800포린트 / 월", "note": "월 총액 기준", "year": 2026, "basis": "Eurostat"},
+    "UK": {"display": "12.71파운드 / 시간", "note": "21세 이상 National Living Wage", "year": 2026, "basis": "GOV.UK (Low Pay Commission)"},
+    "FR": {"display": "12.02유로 / 시간", "note": "SMIC", "year": 2026, "basis": "Eurostat"},
+    "ES": {"display": "1,184유로 / 월", "note": "14회 지급 기준 (SMI)", "year": 2025, "basis": "Eurostat"},
+    "PL": {"display": "4,806즈워티 / 월", "note": "월 총액 기준", "year": 2026, "basis": "Eurostat"},
+    "CZ": {"display": "22,400코루나 / 월", "note": "월 총액 기준", "year": 2026, "basis": "Eurostat"},
+    "NL": {"display": "14.71유로 / 시간", "note": "21세 이상", "year": 2026, "basis": "Eurostat"},
+    "RO": {"display": "4,050레이 / 월", "note": "월 총액 기준", "year": 2025, "basis": "Eurostat"},
+    "HR": {"display": "1,050유로 / 월", "note": "월 총액 기준", "year": 2026, "basis": "Eurostat"},
+    "TR": {"display": "28,075.5리라 / 월", "note": "순액 기준", "year": 2026, "basis": "Eurostat"},
+    "RU": {"display": "27,093루블 / 월", "note": "법정 최저임금(MROT)", "year": 2026, "basis": "ILO"},
+    "UA": {"display": "8,647흐리브냐 / 월", "note": "월 기준", "year": 2026, "basis": "ILO"},
+    "EG": {"display": "7,000이집트파운드 / 월", "note": "민간 부문", "year": 2025, "basis": "ILO"},
+    "KZ": {"display": "85,000텡게 / 월", "note": "월 기준", "year": 2025, "basis": "ILO"},
+    "MX": {"display": "315.04페소 / 일", "note": "일반 최저임금", "year": 2026, "basis": "ILO"},
+    "BR": {"display": "1,621헤알 / 월", "note": "연방 최저임금", "year": 2026, "basis": "ILO"},
+    "CL": {"display": "529,000페소 / 월", "note": "2025년 7월 적용분", "year": 2025, "basis": "ILO"},
+    "CO": {"display": "1,750,905페소 / 월", "note": "교통보조금 별도", "year": 2026, "basis": "ILO"},
+    "ID": {"display": "5,396,761루피아 / 월", "note": "자카르타 주 최저임금(UMP) 기준", "year": 2025, "basis": "ILO"},
+    "AU": {"display": "24.95호주달러 / 시간", "note": "전국 최저임금", "year": 2025, "basis": "Fair Work Commission"},
+    "JP": {"display": "1,121엔 / 시간", "note": "전국 가중평균 (도쿄 1,226엔)", "year": 2025, "basis": "일본 후생노동성"},
+    "MY": {"display": "1,700링깃 / 월", "note": "월 기준", "year": 2025, "basis": "ILO"},
+    "TH": {"display": "400바트 / 일", "note": "방콕 기준 (지역별 337~400바트)", "year": 2025, "basis": "ILO"},
+    "VN": {"display": "5,310,000동 / 월", "note": "1지역 기준", "year": 2026, "basis": "ILO"},
+    "TW": {"display": "29,500대만달러 / 월", "note": "시급 196대만달러", "year": 2026, "basis": "ILO"},
+    "SE": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
+    "AT": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
+    "IT": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
+    "SG": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
+    "AE": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
+    "SA": {"display": "-", "note": "단체협약(CBA)으로 결정", "year": 2025, "basis": "수동 보완"},
 }
 
-# 각국 정부 고시 / Eurostat / ILO 공표 기준 최저임금 (식별 메타데이터와 별개로 코드에 내장).
-# 표에 없는 국가는 "데이터 확인 중" 으로 표시된다.
-MIN_WAGE_TABLE = {
-    "KR": {"display": "10,320원 / 시간", "note": "2026년 최저임금", "source": "고용노동부 고시", "year": 2026},
-    "CN": {"display": "2,740위안 / 월", "note": "상하이시 기준 (지역별 상이)", "source": "상하이시 인력자원사회보장국 고시", "year": 2025},
-    "US": {"display": "7.25달러 / 시간", "note": "연방 기준 (주별 상이)", "source": "U.S. Department of Labor", "year": 2025},
-    "CA": {"display": "17.20캐나다달러 / 시간", "note": "온타리오주 기준", "source": "Ontario Ministry of Labour", "year": 2025},
-    "DE": {"display": "13.90유로 / 시간", "note": "법정 최저임금", "source": "Eurostat", "year": 2026},
-    "HU": {"display": "322,800포린트 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
-    "UK": {"display": "12.71파운드 / 시간", "note": "21세 이상 National Living Wage", "source": "GOV.UK (Low Pay Commission)", "year": 2026},
-    "FR": {"display": "12.02유로 / 시간", "note": "SMIC", "source": "Eurostat", "year": 2026},
-    "ES": {"display": "1,184유로 / 월", "note": "14회 지급 기준 (SMI)", "source": "Eurostat", "year": 2025},
-    "PL": {"display": "4,806즈워티 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
-    "CZ": {"display": "22,400코루나 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
-    "NL": {"display": "14.71유로 / 시간", "note": "21세 이상", "source": "Eurostat", "year": 2026},
-    "RO": {"display": "4,050레이 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2025},
-    "HR": {"display": "1,050유로 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
-    "TR": {"display": "28,075.5리라 / 월", "note": "순액 기준", "source": "Eurostat", "year": 2026},
-    "RU": {"display": "27,093루블 / 월", "note": "법정 최저임금(MROT)", "source": "ILO", "year": 2026},
-    "UA": {"display": "8,647흐리브냐 / 월", "note": "월 기준", "source": "ILO", "year": 2026},
-    "EG": {"display": "7,000이집트파운드 / 월", "note": "민간 부문", "source": "ILO", "year": 2025},
-    "KZ": {"display": "85,000텡게 / 월", "note": "월 기준", "source": "ILO", "year": 2025},
-    "MX": {"display": "315.04페소 / 일", "note": "일반 최저임금", "source": "ILO", "year": 2026},
-    "BR": {"display": "1,621헤알 / 월", "note": "연방 최저임금", "source": "ILO", "year": 2026},
-    "CL": {"display": "529,000페소 / 월", "note": "2025년 7월 적용분", "source": "ILO", "year": 2025},
-    "CO": {"display": "1,750,905페소 / 월", "note": "교통보조금 별도", "source": "ILO", "year": 2026},
-    "ID": {"display": "5,396,761루피아 / 월", "note": "자카르타 주 최저임금(UMP) 기준", "source": "ILO", "year": 2025},
-    "AU": {"display": "24.95호주달러 / 시간", "note": "전국 최저임금", "source": "Fair Work Commission", "year": 2025},
-    "JP": {"display": "1,121엔 / 시간", "note": "전국 가중평균 (도쿄 1,226엔)", "source": "일본 후생노동성", "year": 2025},
-    "MY": {"display": "1,700링깃 / 월", "note": "월 기준", "source": "ILO", "year": 2025},
-    "TH": {"display": "400바트 / 일", "note": "방콕 기준 (지역별 337~400바트)", "source": "ILO", "year": 2025},
-    "VN": {"display": "5,310,000동 / 월", "note": "1지역 기준", "source": "ILO", "year": 2026},
-    "TW": {"display": "29,500대만달러 / 월", "note": "시급 196대만달러", "source": "ILO", "year": 2026},
+CURRENCY_KO = {
+    "KRW": "원", "USD": "달러", "EUR": "유로", "GBP": "파운드", "JPY": "엔", "CNY": "위안",
+    "CAD": "캐나다달러", "AUD": "호주달러", "HUF": "포린트", "PLN": "즈워티", "CZK": "코루나",
+    "RON": "레이", "TRY": "리라", "RUB": "루블", "UAH": "흐리브냐", "MXN": "페소", "BRL": "헤알",
+    "CLP": "페소", "COP": "페소", "IDR": "루피아", "MYR": "링깃", "THB": "바트", "VND": "동",
+    "TWD": "대만달러", "SEK": "크로나", "SGD": "싱가포르달러", "KZT": "텡게", "EGP": "이집트파운드",
+    "RSD": "디나르", "MAD": "디르함", "PAB": "발보아", "AED": "디르함", "SAR": "리얄",
 }
+PAY_PERIOD_KO = {"H": "시간", "D": "일", "W": "주", "M": "월", "A": "연"}
 
 
 def _is_bad_value(value) -> bool:
@@ -609,8 +624,52 @@ def fetch_hankook_offices(countries: list) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# 2) 거시경제 지표: World Bank → IMF WEO → REST Countries (내부 수기값 없음)
+# 2) 국가 기본정보: 항목별 1순위 공식 API + 항목별 독립 캐시 (내부 수기값 없음)
+#
+#   수도        REST Countries                       data/cache_capital.json   (최초 1회, 영구 재사용)
+#   총 인구     World Bank SP.POP.TOTL               data/cache_economic.json  (항목별 30일)
+#   GDP         World Bank NY.GDP.MKTP.CD + IMF NGDPD 교차확인 → 더 최신 연도 채택
+#   인플레이션  IMF WEO PCPIPCH → World Bank FP.CPI.TOTL.ZG
+#   실업률      ILOSTAT → World Bank SL.UEM.TOTL.ZS
+#   최저임금    OECD Data API → data/minwage_manual.json (수동 보완)
 # ---------------------------------------------------------------------------
+def _now_iso() -> str:
+    return datetime.now(KST).isoformat()
+
+
+def _stamp(entry, note: str = None):
+    """수집 성공한 항목에 last_updated(수집일시)를 기록한다."""
+    if not isinstance(entry, dict):
+        return None
+    stamped = dict(entry)
+    stamped["last_updated"] = _now_iso()
+    if note is not None:
+        stamped["note"] = note
+    return stamped
+
+
+def _safe_call(label: str, func, *args):
+    """어떤 예외가 나도 None 을 돌려주고 다음 소스로 넘어가게 한다."""
+    try:
+        return func(*args)
+    except Exception as e:
+        log.warning(f"{label} 처리 예외, 다음 출처로 전환: {str(e)[:120]}")
+        return None
+
+
+def _pick_newer(first, second):
+    """두 소스의 값 중 기준연도가 더 최신인 것을 채택한다. 연도가 같으면 first 우선."""
+    if not first and not second:
+        return None
+    if first and not second:
+        return first
+    if second and not first:
+        return second
+    year_first = _year_from_value(first.get("year")) or 0
+    year_second = _year_from_value(second.get("year")) or 0
+    return second if year_second > year_first else first
+
+
 def _fetch_imf_weo(code: str, need: list) -> dict:
     out = {}
     source = "IMF WEO"
@@ -689,14 +748,15 @@ def _fetch_world_bank(code: str, need: list) -> dict:
     return out
 
 
-def _fetch_rest_countries(code: str) -> dict:
+def _fetch_rest_countries(code: str, field: str) -> dict:
+    """field: 'capital' 또는 'population'. 성공 시 {field: entry}."""
     out = {}
     source = "REST Countries"
     if _source_disabled(source):
         return out
     try:
         iso2 = _iso2_for(code)
-        url = f"https://restcountries.com/v3.1/alpha/{iso2}?fields=capital,population"
+        url = f"https://restcountries.com/v3.1/alpha/{iso2}?fields={field}"
         status, payload, _ = _api_get_json(source, url)
         if status != 200 or payload is None:
             return out
@@ -705,127 +765,403 @@ def _fetch_rest_countries(code: str) -> dict:
             return out
         year = datetime.now(KST).year
 
-        capitals = row.get("capital")
-        if isinstance(capitals, list) and capitals and not _is_bad_value(capitals[0]):
-            out["capital"] = {"value": str(capitals[0]).strip(), "display": str(capitals[0]).strip(),
-                              "source": source, "year": year}
-        pop = _to_float(row.get("population"))
-        if pop is not None and pop > 0:
-            entry = _make_entry("population", pop, source, year)
-            if entry:
-                out["population"] = entry
+        if field == "capital":
+            capitals = row.get("capital")
+            if isinstance(capitals, list) and capitals and not _is_bad_value(capitals[0]):
+                name = str(capitals[0]).strip()
+                out["capital"] = {"value": name, "display": name, "source": source, "year": year}
+        elif field == "population":
+            pop = _to_float(row.get("population"))
+            if pop is not None and pop > 0:
+                entry = _make_entry("population", pop, source, year)
+                if entry:
+                    out["population"] = entry
     except Exception as e:
-        log.warning(f"[{code}] REST Countries 처리 실패: {e}")
+        log.warning(f"[{code}] REST Countries({field}) 처리 실패: {e}")
     return out
 
 
-def collect_macro_for_country(country: dict) -> dict:
+# ---- SDMX-JSON 공통 파서 (OECD / ILOSTAT 응답) ----------------------------
+def _parse_sdmx_json(payload) -> list:
     """
-    한 국가의 거시지표 수집.
-      인구/GDP/물가/실업률: World Bank (1차) → GDP·물가는 IMF WEO 로 재시도 → 인구는 REST Countries 로 재시도
-      수도: REST Countries
-    확보하지 못한 지표는 결과에 포함하지 않는다.
+    SDMX-JSON 응답을 [{차원ID: 값ID, ..., 'value': float}, ...] 로 평탄화한다.
+    AllDimensions(observations) 형태와 series 형태, SDMX-JSON 1.0/2.0 구조를 모두 처리한다.
+    """
+    rows = []
+    try:
+        if not isinstance(payload, dict):
+            return rows
+        data = payload.get("data") if isinstance(payload.get("data"), dict) else payload
+        datasets = data.get("dataSets")
+        structure = data.get("structure")
+        if structure is None:
+            structures = data.get("structures")
+            structure = structures[0] if isinstance(structures, list) and structures else None
+        if not isinstance(datasets, list) or not datasets or not isinstance(structure, dict):
+            return rows
+
+        dims_struct = structure.get("dimensions") or {}
+        series_dims = dims_struct.get("series") or []
+        obs_dims = dims_struct.get("observation") or []
+        dataset = datasets[0] if isinstance(datasets[0], dict) else {}
+
+        items = []
+        if isinstance(dataset.get("observations"), dict) and dataset.get("observations"):
+            all_dims = list(obs_dims)
+            items = list(dataset["observations"].items())
+        elif isinstance(dataset.get("series"), dict):
+            all_dims = list(series_dims) + list(obs_dims)
+            for skey, sval in dataset["series"].items():
+                for okey, arr in ((sval or {}).get("observations") or {}).items():
+                    items.append((f"{skey}:{okey}", arr))
+        else:
+            return rows
+
+        for key, arr in items:
+            idxs = str(key).split(":")
+            if len(idxs) != len(all_dims):
+                continue
+            row, ok = {}, True
+            for dim, ix in zip(all_dims, idxs):
+                values = dim.get("values") or []
+                i = int(ix)
+                if i < 0 or i >= len(values):
+                    ok = False
+                    break
+                row[str(dim.get("id"))] = str(values[i].get("id"))
+            if not ok:
+                continue
+            value = _to_float(arr[0] if isinstance(arr, list) and arr else None)
+            if value is None:
+                continue
+            row["value"] = value
+            rows.append(row)
+    except Exception as e:
+        log.warning(f"[sdmx] 응답 파싱 실패: {str(e)[:120]}")
+    return rows
+
+
+def _period_key(period: str) -> tuple:
+    """'2024' / '2024-Q2' / '2024-M05' / '2024-06' → (연도, 연내 순서) 정렬 키."""
+    try:
+        p = str(period or "")
+        year = _year_from_value(p) or 0
+        m = re.search(r"Q([1-4])", p)
+        if m:
+            return year, int(m.group(1)) * 3
+        m = re.search(r"M(\d{1,2})", p)
+        if m:
+            return year, int(m.group(1))
+        m = re.search(r"-(\d{2})$", p)
+        if m:
+            return year, int(m.group(1))
+        return year, 12
+    except Exception:
+        return 0, 0
+
+
+def _fmt_amount(value: float) -> str:
+    try:
+        v = float(value)
+        return f"{v:,.0f}" if v >= 1000 else f"{v:,.2f}"
+    except Exception:
+        return str(value)
+
+
+# ---- 실업률: ILOSTAT (SDMX) → World Bank ------------------------------------
+_ILO_STATE = {"dots": None, "empty_streak": 0}
+
+
+def _ilo_row_ok(row: dict) -> bool:
+    if "SEX" in row and row["SEX"] != "SEX_T":
+        return False
+    ages = [v for k, v in row.items() if k in ("CLASSIF1", "AGE")]
+    if ages and not any("YGE15" in a for a in ages):
+        return False
+    return 0 <= row.get("value", -1) <= 100
+
+
+def _fetch_ilostat_unemployment(code: str):
+    source = "ILOSTAT"
+    if _source_disabled(source):
+        return None
+    iso3 = ISO3_MAP.get(code)
+    if not iso3:
+        return None
+
+    candidates = [_ILO_STATE["dots"]] if _ILO_STATE["dots"] is not None else [4, 5, 3]
+    for dots in candidates:
+        url = (f"https://sdmx.ilo.org/rest/data/ILO,DF_UNE_DEAP_SEX_AGE_RT/{iso3}{'.' * dots}"
+               f"?format=jsondata&lastNObservations=1&dimensionAtObservation=AllDimensions")
+        status, payload, _ = _api_get_json(source, url)
+        if status != 200 or payload is None:
+            continue
+        rows = [r for r in _parse_sdmx_json(payload) if _ilo_row_ok(r)]
+        if not rows:
+            continue
+        best = max(rows, key=lambda r: _period_key(r.get("TIME_PERIOD")))
+        year = _year_from_value(best.get("TIME_PERIOD"))
+        entry = _make_entry("unemployment", best["value"], source, year)
+        if entry:
+            _ILO_STATE["dots"] = dots
+            _ILO_STATE["empty_streak"] = 0
+            return entry
+
+    _ILO_STATE["empty_streak"] += 1
+    if _ILO_STATE["empty_streak"] >= 6 and _ILO_STATE["dots"] is None:
+        _disable_source(source, "응답 형식을 확인하지 못해 World Bank 로 대체")
+    return None
+
+
+# ---- 최저임금: OECD → 수동 보완 ---------------------------------------------
+_MINWAGE_MANUAL = None
+
+
+def load_minwage_manual() -> dict:
+    """
+    data/minwage_manual.json 의 수동 보완 테이블을 읽는다. 파일이 없으면 기본값으로 생성한다.
+    형식: {"countries": {"KR": {"display": "...", "note": "...", "year": 2026, "basis": "..."}}}
+    """
+    global _MINWAGE_MANUAL
+    if _MINWAGE_MANUAL is not None:
+        return _MINWAGE_MANUAL
+
+    table = {code: dict(row) for code, row in MIN_WAGE_MANUAL_DEFAULT.items()}
+    stored = _read_json_file(MINWAGE_MANUAL_PATH)
+    if isinstance(stored, dict) and isinstance(stored.get("countries"), dict):
+        for code, row in stored["countries"].items():
+            if isinstance(row, dict) and not _is_bad_value(row.get("display")):
+                table[str(code).upper()] = row
+    else:
+        _write_json_file(MINWAGE_MANUAL_PATH, {
+            "_comment": "OECD 에 없는 국가의 최저임금 수동 보완 테이블. display/note/year/basis 를 직접 수정할 수 있습니다.",
+            "countries": table,
+        })
+    _MINWAGE_MANUAL = table
+    return _MINWAGE_MANUAL
+
+
+def _manual_minwage_entry(code: str):
+    row = load_minwage_manual().get(code)
+    if not isinstance(row, dict) or _is_bad_value(row.get("display")):
+        return None
+    note = "" if _is_bad_value(row.get("note")) else str(row.get("note"))
+    basis = row.get("basis")
+    if row.get("display") != "-" and not _is_bad_value(basis) and basis != "수동 보완":
+        note = f"{note} · 기준: {basis}" if note else f"기준: {basis}"
+    year = row.get("year")
+    return {"display": str(row["display"]), "note": note, "source": "수동 보완",
+            "year": year if year not in (None, "") else "-", "last_updated": _now_iso()}
+
+
+def _fetch_oecd_min_wage(code: str):
+    source = "OECD"
+    if _source_disabled(source):
+        return None
+    iso3 = ISO3_MAP.get(code)
+    if not iso3:
+        return None
+
+    url = ("https://sdmx.oecd.org/public/rest/data/OECD.ELS.SAE,DSD_EARNINGS@MW_CURP,1.0/"
+           f"{iso3}......?format=jsondata&lastNObservations=1&dimensionAtObservation=AllDimensions")
+    status, payload, _ = _api_get_json(source, url)
+    if status != 200 or payload is None:
+        return None
+
+    rows = [r for r in _parse_sdmx_json(payload) if r.get("PRICE_BASE", "V") == "V" and r.get("value", 0) > 0]
+    if not rows:
+        return None
+
+    pay_rank = {"H": 0, "M": 1, "A": 2, "W": 3}
+    best = sorted(
+        rows,
+        key=lambda r: (-_period_key(r.get("TIME_PERIOD"))[0], pay_rank.get(r.get("PAY_PERIOD"), 9)),
+    )[0]
+    pay = best.get("PAY_PERIOD", "M")
+    currency = best.get("UNIT_MEASURE", "")
+    label = CURRENCY_KO.get(currency, currency)
+    pay_label = PAY_PERIOD_KO.get(pay, "월")
+    return {
+        "display": f"{_fmt_amount(best['value'])}{label} / {pay_label}",
+        "note": f"법정 최저임금 ({pay_label} 기준, 현지통화)",
+        "source": source,
+        "year": _year_from_value(best.get("TIME_PERIOD")),
+        "last_updated": _now_iso(),
+    }
+
+
+def fetch_min_wage(code: str):
+    """수동 테이블에서 '법정 최저임금 없음' 이면 즉시 '-' → OECD → 수동 보완 순서."""
+    manual = _manual_minwage_entry(code)
+    if manual and manual["display"] == "-":
+        return manual
+    oecd = _safe_call(f"[{code}] OECD 최저임금", _fetch_oecd_min_wage, code)
+    if oecd:
+        return oecd
+    return manual
+
+
+def build_min_wage(code: str) -> dict:
+    """아카이브 마이그레이션/안전망용: API 호출 없이 수동 보완 테이블만 사용한다."""
+    entry = _safe_call(f"[{code}] 수동 최저임금", _manual_minwage_entry, code)
+    if entry:
+        return entry
+    return {"display": PLACEHOLDER_TEXT, "note": "", "source": "-", "year": "-"}
+
+
+# ---- 항목별 수집 -------------------------------------------------------------
+def collect_economic_items(country: dict, need: list) -> dict:
+    """
+    need 에 포함된 항목만 호출한다. 반환: {item: entry(last_updated 포함)}.
+    모든 소스가 실패한 항목은 결과에 포함하지 않는다.
     """
     code = country["code"]
     found = {}
-    try:
-        found.update(_fetch_world_bank(code, ["population", "gdp", "inflation", "unemployment"]))
-    except Exception as e:
-        log.warning(f"[{code}] World Bank 처리 예외, 다음 출처로 전환: {e}")
 
-    try:
-        need = [k for k in ("gdp", "inflation") if k not in found]
-        if need:
-            for k, v in _fetch_imf_weo(code, need).items():
-                found.setdefault(k, v)
-    except Exception as e:
-        log.warning(f"[{code}] IMF WEO 처리 예외, 다음 출처로 전환: {e}")
+    wb_keys = [k for k in ("population", "gdp") if k in need]
+    wb_data = _safe_call(f"[{code}] World Bank", _fetch_world_bank, code, wb_keys) or {} if wb_keys else {}
 
-    try:
-        rest = _fetch_rest_countries(code)
-        if "capital" in rest:
-            found["capital"] = rest["capital"]
-        if "population" not in found and "population" in rest:
-            found["population"] = rest["population"]
-    except Exception as e:
-        log.warning(f"[{code}] REST Countries 처리 예외: {e}")
+    if "population" in need:
+        entry = wb_data.get("population")
+        if not entry:
+            entry = (_safe_call(f"[{code}] REST Countries 인구", _fetch_rest_countries, code, "population") or {}).get("population")
+        if entry:
+            found["population"] = _stamp(entry)
+
+    if "gdp" in need:
+        imf = (_safe_call(f"[{code}] IMF WEO GDP", _fetch_imf_weo, code, ["gdp"]) or {}).get("gdp")
+        entry = _pick_newer(wb_data.get("gdp"), imf)
+        if entry:
+            found["gdp"] = _stamp(entry)
+
+    if "inflation" in need:
+        entry = (_safe_call(f"[{code}] IMF WEO 물가", _fetch_imf_weo, code, ["inflation"]) or {}).get("inflation")
+        if not entry:
+            entry = (_safe_call(f"[{code}] World Bank 물가", _fetch_world_bank, code, ["inflation"]) or {}).get("inflation")
+        if entry:
+            found["inflation"] = _stamp(entry)
+
+    if "unemployment" in need:
+        entry = _safe_call(f"[{code}] ILOSTAT 실업률", _fetch_ilostat_unemployment, code)
+        if not entry:
+            entry = (_safe_call(f"[{code}] World Bank 실업률", _fetch_world_bank, code, ["unemployment"]) or {}).get("unemployment")
+        if entry:
+            found["unemployment"] = _stamp(entry)
+
+    if "min_wage" in need:
+        entry = _safe_call(f"[{code}] 최저임금", fetch_min_wage, code)
+        if entry:
+            found["min_wage"] = entry
 
     return found
 
 
-def _economic_cache_is_fresh(cache) -> bool:
-    try:
-        if not isinstance(cache, dict) or not cache.get("complete"):
-            return False
-        fetched = _parse_iso_datetime(cache.get("fetched_at"))
-        if fetched is None:
-            return False
-        if datetime.now(KST) - fetched >= timedelta(days=ECONOMIC_CACHE_TTL_DAYS):
-            return False
-        stored = cache.get("countries")
-        if not isinstance(stored, dict):
-            return False
-        return all(c["code"] in stored for c in COUNTRIES)
-    except Exception:
+def _entry_valid(entry) -> bool:
+    return (isinstance(entry, dict)
+            and not _is_bad_value(entry.get("display"))
+            and entry.get("display") != PLACEHOLDER_TEXT)
+
+
+def _entry_fresh(entry, now) -> bool:
+    if not _entry_valid(entry):
         return False
+    updated = _parse_iso_datetime(entry.get("last_updated"))
+    if updated is None:
+        return False
+    return (now - updated) < timedelta(days=ECONOMIC_REFRESH_DAYS)
 
 
 def load_economic_data(countries: list) -> tuple:
     """
-    반환: ({code: {indicator: entry}}, 기준일 문자열)
-    캐시가 7일 이내(그리고 완전)이면 API 호출 없이 재사용한다.
+    반환: ({code: {capital/population/gdp/inflation/unemployment/min_wage: entry}}, 기준일)
+      - 수도: data/cache_capital.json 에 값이 있으면 영구 재사용 (없는 국가만 호출)
+      - 나머지: data/cache_economic.json 의 항목별 last_updated 가 30일 이내면 재사용, 지난 항목만 재호출
     """
-    cache = _read_json_file(ECONOMIC_CACHE_PATH)
-    if _economic_cache_is_fresh(cache):
-        log.info("[economic] data/economic_cache.json 이 7일 이내 → API 호출 없이 재사용")
-        return cache["countries"], str(cache.get("fetched_at", ""))[:10]
+    now = datetime.now(KST)
 
-    log.info("[economic] 거시지표 갱신 시작 (World Bank → IMF WEO → REST Countries)")
+    capital_cache = _read_json_file(CAPITAL_CACHE_PATH)
+    capitals = capital_cache.get("countries") if isinstance(capital_cache, dict) and isinstance(capital_cache.get("countries"), dict) else {}
+    economic_cache = _read_json_file(ECONOMIC_CACHE_PATH)
+    stored = economic_cache.get("countries") if isinstance(economic_cache, dict) and isinstance(economic_cache.get("countries"), dict) else {}
 
-    collected = {}
-    api_count = 0
+    result = {}
+    capital_changed = False
+    economic_changed = False
+    api_countries = 0
+
     for country in countries:
+        code = country["code"]
+        items = {}
+
+        # 1) 수도 — 최초 1회 수집 후 영구 재사용
         try:
-            data = collect_macro_for_country(country)
+            cap = capitals.get(code)
+            if _entry_valid(cap):
+                items["capital"] = cap
+            else:
+                fetched = (_safe_call(f"[{code}] REST Countries 수도", _fetch_rest_countries, code, "capital") or {}).get("capital")
+                if fetched:
+                    stamped = _stamp(fetched)
+                    capitals[code] = stamped
+                    items["capital"] = stamped
+                    capital_changed = True
         except Exception as e:
-            log.warning(f"[{country.get('code')}] 거시지표 수집 예외: {e}")
-            data = {}
-        collected[country["code"]] = data
-        api_count += sum(1 for k in ("population", "gdp", "inflation", "unemployment") if k in data)
+            log.warning(f"[{code}] 수도 처리 예외: {e}")
 
-    expected = max(1, len(countries) * 4)
-    complete = api_count >= expected * 0.5
-    now_kst = datetime.now(KST)
+        # 2) 인구/GDP/인플레이션/실업률/최저임금 — 항목별 30일 주기
+        try:
+            old = stored.get(code) if isinstance(stored.get(code), dict) else {}
+            need = []
+            for key in ECONOMIC_ITEMS:
+                entry = old.get(key)
+                if _entry_fresh(entry, now):
+                    if key == "min_wage" and entry.get("source") == "수동 보완":
+                        latest = _manual_minwage_entry(code)
+                        if latest and (latest["display"] != entry.get("display")
+                                       or latest["note"] != entry.get("note")
+                                       or latest["year"] != entry.get("year")):
+                            entry = latest
+                            old[key] = entry
+                            economic_changed = True
+                    items[key] = entry
+                else:
+                    need.append(key)
 
-    # 직전 캐시(오래된 것)가 있으면 이번에 못 받은 지표를 보충한다. (모두 API 출처 값)
-    if isinstance(cache, dict) and isinstance(cache.get("countries"), dict):
-        for code, old in cache["countries"].items():
-            if code in collected and isinstance(old, dict):
-                for k, v in old.items():
-                    if isinstance(v, dict) and v.get("source") in API_SOURCES:
-                        collected[code].setdefault(k, v)
+            if need:
+                api_countries += 1
+                fetched = collect_economic_items(country, need)
+                for key in need:
+                    if key in fetched:
+                        items[key] = fetched[key]
+                        old[key] = fetched[key]
+                        economic_changed = True
+                    elif _entry_valid(old.get(key)):
+                        items[key] = old[key]   # 갱신 실패 시 직전 값 유지 (다음 실행에서 재시도)
+            stored[code] = old
+        except Exception as e:
+            log.warning(f"[{code}] 경제지표 처리 예외: {e}")
 
-    _write_json_file(ECONOMIC_CACHE_PATH, {
-        "fetched_at": now_kst.isoformat(),
-        "complete": complete,
-        "api_indicator_count": api_count,
-        "countries": collected,
-    })
-    log.info(f"[economic] 갱신 완료: API 지표 {api_count}/{expected}건 (complete={complete})")
-    return collected, now_kst.strftime("%Y-%m-%d")
+        result[code] = items
 
+    if capital_changed or not os.path.exists(CAPITAL_CACHE_PATH):
+        if capitals:
+            _write_json_file(CAPITAL_CACHE_PATH, {"updated_at": now.isoformat(), "countries": capitals})
+    if economic_changed or not os.path.exists(ECONOMIC_CACHE_PATH):
+        if any(stored.get(c["code"]) for c in countries):
+            _write_json_file(ECONOMIC_CACHE_PATH, {"updated_at": now.isoformat(), "refresh_days": ECONOMIC_REFRESH_DAYS,
+                                                   "countries": stored})
 
-# ---------------------------------------------------------------------------
-# 3) 최저임금 {display, note, source, year}
-# ---------------------------------------------------------------------------
-def build_min_wage(code: str) -> dict:
-    if code in NO_STATUTORY_MIN_WAGE:
-        return {"display": "-", "note": NO_STATUTORY_MIN_WAGE[code], "source": "ILO", "year": 2025}
-    row = MIN_WAGE_TABLE.get(code)
-    if isinstance(row, dict) and not _is_bad_value(row.get("display")):
-        return {"display": row["display"], "note": row.get("note", ""),
-                "source": row.get("source", "ILO"), "year": row.get("year", "-")}
-    return {"display": PLACEHOLDER_TEXT, "note": "", "source": "ILO", "year": "-"}
+    latest_dates = []
+    for items in result.values():
+        for entry in items.values():
+            dt = _parse_iso_datetime(entry.get("last_updated")) if isinstance(entry, dict) else None
+            if dt:
+                latest_dates.append(dt)
+    asof = max(latest_dates).strftime("%Y-%m-%d") if latest_dates else now.strftime("%Y-%m-%d")
+
+    log.info(f"[economic] 완료: 항목 갱신이 필요했던 국가 {api_countries}/{len(countries)}개 "
+             f"(나머지는 캐시 재사용)")
+    return result, asof
 
 
 # ---------------------------------------------------------------------------
@@ -847,22 +1183,31 @@ def build_profile(country: dict, cached: dict, shared: dict = None) -> dict:
         entry = None
         try:
             api_entry = econ.get(key)
-            if isinstance(api_entry, dict) and api_entry.get("source") in API_SOURCES and not _is_bad_value(api_entry.get("display")):
+            if isinstance(api_entry, dict) and api_entry.get("source") in API_SOURCES and _entry_valid(api_entry):
                 entry = dict(api_entry)
             if entry is None:
                 old = cached_indicators.get(key)
-                if isinstance(old, dict) and old.get("source") in API_SOURCES and not _is_bad_value(old.get("display")):
+                if isinstance(old, dict) and old.get("source") in API_SOURCES and _entry_valid(old):
                     entry = dict(old)
         except Exception as e:
             log.warning(f"[{code}] '{key}' 지표 구성 실패: {e}")
             entry = None
         indicators[key] = entry if entry is not None else _placeholder_entry()
 
-    min_wage = build_min_wage(code)
+    min_wage = econ.get("min_wage")
+    if not _entry_valid(min_wage):
+        min_wage = build_min_wage(code)
+    min_wage = {
+        "display": min_wage.get("display", PLACEHOLDER_TEXT),
+        "note": min_wage.get("note", ""),
+        "source": min_wage.get("source", "-"),
+        "year": min_wage.get("year", "-"),
+        "last_updated": min_wage.get("last_updated", ""),
+    }
 
     sources = []
     years = []
-    for entry in indicators.values():
+    for entry in list(indicators.values()) + [min_wage]:
         src = entry.get("source")
         if src and src != "-" and src not in sources:
             sources.append(src)

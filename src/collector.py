@@ -1,27 +1,19 @@
 """
 collector.py
 ------------
-Global Daily News — 39개 진출국 데이터 수집기 (공식 출처 연동 버전).
+Global Daily News — 39개 진출국 데이터 수집기 (공식 출처 전용 버전).
 
-이 버전에서 추가/변경된 핵심 사항
-  1) 한국타이어 공식 거점 명칭 (1회성 크롤링)
-       - https://www.hankooktire.com/global/ko/company/global-network.html 을 BeautifulSoup 으로
-         파싱해 국가별 공식 법인/공장명과 도시를 가져온다.
-       - data/hankook_offices_cache.json 이 있으면 그 파일만 읽고 절대 다시 크롤링하지 않는다.
-         (크롤링이 실패해 'fallback' 으로 저장된 경우에 한해 30일 뒤 1회 재시도)
-       - 페이지가 JS 렌더링이라 파싱 결과가 부족하면 data/countries_metadata.json 의 offices 로 대체.
-  2) 거시경제 지표 (주 1회 갱신)
-       - 우선순위 1: Trading Economics API (환경변수 TE_API_KEY, 키 없음/403/한도 초과 시 즉시 다음 단계)
-       - 우선순위 2: IMF WEO (NGDPD, PCPIPCH)
-       - 우선순위 3: World Bank API (SP.POP.TOTL / NY.GDP.MKTP.CD / FP.CPI.TOTL.ZG / SL.UEM.TOTL.ZS)
-       - 수도/인구 보조: REST Countries
-       - 모든 지표에 source 와 기준연도(year) 를 함께 저장하고, data/economic_cache.json 에 7일간 캐시.
-       - 우선순위 1~3 이 모두 실패한 지표만 countries_metadata.json 의 정적 값을 사용.
-  3) 최저임금: {display, note, source, year}. 법정 최저임금이 없는 국가는 display = "-".
-  4) 안전성: 모든 외부 호출은 7초 타임아웃 + try/except, 국가 순회 시 0.2~0.3초 지연,
-     연속 실패하는 출처는 해당 실행 동안 자동으로 건너뛴다. 화면에 'Error' 문자열은 생성하지 않는다.
+  1) 한국타이어 공식 거점명: 글로벌 네트워크 페이지 원문을 "{공식 조직명} ({도시})" 그대로 저장.
+     data/hankook_offices_cache.json 이 있으면 재크롤링 없이 재사용(최초 1회만 수집).
+     캐시가 없고 파싱도 실패할 때만 "공식 거점 정보 확인 중" 문구 사용 (수기 거점 리스트 없음).
+  2) 인구/GDP/물가/실업률/수도: 내부 메타데이터를 사용하지 않고 공식 API에서만 수집.
+       World Bank → (GDP·물가 실패 시) IMF WEO / 수도·인구 보조: REST Countries
+     모든 지표에 source / year 포함, 실패 시 "데이터 확인 중". data/economic_cache.json 7일 캐시.
+  3) 최저임금: 정부 고시·ILO·Eurostat 기준 공식 수치 표(MIN_WAGE_TABLE)를 코드에 내장하고
+     source / year 를 함께 표기. 법정 최저임금이 없는 국가는 display = "-".
+  4) 모든 외부 호출은 7초 타임아웃 + try/except, 국가 순회 시 0.2~0.3초 지연.
 
-뉴스 수집 / 환율 수집 / 국가 정렬 / 아카이브 관리 로직은 기존과 동일하다.
+뉴스 / 환율 / 국가 정렬 / 아카이브 마이그레이션 / 180일 보존 로직은 기존과 동일하다.
 """
 
 import os
@@ -55,7 +47,10 @@ ARCHIVE_INDEX_PATH = os.path.join(ARCHIVE_DIR, "index.json")
 ARCHIVE_RETENTION_DAYS = 180
 
 HANKOOK_NETWORK_URL = "https://www.hankooktire.com/global/ko/company/global-network.html"
-HANKOOK_RETRY_AFTER_DAYS = 30
+HANKOOK_NETWORK_URLS = [
+    HANKOOK_NETWORK_URL,
+    "https://www.hankooktire.com/global/en/company/global-network.html",
+]
 HANKOOK_MIN_COUNTRIES = 5
 
 ECONOMIC_CACHE_TTL_DAYS = 7
@@ -63,7 +58,6 @@ API_TIMEOUT = 7
 API_DELAY_MIN = 0.2
 API_DELAY_MAX = 0.3
 SOURCE_MAX_CONSECUTIVE_FAILS = 5
-TE_API_KEY = os.environ.get("TE_API_KEY", "").strip()
 
 MONTH_KR = ["1월", "2월", "3월", "4월", "5월", "6월",
             "7월", "8월", "9월", "10월", "11월", "12월"]
@@ -73,7 +67,9 @@ MAX_WORKERS = 8  # 국가 단위 병렬 수집 스레드 수
 SMALL_UNIT_CURRENCIES = {"VND": 100, "JPY": 100, "IDR": 100}
 WON_DECIMALS = 1
 FALLBACK_TEXT = "현지 산업 및 정책 모니터링 중"
-STATIC_SOURCE = "내부 메타데이터(정적 값)"
+PLACEHOLDER_TEXT = "데이터 확인 중"
+OFFICE_PLACEHOLDER = "공식 거점 정보 확인 중"
+API_SOURCES = {"World Bank", "IMF WEO", "REST Countries"}
 
 HTTP_HEADERS = {
     "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -114,13 +110,6 @@ ISO3_MAP = {
     "JP": "JPN", "SG": "SGP", "MY": "MYS", "TH": "THA", "VN": "VNM", "TW": "TWN",
     "AE": "ARE", "SA": "SAU", "EG": "EGY", "KZ": "KAZ",
 }
-TE_COUNTRY_NAMES = {
-    "KR": "south korea", "US": "united states", "UK": "united kingdom", "GB": "united kingdom",
-    "CZ": "czech republic", "TR": "turkey", "RU": "russia", "AE": "united arab emirates",
-    "VN": "vietnam", "TW": "taiwan", "SA": "saudi arabia", "NL": "netherlands",
-    "KZ": "kazakhstan", "HR": "croatia", "RS": "serbia",
-}
-
 # 법정 최저임금 제도가 없는 국가 (display = "-")
 NO_STATUTORY_MIN_WAGE = {
     "SE": "법정 최저임금 없음 (산별 단체협약으로 결정)",
@@ -128,13 +117,42 @@ NO_STATUTORY_MIN_WAGE = {
     "IT": "법정 최저임금 없음 (단체협약 중심)",
     "SG": "법정 최저임금 없음 (점진적 임금모델 PWM 적용)",
     "AE": "법정 일반 최저임금 없음",
+    "SA": "법정 일반 최저임금 없음",
 }
-EUROSTAT_MIN_WAGE_CODES = {"DE", "FR", "ES", "PL", "CZ", "NL", "RO", "HR", "HU", "TR", "RS"}
-MIN_WAGE_SOURCE_BY_CODE = {
-    "KR": "고용노동부 고시",
-    "US": "U.S. Department of Labor",
-    "UK": "GOV.UK (Low Pay Commission)",
-    "JP": "일본 후생노동성",
+
+# 각국 정부 고시 / Eurostat / ILO 공표 기준 최저임금 (식별 메타데이터와 별개로 코드에 내장).
+# 표에 없는 국가는 "데이터 확인 중" 으로 표시된다.
+MIN_WAGE_TABLE = {
+    "KR": {"display": "10,320원 / 시간", "note": "2026년 최저임금", "source": "고용노동부 고시", "year": 2026},
+    "CN": {"display": "2,740위안 / 월", "note": "상하이시 기준 (지역별 상이)", "source": "상하이시 인력자원사회보장국 고시", "year": 2025},
+    "US": {"display": "7.25달러 / 시간", "note": "연방 기준 (주별 상이)", "source": "U.S. Department of Labor", "year": 2025},
+    "CA": {"display": "17.20캐나다달러 / 시간", "note": "온타리오주 기준", "source": "Ontario Ministry of Labour", "year": 2025},
+    "DE": {"display": "13.90유로 / 시간", "note": "법정 최저임금", "source": "Eurostat", "year": 2026},
+    "HU": {"display": "322,800포린트 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
+    "UK": {"display": "12.71파운드 / 시간", "note": "21세 이상 National Living Wage", "source": "GOV.UK (Low Pay Commission)", "year": 2026},
+    "FR": {"display": "12.02유로 / 시간", "note": "SMIC", "source": "Eurostat", "year": 2026},
+    "ES": {"display": "1,184유로 / 월", "note": "14회 지급 기준 (SMI)", "source": "Eurostat", "year": 2025},
+    "PL": {"display": "4,806즈워티 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
+    "CZ": {"display": "22,400코루나 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
+    "NL": {"display": "14.71유로 / 시간", "note": "21세 이상", "source": "Eurostat", "year": 2026},
+    "RO": {"display": "4,050레이 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2025},
+    "HR": {"display": "1,050유로 / 월", "note": "월 총액 기준", "source": "Eurostat", "year": 2026},
+    "TR": {"display": "28,075.5리라 / 월", "note": "순액 기준", "source": "Eurostat", "year": 2026},
+    "RU": {"display": "27,093루블 / 월", "note": "법정 최저임금(MROT)", "source": "ILO", "year": 2026},
+    "UA": {"display": "8,647흐리브냐 / 월", "note": "월 기준", "source": "ILO", "year": 2026},
+    "EG": {"display": "7,000이집트파운드 / 월", "note": "민간 부문", "source": "ILO", "year": 2025},
+    "KZ": {"display": "85,000텡게 / 월", "note": "월 기준", "source": "ILO", "year": 2025},
+    "MX": {"display": "315.04페소 / 일", "note": "일반 최저임금", "source": "ILO", "year": 2026},
+    "BR": {"display": "1,621헤알 / 월", "note": "연방 최저임금", "source": "ILO", "year": 2026},
+    "CL": {"display": "529,000페소 / 월", "note": "2025년 7월 적용분", "source": "ILO", "year": 2025},
+    "CO": {"display": "1,750,905페소 / 월", "note": "교통보조금 별도", "source": "ILO", "year": 2026},
+    "ID": {"display": "5,396,761루피아 / 월", "note": "자카르타 주 최저임금(UMP) 기준", "source": "ILO", "year": 2025},
+    "AU": {"display": "24.95호주달러 / 시간", "note": "전국 최저임금", "source": "Fair Work Commission", "year": 2025},
+    "JP": {"display": "1,121엔 / 시간", "note": "전국 가중평균 (도쿄 1,226엔)", "source": "일본 후생노동성", "year": 2025},
+    "MY": {"display": "1,700링깃 / 월", "note": "월 기준", "source": "ILO", "year": 2025},
+    "TH": {"display": "400바트 / 일", "note": "방콕 기준 (지역별 337~400바트)", "source": "ILO", "year": 2025},
+    "VN": {"display": "5,310,000동 / 월", "note": "1지역 기준", "source": "ILO", "year": 2026},
+    "TW": {"display": "29,500대만달러 / 월", "note": "시급 196대만달러", "source": "ILO", "year": 2026},
 }
 
 
@@ -147,8 +165,9 @@ def _is_bad_value(value) -> bool:
 
 
 def load_countries_metadata() -> list:
+    """식별 정보(코드/국가명/통화/권역)만 메타데이터에서 읽는다. 경제지표·거점 수기값은 읽지 않는다."""
     if not os.path.exists(METADATA_PATH):
-        raise FileNotFoundError(f"{METADATA_PATH} 파일이 없습니다. 39개국 메타데이터 파일을 먼저 준비하세요.")
+        raise FileNotFoundError(f"{METADATA_PATH} 파일이 없습니다. 39개국 식별 메타데이터 파일을 먼저 준비하세요.")
 
     with open(METADATA_PATH, "r", encoding="utf-8") as f:
         raw = f.read()
@@ -166,7 +185,6 @@ def load_countries_metadata() -> list:
             log.warning(f"[metadata] 잘못된 국가 항목을 건너뜁니다: {row}")
             continue
         code = str(row["code"]).strip().upper()
-        offices = row.get("offices") if isinstance(row.get("offices"), list) else []
         countries.append({
             "code": code,
             "region": row.get("region", "ALL"),
@@ -174,17 +192,7 @@ def load_countries_metadata() -> list:
             "name_en": row.get("name_en", code),
             "currency": row.get("currency", "USD"),
             "flag": code.lower(),
-            "offices": offices,
-            "hubs": offices,
-            "meta_profile": {
-                "capital": row.get("capital", "-"),
-                "population": row.get("population", "-"),
-                "gdp": row.get("gdp", "-"),
-                "inflation": row.get("inflation", "-"),
-                "unemployment": row.get("unemployment", "-"),
-                "min_wage": row.get("min_wage", "-"),
-                "curr_unit": row.get("curr_unit", ""),
-            },
+            "curr_unit": row.get("curr_unit", ""),
         })
 
     if not countries:
@@ -194,12 +202,6 @@ def load_countries_metadata() -> list:
 
 
 COUNTRIES = load_countries_metadata()
-METADATA_ASOF = None
-try:
-    with open(METADATA_PATH, "r", encoding="utf-8") as _f:
-        METADATA_ASOF = json.load(_f).get("generated_at", "-")
-except Exception:
-    METADATA_ASOF = "-"
 
 
 def _strip_html(text: str) -> str:
@@ -475,8 +477,33 @@ def _detect_country_in_line(line: str, name_index: dict):
     return best_code
 
 
+def _clean_office_line(line: str) -> str:
+    return " ".join((line or "").split())
+
+
+def _is_city_candidate(text: str, name_index: dict) -> bool:
+    """조직명 바로 다음 줄이 도시명 단독 표기인지 판별 (원문 그대로 사용, 변형하지 않음)."""
+    try:
+        t = _clean_office_line(text)
+        if not t or len(t) > 40:
+            return False
+        if NOISE_LINE_RE.search(t) or OFFICE_KEYWORD_RE.search(t):
+            return False
+        if re.search(r"\d", t):
+            return False
+        norm = _normalize_name(t)
+        if norm in REGION_HEADINGS or norm in name_index:
+            return False
+        return True
+    except Exception:
+        return False
+
+
 def parse_hankook_global_network(html: str, countries: list) -> dict:
-    """공식 글로벌 네트워크 페이지 HTML → {country_code: [공식 거점명, ...]}"""
+    """
+    공식 글로벌 네트워크 페이지 HTML → {country_code: ["조직명 (도시)", ...]}
+    홈페이지에 표기된 원문을 번역/재구성하지 않고 그대로 사용한다.
+    """
     result = {}
     try:
         from bs4 import BeautifulSoup
@@ -488,7 +515,7 @@ def parse_hankook_global_network(html: str, countries: list) -> dict:
         soup = BeautifulSoup(html or "", "html.parser")
         for tag in soup(["script", "style", "noscript", "nav", "header", "footer"]):
             tag.decompose()
-        lines = [" ".join(l.split()) for l in soup.get_text("\n").split("\n")]
+        lines = [_clean_office_line(l) for l in soup.get_text("\n").split("\n")]
         lines = [l for l in lines if l]
     except Exception as e:
         log.warning(f"[hankook] HTML 파싱 실패: {e}")
@@ -496,9 +523,12 @@ def parse_hankook_global_network(html: str, countries: list) -> dict:
 
     name_index = _build_country_name_index(countries)
     current = None
+    skip_next = set()
 
-    for line in lines:
+    for i, line in enumerate(lines):
         try:
+            if i in skip_next:
+                continue
             if len(line) > 110 or NOISE_LINE_RE.search(line):
                 continue
 
@@ -518,124 +548,65 @@ def parse_hankook_global_network(html: str, countries: list) -> dict:
             if not target:
                 continue
 
+            entry = line
+            has_city = bool(re.search(r"\([^()]+\)\s*$", line))
+            if not has_city and i + 1 < len(lines) and _is_city_candidate(lines[i + 1], name_index):
+                entry = f"{line} ({lines[i + 1]})"
+                skip_next.add(i + 1)
+
             bucket = result.setdefault(target, [])
-            if line not in bucket and len(bucket) < 12:
-                bucket.append(line)
+            if entry not in bucket and len(bucket) < 12:
+                bucket.append(entry)
         except Exception:
             continue
 
     return {code: names for code, names in result.items() if names}
 
 
-def _hankook_retry_due(cached: dict) -> bool:
-    fetched = _parse_iso_datetime(cached.get("fetched_at"))
-    if fetched is None:
-        return True
-    return datetime.now(KST) - fetched > timedelta(days=HANKOOK_RETRY_AFTER_DAYS)
-
-
 def fetch_hankook_offices(countries: list) -> dict:
     """
-    반환: {country_code: [공식 거점명, ...]} (확보한 국가만 포함, 없으면 빈 dict).
-    캐시 파일이 있으면 읽기만 하고 크롤링하지 않는다.
+    반환: {country_code: ["조직명 (도시)", ...]} (확보한 국가만 포함).
+    data/hankook_offices_cache.json 이 존재하면 재크롤링 없이 그대로 재사용한다.
+    캐시 파일이 없을 때만 크롤링하며, 성공했을 때만 캐시를 저장한다.
     """
     cached = _read_json_file(HANKOOK_CACHE_PATH)
     if isinstance(cached, dict) and isinstance(cached.get("offices"), dict):
-        if cached.get("status") == "ok" or not _hankook_retry_due(cached):
-            log.info("[hankook] data/hankook_offices_cache.json 사용 (재크롤링 없음)")
-            return {k: v for k, v in cached["offices"].items() if isinstance(v, list) and v}
+        log.info("[hankook] data/hankook_offices_cache.json 사용 (재크롤링 없음)")
+        return {k: v for k, v in cached["offices"].items() if isinstance(v, list) and v}
 
     log.info("[hankook] 공식 글로벌 네트워크 페이지 1회 크롤링 시작")
-    offices, status, reason = {}, "fallback", ""
-    try:
-        resp = requests.get(HANKOOK_NETWORK_URL, headers=HTTP_HEADERS, timeout=API_TIMEOUT)
-        if resp.status_code != 200:
-            reason = f"HTTP {resp.status_code}"
-        else:
+    offices, used_url, reason = {}, "", ""
+    for url in HANKOOK_NETWORK_URLS:
+        try:
+            resp = requests.get(url, headers=HTTP_HEADERS, timeout=API_TIMEOUT)
+            if resp.status_code != 200:
+                reason = f"HTTP {resp.status_code}"
+                continue
             resp.encoding = resp.apparent_encoding or "utf-8"
-            offices = parse_hankook_global_network(resp.text, countries)
-            if len(offices) >= HANKOOK_MIN_COUNTRIES:
-                status = "ok"
-            else:
-                reason = f"파싱 결과 부족({len(offices)}개국, JS 렌더링 페이지로 추정)"
-    except Exception as e:
-        reason = str(e)[:120]
+            parsed = parse_hankook_global_network(resp.text, countries)
+            if len(parsed) >= HANKOOK_MIN_COUNTRIES:
+                offices, used_url = parsed, url
+                break
+            reason = f"파싱 결과 부족({len(parsed)}개국, JS 렌더링 페이지로 추정)"
+        except Exception as e:
+            reason = str(e)[:120]
 
-    if status != "ok":
-        log.warning(f"[hankook] 공식 페이지 사용 불가 → countries_metadata.json 의 거점 정보로 대체 ({reason})")
-        offices = {}
+    if not offices:
+        log.warning(f"[hankook] 공식 페이지 파싱 실패 → '{OFFICE_PLACEHOLDER}' 문구 사용, 캐시는 저장하지 않음 ({reason})")
+        return {}
 
     _write_json_file(HANKOOK_CACHE_PATH, {
-        "source_url": HANKOOK_NETWORK_URL,
+        "source_url": used_url,
         "fetched_at": datetime.now(KST).isoformat(),
-        "status": status,
-        "reason": reason,
+        "status": "ok",
         "offices": offices,
     })
     return offices
 
 
 # ---------------------------------------------------------------------------
-# 2) 거시경제 지표: Trading Economics → IMF WEO → World Bank → 메타데이터
+# 2) 거시경제 지표: World Bank → IMF WEO → REST Countries (내부 수기값 없음)
 # ---------------------------------------------------------------------------
-def _fetch_trading_economics(code: str, name_en: str) -> dict:
-    out = {}
-    source = "Trading Economics"
-    if not TE_API_KEY or _source_disabled(source):
-        return out
-
-    try:
-        te_name = TE_COUNTRY_NAMES.get(code) or str(name_en or code).lower()
-        url = f"https://api.tradingeconomics.com/country/{requests.utils.quote(te_name)}"
-        status, payload, text = _api_get_json(source, url, params={"c": TE_API_KEY, "f": "json"})
-
-        if status in (401, 402, 403, 429):
-            _disable_source(source, f"HTTP {status} (키 오류/권한/한도 초과)")
-            return out
-        if status is not None and status != 200:
-            lowered = (text or "").lower()
-            if "limit" in lowered or "quota" in lowered or "exceed" in lowered:
-                _disable_source(source, "호출 한도 초과")
-            return out
-        if status == 200 and not isinstance(payload, list):
-            lowered = (text or "").lower()
-            if "limit" in lowered or "quota" in lowered or "exceed" in lowered:
-                _disable_source(source, "호출 한도 초과")
-            return out
-        if not isinstance(payload, list):
-            return out
-
-        wanted = {"gdp": "gdp", "inflation rate": "inflation", "unemployment rate": "unemployment"}
-        for row in payload:
-            if not isinstance(row, dict):
-                continue
-            category = str(row.get("Category", "")).strip().lower()
-            key = wanted.get(category)
-            if not key or key in out:
-                continue
-            value = _to_float(row.get("LatestValue"))
-            if value is None:
-                continue
-            year = _year_from_value(row.get("LatestValueDate"))
-
-            if key == "gdp":
-                unit = str(row.get("Unit", "")).lower()
-                if "usd" not in unit:
-                    continue
-                if "trillion" in unit:
-                    value = value * 1000.0
-                elif "million" in unit:
-                    value = value / 1000.0
-                elif "thousand" in unit:
-                    value = value / 1_000_000.0
-            entry = _make_entry(key, value, source, year)
-            if entry:
-                out[key] = entry
-    except Exception as e:
-        log.warning(f"[{code}] Trading Economics 처리 실패: {e}")
-    return out
-
-
 def _fetch_imf_weo(code: str, need: list) -> dict:
     out = {}
     source = "IMF WEO"
@@ -745,13 +716,18 @@ def _fetch_rest_countries(code: str) -> dict:
 
 
 def collect_macro_for_country(country: dict) -> dict:
-    """한 국가의 거시지표를 우선순위대로 수집. 확보하지 못한 지표는 결과에 포함하지 않는다."""
+    """
+    한 국가의 거시지표 수집.
+      인구/GDP/물가/실업률: World Bank (1차) → GDP·물가는 IMF WEO 로 재시도 → 인구는 REST Countries 로 재시도
+      수도: REST Countries
+    확보하지 못한 지표는 결과에 포함하지 않는다.
+    """
     code = country["code"]
     found = {}
     try:
-        found.update(_fetch_trading_economics(code, country.get("name_en", "")))
+        found.update(_fetch_world_bank(code, ["population", "gdp", "inflation", "unemployment"]))
     except Exception as e:
-        log.warning(f"[{code}] 우선순위1 처리 예외, 다음 출처로 전환: {e}")
+        log.warning(f"[{code}] World Bank 처리 예외, 다음 출처로 전환: {e}")
 
     try:
         need = [k for k in ("gdp", "inflation") if k not in found]
@@ -759,15 +735,7 @@ def collect_macro_for_country(country: dict) -> dict:
             for k, v in _fetch_imf_weo(code, need).items():
                 found.setdefault(k, v)
     except Exception as e:
-        log.warning(f"[{code}] 우선순위2 처리 예외, 다음 출처로 전환: {e}")
-
-    try:
-        need = [k for k in ("population", "gdp", "inflation", "unemployment") if k not in found]
-        if need:
-            for k, v in _fetch_world_bank(code, need).items():
-                found.setdefault(k, v)
-    except Exception as e:
-        log.warning(f"[{code}] 우선순위3 처리 예외, 다음 출처로 전환: {e}")
+        log.warning(f"[{code}] IMF WEO 처리 예외, 다음 출처로 전환: {e}")
 
     try:
         rest = _fetch_rest_countries(code)
@@ -808,9 +776,7 @@ def load_economic_data(countries: list) -> tuple:
         log.info("[economic] data/economic_cache.json 이 7일 이내 → API 호출 없이 재사용")
         return cache["countries"], str(cache.get("fetched_at", ""))[:10]
 
-    log.info("[economic] 거시지표 갱신 시작 (TE → IMF WEO → World Bank → REST Countries)")
-    if not TE_API_KEY:
-        log.info("[economic] TE_API_KEY 없음 → Trading Economics 건너뛰고 IMF WEO 로 시작")
+    log.info("[economic] 거시지표 갱신 시작 (World Bank → IMF WEO → REST Countries)")
 
     collected = {}
     api_count = 0
@@ -818,7 +784,7 @@ def load_economic_data(countries: list) -> tuple:
         try:
             data = collect_macro_for_country(country)
         except Exception as e:
-            log.warning(f"[{country.get('code')}] 거시지표 수집 예외, 메타데이터로 대체: {e}")
+            log.warning(f"[{country.get('code')}] 거시지표 수집 예외: {e}")
             data = {}
         collected[country["code"]] = data
         api_count += sum(1 for k in ("population", "gdp", "inflation", "unemployment") if k in data)
@@ -827,12 +793,13 @@ def load_economic_data(countries: list) -> tuple:
     complete = api_count >= expected * 0.5
     now_kst = datetime.now(KST)
 
-    # 직전 캐시(오래된 것)가 있으면 이번에 못 받은 지표를 보충한다.
+    # 직전 캐시(오래된 것)가 있으면 이번에 못 받은 지표를 보충한다. (모두 API 출처 값)
     if isinstance(cache, dict) and isinstance(cache.get("countries"), dict):
         for code, old in cache["countries"].items():
             if code in collected and isinstance(old, dict):
                 for k, v in old.items():
-                    collected[code].setdefault(k, v)
+                    if isinstance(v, dict) and v.get("source") in API_SOURCES:
+                        collected[code].setdefault(k, v)
 
     _write_json_file(ECONOMIC_CACHE_PATH, {
         "fetched_at": now_kst.isoformat(),
@@ -847,102 +814,47 @@ def load_economic_data(countries: list) -> tuple:
 # ---------------------------------------------------------------------------
 # 3) 최저임금 {display, note, source, year}
 # ---------------------------------------------------------------------------
-def _metadata_year() -> int:
-    y = _year_from_value(METADATA_ASOF)
-    return y if y else datetime.now(KST).year
-
-
-def build_min_wage(code: str, raw) -> dict:
-    source = MIN_WAGE_SOURCE_BY_CODE.get(code) or ("Eurostat" if code in EUROSTAT_MIN_WAGE_CODES else "ILO")
-    year = _metadata_year()
-    display, note = "-", ""
-
-    try:
-        if isinstance(raw, dict):
-            display = str(raw.get("display", "-")).strip() or "-"
-            note = str(raw.get("note", "") or "").strip()
-            if not _is_bad_value(raw.get("source")):
-                source = str(raw.get("source")).strip()
-            parsed_year = _year_from_value(raw.get("year"))
-            if parsed_year:
-                year = parsed_year
-            else:
-                parsed_year = _year_from_value(note) or _year_from_value(display)
-                if parsed_year:
-                    year = parsed_year
-        elif isinstance(raw, str) and not _is_bad_value(raw):
-            text = raw.strip()
-            m = re.match(r"^(.*?)\s*\((.*)\)\s*$", text)
-            if m:
-                display, note = m.group(1).strip(), m.group(2).strip()
-            else:
-                display = text
-            parsed_year = _year_from_value(note) or _year_from_value(text)
-            if parsed_year:
-                year = parsed_year
-    except Exception as e:
-        log.warning(f"[{code}] 최저임금 파싱 실패, '-' 처리: {e}")
-        display, note = "-", ""
-
-    if _is_bad_value(display) or display == "-" or re.search(r"(없음|해당 없음|n/a)", display, re.IGNORECASE):
-        display = "-"
-
+def build_min_wage(code: str) -> dict:
     if code in NO_STATUTORY_MIN_WAGE:
-        display = "-"
-        note = NO_STATUTORY_MIN_WAGE[code]
-    elif display == "-" and not note:
-        note = "법정 최저임금 정보 없음"
-
-    return {"display": display, "note": note, "source": source, "year": year}
+        return {"display": "-", "note": NO_STATUTORY_MIN_WAGE[code], "source": "ILO", "year": 2025}
+    row = MIN_WAGE_TABLE.get(code)
+    if isinstance(row, dict) and not _is_bad_value(row.get("display")):
+        return {"display": row["display"], "note": row.get("note", ""),
+                "source": row.get("source", "ILO"), "year": row.get("year", "-")}
+    return {"display": PLACEHOLDER_TEXT, "note": "", "source": "ILO", "year": "-"}
 
 
 # ---------------------------------------------------------------------------
-# 프로필 구성
+# 프로필 구성 (내부 수기값 미사용)
 # ---------------------------------------------------------------------------
-def _static_entry(key: str, value, year):
-    if _is_bad_value(value) or str(value).strip() == "-":
-        return None
-    return {"value": value, "display": str(value), "source": STATIC_SOURCE, "year": year}
+def _placeholder_entry() -> dict:
+    return {"value": None, "display": PLACEHOLDER_TEXT, "source": "-", "year": "-"}
 
 
 def build_profile(country: dict, cached: dict, shared: dict = None) -> dict:
     shared = shared or {}
     code = country.get("code", "")
-    meta = country.get("meta_profile", {}) or {}
     cached_profile = (cached or {}).get("profile", {}) or {}
     cached_indicators = cached_profile.get("indicators", {}) if isinstance(cached_profile.get("indicators"), dict) else {}
     econ = (shared.get("economic") or {}).get(code, {}) or {}
-    meta_year = _metadata_year()
 
     indicators = {}
     for key in ("capital", "population", "gdp", "inflation", "unemployment"):
         entry = None
         try:
             api_entry = econ.get(key)
-            if isinstance(api_entry, dict) and not _is_bad_value(api_entry.get("display")):
+            if isinstance(api_entry, dict) and api_entry.get("source") in API_SOURCES and not _is_bad_value(api_entry.get("display")):
                 entry = dict(api_entry)
-                if key == "capital":
-                    meta_capital = meta.get("capital")
-                    if (not _is_bad_value(meta_capital) and re.search(r"[가-힣]", str(meta_capital))):
-                        entry["display"] = str(meta_capital)
             if entry is None:
-                entry = _static_entry(key, meta.get(key), meta_year)
-            if entry is None and isinstance(cached_indicators.get(key), dict):
-                entry = dict(cached_indicators[key])
-            if entry is None and not _is_bad_value(cached_profile.get(key)) and cached_profile.get(key) != "-":
-                entry = {"value": cached_profile.get(key), "display": str(cached_profile.get(key)),
-                         "source": cached_profile.get("stats_source", STATIC_SOURCE), "year": meta_year}
+                old = cached_indicators.get(key)
+                if isinstance(old, dict) and old.get("source") in API_SOURCES and not _is_bad_value(old.get("display")):
+                    entry = dict(old)
         except Exception as e:
             log.warning(f"[{code}] '{key}' 지표 구성 실패: {e}")
             entry = None
-        if entry is None:
-            entry = {"value": None, "display": "-", "source": "-", "year": "-"}
-        indicators[key] = entry
+        indicators[key] = entry if entry is not None else _placeholder_entry()
 
-    raw_min_wage = meta.get("min_wage")
-    if _is_bad_value(raw_min_wage):
-        raw_min_wage = cached_profile.get("min_wage")
-    min_wage = build_min_wage(code, raw_min_wage)
+    min_wage = build_min_wage(code)
 
     sources = []
     years = []
@@ -954,7 +866,7 @@ def build_profile(country: dict, cached: dict, shared: dict = None) -> dict:
         if y:
             years.append(y)
 
-    asof = shared.get("economic_asof") or METADATA_ASOF or "-"
+    asof = shared.get("economic_asof") or "-"
     return {
         "capital": indicators["capital"]["display"],
         "population": indicators["population"]["display"],
@@ -1663,29 +1575,17 @@ def _migrate_exchange_rate_legacy(old_fx: dict, meta: dict) -> dict:
 def _migrate_profile_legacy(old_profile: dict, meta: dict) -> dict:
     old_profile = old_profile if isinstance(old_profile, dict) else {}
     code = meta.get("code", "")
-    meta_profile = meta.get("meta_profile", {}) or {}
     old_indicators = old_profile.get("indicators") if isinstance(old_profile.get("indicators"), dict) else {}
-    old_source = old_profile.get("stats_source")
-    old_source = STATIC_SOURCE if _is_bad_value(old_source) else str(old_source)
-    meta_year = _metadata_year()
 
     indicators = {}
     for key in ("capital", "population", "gdp", "inflation", "unemployment"):
-        entry = old_indicators.get(key) if isinstance(old_indicators.get(key), dict) else None
-        if entry is None:
-            old_value = old_profile.get(key)
-            if not _is_bad_value(old_value) and str(old_value) != "-":
-                entry = {"value": old_value, "display": str(old_value), "source": old_source, "year": meta_year}
-        if entry is None:
-            entry = _static_entry(key, meta_profile.get(key), meta_year)
-        if entry is None:
-            entry = {"value": None, "display": "-", "source": "-", "year": "-"}
-        indicators[key] = entry
+        old = old_indicators.get(key)
+        if isinstance(old, dict) and old.get("source") in API_SOURCES and not _is_bad_value(old.get("display")):
+            indicators[key] = dict(old)
+        else:
+            indicators[key] = _placeholder_entry()
 
-    raw_min_wage = old_profile.get("min_wage")
-    if _is_bad_value(raw_min_wage) or (isinstance(raw_min_wage, str) and raw_min_wage.strip() == "-"):
-        raw_min_wage = meta_profile.get("min_wage")
-    min_wage = build_min_wage(code, raw_min_wage)
+    min_wage = build_min_wage(code)
 
     sources = []
     for entry in indicators.values():
@@ -1704,7 +1604,7 @@ def _migrate_profile_legacy(old_profile: dict, meta: dict) -> dict:
         "indicators": indicators,
         "stats_source": " · ".join(sources) if sources else "-",
         "stats_year": old_profile.get("stats_year", "-"),
-        "stats_asof": old_profile.get("stats_asof") if not _is_bad_value(old_profile.get("stats_asof")) else (METADATA_ASOF or "-"),
+        "stats_asof": old_profile.get("stats_asof") if not _is_bad_value(old_profile.get("stats_asof")) else "-",
     }
 
 
@@ -1777,7 +1677,7 @@ def migrate_legacy_archive_file(path: str, date_str: str) -> None:
         meta_copy = copy.deepcopy(meta)
         old_country = old_by_code.get(meta_copy["code"]) or {}
         old_offices = old_country.get("offices") if isinstance(old_country.get("offices"), list) and old_country.get("offices") else None
-        offices = old_offices if old_offices else meta_copy.get("offices", [])
+        offices = old_offices if old_offices else [OFFICE_PLACEHOLDER]
         new_countries.append({
             "code": meta_copy["code"],
             "region": meta_copy["region"],
@@ -1866,7 +1766,7 @@ def _resolve_offices(country: dict, shared: dict) -> tuple:
         cleaned = [str(n).strip() for n in names if not _is_bad_value(n)]
         if cleaned:
             return cleaned, "Hankook Tire 공식 홈페이지"
-    return copy.deepcopy(country.get("offices", [])), "내부 메타데이터"
+    return [OFFICE_PLACEHOLDER], "확인 중"
 
 
 def collect_country(country: dict, cache_by_code: dict, shared: dict = None) -> dict:
@@ -1932,15 +1832,14 @@ def _build_country_fallback(country_code: str, shared: dict = None) -> dict:
     meta = next((copy.deepcopy(c) for c in COUNTRIES if c["code"] == country_code), None)
     if meta is None:
         meta = {"code": country_code, "region": "ALL", "name_kr": country_code,
-                "name_en": country_code, "currency": "USD", "flag": "un", "offices": [],
-                "meta_profile": {}}
+                "name_en": country_code, "currency": "USD", "flag": "un"}
     offices, offices_source = _resolve_offices(meta, shared or {})
     try:
         profile = build_profile(meta, {}, shared or {})
     except Exception as e:
         log.error(f"[{country_code}] 안전망 프로필 구성 실패: {e}")
         profile = {"capital": "-", "population": "-", "gdp": "-", "inflation": "-", "unemployment": "-",
-                   "min_wage": build_min_wage(country_code, None), "min_wage_note": "",
+                   "min_wage": build_min_wage(country_code), "min_wage_note": "",
                    "indicators": {}, "stats_source": "-", "stats_year": "-", "stats_asof": "-"}
     return {
         "code": meta["code"], "region": meta["region"], "name_kr": meta["name_kr"],
@@ -1961,7 +1860,7 @@ def _prepare_shared_sources() -> dict:
     try:
         shared["offices"] = fetch_hankook_offices(COUNTRIES) or {}
     except Exception as e:
-        log.error(f"한국타이어 공식 거점 정보 처리 실패, 메타데이터 거점으로 대체: {e}")
+        log.error(f"한국타이어 공식 거점 정보 처리 실패, 안내 문구로 대체: {e}")
         shared["offices"] = {}
 
     try:
@@ -1969,7 +1868,7 @@ def _prepare_shared_sources() -> dict:
         shared["economic"] = economic or {}
         shared["economic_asof"] = asof or None
     except Exception as e:
-        log.error(f"거시경제 지표 처리 실패, 메타데이터 정적 값으로 대체: {e}")
+        log.error(f"거시경제 지표 처리 실패, 안내 문구로 대체: {e}")
         shared["economic"] = {}
         shared["economic_asof"] = None
 

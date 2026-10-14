@@ -1,0 +1,1407 @@
+{
+  "updated_at": "2026-10-14T10:10:25.434769+09:00",
+  "refresh_days": 30,
+  "countries": {
+    "KR": {
+      "population": {
+        "value": 51684564.0,
+        "display": "약 5,168만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:27.476869+09:00"
+      },
+      "gdp": {
+        "value": 1872.37496155315,
+        "display": "약 1.87조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:29.988061+09:00"
+      },
+      "inflation": {
+        "value": 2.12309421458659,
+        "display": "2.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:30.760651+09:00"
+      },
+      "unemployment": {
+        "value": 2.683,
+        "display": "2.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:37.987112+09:00"
+      },
+      "min_wage": {
+        "display": "10,030원 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:42.970011+09:00"
+      }
+    },
+    "US": {
+      "population": {
+        "value": 341784857.0,
+        "display": "약 3억 4,178만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:44.342903+09:00"
+      },
+      "gdp": {
+        "value": 30769.7,
+        "display": "약 30.77조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:44.713212+09:00"
+      },
+      "inflation": {
+        "value": 2.94952520485207,
+        "display": "2.9%",
+        "source": "World Bank",
+        "year": 2024,
+        "last_updated": "2026-10-14T10:10:45.578687+09:00"
+      },
+      "unemployment": {
+        "value": 4.028,
+        "display": "4.0%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:10:47.390798+09:00"
+      },
+      "min_wage": {
+        "display": "7.25달러 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:48.440854+09:00"
+      }
+    },
+    "DE": {
+      "population": {
+        "value": 83491249.0,
+        "display": "약 8,349만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:49.976881+09:00"
+      },
+      "gdp": {
+        "value": 5050.92292504705,
+        "display": "약 5.05조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:50.384729+09:00"
+      },
+      "inflation": {
+        "value": 2.17178770949721,
+        "display": "2.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:51.184078+09:00"
+      },
+      "unemployment": {
+        "value": 4.2,
+        "display": "4.2%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:10:52.568097+09:00"
+      },
+      "min_wage": {
+        "display": "12.82유로 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:54.798980+09:00"
+      }
+    },
+    "CN": {
+      "population": {
+        "value": 1406585000.0,
+        "display": "약 14억 658만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:56.211063+09:00"
+      },
+      "gdp": {
+        "value": 19498.0393880426,
+        "display": "약 19.50조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:56.501046+09:00"
+      },
+      "inflation": {
+        "value": 0.0595646916565402,
+        "display": "0.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:57.360834+09:00"
+      },
+      "unemployment": {
+        "value": 5.3,
+        "display": "5.3%",
+        "source": "ILOSTAT",
+        "year": 2020,
+        "last_updated": "2026-10-14T10:10:58.736612+09:00"
+      },
+      "min_wage": {
+        "display": "2,740위안 / 월",
+        "note": "상하이시 기준 (지역별 상이) · 기준: 상하이시 인력자원사회보장국 고시",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:10:58.736656+09:00"
+      }
+    },
+    "HU": {
+      "population": {
+        "value": 9514251.0,
+        "display": "약 951만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:01.939974+09:00"
+      },
+      "gdp": {
+        "value": 246.490213513054,
+        "display": "약 2,465억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:02.310632+09:00"
+      },
+      "inflation": {
+        "value": 4.41198445905566,
+        "display": "4.4%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:03.335817+09:00"
+      },
+      "unemployment": {
+        "value": 4.5,
+        "display": "4.5%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:11:05.014656+09:00"
+      },
+      "min_wage": {
+        "display": "1,672포린트 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:05.826920+09:00"
+      }
+    },
+    "ID": {
+      "population": {
+        "value": 285721236.0,
+        "display": "약 2억 8,572만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:07.527536+09:00"
+      },
+      "gdp": {
+        "value": 1445.6425841638102,
+        "display": "약 1.45조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:07.907712+09:00"
+      },
+      "inflation": {
+        "value": 1.91333443295079,
+        "display": "1.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:08.745224+09:00"
+      },
+      "unemployment": {
+        "value": 4.317,
+        "display": "4.3%",
+        "source": "ILOSTAT",
+        "year": 2023,
+        "last_updated": "2026-10-14T10:11:10.343613+09:00"
+      },
+      "min_wage": {
+        "display": "5,396,761루피아 / 월",
+        "note": "자카르타 주 최저임금(UMP) 기준 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:10.343658+09:00"
+      }
+    },
+    "NL": {
+      "population": {
+        "value": 18087633.0,
+        "display": "약 1,809만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:12.969940+09:00"
+      },
+      "gdp": {
+        "value": 1332.76765110039,
+        "display": "약 1.33조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:17.418088+09:00"
+      },
+      "inflation": {
+        "value": 3.20363967869003,
+        "display": "3.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:18.218108+09:00"
+      },
+      "unemployment": {
+        "value": 4.1,
+        "display": "4.1%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:11:19.716218+09:00"
+      },
+      "min_wage": {
+        "display": "2,228유로 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:20.846517+09:00"
+      }
+    },
+    "TW": {
+      "unemployment": {
+        "value": 3.637,
+        "display": "3.6%",
+        "source": "ILOSTAT",
+        "year": 2021,
+        "last_updated": "2026-10-14T10:11:25.551273+09:00"
+      },
+      "min_wage": {
+        "display": "29,500대만달러 / 월",
+        "note": "시급 196대만달러 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:11:25.551322+09:00"
+      }
+    },
+    "RU": {
+      "population": {
+        "value": 143513328.0,
+        "display": "약 1억 4,351만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:28.308015+09:00"
+      },
+      "gdp": {
+        "value": 2561.31016935874,
+        "display": "약 2.56조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:28.612613+09:00"
+      },
+      "inflation": {
+        "value": 8.71986939402666,
+        "display": "8.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:29.676026+09:00"
+      },
+      "unemployment": {
+        "value": 2.093,
+        "display": "2.1%",
+        "source": "ILOSTAT",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:31.333209+09:00"
+      },
+      "min_wage": {
+        "display": "22,440루블 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:32.455160+09:00"
+      }
+    },
+    "RO": {
+      "population": {
+        "value": 19020271.0,
+        "display": "약 1,902만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:34.160213+09:00"
+      },
+      "gdp": {
+        "value": 428.677977854826,
+        "display": "약 4,287억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:37.975068+09:00"
+      },
+      "inflation": {
+        "value": 7.18903362292063,
+        "display": "7.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:38.811634+09:00"
+      },
+      "unemployment": {
+        "value": 6.4,
+        "display": "6.4%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:11:40.305851+09:00"
+      },
+      "min_wage": {
+        "display": "4,050레이 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:41.457041+09:00"
+      }
+    },
+    "MY": {
+      "population": {
+        "value": 35977838.0,
+        "display": "약 3,598만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:43.005630+09:00"
+      },
+      "gdp": {
+        "value": 472.193128644597,
+        "display": "약 4,722억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:43.293560+09:00"
+      },
+      "inflation": {
+        "value": 1.38060872293691,
+        "display": "1.4%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:44.150431+09:00"
+      },
+      "unemployment": {
+        "value": 4.63,
+        "display": "4.6%",
+        "source": "ILOSTAT",
+        "year": 2020,
+        "last_updated": "2026-10-14T10:11:45.549695+09:00"
+      },
+      "min_wage": {
+        "display": "1,700링깃 / 월",
+        "note": "월 기준 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:45.549735+09:00"
+      }
+    },
+    "MX": {
+      "population": {
+        "value": 131946900.0,
+        "display": "약 1억 3,195만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:48.200327+09:00"
+      },
+      "gdp": {
+        "value": 1832.64136477552,
+        "display": "약 1.83조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:48.515072+09:00"
+      },
+      "inflation": {
+        "value": 3.80957950037393,
+        "display": "3.8%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:49.447338+09:00"
+      },
+      "unemployment": {
+        "value": 2.807,
+        "display": "2.8%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:11:50.916793+09:00"
+      },
+      "min_wage": {
+        "display": "72,488페소 / 연",
+        "note": "법정 최저임금 (연 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:52.151414+09:00"
+      }
+    },
+    "MA": {
+      "population": {
+        "value": 38430770.0,
+        "display": "약 3,843만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:53.531075+09:00"
+      },
+      "gdp": {
+        "value": 182.37425061228,
+        "display": "약 1,824억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:53.895366+09:00"
+      },
+      "inflation": {
+        "value": 0.701902154839544,
+        "display": "0.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:11:58.839574+09:00"
+      },
+      "unemployment": {
+        "value": 10.617,
+        "display": "10.6%",
+        "source": "ILOSTAT",
+        "year": 2017,
+        "last_updated": "2026-10-14T10:12:00.168699+09:00"
+      }
+    },
+    "VN": {
+      "population": {
+        "value": 101598527.0,
+        "display": "약 1억 160만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:02.918983+09:00"
+      },
+      "gdp": {
+        "value": 514.697215165065,
+        "display": "약 5,147억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:03.236825+09:00"
+      },
+      "inflation": {
+        "value": 3.30999314219739,
+        "display": "3.3%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:03.961297+09:00"
+      },
+      "unemployment": {
+        "value": 1.452,
+        "display": "1.5%",
+        "source": "ILOSTAT",
+        "year": 2024,
+        "last_updated": "2026-10-14T10:12:05.360972+09:00"
+      },
+      "min_wage": {
+        "display": "5,310,000동 / 월",
+        "note": "1지역 기준 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:05.361014+09:00"
+      }
+    },
+    "BR": {
+      "population": {
+        "value": 212812405.0,
+        "display": "약 2억 1,281만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:08.363579+09:00"
+      },
+      "gdp": {
+        "value": 2279.9200924921297,
+        "display": "약 2.28조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:08.690980+09:00"
+      },
+      "inflation": {
+        "value": 5.01675279604836,
+        "display": "5.0%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:10.061550+09:00"
+      },
+      "unemployment": {
+        "value": 5.35,
+        "display": "5.3%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:11.575453+09:00"
+      },
+      "min_wage": {
+        "display": "1,518헤알 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:13.163545+09:00"
+      }
+    },
+    "SA": {
+      "population": {
+        "value": 36973555.0,
+        "display": "약 3,697만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:14.801864+09:00"
+      },
+      "gdp": {
+        "value": 1276.94293333333,
+        "display": "약 1.28조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:15.206197+09:00"
+      },
+      "inflation": {
+        "value": 2.03559944812264,
+        "display": "2.0%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:16.047381+09:00"
+      },
+      "unemployment": {
+        "value": 5.954,
+        "display": "6.0%",
+        "source": "ILOSTAT",
+        "year": 2017,
+        "last_updated": "2026-10-14T10:12:17.400136+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:17.400175+09:00"
+      }
+    },
+    "RS": {
+      "population": {
+        "value": 6549143.0,
+        "display": "약 655만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:19.047439+09:00"
+      },
+      "gdp": {
+        "value": 99.9533244729042,
+        "display": "약 1,000억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:19.422925+09:00"
+      },
+      "inflation": {
+        "value": 3.89036786060009,
+        "display": "3.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:20.162888+09:00"
+      },
+      "unemployment": {
+        "value": 7.406,
+        "display": "7.4%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:21.611832+09:00"
+      }
+    },
+    "SE": {
+      "population": {
+        "value": 10596620.0,
+        "display": "약 1,060만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:24.056326+09:00"
+      },
+      "gdp": {
+        "value": 668.9986640820811,
+        "display": "약 6,690억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:24.409027+09:00"
+      },
+      "inflation": {
+        "value": 0.679015259300199,
+        "display": "0.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:25.223525+09:00"
+      },
+      "unemployment": {
+        "value": 8.5,
+        "display": "8.5%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:26.580643+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:26.580683+09:00"
+      }
+    },
+    "ES": {
+      "population": {
+        "value": 49355143.0,
+        "display": "약 4,936만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:28.317120+09:00"
+      },
+      "gdp": {
+        "value": 1906.45330998588,
+        "display": "약 1.91조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:28.687331+09:00"
+      },
+      "inflation": {
+        "value": 2.67326741144651,
+        "display": "2.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:29.587050+09:00"
+      },
+      "unemployment": {
+        "value": 9.9,
+        "display": "9.9%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:31.285617+09:00"
+      },
+      "min_wage": {
+        "display": "9.26유로 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:32.398768+09:00"
+      }
+    },
+    "SG": {
+      "population": {
+        "value": 6111175.0,
+        "display": "약 611만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:33.721514+09:00"
+      },
+      "gdp": {
+        "value": 603.869516998738,
+        "display": "약 6,039억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:34.072374+09:00"
+      },
+      "inflation": {
+        "value": 0.902998495002676,
+        "display": "0.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:34.850520+09:00"
+      },
+      "unemployment": {
+        "value": 2.6,
+        "display": "2.6%",
+        "source": "ILOSTAT",
+        "year": 2018,
+        "last_updated": "2026-10-14T10:12:36.205214+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:36.205255+09:00"
+      }
+    },
+    "AE": {
+      "population": {
+        "value": 11513149.0,
+        "display": "약 1,151만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:37.849280+09:00"
+      },
+      "gdp": {
+        "value": 552.3249190958719,
+        "display": "약 5,523억 달러",
+        "source": "World Bank",
+        "year": 2024,
+        "last_updated": "2026-10-14T10:12:38.230651+09:00"
+      },
+      "inflation": {
+        "value": 1.250865245598,
+        "display": "1.3%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:38.924269+09:00"
+      },
+      "unemployment": {
+        "value": 1.744,
+        "display": "1.7%",
+        "source": "ILOSTAT",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:40.254834+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:40.254874+09:00"
+      }
+    },
+    "GB": {
+      "population": {
+        "value": 69487000.0,
+        "display": "약 6,949만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:41.656032+09:00"
+      },
+      "gdp": {
+        "value": 4002.5875418460096,
+        "display": "약 4.00조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:42.039515+09:00"
+      },
+      "inflation": {
+        "value": 3.88306881625999,
+        "display": "3.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:42.897577+09:00"
+      },
+      "unemployment": {
+        "value": 5.1,
+        "display": "5.1%",
+        "source": "ILOSTAT",
+        "year": 2020,
+        "last_updated": "2026-10-14T10:12:44.865213+09:00"
+      },
+      "min_wage": {
+        "display": "12.02파운드 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:46.054076+09:00"
+      }
+    },
+    "AT": {
+      "population": {
+        "value": 9208163.0,
+        "display": "약 921만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:47.346151+09:00"
+      },
+      "gdp": {
+        "value": 579.470021095418,
+        "display": "약 5,795억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:47.741581+09:00"
+      },
+      "inflation": {
+        "value": 3.52719439956928,
+        "display": "3.5%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:48.561340+09:00"
+      },
+      "unemployment": {
+        "value": 5.9,
+        "display": "5.9%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:50.030783+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:50.030823+09:00"
+      }
+    },
+    "UA": {
+      "population": {
+        "value": 38980376.0,
+        "display": "약 3,898만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:51.310218+09:00"
+      },
+      "gdp": {
+        "value": 214.23331278439701,
+        "display": "약 2,142억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:51.697376+09:00"
+      },
+      "inflation": {
+        "value": 12.7303341026902,
+        "display": "12.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:52.675736+09:00"
+      },
+      "unemployment": {
+        "value": 9.681,
+        "display": "9.7%",
+        "source": "ILOSTAT",
+        "year": 2016,
+        "last_updated": "2026-10-14T10:12:53.985022+09:00"
+      },
+      "min_wage": {
+        "display": "8,647흐리브냐 / 월",
+        "note": "월 기준 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:12:53.985063+09:00"
+      }
+    },
+    "EG": {
+      "population": {
+        "value": 118365995.0,
+        "display": "약 1억 1,837만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:56.230727+09:00"
+      },
+      "gdp": {
+        "value": 365.254630179737,
+        "display": "약 3,653억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:56.577950+09:00"
+      },
+      "inflation": {
+        "value": 14.0735136645933,
+        "display": "14.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:57.569494+09:00"
+      },
+      "unemployment": {
+        "value": 9.1,
+        "display": "9.1%",
+        "source": "ILOSTAT",
+        "year": 2007,
+        "last_updated": "2026-10-14T10:12:58.966523+09:00"
+      },
+      "min_wage": {
+        "display": "7,000이집트파운드 / 월",
+        "note": "민간 부문 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:12:58.966564+09:00"
+      }
+    },
+    "IT": {
+      "population": {
+        "value": 58915656.0,
+        "display": "약 5,892만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:01.435611+09:00"
+      },
+      "gdp": {
+        "value": 2551.55695410035,
+        "display": "약 2.55조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:02.002134+09:00"
+      },
+      "inflation": {
+        "value": 1.5316735709312,
+        "display": "1.5%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:02.704179+09:00"
+      },
+      "unemployment": {
+        "value": 6.3,
+        "display": "6.3%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:04.300732+09:00"
+      },
+      "min_wage": {
+        "display": "-",
+        "note": "단체협약(CBA)으로 결정",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:04.300775+09:00"
+      }
+    },
+    "JP": {
+      "population": {
+        "value": 123366734.0,
+        "display": "약 1억 2,337만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:05.876075+09:00"
+      },
+      "gdp": {
+        "value": 4435.16299997694,
+        "display": "약 4.44조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:06.196033+09:00"
+      },
+      "inflation": {
+        "value": 3.17253034260247,
+        "display": "3.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:06.967956+09:00"
+      },
+      "unemployment": {
+        "value": 2.6,
+        "display": "2.6%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:09.605407+09:00"
+      },
+      "min_wage": {
+        "display": "1,072엔 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:10.799594+09:00"
+      }
+    },
+    "CZ": {
+      "population": {
+        "value": 10886878.0,
+        "display": "약 1,089만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:12.571989+09:00"
+      },
+      "gdp": {
+        "value": 391.02696280047496,
+        "display": "약 3,910억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:12.878900+09:00"
+      },
+      "inflation": {
+        "value": 2.45996367838864,
+        "display": "2.5%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:13.902230+09:00"
+      },
+      "unemployment": {
+        "value": 3.4,
+        "display": "3.4%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:15.583565+09:00"
+      },
+      "min_wage": {
+        "display": "129.80코루나 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:16.846195+09:00"
+      }
+    },
+    "CL": {
+      "population": {
+        "value": 19859921.0,
+        "display": "약 1,986만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:18.146004+09:00"
+      },
+      "gdp": {
+        "value": 357.371159574862,
+        "display": "약 3,574억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:18.479951+09:00"
+      },
+      "inflation": {
+        "value": 4.21294031801535,
+        "display": "4.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:19.621026+09:00"
+      },
+      "unemployment": {
+        "value": 9.869,
+        "display": "9.9%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:21.409880+09:00"
+      },
+      "min_wage": {
+        "display": "519,333페소 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:22.544896+09:00"
+      }
+    },
+    "KZ": {
+      "population": {
+        "value": 20843754.0,
+        "display": "약 2,084만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:23.978975+09:00"
+      },
+      "gdp": {
+        "value": 306.239209650024,
+        "display": "약 3,062억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:24.395121+09:00"
+      },
+      "inflation": {
+        "value": 11.3789456104214,
+        "display": "11.4%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:25.319721+09:00"
+      },
+      "unemployment": {
+        "value": 4.892,
+        "display": "4.9%",
+        "source": "ILOSTAT",
+        "year": 2017,
+        "last_updated": "2026-10-14T10:13:27.076436+09:00"
+      },
+      "min_wage": {
+        "display": "85,000텡게 / 월",
+        "note": "월 기준 · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:27.076477+09:00"
+      }
+    },
+    "CA": {
+      "population": {
+        "value": 41651653.0,
+        "display": "약 4,165만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:29.696301+09:00"
+      },
+      "gdp": {
+        "value": 2319.8997724259198,
+        "display": "약 2.32조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:30.066785+09:00"
+      },
+      "inflation": {
+        "value": 2.07232411149103,
+        "display": "2.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:30.821481+09:00"
+      },
+      "unemployment": {
+        "value": 6.189,
+        "display": "6.2%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:32.187525+09:00"
+      },
+      "min_wage": {
+        "display": "16.57캐나다달러 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:33.254815+09:00"
+      }
+    },
+    "CO": {
+      "population": {
+        "value": 53425635.0,
+        "display": "약 5,343만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:34.494243+09:00"
+      },
+      "gdp": {
+        "value": 457.41003420252304,
+        "display": "약 4,574억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:34.860454+09:00"
+      },
+      "inflation": {
+        "value": 5.14222911946201,
+        "display": "5.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:35.676476+09:00"
+      },
+      "unemployment": {
+        "value": 7.737,
+        "display": "7.7%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:37.673677+09:00"
+      },
+      "min_wage": {
+        "display": "1,423,500페소 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:38.862309+09:00"
+      }
+    },
+    "HR": {
+      "population": {
+        "value": 3876200.0,
+        "display": "약 388만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:40.266969+09:00"
+      },
+      "gdp": {
+        "value": 105.060182186274,
+        "display": "약 1,051억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:40.627823+09:00"
+      },
+      "inflation": {
+        "value": 3.69153459605728,
+        "display": "3.7%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:41.412125+09:00"
+      },
+      "unemployment": {
+        "value": 3.8,
+        "display": "3.8%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:42.853893+09:00"
+      },
+      "min_wage": {
+        "display": "970.00유로 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:44.041190+09:00"
+      }
+    },
+    "TH": {
+      "population": {
+        "value": 71619863.0,
+        "display": "약 7,162만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:45.499207+09:00"
+      },
+      "gdp": {
+        "value": 577.009981112015,
+        "display": "약 5,770억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:45.864504+09:00"
+      },
+      "inflation": {
+        "value": -0.133634356480206,
+        "display": "-0.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:46.592918+09:00"
+      },
+      "unemployment": {
+        "value": 0.671,
+        "display": "0.7%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:48.411753+09:00"
+      },
+      "min_wage": {
+        "display": "400바트 / 일",
+        "note": "방콕 기준 (지역별 337~400바트) · 기준: ILO",
+        "source": "수동 보완",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:48.411793+09:00"
+      }
+    },
+    "TR": {
+      "population": {
+        "value": 85878556.0,
+        "display": "약 8,588만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:51.228333+09:00"
+      },
+      "gdp": {
+        "value": 1597.293229287,
+        "display": "약 1.60조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:51.569917+09:00"
+      },
+      "inflation": {
+        "value": 34.8811700293777,
+        "display": "34.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:52.355275+09:00"
+      },
+      "unemployment": {
+        "value": 8.3,
+        "display": "8.3%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:13:53.796119+09:00"
+      },
+      "min_wage": {
+        "display": "26,006리라 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:54.881494+09:00"
+      }
+    },
+    "PA": {
+      "population": {
+        "value": 4571189.0,
+        "display": "약 457만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:56.812449+09:00"
+      },
+      "gdp": {
+        "value": 90.4626,
+        "display": "약 905억 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:57.134834+09:00"
+      },
+      "inflation": {
+        "value": -0.187950146495633,
+        "display": "-0.2%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:57.968716+09:00"
+      },
+      "unemployment": {
+        "value": 8.306,
+        "display": "8.3%",
+        "source": "ILOSTAT",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:13:59.416115+09:00"
+      }
+    },
+    "PL": {
+      "population": {
+        "value": 36435861.0,
+        "display": "약 3,644만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:02.074764+09:00"
+      },
+      "gdp": {
+        "value": 1035.49178419744,
+        "display": "약 1.04조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:02.413748+09:00"
+      },
+      "inflation": {
+        "value": 3.81419531520146,
+        "display": "3.8%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:03.312549+09:00"
+      },
+      "unemployment": {
+        "value": 3.3,
+        "display": "3.3%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:14:04.663617+09:00"
+      },
+      "min_wage": {
+        "display": "4,666즈워티 / 월",
+        "note": "법정 최저임금 (월 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:05.748585+09:00"
+      }
+    },
+    "FR": {
+      "population": {
+        "value": 68720337.0,
+        "display": "약 6,872만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:07.394646+09:00"
+      },
+      "gdp": {
+        "value": 3366.31592744733,
+        "display": "약 3.37조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:07.759613+09:00"
+      },
+      "inflation": {
+        "value": 0.943824761520197,
+        "display": "0.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:08.497737+09:00"
+      },
+      "unemployment": {
+        "value": 8.1,
+        "display": "8.1%",
+        "source": "ILOSTAT",
+        "year": 2026,
+        "last_updated": "2026-10-14T10:14:10.258637+09:00"
+      },
+      "min_wage": {
+        "display": "11.88유로 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:11.394015+09:00"
+      }
+    },
+    "AU": {
+      "population": {
+        "value": 27614411.0,
+        "display": "약 2,761만 명",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:13.052245+09:00"
+      },
+      "gdp": {
+        "value": 1798.51893368921,
+        "display": "약 1.80조 달러",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:13.362736+09:00"
+      },
+      "inflation": {
+        "value": 2.87403791660173,
+        "display": "2.9%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:14.281143+09:00"
+      },
+      "unemployment": {
+        "value": 4.09,
+        "display": "4.1%",
+        "source": "World Bank",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:16.245573+09:00"
+      },
+      "min_wage": {
+        "display": "24.53호주달러 / 시간",
+        "note": "법정 최저임금 (시간 기준, 현지통화)",
+        "source": "OECD",
+        "year": 2025,
+        "last_updated": "2026-10-14T10:14:17.529866+09:00"
+      }
+    }
+  }
+}

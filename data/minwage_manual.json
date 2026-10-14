@@ -1,0 +1,221 @@
+{
+  "_comment": "OECD 에 없는 국가의 최저임금 수동 보완 테이블. display/note/year/basis 를 직접 수정할 수 있습니다.",
+  "countries": {
+    "KR": {
+      "display": "10,320원 / 시간",
+      "note": "2026년 최저임금",
+      "year": 2026,
+      "basis": "고용노동부 고시"
+    },
+    "CN": {
+      "display": "2,740위안 / 월",
+      "note": "상하이시 기준 (지역별 상이)",
+      "year": 2025,
+      "basis": "상하이시 인력자원사회보장국 고시"
+    },
+    "US": {
+      "display": "7.25달러 / 시간",
+      "note": "연방 기준 (주별 상이)",
+      "year": 2025,
+      "basis": "U.S. Department of Labor"
+    },
+    "CA": {
+      "display": "17.20캐나다달러 / 시간",
+      "note": "온타리오주 기준",
+      "year": 2025,
+      "basis": "Ontario Ministry of Labour"
+    },
+    "DE": {
+      "display": "13.90유로 / 시간",
+      "note": "법정 최저임금",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "HU": {
+      "display": "322,800포린트 / 월",
+      "note": "월 총액 기준",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "UK": {
+      "display": "12.71파운드 / 시간",
+      "note": "21세 이상 National Living Wage",
+      "year": 2026,
+      "basis": "GOV.UK (Low Pay Commission)"
+    },
+    "FR": {
+      "display": "12.02유로 / 시간",
+      "note": "SMIC",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "ES": {
+      "display": "1,184유로 / 월",
+      "note": "14회 지급 기준 (SMI)",
+      "year": 2025,
+      "basis": "Eurostat"
+    },
+    "PL": {
+      "display": "4,806즈워티 / 월",
+      "note": "월 총액 기준",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "CZ": {
+      "display": "22,400코루나 / 월",
+      "note": "월 총액 기준",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "NL": {
+      "display": "14.71유로 / 시간",
+      "note": "21세 이상",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "RO": {
+      "display": "4,050레이 / 월",
+      "note": "월 총액 기준",
+      "year": 2025,
+      "basis": "Eurostat"
+    },
+    "HR": {
+      "display": "1,050유로 / 월",
+      "note": "월 총액 기준",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "TR": {
+      "display": "28,075.5리라 / 월",
+      "note": "순액 기준",
+      "year": 2026,
+      "basis": "Eurostat"
+    },
+    "RU": {
+      "display": "27,093루블 / 월",
+      "note": "법정 최저임금(MROT)",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "UA": {
+      "display": "8,647흐리브냐 / 월",
+      "note": "월 기준",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "EG": {
+      "display": "7,000이집트파운드 / 월",
+      "note": "민간 부문",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "KZ": {
+      "display": "85,000텡게 / 월",
+      "note": "월 기준",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "MX": {
+      "display": "315.04페소 / 일",
+      "note": "일반 최저임금",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "BR": {
+      "display": "1,621헤알 / 월",
+      "note": "연방 최저임금",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "CL": {
+      "display": "529,000페소 / 월",
+      "note": "2025년 7월 적용분",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "CO": {
+      "display": "1,750,905페소 / 월",
+      "note": "교통보조금 별도",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "ID": {
+      "display": "5,396,761루피아 / 월",
+      "note": "자카르타 주 최저임금(UMP) 기준",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "AU": {
+      "display": "24.95호주달러 / 시간",
+      "note": "전국 최저임금",
+      "year": 2025,
+      "basis": "Fair Work Commission"
+    },
+    "JP": {
+      "display": "1,121엔 / 시간",
+      "note": "전국 가중평균 (도쿄 1,226엔)",
+      "year": 2025,
+      "basis": "일본 후생노동성"
+    },
+    "MY": {
+      "display": "1,700링깃 / 월",
+      "note": "월 기준",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "TH": {
+      "display": "400바트 / 일",
+      "note": "방콕 기준 (지역별 337~400바트)",
+      "year": 2025,
+      "basis": "ILO"
+    },
+    "VN": {
+      "display": "5,310,000동 / 월",
+      "note": "1지역 기준",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "TW": {
+      "display": "29,500대만달러 / 월",
+      "note": "시급 196대만달러",
+      "year": 2026,
+      "basis": "ILO"
+    },
+    "SE": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "AT": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "IT": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "SG": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "AE": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "SA": {
+      "display": "-",
+      "note": "단체협약(CBA)으로 결정",
+      "year": 2025,
+      "basis": "수동 보완"
+    }
+  }
+}

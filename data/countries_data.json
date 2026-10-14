@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T10:14:58.574593+09:00",
-  "generated_at_display": "2026-10-14 10:14 KST",
+  "generated_at": "2026-10-14T10:26:30.635056+09:00",
+  "generated_at_display": "2026-10-14 10:26 KST",
   "as_of_display": "2026-10-14 06:00 KST 기준",
   "regions": [
     {
@@ -117,22 +117,22 @@
       },
       "headlines": [
         {
-          "title": "인천서 전자발찌 찬 50대 흉기난동…시민들, 의자로 막으며 제압",
+          "title": "김민석 “신천지, 상당한 정도의 집단 가입 확인…의미 있는 증언 축적”",
           "source": "한겨레",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1EY1NxQTlzNFNscDQwNmVFUF9QU0FuRUJ0Uk9DdmFhVngyc2xyMTNJU0xiVU05RGNDNVRNTVJCRmhoN2dhUlRhZUFzeUJzSDRyNWlSanR0WU5LUDRHNnhXcjRqVQ?oc=5",
-          "summary": "인천서 전자발찌 찬 50대 흉기난동…시민들, 의자로 막으며 제압&nbsp;&nbsp;한겨레'인천 흉기 난동' 상가 여전히 충격...상인들도 '걱정'&nbsp;&n…",
-          "original_title": "인천서 전자발찌 찬 50대 흉기난동…시민들, 의자로 막으며 제압",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VZXliNjI0dGNfX3Y5N3UzVVJmTzJSTXY2RXh0cndMVG9MVV9Qa1RBdXQ1dk9rQzJXTFBSUVBaSGlVOXNGbC1QbW1qaE1zckEwS1V1akhlTjcxWGtMcmRFenVPNEFqTVVIdlVJWjJ2bDJVS3V0?oc=5",
+          "summary": "김민석 “신천지, 상당한 정도의 집단 가입 확인…의미 있는 증언 축적”&nbsp;&nbsp;한겨레김민석 \"신천지 개입, 증언 있다\"...정청래 \"국물도 남김없이…",
+          "original_title": "김민석 “신천지, 상당한 정도의 집단 가입 확인…의미 있는 증언 축적”",
           "original_lang": "ko",
           "is_translated": false,
           "lang": "ko",
           "translated": false
         },
         {
-          "title": "김민석 “신천지, 상당한 정도 집단 가입 확인돼…의미있는 증언도”",
-          "source": "한겨레",
-          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9VZXliNjI0dGNfX3Y5N3UzVVJmTzJSTXY2RXh0cndMVG9MVV9Qa1RBdXQ1dk9rQzJXTFBSUVBaSGlVOXNGbC1QbW1qaE1zckEwS1V1akhlTjcxWGtMcmRFenVPNEFqTVVIdlVJWjJ2bDJVS3V0?oc=5",
-          "summary": "김민석 “신천지, 상당한 정도 집단 가입 확인돼…의미있는 증언도”&nbsp;&nbsp;한겨레김민석 \"신천지 개입, 증언 있다\"...정청래 \"국물도 남김없이 밝히자…",
-          "original_title": "김민석 “신천지, 상당한 정도 집단 가입 확인돼…의미있는 증언도”",
+          "title": "인천경찰청 찾은 이 대통령, 흉기 난동 사건에 “엄정 수사···전자발찌 관리대책 마련해야”",
+          "source": "경향신문",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwLXh3aFFaUWsxQjV6eGhBV0tNQWhiNzZ0Yjg2eC0zQWc0R2hNWjlUVWJIVEF0bVJaZ25rb0FZTmU2TnhYWFI1dkxoM29Qb2F5dTJjZlk3R3NvQdIBX0FVX3lxTFBoTzFSNW1PRTk0eUhPajROeVR4dWNwRFk2dElxZEZKVVY4b21rak1rcWJtZ1U4X0QwODFma3RkRlZFWU0tTFp3YjhEM1pSMVI4TmtzbjQycmlUQVprWlc4?oc=5",
+          "summary": "인천경찰청 찾은 이 대통령, 흉기 난동 사건에 “엄정 수사···전자발찌 관리대책 마련해야”&nbsp;&nbsp;경향신문'인천 흉기 난동' 상가 여전히 충격...상…",
+          "original_title": "인천경찰청 찾은 이 대통령, 흉기 난동 사건에 “엄정 수사···전자발찌 관리대책 마련해야”",
           "original_lang": "ko",
           "is_translated": false,
           "lang": "ko",
@@ -324,18 +324,51 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1339.5,
-        "change_pct": 0.0,
+        "current_rate": 1340.2,
+        "change_pct": 0.45,
         "history_labels": [
+          "11월",
+          "12월",
+          "1월",
+          "2월",
+          "3월",
+          "4월",
+          "5월",
+          "6월",
+          "7월",
+          "8월",
+          "9월",
           "10월"
         ],
         "history_values": [
-          1339.5
+          1461.4,
+          1437.9,
+          1428.8,
+          1432.3,
+          1516.1,
+          1487.4,
+          1495.3,
+          1541.7,
+          1420.6,
+          1377.1,
+          1350.5,
+          1340.2
         ],
-        "source": "Yahoo Finance (USD 교차 환산)",
+        "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
       },
       "headlines": [
+        {
+          "title": "United States Delivers $2.1 Million in Cargo Trucks to Strengthen Panama’s Border Security and Disaster Response Capabilities",
+          "source": "U.S. Embassy in Panama (.gov)",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQcmExYjN5dkhpMUVOb2FQcjd6aEh3M0w3MnByR3hsSjM5eFBCTk42Sm41VFJ6Mzh1VzdXeWtVbGtiUUlEMTM3ZmlqX0tTZk1iTGdQTWV2Q1MzTlhTbldFVE1JcVVPcy1PU0NtczhwVWZhOWJCaEpWWUhMc093MzhodXlfVFZuNWNEZlppU1ZqOW9QX3BPczJPdVMzZU5nQ21qV053Q2N6ZXRRNW5fdTZhY2VFRVQ2NERrb2lDcEZyX2J6NW8temszNERaenVKYWp3ei1qYVl4Z2tlcjJrazdEZlYzWQ?oc=5",
+          "summary": "United States Delivers $2.1 Million in Cargo Trucks to Strengthen Panama’s Border Security…",
+          "original_title": "United States Delivers $2.1 Million in Cargo Trucks to Strengthen Panama’s Border Security and Disaster Response Capabilities",
+          "original_lang": "en",
+          "is_translated": false,
+          "lang": "en",
+          "translated": false
+        },
         {
           "title": "Space Threats: Russia, China are United States’ biggest competitors for space superiority",
           "source": "Space Force — Space Systems Command (.mil)",
@@ -353,17 +386,6 @@
           "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQQUc2X2ZaR3M4elV4amNnTUYtN3VoWlo3Z0ZoajFWTlZSZHI2d3J4MGVJXzNxbXlTaGxvbTR0WkE0ek5ydzNzNFlCd1otVWFMOENsQVMxY1h4TG9jYklUMnRKRmZvc0VwMzAtVUgtQXY5aHhPYUYxT0lnUXk2Z20zVG1xaTdETWVHZktXRUtjNERoSFFhbVZ0SEY4XzF3QW81S2t2UlVYd3BIay1mcXJ2X0U5d0pFVktiRmRSOUIxNEhOU2Y3Nk5PeA?oc=5",
           "summary": "United States Air Force Airman First Class Eric Gavailanez is our Hero of the Match | Octo…",
           "original_title": "United States Air Force Airman First Class Eric Gavailanez is our Hero of the Match | October 14, 2026",
-          "original_lang": "en",
-          "is_translated": false,
-          "lang": "en",
-          "translated": false
-        },
-        {
-          "title": "SS United States, which was docked in Philadelphia for decades, set to be sunk off Florida coast in November",
-          "source": "CBS News",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSWFOSUVZdnR1dDM0V2JLNzJ6YlN2RVdRaEZuYUttbmtncV9UQ2pBWE01VlBCcnhzRi1tZFI2UTF5WFBBbm5ZYkpYNTRvM1pkVmNHalo5SzlKN1lJU0VFdG13dUVCTmY3YmdZLU84Tmh0c2lQdXo1ZFU3dnZyeUtaX0FIWXFaRW9tY3Fid3RFZHB3Q053NWc?oc=5",
-          "summary": "SS United States, which was docked in Philadelphia for decades, set to be sunk off Florida…",
-          "original_title": "SS United States, which was docked in Philadelphia for decades, set to be sunk off Florida coast in November",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -546,8 +568,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.3,
-        "change_pct": 0.82,
+        "current_rate": 1500.2,
+        "change_pct": 0.81,
         "history_labels": [
           "11월",
           "12월",
@@ -574,7 +596,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.3
+          1500.2
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -632,13 +654,24 @@
               "is_translated": false
             },
             {
-              "title": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’",
-              "desc": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’&nbsp;&nbsp;매일일보",
-              "source": "매일일보",
-              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yVlY3Yk1lck9hT1o0bDFVdDAtZ2gxdWh5aVU3eGVEa3BNOXdQQUJLd2QycklLQVppZHFvMmdMeG1CbWJfWXhuM05QWFFBNGEySmtSdWVvR2FjQkNKai0wbExRdXA?oc=5",
+              "title": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차",
+              "desc": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차&nbsp;&nbsp;라온신문",
+              "source": "라온신문",
+              "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zeDhyd1BpRFNGUVA1X1hkMDI2bEdtZHM0WFRMMWJFeUEwLUt2Z3h5bjJYUWp6RkNRYWp3dEQwSFo0OWgyYllwZm9IWFBXTkxuYzRMd2R3eXBGT0dkRDZBTw?oc=5",
               "lang": "ko",
               "translated": false,
-              "original_title": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’",
+              "original_title": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차",
+              "original_lang": "ko",
+              "is_translated": false
+            },
+            {
+              "title": "현대차·기아, 유럽서 전동화 전략 공개... 렉서스 ES 올해의 차 외[시경Today-자동차]",
+              "desc": "현대차·기아, 유럽서 전동화 전략 공개... 렉서스 ES 올해의 차 외[시경Today-자동차]&nbsp;&nbsp;시장경제신문",
+              "source": "시장경제신문",
+              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5nOEs1N0tsYmhXRmhCc19ZekNQY3BQZ2ktY1RZaHZWUWJzXzNQT1RRdDJwXzBpM0w0TkQ5dTlpQVk3Y3ZuemZIb1ZJVVVGUHBOYU1FcjBTWFozQjhVbWgwMC1KbXB0Rlp5RFVPUWIxdVA?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": "현대차·기아, 유럽서 전동화 전략 공개... 렉서스 ES 올해의 차 외[시경Today-자동차]",
               "original_lang": "ko",
               "is_translated": false
             },
@@ -650,17 +683,6 @@
               "lang": "ko",
               "translated": false,
               "original_title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
-              "original_lang": "ko",
-              "is_translated": false
-            },
-            {
-              "title": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차",
-              "desc": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차&nbsp;&nbsp;라온신문",
-              "source": "라온신문",
-              "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0zeDhyd1BpRFNGUVA1X1hkMDI2bEdtZHM0WFRMMWJFeUEwLUt2Z3h5bjJYUWp6RkNRYWp3dEQwSFo0OWgyYllwZm9IWFBXTkxuYzRMd2R3eXBGT0dkRDZBTw?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": "독일도 전기차 판매 증가...9월 등록 34.5%가 전기차",
               "original_lang": "ko",
               "is_translated": false
             }
@@ -683,17 +705,6 @@
               "is_translated": false
             },
             {
-              "title": "The EOR mismatch that's costing HR teams time and budget",
-              "desc": "The EOR mismatch that's costing HR teams time and budget&nbsp;&nbsp;HR Executive",
-              "source": "HR Executive",
-              "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOT1lpOWpYX0FBbDQ5MlBja0pXbDhYRkNodjBsaXdnblpWVkJKUWJaTTRMQnd6N1dTS256YTBjNzVud1pYNWkwUUxPTzlMa1gydzNlNmlwVkVpNlVsanZuOGdLRURpeks2YWp6Z2M0ZHpPU1c0YlI0UjFlaU9Wa2JDekl1cGFXRVk?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "The EOR mismatch that's costing HR teams time and budget",
-              "original_lang": "en",
-              "is_translated": false
-            },
-            {
               "title": "Germany",
               "desc": "Germany - Security, Politics, Economy&nbsp;&nbsp;Britannica",
               "source": "Britannica",
@@ -712,6 +723,17 @@
               "lang": "en",
               "translated": false,
               "original_title": "Germany to Raise Minimum Wage: What Pension Can You Receive?",
+              "original_lang": "en",
+              "is_translated": false
+            },
+            {
+              "title": "HR giant ordered to pay $400,000 to job applicant who wanted…",
+              "desc": "HR giant ordered to pay $400,000 to job applicant who wanted to bring a service dog to wor…",
+              "source": "Business Insider",
+              "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQnB0Mlg2LVo1amJCNHlKWmZNSGoyVUMtMEYzU1JZcGROZUFEQnlXWDd5aHdDMnY4SUNoSE5iUHctenFyelQ3YmlnZ1VKUHZzaHV2Zy1zM1Jhdk5tR1ZwWGdPWkk1YWJmWEZ1Y2FFQkdHYUV3bHFwZmg3WGc5MEpNM2dCc2lNZ1d5aFFWRDlqd2hZTDRo?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "HR giant ordered to pay $400,000 to job applicant who wanted to bring a service dog to work",
               "original_lang": "en",
               "is_translated": false
             }
@@ -812,8 +834,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 200.5,
-        "change_pct": 0.56,
+        "current_rate": 200.6,
+        "change_pct": 0.61,
         "history_labels": [
           "11월",
           "12월",
@@ -840,7 +862,7 @@
           210.3,
           204.7,
           201.5,
-          200.5
+          200.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -901,7 +923,7 @@
               "title": "중국 자동차 완성차 업체 20개사 파리 모터쇼 참가, 유럽 시장 공략 점유율 확대",
               "desc": "중국 자동차 완성차 업체 20개사 파리 모터쇼 참가, 유럽 시장 공략 점유율 확대&nbsp;&nbsp;다나와 자동차",
               "source": "다나와 자동차",
-              "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JRkJMUUNLTjdyWjl4RE5NRFduRllsOWdWZU0tY3VOSWdXMUpvWURqRWF6UnVJN3VKcjRnOTM3LXc2OWpkeGE1WTBTODA4M0hnTHZhdUVlc2FyMzQ0UEU1aXNxbU9xVWtrU1lGQWtsaGRWZw?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1oQjQ1OW1uU0xJREpLTTRUcUdiT2tlNFF5T2pvZllNV2lZNTVvQ2FnMUZ2bzJ5MlFFdmwzWWltZzZ2YmZ6UGEzN0Z6eGl4anlYUWM2Vm5LWS1jd29XSnJXWGlMNmRyTTF0UnhNMTBoZmlFSnhwZTNZcXNfSQ?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": "중국 자동차 완성차 업체 20개사 파리 모터쇼 참가, 유럽 시장 공략 점유율 확대",
@@ -1057,7 +1079,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.1,
-        "change_pct": 1.1,
+        "change_pct": 1.14,
         "history_labels": [
           "11월",
           "12월",
@@ -1153,13 +1175,13 @@
               "is_translated": false
             },
             {
-              "title": "한국타이어, 타임 선정 ‘2026 세계 최고의 기업’…매출 10조·ESG 성과 주목",
-              "desc": "한국타이어, 타임 선정 ‘2026 세계 최고의 기업’…매출 10조·ESG 성과 주목&nbsp;&nbsp;나눔경제뉴스",
-              "source": "나눔경제뉴스",
-              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5CTHFBbDI0WXAwOC00RFJ5eHZ2NE5kWHVPV1I2emd3S2JYYWRoLUZJRmZBR05lUFVhNGRNcFItUl9zM3lUd1FDOEY4aWI0SXo4T2puckg2R0lYZXI2YWxyRFppV0h3aGxFMW9KTg?oc=5",
+              "title": "한국타이어, 美 타임지 '2026 세계 최고기업'에 이름 올렸다",
+              "desc": "한국타이어, 美 타임지 '2026 세계 최고기업'에 이름 올렸다&nbsp;&nbsp;뉴스웍스",
+              "source": "뉴스웍스",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5jYVUtbzFKaWhyVWFRQWV5SzhFay1jR0xib050S1RqTUJxRURzcW9NcXRjVUpmZFUxajBzMkstcW1zN0dhakM4MmxmVTRTMkgwMG5JZUx2R29hazhZV3ZsRm9nZDYtZ2xzd2x0b2lLMNIBc0FVX3lxTFB6dlBGSC1kaTlGd2JpUkJfRW1zdlZxWUhzVW5IZlY1LTIzVHE1bEpLSGcxemFPQzF6bm85TkJjU1JSZEZJX2xUVEdJSE5oaFpzMzZLLXVSTmpMUzJ1NUZwRXhIYXVhbkVpTFI3WHpxQnBYSGc?oc=5",
               "lang": "ko",
               "translated": false,
-              "original_title": "한국타이어, 타임 선정 ‘2026 세계 최고의 기업’…매출 10조·ESG 성과 주목",
+              "original_title": "한국타이어, 美 타임지 '2026 세계 최고기업'에 이름 올렸다",
               "original_lang": "ko",
               "is_translated": false
             },
@@ -1513,8 +1535,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.3,
-        "change_pct": 0.82,
+        "current_rate": 1500.2,
+        "change_pct": 0.81,
         "history_labels": [
           "11월",
           "12월",
@@ -1541,7 +1563,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.3
+          1500.2
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -1610,17 +1632,6 @@
               "is_translated": false
             },
             {
-              "title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Bi…",
-              "desc": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spend…",
-              "source": "PR Newswire",
-              "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNbDdXV0ZaRTRDU0NqN0JFci1Cc2Fxc0RvLXAwSGM3S2lNYjY3UWNseFY1bVRaM0htWVVSNkxzZ3VEMnV4VXdITFdDMVJVamxrSHhvY1ZLbXAzcThXNWxjVndhUEJxcGVUaUI4SFJjNUtic2N3eXUzY1A4d1pIbnltSkVYREJKSDQ2UFRnRnBVenRkMWVnWVBrcTdEWUtDS2g4TmFMMjc5UHpUcUFPNVZVazcwLVktbFc1cm5Fc0ZyMXlCYkVFVzhmbGdVWUphV0ludkdCaUhETjhuaDBDdmh3TXFfTFh0S092S09vNUVMX04zaGp6TEI1VVVZbTJpYnpJVlZvYjFONWZieGNrLW1xR1JsTmFCWEZKbkVWSy1MbHJUUlZIbVV3elZoalFyWmFzc2ZKUmxQbw?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
-              "original_lang": "en",
-              "is_translated": false
-            },
-            {
               "title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Cla…",
               "desc": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars&nbsp;&nbsp;Republica…",
               "source": "Republican Herald",
@@ -1628,6 +1639,17 @@
               "lang": "en",
               "translated": false,
               "original_title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars",
+              "original_lang": "en",
+              "is_translated": false
+            },
+            {
+              "title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Bi…",
+              "desc": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spend…",
+              "source": "PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNbDdXV0ZaRTRDU0NqN0JFci1Cc2Fxc0RvLXAwSGM3S2lNYjY3UWNseFY1bVRaM0htWVVSNkxzZ3VEMnV4VXdITFdDMVJVamxrSHhvY1ZLbXAzcThXNWxjVndhUEJxcGVUaUI4SFJjNUtic2N3eXUzY1A4d1pIbnltSkVYREJKSDQ2UFRnRnBVenRkMWVnWVBrcTdEWUtDS2g4TmFMMjc5UHpUcUFPNVZVazcwLVktbFc1cm5Fc0ZyMXlCYkVFVzhmbGdVWUphV0ludkdCaUhETjhuaDBDdmh3TXFfTFh0S092S09vNUVMX04zaGp6TEI1VVVZbTJpYnpJVlZvYjFONWZieGNrLW1xR1JsTmFCWEZKbkVWSy1MbHJUUlZIbVV3elZoalFyWmFzc2ZKUmxQbw?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
               "original_lang": "en",
               "is_translated": false
             }
@@ -1733,7 +1755,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 41.6,
-        "change_pct": -0.44,
+        "change_pct": -0.34,
         "history_labels": [
           "11월",
           "12월",
@@ -1778,22 +1800,22 @@
           "translated": false
         },
         {
-          "title": "US Taiwan policy will be watched closely during Trump's China visit",
-          "source": "ABC News - Breaking News, Latest News and Videos",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdDhSS1hDWERtcmJTeHZKNXY2MGpZUUdjeWZ6Y05wb0hISXFjM2J2dzR3Ykt4b2tTVVFwczN2MzF6dk5pLTlnVkZZVjB0NFdvM1BBM3E1U0c1eUFCZmg2YU9VczR2TE1FbDNQZlJaX0U4ckx4QzMybjZRU2lQTGRNdTFMRmVlbThRVmtucExfLUJMZEkyVm5XbzA1MHNCSFAz0gGmAUFVX3lxTE9RdXNzT01UczhmQV9Ua0NJUTVqaXQ2V2RHUDN4bmQ3S1B1cDduV2J1NkV0ZFlJSzhTRWlHM1RMaUEyWTdRUnh2clBIekY2bFFnRjB4YUhKek10MS1BaGtPd0dleW1qZzBTTkJwRHNnTncyR2wxNHJyWVJxM3dwVnNQMEFQWEhka0xXVGVUbnFyd0VxdFJYRF9MdDc1MlViYjZqaHM5eXc?oc=5",
-          "summary": "US Taiwan policy will be watched closely during Trump's China visit&nbsp;&nbsp;ABC News -…",
-          "original_title": "US Taiwan policy will be watched closely during Trump's China visit",
+          "title": "Repairing America’s signaling on Taiwan",
+          "source": "Brookings",
+          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IMG9vN1MwSWNQalYyMGItM1dUSkhqY2h3Qkt1SGQzY09wWmRCbngxZjd0ZHBQTUhoeUJDUG5qYkMtTzZMZVV6cmJ1OE9HbmRxS19ub0tfZXBtX21EeWV1eUo3eVpkMHVHaDAxbFhGNDFjM1N5cDJtRmVsYlJxQm8?oc=5",
+          "summary": "Repairing America’s signaling on Taiwan&nbsp;&nbsp;Brookings",
+          "original_title": "Repairing America’s signaling on Taiwan",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
           "translated": false
         },
         {
-          "title": "Repairing America’s signaling on Taiwan",
-          "source": "Brookings",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1IMG9vN1MwSWNQalYyMGItM1dUSkhqY2h3Qkt1SGQzY09wWmRCbngxZjd0ZHBQTUhoeUJDUG5qYkMtTzZMZVV6cmJ1OE9HbmRxS19ub0tfZXBtX21EeWV1eUo3eVpkMHVHaDAxbFhGNDFjM1N5cDJtRmVsYlJxQm8?oc=5",
-          "summary": "Repairing America’s signaling on Taiwan&nbsp;&nbsp;Brookings",
-          "original_title": "Repairing America’s signaling on Taiwan",
+          "title": "Trump says Taiwan agrees to buy 30% of gas from Alaska pipeline",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUkhxakRwVWtIYkFQMFgtVExzbndLT3hSSGpUMGRWZ3dtVzhDdVR6ZFpXNmRnOWY5bDd5QjJhdFBxeGIxVnQ5bXphb0d6bjMzaW4wdFZ3eUhlMmp3cHo1SWRYVFh4bmFIV1J2QlBvWUZwdDg1NHpaMm5kcnB6U3ROMWhJbzBGUTVaSE5sVUZwaUl3UTZNWjJXemNSZjA3dU1oaXpXRi1n?oc=5",
+          "summary": "Trump says Taiwan agrees to buy 30% of gas from Alaska pipeline&nbsp;&nbsp;Reuters",
+          "original_title": "Trump says Taiwan agrees to buy 30% of gas from Alaska pipeline",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -1966,7 +1988,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 16.0,
-        "change_pct": 0.75,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -2187,8 +2209,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 281.3,
-        "change_pct": 0.72,
+        "current_rate": 281.4,
+        "change_pct": 0.76,
         "history_labels": [
           "11월",
           "12월",
@@ -2215,7 +2237,7 @@
           312.4,
           303.8,
           290.5,
-          281.3
+          281.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -2244,11 +2266,11 @@
           "translated": false
         },
         {
-          "title": "Norway vs. Romania (13 Oct, 2026) Live Score",
+          "title": "Cricket Video",
           "source": "ESPN",
-          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB6dGg1TkhvUkdqOVh2am5rRUdUY01MdmdXS2VwVmU3TmlKZXM3NG9aaHhhRk1Lb0pPV2ttMnlINnN4ejBRNVlnUFkzcWtOUXFoTG4tUjREb1BmMlYxNXdjdExiMUZPNFd1?oc=5",
-          "summary": "Norway vs. Romania (13 Oct, 2026) Live Score&nbsp;&nbsp;ESPN",
-          "original_title": "Norway vs. Romania (13 Oct, 2026) Live Score",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNYWRQZjRxaVVnNm5YSHFaMENJY2FQUHBsRDJia1luWnJZS01qZkFCSHcta2xjRnpBRTB6MXhyd093QmRLREFZLW9GYXhWRHJPYUtqMjMwN3U5T1UtRWdSRkhKZ1ozYWdXNjBmeWV3QldYc3JDVURseVlSdnZoOFowYWVOVEpWZzVaLXZPR0NKNEcyTnJMc2Z5NlhlSzM4Sk0?oc=5",
+          "summary": "Cricket Video - Romania Women vs Sweden Women 6th Match 2026 Match Highlights | ESPN.com&n…",
+          "original_title": "Cricket Video",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -2522,17 +2544,6 @@
               "original_title": "Budget2027 | Mandated or arbitrary wage hikes without systemic productivity increases, creates challenging economic loop",
               "original_lang": "en",
               "is_translated": false
-            },
-            {
-              "title": "World Bank: M’sian Salaries Are Rising Faster Than Productiv…",
-              "desc": "World Bank: M’sian Salaries Are Rising Faster Than Productivity | WeirdKaya&nbsp;&nbsp;New…",
-              "source": "Newswav",
-              "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZHJZWXFlX3VUMk8zWUdjSlcyT2ROVzM0aVJnbS1EenlSMTNKdjlFajE5LVVtdjJsOFl1SkZpS3VtbzY1TExMTHhuSkxoZzRjenlhQ2tCUmp6RnZzWDR5NW9GY3IxY05IX280elVSeUY2SDltcnVTVDJwX3ZFLVRFakxjMWNneXpnMnFyMGZPT0c0bDNCbGNwUDZUVE94NDl2a3pBMVVVNXdpX29DQ2F3VlpwUQ?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "World Bank: M’sian Salaries Are Rising Faster Than Productivity | WeirdKaya",
-              "original_lang": "en",
-              "is_translated": false
             }
           ]
         }
@@ -2610,7 +2621,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 72.9,
-        "change_pct": -0.19,
+        "change_pct": -0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -2684,17 +2695,6 @@
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
             {
-              "title": "멕시코 9월 자동차 수출 12% 감소, 미 관세 여파로 생산·수출 동반 타격",
-              "desc": "멕시코 9월 자동차 수출 12% 감소, 미 관세 여파로 생산·수출 동반 타격&nbsp;&nbsp;다나와 자동차",
-              "source": "다나와 자동차",
-              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvRUJUN3pRM3dtLUVjM0lCRnJLZUxwUnN0LXRhWG5yZVB1YjhHZTlKakFwRTlWZEt1TE1Dem1pVGVSU25aaHJYQ0JFSHN3Q211anlEYTBVcjF1NnlRRnRIZHpINExOQV82TjZzRGg2N2pHbkRLVmNCMEJTOA?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": "멕시코 9월 자동차 수출 12% 감소, 미 관세 여파로 생산·수출 동반 타격",
-              "original_lang": "ko",
-              "is_translated": false
-            },
-            {
               "title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
@@ -2724,6 +2724,17 @@
               "lang": "ko",
               "translated": false,
               "original_title": "HS효성첨단 '알짜' 인테리어PU, 해외 영토 확장 속도 : 네이버 블로그",
+              "original_lang": "ko",
+              "is_translated": false
+            },
+            {
+              "title": "또 하나의 HS효성, 해외 생산거점 확장",
+              "desc": "또 하나의 HS효성, 해외 생산거점 확장&nbsp;&nbsp;주간현대",
+              "source": "주간현대",
+              "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBBX0RIekRDeHRzd0tfSTRsNUJCbWpWZTdWeFdZMExtczhDdk54VkVVTXlodU5jMGdCd0NBRG9YeHJnZm42alhqMzRR?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": "또 하나의 HS효성, 해외 생산거점 확장",
               "original_lang": "ko",
               "is_translated": false
             }
@@ -2764,17 +2775,6 @@
               "lang": "en",
               "translated": false,
               "original_title": "How the average US salary stacks up globally | lovemoney.com",
-              "original_lang": "en",
-              "is_translated": false
-            },
-            {
-              "title": "Qualifying for Legal Residency in Mexico in 2026",
-              "desc": "Qualifying for Legal Residency in Mexico in 2026&nbsp;&nbsp;Mexperience",
-              "source": "Mexperience",
-              "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBuTVRVbTl6QkRNa01iaFdXd1NqOVQtM0NodGxtR0pmcTB0RU9SSTdwVEowbEtnZnBDVW83d1RaMHZxMWZhV2NJaWhQMjNvSzlwX1BOZXlyclhNZ0Vxak13ZVQ2ekkxSVkwRktybW0wdklKRU9xTEtKRg?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Qualifying for Legal Residency in Mexico in 2026",
               "original_lang": "en",
               "is_translated": false
             }
@@ -2854,7 +2854,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 136.7,
-        "change_pct": -3.98,
+        "change_pct": -3.93,
         "history_labels": [
           "11월",
           "12월",
@@ -3030,7 +3030,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "change_pct": 0.4,
+        "change_pct": 0.45,
         "history_labels": [
           "11월",
           "12월",
@@ -3086,11 +3086,11 @@
           "translated": false
         },
         {
-          "title": "Get a Taste of Vietnam’s Historic Chinatown at Qua in Little Saigon",
-          "source": "Eater Los Angeles",
-          "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVzU2ZWJRdnozaVAwZTRCOHA2NGNsR214OU0zemM1S0V3VTlDZnhoellJb1g1ckFZZWVuWDF5QkFfME15emVYeHJMOFJzYzZZSnpKNndrUV9ERDQ0QS1pSHZ2QmstSEFvSF9JTTJMNWxERHFKMmtRRjBfc1REQjdVaXlSemRzeExO?oc=5",
-          "summary": "Get a Taste of Vietnam’s Historic Chinatown at Qua in Little Saigon&nbsp;&nbsp;Eater Los A…",
-          "original_title": "Get a Taste of Vietnam’s Historic Chinatown at Qua in Little Saigon",
+          "title": "Vietnam: Free Abducted Democracy Group Activists",
+          "source": "Human Rights Watch",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUzA3UHhQckhZSXRqMVBLT1NBMGVySXJnLWwxY2ZjeW50ZUEzdjVKbDVSYW5DRmt5b0xBa0pqQTVQR2x2SVRZMGZDRjg1THNYTjFGc1NiLWIyclFtbVFnOWZ5Y0FPeDcwQlhBMTRfTm9oME5ldDlYZ2ZWMzdLYmI3bFlGS0sxZWdBOUlV?oc=5",
+          "summary": "Vietnam: Free Abducted Democracy Group Activists&nbsp;&nbsp;Human Rights Watch",
+          "original_title": "Vietnam: Free Abducted Democracy Group Activists",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -3262,8 +3262,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 268.7,
-        "change_pct": 0.41,
+        "current_rate": 268.8,
+        "change_pct": 0.45,
         "history_labels": [
           "11월",
           "12월",
@@ -3290,7 +3290,7 @@
           279.8,
           265.3,
           259.6,
-          268.7
+          268.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/BRLKRW=X"
@@ -3319,11 +3319,11 @@
           "translated": false
         },
         {
-          "title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom",
-          "source": "Committee to Protect Journalists",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMXVkZlNHV01obkdBNjRBN3hEcGppYWMtdjVmQ1VNSnZqZVVfclFqeW9BYTZkYnNkbHROVGN3UUpZQXlWdU55cHpsaVpCN1ZOR1lrMndQUU43VWhKbnFqSlFIMVE4N0Z4aUc5OHk5Mjl0U2xhcm1rVWdBX3hXUlZvSk1TNFQwUnEzVXFVV1BfekpwQVdSS0gyWkxOZndaOTDSAaQBQVVfeXFMUDUxZk5pMmt5UkpqbG1fS21OdXRrUXFjeDlFU0FjaHM3THBQQVIzLXJVVUp4aDZsR1pHOFRHV2NXWXFXUEZSQm9iMWpRRUl0RFRJNldWZUp5ZlBwRTdiUzlTbjUybGJ3UkFSRExTWXJvN3BleExwLTFkbDFPVDZpZThyeTNkM3VEc3JhSDNiTllXZU81Rk9wcENmRjJwbjQxNVVMS20?oc=5",
-          "summary": "CPJ, partners warn about Brazil’s election and its impacts on press freedom&nbsp;&nbsp;Com…",
-          "original_title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom",
+          "title": "2026 COA Conference: Brazil",
+          "source": "AS/COA",
+          "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1kb3I4SmtWUTY4TC04dF9KUGN1a0N2NU9qU0o2QzB5T0JtdktTekJObDdOWUhWRWttamJSSGZ3bVhobU5TZUp0dlF3ZEpPM0JqQmZ2aGJYMTl5M1gyWGtiSFhRSUI4SXM?oc=5",
+          "summary": "2026 COA Conference: Brazil&nbsp;&nbsp;AS/COA",
+          "original_title": "2026 COA Conference: Brazil",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -3484,8 +3484,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 356.7,
-        "change_pct": -2.69,
+        "current_rate": 356.9,
+        "change_pct": -2.64,
         "history_labels": [
           "11월",
           "12월",
@@ -3512,7 +3512,7 @@
           378.3,
           376.0,
           370.8,
-          356.7
+          356.9
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
@@ -3729,7 +3729,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 12.8,
-        "change_pct": 0.41,
+        "change_pct": 0.46,
         "history_labels": [
           "11월",
           "12월",
@@ -3904,8 +3904,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 134.5,
-        "change_pct": 1.2,
+        "current_rate": 134.6,
+        "change_pct": 1.28,
         "history_labels": [
           "11월",
           "12월",
@@ -3932,7 +3932,7 @@
           148.9,
           143.4,
           135.2,
-          134.5
+          134.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SEKKRW=X"
@@ -4383,8 +4383,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1046.4,
-        "change_pct": 0.47,
+        "current_rate": 1046.5,
+        "change_pct": 0.49,
         "history_labels": [
           "11월",
           "12월",
@@ -4411,7 +4411,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1046.4
+          1046.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -4440,11 +4440,11 @@
           "translated": false
         },
         {
-          "title": "Singapore third-quarter GDP growth softens from four-year high but beats estimates",
-          "source": "CNBC",
-          "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBEaE05UWFsRE9ZTEVFTVhPaTZEMkdrOFJUbWQ0NElpSmtEVkVSOFhVcF9mc0VONFBXLWYzZ2pmNFNIYmduVjFJcU0zLTZTdEp5dnRuYUtQZFl0ZDJwWlVTdUs2QdIBaEFVX3lxTE9oVS1MZS1tSTQ5NFpwU1FCa2FIYUFEc2gtVWhnQTI0ekwyeHNGdUtvVHFwZmh5dTZYMEhhODdSZzVnajAtYmxtOU93blpKN2hJUURoNUszYWwxQmVkODdqNzJUTDMyVzdL?oc=5",
-          "summary": "Singapore third-quarter GDP growth softens from four-year high but beats estimates&nbsp;&n…",
-          "original_title": "Singapore third-quarter GDP growth softens from four-year high but beats estimates",
+          "title": "Singapore keeps monetary policy unchanged, surprising analysts",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTkZsNjgxcWtmVi11UjBKNWxKVG5VQnk5WWpyakxHdnFWVFRsMldXNFgtV1FRRExUWlBvTmRiTTBhRS1CNDE0MWlpUjR4bk9iUHJqcl9qUTViVHB3by1LM1Q1MDR0VjVMWU9qYzRfSEFsRnkzZktPdGhPbTNGdFYyY3BVcmVVem1oT25OdUF0c2dLTllmT3hhTDNfN2VVa0l2Q1U4cl9hSEswdmNVWkg5bFlQQ2pGaWs?oc=5",
+          "summary": "Singapore keeps monetary policy unchanged, surprising analysts&nbsp;&nbsp;Reuters",
+          "original_title": "Singapore keeps monetary policy unchanged, surprising analysts",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -4627,8 +4627,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 364.6,
-        "change_pct": 0.35,
+        "current_rate": 365.0,
+        "change_pct": 0.44,
         "history_labels": [
           "11월",
           "12월",
@@ -4655,7 +4655,7 @@
           386.9,
           375.1,
           367.8,
-          364.6
+          365.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
@@ -4861,7 +4861,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1774.7,
-        "change_pct": 0.72,
+        "change_pct": 0.73,
         "history_labels": [
           "11월",
           "12월",
@@ -4895,17 +4895,6 @@
       },
       "headlines": [
         {
-          "title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework",
-          "source": "Global Regulation Tomorrow",
-          "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNNzNiSWN0TkZmVjBvNDNPdndzenZIQjNVR1RPYldzZmp3RnBJa1JlNlIxc0VPd2hGR0Fka0gtWXlJNmVzRUVLTG10RmI4Wm4tOFhENThnWkJRcExwcVFSR1g0RjFyUWhmWERTZ0NBVU4zY1FVdkRrdEVzeHlvdE52NW91RzM3aHRqejhCcm9NSThja2FxMXJodVJuSm42U2Y3MTBPNEVSR2M5Q0RIeElvYzFERzZFVmtRVDhQRmM0dEc1ZVFUSGJqc3VGaXB1ZXlHVHN1WlNQNFpOT0JKOHU5bERNZXlSM0gyUWxmT2g0cU9FZ3U3M2hucHFXa2JkaDJUdlhVakpyaUNTZk1yUkNBRy1hRW12UQ?oc=5",
-          "summary": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United K…",
-          "original_title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework",
-          "original_lang": "en",
-          "is_translated": false,
-          "lang": "en",
-          "translated": false
-        },
-        {
           "title": "U.K. intelligence chief warns Iran is shifting plots to ‘harder targets’",
           "source": "The Washington Post",
           "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPMHpoSWxCVzlWVmVkY05uUXZNLV85OHRFclFDZ1hXYV9HNzdFZ29XQ2xmVG9VYlF0VWhoNnJ4bzVxY1h2WmFOZGFQWE0tdndpTGVrTXNyTlgzLVBqS3ZvUXRmanBpWnBFckdSdVZvMHZSYUJMSUJCY0tBeGxTbnQzTTVtNmVvMWJNYUdoRHB0T29PcmRLVU5qV00wV3BRZ1c3YlRWTWhhclc1dGFIeEdrZjlpUHU?oc=5",
@@ -4917,11 +4906,22 @@
           "translated": false
         },
         {
-          "title": "UK Government to Explore ‘Court-Anchored’ FRAND Determination Proceedings for SEP Infringement Cases",
-          "source": "IPWatchdog",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOMG5xRFdYellLQW5uMTlWTTZTZVBhMmlucmdlYXdzY2tPeWJQWGlxS2VTVUlxVG12c1pRYTA4cXE2cmYxYjVSZWxmclNjd2JIcWtWS1N3U3kxOUU5Y2ptNno2MGRibDdVcFRIUGltYWh2V0lWM0NnVnViWkc3Sl83VzQ0VExkM05TZEMzN3AxOXpWYTl4VHVFd29QNDZOQURKT2hLeXBFbTNRMERDZmdzUWRzZTRRc1pjT1phVXhtUmtSUFBk?oc=5",
-          "summary": "UK Government to Explore ‘Court-Anchored’ FRAND Determination Proceedings for SEP Infringe…",
-          "original_title": "UK Government to Explore ‘Court-Anchored’ FRAND Determination Proceedings for SEP Infringement Cases",
+          "title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework",
+          "source": "Global Regulation Tomorrow",
+          "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNNzNiSWN0TkZmVjBvNDNPdndzenZIQjNVR1RPYldzZmp3RnBJa1JlNlIxc0VPd2hGR0Fka0gtWXlJNmVzRUVLTG10RmI4Wm4tOFhENThnWkJRcExwcVFSR1g0RjFyUWhmWERTZ0NBVU4zY1FVdkRrdEVzeHlvdE52NW91RzM3aHRqejhCcm9NSThja2FxMXJodVJuSm42U2Y3MTBPNEVSR2M5Q0RIeElvYzFERzZFVmtRVDhQRmM0dEc1ZVFUSGJqc3VGaXB1ZXlHVHN1WlNQNFpOT0JKOHU5bERNZXlSM0gyUWxmT2g0cU9FZ3U3M2hucHFXa2JkaDJUdlhVakpyaUNTZk1yUkNBRy1hRW12UQ?oc=5",
+          "summary": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United K…",
+          "original_title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework",
+          "original_lang": "en",
+          "is_translated": false,
+          "lang": "en",
+          "translated": false
+        },
+        {
+          "title": "Kate Foster, Deputy Permanent Representative of the United Kingdom to the United Nations — Statement at the UN Security Council on Cooperation Between the United Nations and Regional and Subregional Organizations in Maintaining International Peace",
+          "source": "The America Times",
+          "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQUTJzdFpuOTBXd3daSTdidzBoeTNCcDhaWmJ6cjBzNUptaEhQTTFTR3dXUEdSUHRfV1ZlMmFVV2hndmZqd1RHdk5qX05qVzBIUGxKck0zdF9FM0JjX2Y3SzQxQXZ0S3RaQXVILTc2a1pOOXdrWE9vRDh1V0RwOTdTdW14OWlEVVVmdWlZdTFfeEV1NTdPallJZHR5Nl8ydU1BYnpjUktPc21PQl9qb3h4aEZ2X3VjR0hoRi1ZZzBfWklvZEpEYWtUV014Mi04UHEtZUs2S3lxV1BaVVExYkxjT21WUHJCckRJV3pyWldXRldXUnRPZ3JsYWowaFZEOHdYZHBleGI5LWFLelNoOTdXWkNTM2IzWndvT0VFRUdMNHo4eUpDM0ZuZ3hsTUpjVXlPSHhhUzhIdG5xUXNWVEQ0Z0pn?oc=5",
+          "summary": "Kate Foster, Deputy Permanent Representative of the United Kingdom to the United Nations —…",
+          "original_title": "Kate Foster, Deputy Permanent Representative of the United Kingdom to the United Nations — Statement at the UN Security Council on Cooperation Between the United Nations and Regional and Subregional Organizations in Maintaining International Peace",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -5307,7 +5307,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.7,
-        "change_pct": 0.38,
+        "change_pct": 0.45,
         "history_labels": [
           "11월",
           "12월",
@@ -5388,6 +5388,17 @@
               "lang": "en",
               "translated": false,
               "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
+              "original_lang": "en",
+              "is_translated": false
+            },
+            {
+              "title": "I went to Canadian Tire for the first time as a newcomer — H…",
+              "desc": "I went to Canadian Tire for the first time as a newcomer — Here's why it totally blew my m…",
+              "source": "Narcity",
+              "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBPYUNVckk1V0JNbTVEZXBUekpaUFJucDRNMl9IcU8yckc3M2txb0VlcXdCbVdLZ1hJU2pLX3pvSFE4UnRsa0c0STZTdlhRNy1TUVMydF9WVE02dXFHZWxvTmx2dmg4S2dQYktKQTR5Y0pxMkd2dnc?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "I went to Canadian Tire for the first time as a newcomer — Here's why it totally blew my mind",
               "original_lang": "en",
               "is_translated": false
             },
@@ -5530,8 +5541,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 25.4,
-        "change_pct": -0.95,
+        "current_rate": 25.5,
+        "change_pct": 0.45,
         "history_labels": [
           "11월",
           "12월",
@@ -5558,7 +5569,7 @@
           27.8,
           27.7,
           26.0,
-          25.4
+          25.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/EGPKRW=X"
@@ -5827,17 +5838,6 @@
               "is_translated": false
             },
             {
-              "title": "한국타이어 후원, 월드 랠리 챔피언십 ‘이탈리아 사르데냐 랠리’ 성료",
-              "desc": "한국타이어 후원, 월드 랠리 챔피언십 ‘이탈리아 사르데냐 랠리’ 성료&nbsp;&nbsp;오토뷰",
-              "source": "오토뷰",
-              "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QRFBZaThzODRVMXpzaURIT2VyREI2c1lpSlFxSmdaZndrdl9OcjJFYV9HLVVXREptWmFVN1M3MHgwVDQ4MktRcG9xRmdkOWlZaVpGMjUyX2p2YXdq?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": "한국타이어 후원, 월드 랠리 챔피언십 ‘이탈리아 사르데냐 랠리’ 성료",
-              "original_lang": "ko",
-              "is_translated": false
-            },
-            {
               "title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
@@ -5856,6 +5856,17 @@
               "lang": "ko",
               "translated": false,
               "original_title": "한국타이어 후원 WRC ‘이탈리아 사르데냐’ 개최…다이나프로 R213 공급",
+              "original_lang": "ko",
+              "is_translated": false
+            },
+            {
+              "title": "한국타이어 후원 WRC 최종전 성료…토요타·에반스 챔피언 등극",
+              "desc": "한국타이어 후원 WRC 최종전 성료…토요타·에반스 챔피언 등극&nbsp;&nbsp;뉴스핌",
+              "source": "뉴스핌",
+              "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE01RW5QSzZSdlRkUXppbEdKNVhJbG1lX1lYSmZDYUg3TE9iMXVSLXl1d1pQeU9SUDJFNTE5Ul9WM0FISFlPNVhyRTNHZVNPZlZLRjFCV3VJWEpZUmtj?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": "한국타이어 후원 WRC 최종전 성료…토요타·에반스 챔피언 등극",
               "original_lang": "ko",
               "is_translated": false
             }
@@ -6210,7 +6221,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 61.6,
-        "change_pct": 0.7,
+        "change_pct": 0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -6419,7 +6430,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1.4,
-        "change_pct": 0.38,
+        "change_pct": 0.46,
         "history_labels": [
           "11월",
           "12월",
@@ -6641,7 +6652,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 3.0,
-        "change_pct": -2.73,
+        "change_pct": -2.66,
         "history_labels": [
           "11월",
           "12월",
@@ -6827,7 +6838,7 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 942.9,
+        "current_rate": 943.0,
         "change_pct": 0.95,
         "history_labels": [
           "11월",
@@ -6855,7 +6866,7 @@
           1013.9,
           990.8,
           952.0,
-          942.9
+          943.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -6884,11 +6895,11 @@
           "translated": false
         },
         {
-          "title": "How the trade war with Canada is hitting US states—and could sway midterm elections",
-          "source": "Atlantic Council",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOczlGQU5QS29lR2ZmWVR3LWx1SmRaR21fclNwdVQ3NXpnMnZsNHY1eFRIazdPazZ5dVlUY1FSalpLQ3lVLWNjNk56cUYtaWc0dXRPSzUzNEhwUUNaZDQ0MWM1NFlzUkpuODJvS0pzQjZYMjhVUjcyVGNXcUFhT1laME5ZcDJyZ3B5bll6a0UweUFGbG51cHV3NllVblRVbGh5SWR6T0xKRlgyZ0xWNk9veGN6MDV2SGJOMFdkN1lFdG13NGhpd1pYRGRDYjZ4NVJVWEE?oc=5",
-          "summary": "How the trade war with Canada is hitting US states—and could sway midterm elections&nbsp;&…",
-          "original_title": "How the trade war with Canada is hitting US states—and could sway midterm elections",
+          "title": "Trump's 50% tariffs on Canada take effect as Carney vows to retaliate",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeDdPQV9hVEo4eEFTSlhrVkowRE9mVVlJQzJkZTJnOG1TTUl1ZWYtNG1CcWk2MWlmZG51eVd2S0NJT0pWeHphblVQWThQMTc2OVhDd3VQQXZRU0gteVYtQlkxa29fcVpVV3VKSkl6NVdRTWhvT0E5X3VfVVI0UlVVdnhoUERGMFpxWVR1YXFiSENWQ2lTUTFNLTBEcU1ObHlfTW9OZ01VcmLSAa4BQVVfeXFMT0NxQThhZzl5Q29YNEt0Nl9FV3NrYzRMa1JXX0Vmd2pROGhvVHM3TFJ5NGRrOWVnY0FCOS1LM25MdVdINW8tNjZSS2NDSmhZbUZ4cFdOMWU4N1RObVVpNG43YTJRelY2R21VRDVjcm51cVk0b0ZISVdmNWFFcTdVOFJRdEZLamtrZXg0eER4cW9RbEt2R0lONGxjSXpYZ3RZbXRxbk9iaWdmREw0YVZB?oc=5",
+          "summary": "Trump's 50% tariffs on Canada take effect as Carney vows to retaliate&nbsp;&nbsp;ABC News…",
+          "original_title": "Trump's 50% tariffs on Canada take effect as Carney vows to retaliate",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -7072,7 +7083,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 0.4,
-        "change_pct": 0.75,
+        "change_pct": 0.79,
         "history_labels": [
           "11월",
           "12월",
@@ -7422,7 +7433,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 39.9,
-        "change_pct": 0.67,
+        "change_pct": 0.69,
         "history_labels": [
           "11월",
           "12월",
@@ -7666,7 +7677,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 27.1,
-        "change_pct": 0.32,
+        "change_pct": 0.37,
         "history_labels": [
           "11월",
           "12월",
@@ -7898,8 +7909,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1339.2,
-        "change_pct": -1.83,
+        "current_rate": 1340.3,
+        "change_pct": -1.75,
         "history_labels": [
           "11월",
           "12월",
@@ -7926,7 +7937,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1339.2
+          1340.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -8076,8 +8087,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 343.4,
-        "change_pct": 1.09,
+        "current_rate": 343.6,
+        "change_pct": 1.17,
         "history_labels": [
           "11월",
           "12월",
@@ -8104,7 +8115,7 @@
           380.3,
           367.9,
           350.9,
-          343.4
+          343.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -8531,8 +8542,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 936.2,
-        "change_pct": 0.91,
+        "current_rate": 936.5,
+        "change_pct": 0.93,
         "history_labels": [
           "11월",
           "12월",
@@ -8559,12 +8570,23 @@
           998.1,
           986.1,
           944.2,
-          936.2
+          936.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/AUDKRW=X"
       },
       "headlines": [
+        {
+          "title": "Simple cleaning steps could curb deadly fungal disease risks for Australia's wild reptiles",
+          "source": "Phys.org",
+          "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ2VyTVpYRkVVcTY0cmZjOWtHTmNfNVhsbDAydGZuejR6am80UV91MzZoYzhrUWZZdm5TOXJCblBOTnhrbWRWb3pSSFZkM0JTaUVHWTQ0aV9HbWwwZ2Z3NmhjNmc5Tk4zLXllMXgwWlZFa2EzYmdn?oc=5",
+          "summary": "Simple cleaning steps could curb deadly fungal disease risks for Australia's wild reptiles…",
+          "original_title": "Simple cleaning steps could curb deadly fungal disease risks for Australia's wild reptiles",
+          "original_lang": "en",
+          "is_translated": false,
+          "lang": "en",
+          "translated": false
+        },
         {
           "title": "Study Finds Banded Dotterel Migration to Australia Is Shrinking",
           "source": "environment coastal & offshore",
@@ -8582,17 +8604,6 @@
           "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMVhtZl83eG5iYkR5elJTMndCWlB2UDBhZEdSTTlUSFlNTUhncmZscUtsUE5qbmt6NVJQZWZkb084dFNWWk9ocENKMzZXWHV5LTJfQXh3YmRGUGxFdTJqX3ZQdXZJNk1hSTFBMC1JSEhvNFZKbElVTGVqQkJINTJMVmdUSzY0ck94cldGNXFnVlBvcHliaUdGdmVmc2U5TS1zXzlnQW5pTEFfOFMtOUlvd1A2M2w4UGJSQkJNRzJZRXppZjEwOG1z?oc=5",
           "summary": "Glencore shares to start trading in Australia as miner hopes to boost valuation&nbsp;&nbsp…",
           "original_title": "Glencore shares to start trading in Australia as miner hopes to boost valuation",
-          "original_lang": "en",
-          "is_translated": false,
-          "lang": "en",
-          "translated": false
-        },
-        {
-          "title": "CBA chief Matt Comyn says Australia must retain economic value of AI",
-          "source": "WKZO",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNXFFYmc3bEhxcGRvNzlxUUxrQXJXSGF5RHJseDlOMlhZeDIzdFpRNl9ib0Q4RjNKS1BNRFYzSGxpbjV5bTRFbjJjSVYxcG43Nnc1cHkxemdIQWktbnluYkhrczRZcThwSzJoTTlKV3JHM29RajhkUk4tQTU0V0EwbkROay1sZ3BkZkFycGdsY1c5bVduMFBJSkI4ME9tZw?oc=5",
-          "summary": "CBA chief Matt Comyn says Australia must retain economic value of AI&nbsp;&nbsp;WKZO",
-          "original_title": "CBA chief Matt Comyn says Australia must retain economic value of AI",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",

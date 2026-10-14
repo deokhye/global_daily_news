@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T08:48:13.145783+09:00",
-  "generated_at_display": "2026-10-14 08:48 KST",
+  "generated_at": "2026-10-14T09:02:07.877002+09:00",
+  "generated_at_display": "2026-10-14 09:02 KST",
   "as_of_display": "2026-10-14 06:00 KST 기준",
   "regions": [
     {
@@ -45,45 +45,37 @@
       "currency": "KRW",
       "flag": "kr",
       "offices": [
-        "Hankook Tire Global Headquarters (판교)",
-        "Hankook Technodome, Central R&D Center (대전)",
-        "Daejeon Plant (대전)",
-        "Geumsan Plant (금산)",
-        "Hankook Technoring, Proving Ground (태안)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Global Headquarters (판교)",
-        "Hankook Technodome, Central R&D Center (대전)",
-        "Daejeon Plant (대전)",
-        "Geumsan Plant (금산)",
-        "Hankook Technoring, Proving Ground (태안)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "서울",
-        "population": "약 5,170만 명",
+        "capital": "데이터 확인 중",
+        "population": "데이터 확인 중",
         "gdp": "약 1.87조 달러",
         "inflation": "2.1%",
         "unemployment": "2.7%",
         "min_wage": {
           "display": "10,320원 / 시간",
-          "note": "2026년 기준",
+          "note": "2026년 최저임금",
           "source": "고용노동부 고시",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준",
+        "min_wage_note": "2026년 최저임금",
         "indicators": {
           "capital": {
-            "value": "서울",
-            "display": "서울",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
-            "value": "약 5,170만 명",
-            "display": "약 5,170만 명",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "gdp": {
             "value": 1872.37496155315,
@@ -104,8 +96,8 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
@@ -129,19 +121,19 @@
           "original_title": ""
         },
         {
-          "title": "민간건물 임차 27곳 내년 이전…‘행정수도 세종’ 2031년 완성",
+          "title": "특검, ‘대선 허위사실 공표 혐의’ 윤석열 항소심서도 당선무효형 구형",
           "source": "한겨레",
-          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nRVl0ZVdQRld3OGtSZFp3WmdOZWFmRk1HWkNFZTMtVDJvYWRfQURGNUFLRUFYRVFtVC1wU1VJSGZrR01sMXBsZ2g1eTQ5aldSY0xydHhiUHl3dmpqOTJPLTN2Wl9CdzdLTlE?oc=5",
-          "summary": "민간건물 임차 27곳 내년 이전…‘행정수도 세종’ 2031년 완성&nbsp;&nbsp;한겨레금융위·법무부 등 44개 기관 9929명, 내년부터 세종 본격 이전&n…",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBHZ3hUeXlZcERRVkFnUDFtUl9MWjBPWmhaelBmV0VqYU42dnctOW1RMExQcHhFN0dOOXAyX2lFYUtNQnNCX1JVM25OZ1pwZnJZSW9DN19MTGppblZBcDZGV1YtQWdsdGF6T3R4R3JzM1hudw?oc=5",
+          "summary": "특검, ‘대선 허위사실 공표 혐의’ 윤석열 항소심서도 당선무효형 구형&nbsp;&nbsp;한겨레\"특검보다 목소리 크게!\" 구형 앞둔 尹 변호사 향해&nbsp;&n…",
           "lang": "ko",
           "translated": false,
           "original_title": ""
         },
         {
-          "title": "특검, 尹 선거법 2심도 ‘당선무효형’ 요청… 尹 “이런 식이면 선거 왜 하나”",
-          "source": "조선일보",
-          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeThHd2J5S0RFZVcwSno5V3JvUGNSMHBLc1F3MWZUSVYwb2xydTBxa0luTV9sMXJfcW9QZW1DWGVta2lIeF9VMnlWSWxldUJpcU5rcU91VmN1TTZIOGxTcWpvR2REMEFHLVhzc0F2T0EyMkpPSE1qeUtEQXZCU1lwU29HSkx1M28?oc=5",
-          "summary": "특검, 尹 선거법 2심도 ‘당선무효형’ 요청… 尹 “이런 식이면 선거 왜 하나”&nbsp;&nbsp;조선일보\"특검보다 목소리 크게!\" 구형 앞둔 尹 변호사 향해&…",
+          "title": "민간건물 임차 27곳 내년 이전…‘행정수도 세종’ 2031년 완성",
+          "source": "한겨레",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nRVl0ZVdQRld3OGtSZFp3WmdOZWFmRk1HWkNFZTMtVDJvYWRfQURGNUFLRUFYRVFtVC1wU1VJSGZrR01sMXBsZ2g1eTQ5aldSY0xydHhiUHl3dmpqOTJPLTN2Wl9CdzdLTlE?oc=5",
+          "summary": "민간건물 임차 27곳 내년 이전…‘행정수도 세종’ 2031년 완성&nbsp;&nbsp;한겨레금융위·법무부 등 44개 기관 9929명, 내년부터 세종 본격 이전&n…",
           "lang": "ko",
           "translated": false,
           "original_title": ""
@@ -257,30 +249,30 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "워싱턴 D.C.",
-        "population": "약 3억 4,200만 명",
+        "capital": "데이터 확인 중",
+        "population": "데이터 확인 중",
         "gdp": "약 30.77조 달러",
         "inflation": "2.9%",
         "unemployment": "4.2%",
         "min_wage": {
-          "display": "$7.25 / 시간",
-          "note": "연방 기준, 2009-07-24 이후 동결·테네시주 별도 기준 없음",
+          "display": "7.25달러 / 시간",
+          "note": "연방 기준 (주별 상이)",
           "source": "U.S. Department of Labor",
-          "year": 2009
+          "year": 2025
         },
-        "min_wage_note": "연방 기준, 2009-07-24 이후 동결·테네시주 별도 기준 없음",
+        "min_wage_note": "연방 기준 (주별 상이)",
         "indicators": {
           "capital": {
-            "value": "워싱턴 D.C.",
-            "display": "워싱턴 D.C.",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
-            "value": "약 3억 4,200만 명",
-            "display": "약 3억 4,200만 명",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "gdp": {
             "value": 30769.7,
@@ -301,15 +293,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1340.4,
-        "change_pct": 0.47,
+        "current_rate": 1340.7,
+        "change_pct": 0.5,
         "history_labels": [
           "11월",
           "12월",
@@ -336,7 +328,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1340.4
+          1340.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -467,35 +459,31 @@
       "currency": "EUR",
       "flag": "de",
       "offices": [
-        "Hankook Tire Europe GmbH, European Headquarters (노이이젠부르크)",
-        "Hannover Technical Center, ETC (하노버)",
-        "Hankook Reifen Deutschland GmbH (노이이젠부르크)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Europe GmbH, European Headquarters (노이이젠부르크)",
-        "Hannover Technical Center, ETC (하노버)",
-        "Hankook Reifen Deutschland GmbH (노이이젠부르크)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "베를린",
+        "capital": "데이터 확인 중",
         "population": "약 8,349만 명",
         "gdp": "약 5.05조 달러",
         "inflation": "2.2%",
         "unemployment": "3.7%",
         "min_wage": {
-          "display": "€13.90 / 시간",
-          "note": "2026년 기준",
+          "display": "13.90유로 / 시간",
+          "note": "법정 최저임금",
           "source": "Eurostat",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준",
+        "min_wage_note": "법정 최저임금",
         "indicators": {
           "capital": {
-            "value": "베를린",
-            "display": "베를린",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 83491249.0,
@@ -522,15 +510,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -557,7 +545,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -717,24 +705,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "베이징",
+        "capital": "데이터 확인 중",
         "population": "약 14억 658만 명",
         "gdp": "약 19.50조 달러",
         "inflation": "0.1%",
         "unemployment": "4.6%",
         "min_wage": {
-          "display": "약 25위안 / 시간",
-          "note": "지역별 상이(참고치), 상하이 등 대도시 기준",
-          "source": "ILO",
-          "year": 2026
+          "display": "2,740위안 / 월",
+          "note": "상하이시 기준 (지역별 상이)",
+          "source": "상하이시 인력자원사회보장국 고시",
+          "year": 2025
         },
-        "min_wage_note": "지역별 상이(참고치), 상하이 등 대도시 기준",
+        "min_wage_note": "상하이시 기준 (지역별 상이)",
         "indicators": {
           "capital": {
-            "value": "베이징",
-            "display": "베이징",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 1406585000.0,
@@ -761,15 +749,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 200.6,
-        "change_pct": 0.63,
+        "current_rate": 200.7,
+        "change_pct": 0.65,
         "history_labels": [
           "11월",
           "12월",
@@ -796,7 +784,7 @@
           210.3,
           204.7,
           201.5,
-          200.6
+          200.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -934,24 +922,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "부다페스트",
+        "capital": "데이터 확인 중",
         "population": "약 951만 명",
         "gdp": "약 2,465억 달러",
         "inflation": "4.4%",
         "unemployment": "4.5%",
         "min_wage": {
-          "display": "약 290,800포린트 / 월",
-          "note": "비숙련 기준, 2025년 기준",
+          "display": "322,800포린트 / 월",
+          "note": "월 총액 기준",
           "source": "Eurostat",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "비숙련 기준, 2025년 기준",
+        "min_wage_note": "월 총액 기준",
         "indicators": {
           "capital": {
-            "value": "부다페스트",
-            "display": "부다페스트",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 9514251.0,
@@ -978,15 +966,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.1,
-        "change_pct": 1.17,
+        "change_pct": 1.14,
         "history_labels": [
           "11월",
           "12월",
@@ -1126,24 +1114,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "자카르타",
+        "capital": "데이터 확인 중",
         "population": "약 2억 8,572만 명",
         "gdp": "약 1.45조 달러",
         "inflation": "1.9%",
         "unemployment": "3.2%",
         "min_wage": {
-          "display": "약 5,396,761루피아 / 월",
-          "note": "자카르타(DKI) 기준, 지역별 상이",
+          "display": "5,396,761루피아 / 월",
+          "note": "자카르타 주 최저임금(UMP) 기준",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
-        "min_wage_note": "자카르타(DKI) 기준, 지역별 상이",
+        "min_wage_note": "자카르타 주 최저임금(UMP) 기준",
         "indicators": {
           "capital": {
-            "value": "자카르타",
-            "display": "자카르타",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 285721236.0,
@@ -1170,8 +1158,8 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
@@ -1255,19 +1243,19 @@
               "original_title": ""
             },
             {
-              "title": "한국타이어 라우펜 다치아 산데로 OE 공급",
-              "desc": "한국타이어 라우펜 다치아 산데로 OE 공급&nbsp;&nbsp;뉴스클레임",
-              "source": "뉴스클레임",
-              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzaFhVNUEzZ1FFYmZfaHFZekVBS3ZNNHpaVC1JQjI0X2otX0tjeFRUd2hmSVhpY1dtUl9tUXFINERrTExqT25JM1BadF9OX0NGUldzWVgtMGZMN3dsMEpsT3c3SVFjNzRkcVh4aUFIcXTSAXRBVV95cUxPLWVWaFJ2eFhzeW1PWXVxR2FuTXdlc0d3Tk5kcUxDR0xvLUQwdHlGXzdmTUpvdFlUTUhuN0FwTTBNY3NQMlQyR0RMcExjbHNwUlRKZko2Skk4YnhhOFRkOGpIWm1RU3JHWGVxZXlHT2tKLVEyNg?oc=5",
+              "title": "Giti CarService의 베트남 첫 진출",
+              "desc": "Giti CarService의 베트남 첫 진출 - Giti의 새로운 여정의 시작을 알리는 중요한 이정표입니다.&nbsp;&nbsp;Vietnam.vn",
+              "source": "Vietnam.vn",
+              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNR0haWnc5VzIzbnJ2UGR0QnVYYUJZeDgtUlFEVWplQ0t1cG8wR19uV2RXMm8tY3pFd1p0VndSel9vOV9ITXhDNEtqR2JrVHg1RzhVVnFKZFpyUC1IdHZJT3VlOHdPSjV4WmZkZGRxTXUzUmpzTFd5SXlxZHJITTNXRThuWEdGQnVjLVpKZHVvWnQ2Z2ZIU0M2VmdQeDVuWXFpOXhr?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
             },
             {
-              "title": "Giti CarService의 베트남 첫 진출",
-              "desc": "Giti CarService의 베트남 첫 진출 - Giti의 새로운 여정의 시작을 알리는 중요한 이정표입니다.&nbsp;&nbsp;Vietnam.vn",
-              "source": "Vietnam.vn",
-              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNR0haWnc5VzIzbnJ2UGR0QnVYYUJZeDgtUlFEVWplQ0t1cG8wR19uV2RXMm8tY3pFd1p0VndSel9vOV9ITXhDNEtqR2JrVHg1RzhVVnFKZFpyUC1IdHZJT3VlOHdPSjV4WmZkZGRxTXUzUmpzTFd5SXlxZHJITTNXRThuWEdGQnVjLVpKZHVvWnQ2Z2ZIU0M2VmdQeDVuWXFpOXhr?oc=5",
+              "title": "한국타이어 라우펜 다치아 산데로 OE 공급",
+              "desc": "한국타이어 라우펜 다치아 산데로 OE 공급&nbsp;&nbsp;뉴스클레임",
+              "source": "뉴스클레임",
+              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzaFhVNUEzZ1FFYmZfaHFZekVBS3ZNNHpaVC1JQjI0X2otX0tjeFRUd2hmSVhpY1dtUl9tUXFINERrTExqT25JM1BadF9OX0NGUldzWVgtMGZMN3dsMEpsT3c3SVFjNzRkcVh4aUFIcXTSAXRBVV95cUxPLWVWaFJ2eFhzeW1PWXVxR2FuTXdlc0d3Tk5kcUxDR0xvLUQwdHlGXzdmTUpvdFlUTUhuN0FwTTBNY3NQMlQyR0RMcExjbHNwUlRKZko2Skk4YnhhOFRkOGpIWm1RU3JHWGVxZXlHT2tKLVEyNg?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -1343,24 +1331,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "암스테르담",
+        "capital": "데이터 확인 중",
         "population": "약 1,809만 명",
         "gdp": "약 1.33조 달러",
         "inflation": "3.2%",
         "unemployment": "3.9%",
         "min_wage": {
-          "display": "€14.71 / 시간",
-          "note": "2026년 기준",
+          "display": "14.71유로 / 시간",
+          "note": "21세 이상",
           "source": "Eurostat",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준",
+        "min_wage_note": "21세 이상",
         "indicators": {
           "capital": {
-            "value": "암스테르담",
-            "display": "암스테르담",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 18087633.0,
@@ -1387,15 +1375,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -1422,7 +1410,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -1535,66 +1523,66 @@
       "currency": "TWD",
       "flag": "tw",
       "offices": [
-        "Hankook Tire Taiwan Branch (타이베이)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Taiwan Branch (타이베이)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "타이베이",
-        "population": "약 2,340만 명",
-        "gdp": "약 8,000억 달러",
-        "inflation": "2.0%",
-        "unemployment": "3.4%",
+        "capital": "데이터 확인 중",
+        "population": "데이터 확인 중",
+        "gdp": "데이터 확인 중",
+        "inflation": "데이터 확인 중",
+        "unemployment": "데이터 확인 중",
         "min_wage": {
-          "display": "NT$190 / 시간",
-          "note": "월 NT$29,500, 2026년 기준",
+          "display": "29,500대만달러 / 월",
+          "note": "시급 196대만달러",
           "source": "ILO",
           "year": 2026
         },
-        "min_wage_note": "월 NT$29,500, 2026년 기준",
+        "min_wage_note": "시급 196대만달러",
         "indicators": {
           "capital": {
-            "value": "타이베이",
-            "display": "타이베이",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
-            "value": "약 2,340만 명",
-            "display": "약 2,340만 명",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "gdp": {
-            "value": "약 8,000억 달러",
-            "display": "약 8,000억 달러",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "inflation": {
-            "value": "2.0%",
-            "display": "2.0%",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "unemployment": {
-            "value": "3.4%",
-            "display": "3.4%",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           }
         },
-        "stats_source": "내부 메타데이터(정적 값)",
-        "stats_year": 2026,
+        "stats_source": "-",
+        "stats_year": "-",
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 41.7,
-        "change_pct": -0.16,
+        "change_pct": -0.21,
         "history_labels": [
           "11월",
           "12월",
@@ -1750,24 +1738,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "모스크바",
+        "capital": "데이터 확인 중",
         "population": "약 1억 4,351만 명",
         "gdp": "약 2.56조 달러",
         "inflation": "8.7%",
         "unemployment": "2.1%",
         "min_wage": {
-          "display": "약 22,440루블 / 월",
-          "note": "MROT 기준, 2025년",
+          "display": "27,093루블 / 월",
+          "note": "법정 최저임금(MROT)",
           "source": "ILO",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "MROT 기준, 2025년",
+        "min_wage_note": "법정 최저임금(MROT)",
         "indicators": {
           "capital": {
-            "value": "모스크바",
-            "display": "모스크바",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 143513328.0,
@@ -1794,15 +1782,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 16.0,
-        "change_pct": 0.81,
+        "change_pct": 0.85,
         "history_labels": [
           "11월",
           "12월",
@@ -1949,24 +1937,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "부쿠레슈티",
+        "capital": "데이터 확인 중",
         "population": "약 1,902만 명",
         "gdp": "약 4,287억 달러",
         "inflation": "7.2%",
         "unemployment": "6.0%",
         "min_wage": {
-          "display": "약 €814 / 월",
-          "note": "2025.1 Eurostat 기준",
+          "display": "4,050레이 / 월",
+          "note": "월 총액 기준",
           "source": "Eurostat",
           "year": 2025
         },
-        "min_wage_note": "2025.1 Eurostat 기준",
+        "min_wage_note": "월 총액 기준",
         "indicators": {
           "capital": {
-            "value": "부쿠레슈티",
-            "display": "부쿠레슈티",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 19020271.0,
@@ -1993,15 +1981,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 281.5,
-        "change_pct": 0.78,
+        "current_rate": 281.4,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -2028,7 +2016,7 @@
           312.4,
           303.8,
           290.5,
-          281.5
+          281.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -2044,13 +2032,13 @@
           "original_title": "Bulgaria Calls for EU, NATO, Turkey and Romania to Aid Black Sea Security"
         },
         {
-          "title": "Cricket Video",
+          "title": "Norway vs. Romania (13 Oct, 2026) Live Score",
           "source": "ESPN",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNYWRQZjRxaVVnNm5YSHFaMENJY2FQUHBsRDJia1luWnJZS01qZkFCSHcta2xjRnpBRTB6MXhyd093QmRLREFZLW9GYXhWRHJPYUtqMjMwN3U5T1UtRWdSRkhKZ1ozYWdXNjBmeWV3QldYc3JDVURseVlSdnZoOFowYWVOVEpWZzVaLXZPR0NKNEcyTnJMc2Z5NlhlSzM4Sk0?oc=5",
-          "summary": "Cricket Video - Romania Women vs Sweden Women 6th Match 2026 Match Highlights | ESPN.com&n…",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB6dGg1TkhvUkdqOVh2am5rRUdUY01MdmdXS2VwVmU3TmlKZXM3NG9aaHhhRk1Lb0pPV2ttMnlINnN4ejBRNVlnUFkzcWtOUXFoTG4tUjREb1BmMlYxNXdjdExiMUZPNFd1?oc=5",
+          "summary": "Norway vs. Romania (13 Oct, 2026) Live Score&nbsp;&nbsp;ESPN",
           "lang": "en",
           "translated": false,
-          "original_title": "Cricket Video"
+          "original_title": "Norway vs. Romania (13 Oct, 2026) Live Score"
         },
         {
           "title": "Romanian Pro-Russian Former Presidential Candidate to Be Moved to House Arrest Pending Fraud Probe",
@@ -2121,24 +2109,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "쿠알라룸푸르",
+        "capital": "데이터 확인 중",
         "population": "약 3,598만 명",
         "gdp": "약 4,722억 달러",
         "inflation": "1.4%",
         "unemployment": "3.8%",
         "min_wage": {
-          "display": "RM8.72 / 시간",
-          "note": "월 RM1,700 기준, 2025.2 시행",
+          "display": "1,700링깃 / 월",
+          "note": "월 기준",
           "source": "ILO",
           "year": 2025
         },
-        "min_wage_note": "월 RM1,700 기준, 2025.2 시행",
+        "min_wage_note": "월 기준",
         "indicators": {
           "capital": {
-            "value": "쿠알라룸푸르",
-            "display": "쿠알라룸푸르",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 35977838.0,
@@ -2165,8 +2153,8 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
@@ -2284,15 +2272,6 @@
           "tag_class": "bg-indigo-100 text-indigo-700",
           "items": [
             {
-              "title": "Why Malaysian professionals look to Singapore? Because many…",
-              "desc": "Why Malaysian professionals look to Singapore? Because many can earn more than double, say…",
-              "source": "Yahoo",
-              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPSGw5Tk9wdU1UODhhUE9SYUJHbWlVY1VrRUY2YjNMX1BKbHUwenhWeG9aNjJ5eHhQNjd5SXV2V0YxVmVQLWlIZ282MkhiYjNjR3pacUpNYnNNdm92NUNjX19JeDlMWnJ0X2UwN0pSczRHM3FuNzFGWjdWZi1OaEVMcWZVTVZMQTdSTVUtLVRtQ0lsNUU?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Why Malaysian professionals look to Singapore? Because many can earn more than double, says HR minister"
-            },
-            {
               "title": "Will Indonesia Adopt 45-Hour Workweek? Apindo Responds",
               "desc": "Will Indonesia Adopt 45-Hour Workweek? Apindo Responds&nbsp;&nbsp;Tempo.co English",
               "source": "Tempo.co English",
@@ -2331,31 +2310,31 @@
       "currency": "MXN",
       "flag": "mx",
       "offices": [
-        "Hankook Tire Mexico, S.A. de C.V. (멕시코시티)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Mexico, S.A. de C.V. (멕시코시티)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "멕시코시티",
+        "capital": "데이터 확인 중",
         "population": "약 1억 3,195만 명",
         "gdp": "약 1.83조 달러",
         "inflation": "3.8%",
         "unemployment": "2.7%",
         "min_wage": {
-          "display": "약 9,583.52페소 / 월",
-          "note": "일반지역 기준, 2026년, 국경지대는 더 높음",
+          "display": "315.04페소 / 일",
+          "note": "일반 최저임금",
           "source": "ILO",
           "year": 2026
         },
-        "min_wage_note": "일반지역 기준, 2026년, 국경지대는 더 높음",
+        "min_wage_note": "일반 최저임금",
         "indicators": {
           "capital": {
-            "value": "멕시코시티",
-            "display": "멕시코시티",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 131946900.0,
@@ -2382,15 +2361,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 73.0,
-        "change_pct": -0.11,
+        "change_pct": -0.13,
         "history_labels": [
           "11월",
           "12월",
@@ -2424,15 +2403,6 @@
       },
       "headlines": [
         {
-          "title": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00",
-          "source": "U.S. Embassy & Consulates in Mexico (.gov)",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQzJSWV9uUGZRN3lzSUpUVXFJVkdwOXA1RjBhRzkxQWdVQ09KeVoxeFB2VHpyNzZWRjhVaDRxUzMzclViUkVPaTAzSlRWbUwycW9QelBPeGh1SzVTQm5veUpzRWVvTEVYdTRtVFl4U1QxS00wdWw3ZV9oUjl0STdmZ0Rpc3hFMzJOSEIxcl9lRVIxZElDTldjcTZwNmdzZw?oc=5",
-          "summary": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00&nbsp;&nbsp;U.S.…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00"
-        },
-        {
           "title": "AT&T sells Mexico unit to Televisa, Fintech for $2 billion",
           "source": "Reuters",
           "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNU1lWT1BvdVQxVUt2aFpUYXBsUXIwMEpUR3RiTzJQdDJvZmd2VDJPM2g0SWVrdk5SYUFjUlgxWDNfdHBXSmgyekZBaVlYSVNsTDR4aDZsSHBYaDcwOG5meEZuNDQwTzlLb2FTZjBLdmFzMW1MOHlRaklob1dGUGJEaHFPSi15eE1pTzhnNWg4SQ?oc=5",
@@ -2440,6 +2410,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "AT&T sells Mexico unit to Televisa, Fintech for $2 billion"
+        },
+        {
+          "title": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00",
+          "source": "U.S. Embassy & Consulates in Mexico (.gov)",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPQzJSWV9uUGZRN3lzSUpUVXFJVkdwOXA1RjBhRzkxQWdVQ09KeVoxeFB2VHpyNzZWRjhVaDRxUzMzclViUkVPaTAzSlRWbUwycW9QelBPeGh1SzVTQm5veUpzRWVvTEVYdTRtVFl4U1QxS00wdWw3ZV9oUjl0STdmZ0Rpc3hFMzJOSEIxcl9lRVIxZElDTldjcTZwNmdzZw?oc=5",
+          "summary": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00&nbsp;&nbsp;U.S.…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Demonstration Alert: Demonstrations in Mexico City on October 13 at 15:00"
         },
         {
           "title": "AT&T to Sell AT&T Mexico to Grupo Televisa and Fintech Holdings",
@@ -2457,6 +2436,15 @@
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
+            {
+              "title": "멕시코 9월 자동차 수출 12% 감소, 미 관세 여파로 생산·수출 동반 타격",
+              "desc": "멕시코 9월 자동차 수출 12% 감소, 미 관세 여파로 생산·수출 동반 타격&nbsp;&nbsp;다나와 자동차",
+              "source": "다나와 자동차",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvRUJUN3pRM3dtLUVjM0lCRnJLZUxwUnN0LXRhWG5yZVB1YjhHZTlKakFwRTlWZEt1TE1Dem1pVGVSU25aaHJYQ0JFSHN3Q211anlEYTBVcjF1NnlRRnRIZHpINExOQV82TjZzRGg2N2pHbkRLVmNCMEJTOA?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": ""
+            },
             {
               "title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
@@ -2480,15 +2468,6 @@
               "desc": "HS효성첨단 '알짜' 인테리어PU, 해외 영토 확장 속도 : 네이버 블로그&nbsp;&nbsp;Naver Blog",
               "source": "Naver Blog",
               "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPNXN4WW9jUnY1cXBTMTJrUEJQZnY5c09wMUM5OXhPVkg1eTNsZm9MaHQtSm9Ua0ktNTc0Z2JUYkE0R2hNbm5JODg0NkJWd3pNNDNYR0p4YW1fcGlrUnNfTU1oMUZmTklsYjVYT3ZDV0dsNjNkbnBFVk5KYlZ2TlA2RnJDdURSWkRoWXRuUFA2dw?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
-            },
-            {
-              "title": "또 하나의 HS효성, 해외 생산거점 확장",
-              "desc": "또 하나의 HS효성, 해외 생산거점 확장&nbsp;&nbsp;주간현대",
-              "source": "주간현대",
-              "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBBX0RIekRDeHRzd0tfSTRsNUJCbWpWZTdWeFdZMExtczhDdk54VkVVTXlodU5jMGdCd0NBRG9YeHJnZm42alhqMzRR?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -2548,31 +2527,31 @@
       "currency": "MAD",
       "flag": "ma",
       "offices": [
-        "Hankook Tire Morocco Sales Office (카사블랑카)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Morocco Sales Office (카사블랑카)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "라바트",
+        "capital": "데이터 확인 중",
         "population": "약 3,843만 명",
         "gdp": "약 1,824억 달러",
         "inflation": "0.7%",
         "unemployment": "9.0%",
         "min_wage": {
-          "display": "약 17.07디르함 / 시간",
-          "note": "참고치",
+          "display": "데이터 확인 중",
+          "note": "",
           "source": "ILO",
-          "year": 2026
+          "year": "-"
         },
-        "min_wage_note": "참고치",
+        "min_wage_note": "",
         "indicators": {
           "capital": {
-            "value": "라바트",
-            "display": "라바트",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 38430770.0,
@@ -2599,15 +2578,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 136.7,
-        "change_pct": -3.91,
+        "current_rate": 143.0,
+        "change_pct": 0.5,
         "history_labels": [
           "11월",
           "12월",
@@ -2634,7 +2613,7 @@
           151.4,
           153.1,
           143.9,
-          136.7
+          143.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -2718,24 +2697,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "하노이",
+        "capital": "데이터 확인 중",
         "population": "약 1억 160만 명",
         "gdp": "약 5,147억 달러",
         "inflation": "3.3%",
         "unemployment": "1.5%",
         "min_wage": {
-          "display": "약 5,310,000동 / 월",
-          "note": "1지역(하노이·호치민 등) 기준, 2026.1, 지역별 상이",
+          "display": "5,310,000동 / 월",
+          "note": "1지역 기준",
           "source": "ILO",
           "year": 2026
         },
-        "min_wage_note": "1지역(하노이·호치민 등) 기준, 2026.1, 지역별 상이",
+        "min_wage_note": "1지역 기준",
         "indicators": {
           "capital": {
-            "value": "하노이",
-            "display": "하노이",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 101598527.0,
@@ -2762,15 +2741,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "change_pct": 0.47,
+        "change_pct": 0.5,
         "history_labels": [
           "11월",
           "12월",
@@ -2822,13 +2801,13 @@
           "original_title": "Get a Taste of Vietnam’s Historic Chinatown at Qua in Little Saigon"
         },
         {
-          "title": "Midstate dustoff pilot honored for efforts during Vietnam War",
-          "source": "ABC27",
-          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRVFoaEU3Y3N3SnRRZ0twMmpCbVNnTzVac0tFNkVBWGRqWFZkcGlhbmozOEZTMV9ncHo0c1Z0bXpFYlJMdUpkLXl6UFI2UWlla3k2MWRWYjNHR2NERFNTX0pDdFRWYzhlaHV5ajhxNy1rNjU4ZlVuYnNuNXN2ME82VU1OSF8yRjNTblJiaXEya1BtWC1zaUpTbDRnONIBoAFBVV95cUxOclBLY0k5TTdQR2JBLU11TnJKbmFQek5xQVpfNEVIc1VVRS1EcWQyYjkycGYtLXczWHR0RWcxM0M5WVN3bFpsSXRTajZ0VXZRZmpsRGdoQV9CcDlWLXduS29tT1ZPaGh3dV9BeE02UjM3VENNLXI5blR5VmcyTEgyc2tLMHl5SFI2ZTJSOV9ZV3B1WEtlQ2d1UWlhNGRicnRB?oc=5",
-          "summary": "Midstate dustoff pilot honored for efforts during Vietnam War&nbsp;&nbsp;ABC27",
+          "title": "Vietnam: Free Abducted Democracy Group Activists",
+          "source": "Human Rights Watch",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUzA3UHhQckhZSXRqMVBLT1NBMGVySXJnLWwxY2ZjeW50ZUEzdjVKbDVSYW5DRmt5b0xBa0pqQTVQR2x2SVRZMGZDRjg1THNYTjFGc1NiLWIyclFtbVFnOWZ5Y0FPeDcwQlhBMTRfTm9oME5ldDlYZ2ZWMzdLYmI3bFlGS0sxZWdBOUlV?oc=5",
+          "summary": "Vietnam: Free Abducted Democracy Group Activists&nbsp;&nbsp;Human Rights Watch",
           "lang": "en",
           "translated": false,
-          "original_title": "Midstate dustoff pilot honored for efforts during Vietnam War"
+          "original_title": "Vietnam: Free Abducted Democracy Group Activists"
         }
       ],
       "hr_trends": [
@@ -2919,31 +2898,31 @@
       "currency": "BRL",
       "flag": "br",
       "offices": [
-        "Hankook Tire do Brasil Ltda. (상파울루)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire do Brasil Ltda. (상파울루)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "브라질리아",
+        "capital": "데이터 확인 중",
         "population": "약 2억 1,281만 명",
         "gdp": "약 2.28조 달러",
         "inflation": "5.0%",
         "unemployment": "6.0%",
         "min_wage": {
-          "display": "약 1,631헤알 / 월",
-          "note": "2026년 기준(참고치), 13번째 급여 별도 지급 관행",
+          "display": "1,621헤알 / 월",
+          "note": "연방 최저임금",
           "source": "ILO",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준(참고치), 13번째 급여 별도 지급 관행",
+        "min_wage_note": "연방 최저임금",
         "indicators": {
           "capital": {
-            "value": "브라질리아",
-            "display": "브라질리아",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 212812405.0,
@@ -2970,15 +2949,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 268.9,
-        "change_pct": 0.47,
+        "current_rate": 269.0,
+        "change_pct": 0.5,
         "history_labels": [
           "11월",
           "12월",
@@ -3005,7 +2984,7 @@
           279.8,
           265.3,
           259.6,
-          268.9
+          269.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/BRLKRW=X"
@@ -3021,15 +3000,6 @@
           "original_title": "Brazil's Flavio Bolsonaro reverses course, backs end to six-day workweek"
         },
         {
-          "title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom",
-          "source": "Committee to Protect Journalists",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPMXVkZlNHV01obkdBNjRBN3hEcGppYWMtdjVmQ1VNSnZqZVVfclFqeW9BYTZkYnNkbHROVGN3UUpZQXlWdU55cHpsaVpCN1ZOR1lrMndQUU43VWhKbnFqSlFIMVE4N0Z4aUc5OHk5Mjl0U2xhcm1rVWdBX3hXUlZvSk1TNFQwUnEzVXFVV1BfekpwQVdSS0gyWkxOZndaOTDSAaQBQVVfeXFMUDUxZk5pMmt5UkpqbG1fS21OdXRrUXFjeDlFU0FjaHM3THBQQVIzLXJVVUp4aDZsR1pHOFRHV2NXWXFXUEZSQm9iMWpRRUl0RFRJNldWZUp5ZlBwRTdiUzlTbjUybGJ3UkFSRExTWXJvN3BleExwLTFkbDFPVDZpZThyeTNkM3VEc3JhSDNiTllXZU81Rk9wcENmRjJwbjQxNVVMS20?oc=5",
-          "summary": "CPJ, partners warn about Brazil’s election and its impacts on press freedom&nbsp;&nbsp;Com…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom"
-        },
-        {
           "title": "How a scandal engulfing Brazil’s top court could return the Bolsonaros to power",
           "source": "The Guardian",
           "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPOGFXTlpkMEFUS2RXMVc3Y3Rld3pvaWpuZEhJbjFCY2JNZ3lGa2VLZzh0QUZ1SVA0Ujd5TkJIM3VFLTA4aFAtZmJkR3FyaDR6YTJyY2htQ25sVVJqV2ZGbEJROVJsaXYzenBiQ3ViQmFvYWRxS3l4WVRtcjVVdWJtQjhlTmRwcXEyclpINGdnRjNLN2hTWGZackNWYnZPM3dBeGNpUEhJTDN5Vk96dXBhdEJ6TmVqQQ?oc=5",
@@ -3037,6 +3007,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "How a scandal engulfing Brazil’s top court could return the Bolsonaros to power"
+        },
+        {
+          "title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom",
+          "source": "Committee to Protect Journalists",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNTFmTmkya3lSSmpsbV9LbU51dGtRcWN4OUVTQWNoczdMcFBBUjMtclVVSnhoNmxHWkc4VEdXY1dZcVdQRlJCb2IxalFFSXREVEk2V1ZlSnlmUHBFN2JTOVNuNTJsYndSQVJETFNZcm83cGV4THAtMWRsMU9UNmllOHJ5M2QzdURzcmFIM2JOWVdlTzVGT3BwQ2ZGMnBuNDE1VUxLbdIBpAFBVV95cUxQNTFmTmkya3lSSmpsbV9LbU51dGtRcWN4OUVTQWNoczdMcFBBUjMtclVVSnhoNmxHWkc4VEdXY1dZcVdQRlJCb2IxalFFSXREVEk2V1ZlSnlmUHBFN2JTOVNuNTJsYndSQVJETFNZcm83cGV4THAtMWRsMU9UNmllOHJ5M2QzdURzcmFIM2JOWVdlTzVGT3BwQ2ZGMnBuNDE1VUxLbQ?oc=5",
+          "summary": "CPJ, partners warn about Brazil’s election and its impacts on press freedom&nbsp;&nbsp;Com…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "CPJ, partners warn about Brazil’s election and its impacts on press freedom"
         }
       ],
       "hr_trends": [
@@ -3050,15 +3029,6 @@
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
               "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOTBfUkM5eU1MUFAzTXlXY19lTm9jZHNRTWo4TnR2cVhudnZQZHh2ZzZ0c0JJaTN4ekM1dFoyLVExNGVuTW5vcTdMYndpcXlTQlNId2UwQTNvdmZHQ1dVYzFPVHRyU1p6MEZOWVpIWVVHWmdmaUJPMkpzWnZGRDJIUkJfTDJ4Q19jd0hpZlNSMTNfMVYzVUFldG8tbFZ6dllwVFBLYlJZUkhmSHBUQWRjanlIREVxbzYxUTBhRWQtb1BhVnBmTGF2aEZLNUNGZHFobjB4SHJweWdBOEk?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
-            },
-            {
-              "title": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인",
-              "desc": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인&nbsp;&nbsp;IndexBox",
-              "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYVRYdGQ1NnQ3RmJGVkNxNjlIVVlLYk12NGpfRUk5RHNISGRPOVFkdmROa0JfT2E1TWlXdGM2bnVzOEgxa0NOX1pINmQtYnlWY2hsR25pb2xsd3hNYS04dkxLZlRqYkM5dTVNa2s2eG95aUhIcVV6X1hxd3diX05YUUpQVVRYdGluLXdydS1EZlVDUS1RcW90bVE2ejRDdFhzQ0ZBV2ZXWnRqb09GOXI2SE5sSHZRWlIxbHlESVp5b2JFbDhvdDY3UTJSbGdndE9lSHBmVW1KWS0?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -3080,6 +3050,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "Carolina Wagner, VP of Marketing, Kumho Tire, Inspires Us with How to Achieve Career Dreams"
+            },
+            {
+              "title": "Performance Tires Market Forecast to 2035: EV-Driven Demand…",
+              "desc": "Performance Tires Market Forecast to 2035: EV-Driven Demand Supports Growth - News and Sta…",
+              "source": "IndexBox",
+              "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUG9tZDFOUm01VURKb0pvbVRJWmxTWGVJbnFETzgzRnJ4THBjbEx2ekotblVIMlVsdVVNdDZ6Q0RoSkF3czhrMTBsSkJqTDhzVHlKWE9maEtUUy1RMzZWeDVjbmNlVmRYb2h5Zm16dGJmZlVZeGF5VkdVRlhESTJsVWpYSE9xYXpyTjJmOW1Oc2RnX0pKQ3M2WE1DNC1ySmFYdkVfZkpJSDdtcW5xb0ZIbmIzb0VpM1U?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Performance Tires Market Forecast to 2035: EV-Driven Demand Supports Growth"
             }
           ]
         },
@@ -3118,31 +3097,31 @@
       "currency": "SAR",
       "flag": "sa",
       "offices": [
-        "Hankook Tire Co., Ltd. Jeddah Office (제다)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Co., Ltd. Jeddah Office (제다)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "리야드",
+        "capital": "데이터 확인 중",
         "population": "약 3,697만 명",
         "gdp": "약 1.28조 달러",
         "inflation": "2.0%",
         "unemployment": "3.0%",
         "min_wage": {
-          "display": "SAR23.08 / 시간",
-          "note": "공공부문 기준, 외국인 근로자 미적용",
+          "display": "-",
+          "note": "법정 일반 최저임금 없음",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
-        "min_wage_note": "공공부문 기준, 외국인 근로자 미적용",
+        "min_wage_note": "법정 일반 최저임금 없음",
         "indicators": {
           "capital": {
-            "value": "리야드",
-            "display": "리야드",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 36973555.0,
@@ -3169,15 +3148,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 356.9,
-        "change_pct": -2.63,
+        "current_rate": 357.0,
+        "change_pct": -2.59,
         "history_labels": [
           "11월",
           "12월",
@@ -3204,21 +3183,12 @@
           378.3,
           376.0,
           370.8,
-          356.9
+          357.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
       },
       "headlines": [
-        {
-          "title": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia",
-          "source": "NBC News",
-          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObUlWVHRLU2g4MU80VGtLUWNCYk9oSDNXeW1kbFV3VEJLWDRwZXFtTEpJNURtZ0JKMl91bG15d0pUQlpya2JaNzRrY1ZybUs5S1JJellKOW9QeEZsYTN5NHlXaldscEVLMlpmZDNOSDNwblFvcEFZZU9XbFZhNDM3Zl9QLThDR0oxVTJmRHVjZ3hwem9ETDEyUjZ3djVEZw?oc=5",
-          "summary": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia&nbsp;&nbsp;NBC Ne…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia"
-        },
         {
           "title": "Saudi Aramco administrative building attacked, limited fire reported",
           "source": "Reuters",
@@ -3236,6 +3206,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "Houthis Threaten Fierce Retaliation After Saudi Arabia Strikes Yemen"
+        },
+        {
+          "title": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia",
+          "source": "NBC News",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxObUlWVHRLU2g4MU80VGtLUWNCYk9oSDNXeW1kbFV3VEJLWDRwZXFtTEpJNURtZ0JKMl91bG15d0pUQlpya2JaNzRrY1ZybUs5S1JJellKOW9QeEZsYTN5NHlXaldscEVLMlpmZDNOSDNwblFvcEFZZU9XbFZhNDM3Zl9QLThDR0oxVTJmRHVjZ3hwem9ETDEyUjZ3djVEZw?oc=5",
+          "summary": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia&nbsp;&nbsp;NBC Ne…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Why advanced U.S. weapons aren’t stopping Houthi attacks in Saudi Arabia"
         }
       ],
       "hr_trends": [
@@ -3272,13 +3251,13 @@
               "original_title": ""
             },
             {
-              "title": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인",
-              "desc": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인&nbsp;&nbsp;IndexBox",
+              "title": "Lucid Partners with Saudi Logistics Academy on 12-Month Dipl…",
+              "desc": "Lucid Partners with Saudi Logistics Academy on 12-Month Diploma Program - News and Statist…",
               "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYVRYdGQ1NnQ3RmJGVkNxNjlIVVlLYk12NGpfRUk5RHNISGRPOVFkdmROa0JfT2E1TWlXdGM2bnVzOEgxa0NOX1pINmQtYnlWY2hsR25pb2xsd3hNYS04dkxLZlRqYkM5dTVNa2s2eG95aUhIcVV6X1hxd3diX05YUUpQVVRYdGluLXdydS1EZlVDUS1RcW90bVE2ejRDdFhzQ0ZBV2ZXWnRqb09GOXI2SE5sSHZRWlIxbHlESVp5b2JFbDhvdDY3UTJSbGdndE9lSHBmVW1KWS0?oc=5",
-              "lang": "ko",
+              "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNaUFkaWRiRUgxT2IxTFpLbU9rRFkxOE1KQ3BHUUM1Y0FiVDRZbFZYVE5DQmtnd1M1bzhBZ29xWVREeTJrUVpkaGZhalR0b3RSMVJJcktIdWhwdkVoVEdZdnpfUnB5cDk2UzhFdXJELXZwRjBzb0N2WnIxaWxxeXNHQ3NmYS04d1JlcFg5eEZGQVhCaVpIY1JfZUFUUktVSVpxbUpoaG9sODI0NHZWSFJKLURB?oc=5",
+              "lang": "en",
               "translated": false,
-              "original_title": ""
+              "original_title": "Lucid Partners with Saudi Logistics Academy on 12-Month Diploma Program"
             }
           ]
         },
@@ -3335,31 +3314,31 @@
       "currency": "RSD",
       "flag": "rs",
       "offices": [
-        "Hankook Tire Serbia Sales Office (베오그라드)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Serbia Sales Office (베오그라드)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "베오그라드",
+        "capital": "데이터 확인 중",
         "population": "약 655만 명",
         "gdp": "약 1,000억 달러",
         "inflation": "3.9%",
         "unemployment": "7.1%",
         "min_wage": {
-          "display": "약 308디나르 / 시간",
-          "note": "참고치",
-          "source": "Eurostat",
-          "year": 2026
+          "display": "데이터 확인 중",
+          "note": "",
+          "source": "ILO",
+          "year": "-"
         },
-        "min_wage_note": "참고치",
+        "min_wage_note": "",
         "indicators": {
           "capital": {
-            "value": "베오그라드",
-            "display": "베오그라드",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 6549143.0,
@@ -3386,15 +3365,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 12.8,
-        "change_pct": 0.47,
+        "change_pct": 0.46,
         "history_labels": [
           "11월",
           "12월",
@@ -3505,7 +3484,7 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "스톡홀름",
+        "capital": "데이터 확인 중",
         "population": "약 1,060만 명",
         "gdp": "약 6,690억 달러",
         "inflation": "0.7%",
@@ -3514,15 +3493,15 @@
           "display": "-",
           "note": "법정 최저임금 없음 (산별 단체협약으로 결정)",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
         "min_wage_note": "법정 최저임금 없음 (산별 단체협약으로 결정)",
         "indicators": {
           "capital": {
-            "value": "스톡홀름",
-            "display": "스톡홀름",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 10596620.0,
@@ -3549,15 +3528,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 134.6,
-        "change_pct": 1.22,
+        "current_rate": 133.5,
+        "change_pct": 0.45,
         "history_labels": [
           "11월",
           "12월",
@@ -3584,7 +3563,7 @@
           148.9,
           143.4,
           135.2,
-          134.6
+          133.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SEKKRW=X"
@@ -3713,24 +3692,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "마드리드",
+        "capital": "데이터 확인 중",
         "population": "약 4,936만 명",
-        "gdp": "약 1.72조 달러",
+        "gdp": "데이터 확인 중",
         "inflation": "2.7%",
         "unemployment": "10.4%",
         "min_wage": {
-          "display": "약 €1,381 / 월",
-          "note": "연 14회 분할 지급 관행, 2025.1 Eurostat 기준",
+          "display": "1,184유로 / 월",
+          "note": "14회 지급 기준 (SMI)",
           "source": "Eurostat",
           "year": 2025
         },
-        "min_wage_note": "연 14회 분할 지급 관행, 2025.1 Eurostat 기준",
+        "min_wage_note": "14회 지급 기준 (SMI)",
         "indicators": {
           "capital": {
-            "value": "마드리드",
-            "display": "마드리드",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 49355143.0,
@@ -3739,10 +3718,10 @@
             "year": 2025
           },
           "gdp": {
-            "value": "약 1.72조 달러",
-            "display": "약 1.72조 달러",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "inflation": {
             "value": 2.67326741144651,
@@ -3757,15 +3736,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -3792,7 +3771,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -3817,13 +3796,13 @@
           "original_title": "Spain election poll tracker: Who will be the next prime minister?"
         },
         {
-          "title": "USWNT vs Spain live updates, lineups, score and where to watch",
-          "source": "Yahoo Sports",
-          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVFMybE9rRzQ3VHUtMkx5TDRvbXUwLS12cjMyWnhiUVBkT05fTnBWUVBjejZ0VjYyQ1BLX2JVZjlvWGQtYVZOZW8yWEpRc3ZkdV9OTldJdWRneXBtUU03VW9BNXZBeVJ3WFBnZXdXN1ZxeERjbnNwcGp5bVdiaUJvZ2FR?oc=5",
-          "summary": "USWNT vs Spain live updates, lineups, score and where to watch&nbsp;&nbsp;Yahoo Sports",
+          "title": "Miriam González Durántez launches new centrist party in Spain",
+          "source": "The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPTnJqTGxOOG1pX1lENkdTcWdIeF9mVjRYVVRfNUdTbUpJa05ST1hkaHJHbWR4WVVmdDhvLUNiWW5BMTl1TjdXNlZKZUpJZXh5Y2tGUlBWUW12dzIwcGlnOWo5RXRpenFyYlZ2LVRkWjJBY3B4QkdiNnQ2Rm8wNU1CWUJfNU5fdjlWVnpMbW5nVGJFUkE1NFBuTVI2QUFLM1dGOURNM3FySXZRWHJyZFJR?oc=5",
+          "summary": "Miriam González Durántez launches new centrist party in Spain&nbsp;&nbsp;The Guardian",
           "lang": "en",
           "translated": false,
-          "original_title": "USWNT vs Spain live updates, lineups, score and where to watch"
+          "original_title": "Miriam González Durántez launches new centrist party in Spain"
         }
       ],
       "hr_trends": [
@@ -3851,22 +3830,22 @@
               "original_title": ""
             },
             {
-              "title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Bi…",
-              "desc": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spend…",
+              "title": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Pre…",
+              "desc": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Premium OEM Fitments, EU Tire-Lab…",
               "source": "PR Newswire",
-              "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNbDdXV0ZaRTRDU0NqN0JFci1Cc2Fxc0RvLXAwSGM3S2lNYjY3UWNseFY1bVRaM0htWVVSNkxzZ3VEMnV4VXdITFdDMVJVamxrSHhvY1ZLbXAzcThXNWxjVndhUEJxcGVUaUI4SFJjNUtic2N3eXUzY1A4d1pIbnltSkVYREJKSDQ2UFRnRnBVenRkMWVnWVBrcTdEWUtDS2g4TmFMMjc5UHpUcUFPNVZVazcwLVktbFc1cm5Fc0ZyMXlCYkVFVzhmbGdVWUphV0ludkdCaUhETjhuaDBDdmh3TXFfTFh0S092S09vNUVMX04zaGp6TEI1VVVZbTJpYnpJVlZvYjFONWZieGNrLW1xR1JsTmFCWEZKbkVWSy1MbHJUUlZIbVV3elZoalFyWmFzc2ZKUmxQbw?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxPeTdjYThiZVJyemVLS0E3ZHBsemNDb2pTQWNZa2RUWEtZejhCQnp4dTBVblpmYmtHNE5LNVhfQXB4WDN0V0drcUVCWUZlZk01aTNtRXM0TnhBWm5pTExmX18wRkpOMGVzOGtFS0tVYlZIdjB0azZCMUFwRmNqelV6czdTd2JXSnlTOGRHNFFLMW5aX3VPcG1OMnJSZ1FDZGk0UlRUZWNLakVLNEU2cHd1WnViZ3RKZUQySXIwZjRQdms0V3pzNXc4X2JHQUN0LTZCc29MOGs3NzlNOU41ME9nbndUTUhOVjRsd2d0MjJzajAzT2JmUzBBbElzQjdCdElTTFdwQ1YxVm5Td3d2MWY3dDlmQnVYVEswSWJ5aUpXczZhRHRqZ0Rqc0d4TW9odlIwNG1zbl8zcXo5MmhwRHo4dGZ3?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights"
+              "original_title": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Premium OEM Fitments, EU Tire-Label Reform and EV Adoption Support High-Value Demand, Reports Radial Insights"
             },
             {
-              "title": "ERJ Tire Tracker",
-              "desc": "ERJ Tire Tracker - 2026&nbsp;&nbsp;European Rubber Journal",
-              "source": "European Rubber Journal",
-              "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWjZRVUxFNVZuTmpEaUdTVzVQMm5MX214X0I1QXdnUWlYSFUzbElvanUtdVhxbHkwSVpRaUNtOUJPcFJaT0s2SzZhNmtHMWlnaUlrY0RsVXJBMmZDNWp5VnhqU1BPcHluZ3EtcWtzYld3M2ROcy1wYTFTQ2hkUml6ajNDSXpSeTNvQUwySXI4YUpFS3JE?oc=5",
+              "title": "Tire Repair Kits Market To 2035: Growth Driven by Rising Veh…",
+              "desc": "Tire Repair Kits Market To 2035: Growth Driven by Rising Vehicle Parc and DIY Maintenance…",
+              "source": "IndexBox",
+              "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPeVR3LWRycldvQWRLMDl2eWtWU1lLVXFrUmZPX3lPNkh5WGpDOUpidzVRQTNrOHRJN0JEZkYwU3I5M2hVaUJEdGs4Mk5TWkgwSDVNOWJBNjZZdEoydHVYejNwdGRRbXJvbmJUbXgtRXhlMTM0dHFMQ3dTWGpMY05nXzNTN0pHeEtHVVBCZnlVOTU2dDJTWFBCLU1rRjRIOHlxT0pZS3UzQXhmUFhHWW1lN2lIbjZoM0JpYzBhb1gzYjNWMjk5YXc?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "ERJ Tire Tracker"
+              "original_title": "Tire Repair Kits Market To 2035: Growth Driven by Rising Vehicle Parc and DIY Maintenance"
             }
           ]
         },
@@ -3932,7 +3911,7 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "싱가포르",
+        "capital": "데이터 확인 중",
         "population": "약 611만 명",
         "gdp": "약 6,039억 달러",
         "inflation": "0.9%",
@@ -3941,15 +3920,15 @@
           "display": "-",
           "note": "법정 최저임금 없음 (점진적 임금모델 PWM 적용)",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
         "min_wage_note": "법정 최저임금 없음 (점진적 임금모델 PWM 적용)",
         "indicators": {
           "capital": {
-            "value": "싱가포르",
-            "display": "싱가포르",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 6111175.0,
@@ -3976,15 +3955,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1047.2,
-        "change_pct": 0.56,
+        "current_rate": 1046.8,
+        "change_pct": 0.52,
         "history_labels": [
           "11월",
           "12월",
@@ -4011,7 +3990,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1047.2
+          1046.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -4142,31 +4121,31 @@
       "currency": "AED",
       "flag": "ae",
       "offices": [
-        "Hankook Tire Co., Ltd. Dubai Office, Middle East Headquarters (두바이)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Co., Ltd. Dubai Office, Middle East Headquarters (두바이)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "아부다비",
+        "capital": "데이터 확인 중",
         "population": "약 1,151만 명",
         "gdp": "약 5,523억 달러",
-        "inflation": "2.3%",
-        "unemployment": "2.6%",
+        "inflation": "데이터 확인 중",
+        "unemployment": "데이터 확인 중",
         "min_wage": {
           "display": "-",
           "note": "법정 일반 최저임금 없음",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
         "min_wage_note": "법정 일반 최저임금 없음",
         "indicators": {
           "capital": {
-            "value": "아부다비",
-            "display": "아부다비",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 11513149.0,
@@ -4181,27 +4160,27 @@
             "year": 2024
           },
           "inflation": {
-            "value": "2.3%",
-            "display": "2.3%",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "unemployment": {
-            "value": "2.6%",
-            "display": "2.6%",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 365.0,
-        "change_pct": 0.44,
+        "current_rate": 365.1,
+        "change_pct": 0.47,
         "history_labels": [
           "11월",
           "12월",
@@ -4228,7 +4207,7 @@
           386.9,
           375.1,
           367.8,
-          365.0
+          365.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
@@ -4296,10 +4275,10 @@
               "original_title": ""
             },
             {
-              "title": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인",
-              "desc": "2035년 타이어 절단기 시장 전망: 규제 의무와 소재 회수 가치가 성장 견인&nbsp;&nbsp;IndexBox",
+              "title": "2035년 2포스트 리프트 시장: 전기차 정비 수요가 성장 견인",
+              "desc": "2035년 2포스트 리프트 시장: 전기차 정비 수요가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPYVRYdGQ1NnQ3RmJGVkNxNjlIVVlLYk12NGpfRUk5RHNISGRPOVFkdmROa0JfT2E1TWlXdGM2bnVzOEgxa0NOX1pINmQtYnlWY2hsR25pb2xsd3hNYS04dkxLZlRqYkM5dTVNa2s2eG95aUhIcVV6X1hxd3diX05YUUpQVVRYdGluLXdydS1EZlVDUS1RcW90bVE2ejRDdFhzQ0ZBV2ZXWnRqb09GOXI2SE5sSHZRWlIxbHlESVp5b2JFbDhvdDY3UTJSbGdndE9lSHBmVW1KWS0?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcV9QYmN5RVZoTWswM3RXelV5blYwU21fVk9WRVdaS0tibERsV2tfV1lxb0VNMk80STFxYmo5Z2NEaEltd0tmeGppRm9MZk9SUWI5Z1Zfa0Z3SFZ0UVN3MGNmSlhCTXRrOUhYU1JvdlBQZUIxUlFKcTQ5SmhtSm9kSVJDdFpwWnJLeVZMNExDYWxuZ0ZkbG1fbFdsaGVxdkVjNVhvd3pRV1FrWlkyTzJaQktaNFBWXzJQYXVYdnliUDI?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -4350,31 +4329,31 @@
       "currency": "GBP",
       "flag": "gb",
       "offices": [
-        "Hankook Tyre U.K. Ltd. (다번트리)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tyre U.K. Ltd. (다번트리)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "런던",
+        "capital": "데이터 확인 중",
         "population": "약 6,949만 명",
-        "gdp": "약 3.59조 달러",
+        "gdp": "데이터 확인 중",
         "inflation": "3.9%",
         "unemployment": "4.7%",
         "min_wage": {
-          "display": "£12.71 / 시간",
-          "note": "National Living Wage(21세 이상), 2025~26년 기준",
+          "display": "데이터 확인 중",
+          "note": "",
           "source": "ILO",
-          "year": 2025
+          "year": "-"
         },
-        "min_wage_note": "National Living Wage(21세 이상), 2025~26년 기준",
+        "min_wage_note": "",
         "indicators": {
           "capital": {
-            "value": "런던",
-            "display": "런던",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 69487000.0,
@@ -4383,10 +4362,10 @@
             "year": 2025
           },
           "gdp": {
-            "value": "약 3.59조 달러",
-            "display": "약 3.59조 달러",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "inflation": {
             "value": 3.88306881625999,
@@ -4401,15 +4380,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1774.9,
-        "change_pct": 0.74,
+        "current_rate": 1774.3,
+        "change_pct": 0.7,
         "history_labels": [
           "11월",
           "12월",
@@ -4436,7 +4415,7 @@
           1912.2,
           1864.7,
           1787.6,
-          1774.9
+          1774.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/GBPKRW=X"
@@ -4461,13 +4440,13 @@
           "original_title": "The Welfare State Is Crushing Britain"
         },
         {
-          "title": "UK police arrest three suspected of involvement in insider dealing ring",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY253eXR3d0hlbHZRSmdHSHFRbU5kblkweDg3U3JlQ1VaaTRRUGx5RWNzQ3pnOXp3S0NXT0lOLVZhUGtKS2k4VDV1ZFFldG1GSWdzUmZhbnIyZXlhcXVkYW5CYWlleHV2Mm5kanJacVlhSXA1NktJUndqV21pQmtEcXlha1VIZ2VkWHRpZXhGdTVnVDRCVkRsZm9hY3RiZjZnYjZKTHZuLWRsWEVLNUJB?oc=5",
-          "summary": "UK police arrest three suspected of involvement in insider dealing ring&nbsp;&nbsp;Reuters",
+          "title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework",
+          "source": "Global Regulation Tomorrow",
+          "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNNzNiSWN0TkZmVjBvNDNPdndzenZIQjNVR1RPYldzZmp3RnBJa1JlNlIxc0VPd2hGR0Fka0gtWXlJNmVzRUVLTG10RmI4Wm4tOFhENThnWkJRcExwcVFSR1g0RjFyUWhmWERTZ0NBVU4zY1FVdkRrdEVzeHlvdE52NW91RzM3aHRqejhCcm9NSThja2FxMXJodVJuSm42U2Y3MTBPNEVSR2M5Q0RIeElvYzFERzZFVmtRVDhQRmM0dEc1ZVFUSGJqc3VGaXB1ZXlHVHN1WlNQNFpOT0JKOHU5bERNZXlSM0gyUWxmT2g0cU9FZ3U3M2hucHFXa2JkaDJUdlhVakpyaUNTZk1yUkNBRy1hRW12UQ?oc=5",
+          "summary": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United K…",
           "lang": "en",
           "translated": false,
-          "original_title": "UK police arrest three suspected of involvement in insider dealing ring"
+          "original_title": "Basel Committee finds Australia, Japan, Korea, Switzerland compliant, and Canada, United Kingdom largely compliant with its leverage ratio framework"
         }
       ],
       "hr_trends": [
@@ -4574,7 +4553,7 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "비엔나",
+        "capital": "데이터 확인 중",
         "population": "약 921만 명",
         "gdp": "약 5,795억 달러",
         "inflation": "3.5%",
@@ -4583,15 +4562,15 @@
           "display": "-",
           "note": "법정 최저임금 없음 (산별 단체협약으로 결정)",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
         "min_wage_note": "법정 최저임금 없음 (산별 단체협약으로 결정)",
         "indicators": {
           "capital": {
-            "value": "비엔나",
-            "display": "비엔나",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 9208163.0,
@@ -4618,15 +4597,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -4653,7 +4632,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -4757,24 +4736,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "키이우",
+        "capital": "데이터 확인 중",
         "population": "약 3,898만 명",
         "gdp": "약 2,142억 달러",
         "inflation": "12.7%",
         "unemployment": "9.8%",
         "min_wage": {
-          "display": "약 8,000흐리브냐 / 월",
-          "note": "2025년 기준",
+          "display": "8,647흐리브냐 / 월",
+          "note": "월 기준",
           "source": "ILO",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "2025년 기준",
+        "min_wage_note": "월 기준",
         "indicators": {
           "capital": {
-            "value": "키이우",
-            "display": "키이우",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 38980376.0,
@@ -4801,15 +4780,15 @@
             "year": 2021
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.7,
-        "change_pct": 0.47,
+        "change_pct": 0.5,
         "history_labels": [
           "11월",
           "12월",
@@ -4843,15 +4822,6 @@
       },
       "headlines": [
         {
-          "title": "War in Ukraine | Global Conflict Tracker",
-          "source": "Council on Foreign Relations",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzNzUzWFZFa3dRQ094S3NlRzRSbVloSUU5ZGhYSHZBLUYxdTlvdGdaTmN6b09EOGZlYmVTaGRnSFVzbk12T0Z4bDJJTnF6bGI4S1ZaVXhNUDY3cEJweFJVVWZZQ2c4T0NOT3lWVy1BMHFFRGJNdUQ5Rg?oc=5",
-          "summary": "War in Ukraine | Global Conflict Tracker&nbsp;&nbsp;Council on Foreign Relations",
-          "lang": "en",
-          "translated": false,
-          "original_title": "War in Ukraine | Global Conflict Tracker"
-        },
-        {
           "title": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR",
           "source": "NPR",
           "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUWV4SlNjbHRLVVNlNDV3STBGRk80d1NjN3ptTmt0N3UyYXFiZWFPbkVzTG9DUFRqYmdMRnJTRlY0WXI4U2toVHVhTVRGOVNNSUNMZ2h4RTdzV2xqU3VHYkdBb2J0U005VUJKOWo0VzVPaGFwMkZrZmpkZDdLLXdPZEhoZ0habDBLUzEyYkd0Qng?oc=5",
@@ -4859,6 +4829,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR"
+        },
+        {
+          "title": "Trump says US still sharing intel, even as Ukraine reports attacks with no warnings",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNRVA2WjlXNVNqR1RhTzFnOFd4bGstWUFZMDhCbXBNUEsxNzU4b2N2Tktwck9tMlFvSERMbFVwcnNkMUFTSVBxMjlia2VhMlQwZVllRlo5ZFpaUnl6aWFxSWJGaXhIeFJFcVA1ZUUxRHJqWjNqalNrU1UwMUtfX1hKTXhtN3pNVHdOSW93WGh5NlRuZW5KdVJPOGtsWWVHbG9UMy1tUjZrcWxEWGZkUldicFVURDFjdmdza3Q0?oc=5",
+          "summary": "Trump says US still sharing intel, even as Ukraine reports attacks with no warnings&nbsp;&…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Trump says US still sharing intel, even as Ukraine reports attacks with no warnings"
         },
         {
           "title": "Ukraine had no intelligence from partners about missiles headed to Kyiv, Zelenskyy says",
@@ -4958,24 +4937,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "카이로",
+        "capital": "데이터 확인 중",
         "population": "약 1억 1,837만 명",
         "gdp": "약 3,653억 달러",
         "inflation": "14.1%",
         "unemployment": "6.8%",
         "min_wage": {
-          "display": "약 7,000파운드 / 월",
-          "note": "공공부문 기준(참고치)",
+          "display": "7,000이집트파운드 / 월",
+          "note": "민간 부문",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
-        "min_wage_note": "공공부문 기준(참고치)",
+        "min_wage_note": "민간 부문",
         "indicators": {
           "capital": {
-            "value": "카이로",
-            "display": "카이로",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 118365995.0,
@@ -5002,15 +4981,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 25.5,
-        "change_pct": 0.49,
+        "current_rate": 25.4,
+        "change_pct": -0.95,
         "history_labels": [
           "11월",
           "12월",
@@ -5037,7 +5016,7 @@
           27.8,
           27.7,
           26.0,
-          25.5
+          25.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/EGPKRW=X"
@@ -5121,6 +5100,15 @@
           "tag_class": "bg-indigo-100 text-indigo-700",
           "items": [
             {
+              "title": "Washington’s nation-high minimum wage rising to nearly $18 a…",
+              "desc": "Washington’s nation-high minimum wage rising to nearly $18 an hour in 2027&nbsp;&nbsp;Kiow…",
+              "source": "Kiowa County Press",
+              "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQSllWZUpaS0ZzQ0p1MVROMXJYaFNyRmVBaDNXQno1Z0RHU0M4QTRKRDZiQTExbzFsczVJQVdJbUhTUVgtT0Z1YWN5VHhfOE1tX042UlhPSkxZbVZKQU5leHBvd1FEWGYtTUF0MldZTVdqMm82d2xsSURBOW1Pal9xTTZ1VWMyYURSMXNvRGg0ejlxOUlDU0o1OXNteERiZDAwbEN4Z3N6TQ?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Washington’s nation-high minimum wage rising to nearly $18 an hour in 2027"
+            },
+            {
               "title": "Minimum Wage by African Country in 2026: Every Country Ranke…",
               "desc": "Minimum Wage by African Country in 2026: Every Country Ranked&nbsp;&nbsp;The African Expon…",
               "source": "The African Exponent",
@@ -5148,7 +5136,7 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "로마",
+        "capital": "데이터 확인 중",
         "population": "약 5,892만 명",
         "gdp": "약 2.55조 달러",
         "inflation": "1.5%",
@@ -5157,15 +5145,15 @@
           "display": "-",
           "note": "법정 최저임금 없음 (단체협약 중심)",
           "source": "ILO",
-          "year": 2026
+          "year": 2025
         },
         "min_wage_note": "법정 최저임금 없음 (단체협약 중심)",
         "indicators": {
           "capital": {
-            "value": "로마",
-            "display": "로마",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 58915656.0,
@@ -5192,15 +5180,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -5227,7 +5215,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -5349,24 +5337,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "도쿄",
+        "capital": "데이터 확인 중",
         "population": "약 1억 2,337만 명",
         "gdp": "약 4.44조 달러",
         "inflation": "3.2%",
         "unemployment": "2.5%",
         "min_wage": {
-          "display": "¥1,121 / 시간",
-          "note": "2026년 전국 가중평균, 지역별 상이(도쿄 ¥1,226)",
+          "display": "1,121엔 / 시간",
+          "note": "전국 가중평균 (도쿄 1,226엔)",
           "source": "일본 후생노동성",
-          "year": 2026
+          "year": 2025
         },
-        "min_wage_note": "2026년 전국 가중평균, 지역별 상이(도쿄 ¥1,226)",
+        "min_wage_note": "전국 가중평균 (도쿄 1,226엔)",
         "indicators": {
           "capital": {
-            "value": "도쿄",
-            "display": "도쿄",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 123366734.0,
@@ -5393,15 +5381,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 844.2,
-        "change_pct": 0.33,
+        "current_rate": 844.0,
+        "change_pct": 0.31,
         "history_labels": [
           "11월",
           "12월",
@@ -5428,7 +5416,7 @@
           886.8,
           860.1,
           858.3,
-          844.2
+          844.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/JPYKRW=X"
@@ -5469,6 +5457,15 @@
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
             {
+              "title": "한온시스템, 애프터마켓 접점 확대 外",
+              "desc": "한온시스템, 애프터마켓 접점 확대 外&nbsp;&nbsp;톱데일리",
+              "source": "톱데일리",
+              "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE55UmthbFd0bmhQV3l5SVJYWjZEcXZHMXpXMEZILTkxMmdrYkFPY1ltZWVndlM1cWhZQ19YZFZtdEJkWlUyYU1DYlhjQ19aYlly?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": ""
+            },
+            {
               "title": "현대차 디 올 뉴 넥쏘, 일본 출시 5개월만에 누적 점유율 11%",
               "desc": "현대차 디 올 뉴 넥쏘, 일본 출시 5개월만에 누적 점유율 11%&nbsp;&nbsp;연합뉴스",
               "source": "연합뉴스",
@@ -5491,15 +5488,6 @@
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
               "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOTBfUkM5eU1MUFAzTXlXY19lTm9jZHNRTWo4TnR2cVhudnZQZHh2ZzZ0c0JJaTN4ekM1dFoyLVExNGVuTW5vcTdMYndpcXlTQlNId2UwQTNvdmZHQ1dVYzFPVHRyU1p6MEZOWVpIWVVHWmdmaUJPMkpzWnZGRDJIUkJfTDJ4Q19jd0hpZlNSMTNfMVYzVUFldG8tbFZ6dllwVFBLYlJZUkhmSHBUQWRjanlIREVxbzYxUTBhRWQtb1BhVnBmTGF2aEZLNUNGZHFobjB4SHJweWdBOEk?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
-            },
-            {
-              "title": "\"일본 여행 중 택시탔는데 넥쏘였어?\"..출시 직후 점유율 11%↑",
-              "desc": "\"일본 여행 중 택시탔는데 넥쏘였어?\"..출시 직후 점유율 11%↑ - 머니투데이&nbsp;&nbsp;머니투데이",
-              "source": "머니투데이",
-              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5kVlBTa3RhMm5DZVQ4NHNXdUEwakNDdGhtS05IZi1nTEpJblh4TjFmWkJJX3NSRnZjYTRENjRHdElGeW1QeDdwaWRNLXlFbFVxM3BrQ3BKWDVmOXV1WktNczJ6anNlQnR4Mm9aetIBckFVX3lxTE55MDl2SF93amRFLVBmXzZheUhXSGxEdUNqdlhZUDNJQ1U5NFZaX2owanFlbVVwZDRWV1V4MVpjVjZmUDFPYUE3X0hVNXI3QzhnbTFkWHc0N0o3T1hIWGdHUjNQdnB4MUdvX1lCeEVHbHBRQQ?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -5530,6 +5518,15 @@
               "original_title": "HR giant ordered to pay $400,000 to job applicant who wanted to bring a service dog to work"
             },
             {
+              "title": "\"Boss, Please Reduce My Working Hours\"... The Strange Phenom…",
+              "desc": "\"Boss, Please Reduce My Working Hours\"... The Strange Phenomenon Following Wage Increases&…",
+              "source": "아시아경제",
+              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQcndvRHl1OHMzRC1EX29YcEpiNVk3LWJDbTU5STNrSUlCYy1JS05xWlo1YllOOWNZTW8yR0hKYURyNWtrM1gyczVFTU5kWjk1cENiRTlvemNNWkFmV0tDQmROb3I?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "\"Boss, Please Reduce My Working Hours\"... The Strange Phenomenon Following Wage Increases"
+            },
+            {
               "title": "Amid discussions about extending the retirement age due to t…",
               "desc": "Amid discussions about extending the retirement age due to the aging population, a proposa…",
               "source": "매일경제",
@@ -5537,15 +5534,6 @@
               "lang": "en",
               "translated": false,
               "original_title": "Amid discussions about extending the retirement age due to the aging population, a proposal has been.."
-            },
-            {
-              "title": "Japan Working Visa Permit: Requirements, Process & Eligibili…",
-              "desc": "Japan Working Visa Permit: Requirements, Process & Eligibility&nbsp;&nbsp;Y-Axis Overseas…",
-              "source": "Y-Axis Overseas Careers",
-              "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1KWExrcWwzVDhrM0dicDhVQ2RPVGM0S3VXRElVYThSZEg3aE9FOEtIMW0tazVLeklUVFFOVkpfaFo2ZmIzRF8tZWNkaHNRMmtv?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Japan Working Visa Permit: Requirements, Process & Eligibility"
             }
           ]
         }
@@ -5559,31 +5547,31 @@
       "currency": "CZK",
       "flag": "cz",
       "offices": [
-        "Hankook Tire Ceska Republika s.r.o. (프라하)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Ceska Republika s.r.o. (프라하)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "프라하",
+        "capital": "데이터 확인 중",
         "population": "약 1,089만 명",
         "gdp": "약 3,910억 달러",
         "inflation": "2.5%",
         "unemployment": "2.8%",
         "min_wage": {
-          "display": "약 20,800코루나 / 월",
-          "note": "2025년 기준",
+          "display": "22,400코루나 / 월",
+          "note": "월 총액 기준",
           "source": "Eurostat",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "2025년 기준",
+        "min_wage_note": "월 총액 기준",
         "indicators": {
           "capital": {
-            "value": "프라하",
-            "display": "프라하",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 10886878.0,
@@ -5610,15 +5598,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 61.7,
-        "change_pct": 0.84,
+        "current_rate": 61.5,
+        "change_pct": 0.48,
         "history_labels": [
           "11월",
           "12월",
@@ -5645,7 +5633,7 @@
           67.7,
           66.2,
           62.8,
-          61.7
+          61.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CZKKRW=X"
@@ -5670,13 +5658,13 @@
           "original_title": "Czech Republic: UN Committee on the Rights of the Child finds that immigration detention of children violated the prohibition of arbitrary detention and ill-treatment"
         },
         {
-          "title": "Prostějov Air Quality Index (AQI) and Czech Republic Air Pollution | IQAir Malaysia",
-          "source": "IQAir",
-          "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBHemZkX1hDSFZSYzZmakxYVHhfcmtHRjNwbDlwRlVHbkZXRk1aelpac0JtT24xYjA3XzBnbE80bFhmZkVGNThscVZwNkh5U2JGNlZfbWxYVjRaYklRbGhFMnlNaVZCUGdvV1JTX296NGRQUUlvTWUwNnhldXdrcEU?oc=5",
-          "summary": "Prostějov Air Quality Index (AQI) and Czech Republic Air Pollution | IQAir Malaysia&nbsp;&…",
+          "title": "Scotland 3-2 Czech Republic (agg 5-2): Have your say",
+          "source": "AOL.com",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBfdVlzMjFXY0xDY1VpTmxEYWhtaEg2djFSUnpIdThhOEpZSFVRbmhSaDlKNlpfU2dGcmQwdC1zZ19WNGtGYlJkYkxSbmFDVVNCa0czQU9Xa1JxNVRtZFhIVVF2MHlVZTNHcDkxOERqeWdxZUtjc2xDOVQ5NA?oc=5",
+          "summary": "Scotland 3-2 Czech Republic (agg 5-2): Have your say&nbsp;&nbsp;AOL.com",
           "lang": "en",
           "translated": false,
-          "original_title": "Prostějov Air Quality Index (AQI) and Czech Republic Air Pollution | IQAir Malaysia"
+          "original_title": "Scotland 3-2 Czech Republic (agg 5-2): Have your say"
         }
       ],
       "hr_trends": [
@@ -5756,24 +5744,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "산티아고",
+        "capital": "데이터 확인 중",
         "population": "약 1,986만 명",
         "gdp": "약 3,574억 달러",
         "inflation": "4.2%",
         "unemployment": "9.0%",
         "min_wage": {
-          "display": "약 539,000페소 / 월",
-          "note": "2025년 기준(참고치)",
+          "display": "529,000페소 / 월",
+          "note": "2025년 7월 적용분",
           "source": "ILO",
           "year": 2025
         },
-        "min_wage_note": "2025년 기준(참고치)",
+        "min_wage_note": "2025년 7월 적용분",
         "indicators": {
           "capital": {
-            "value": "산티아고",
-            "display": "산티아고",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 19859921.0,
@@ -5800,15 +5788,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1.4,
-        "change_pct": 0.46,
+        "change_pct": 0.48,
         "history_labels": [
           "11월",
           "12월",
@@ -5851,13 +5839,13 @@
           "original_title": "WSU-Chile collaboration reveals border-hopping virus"
         },
         {
-          "title": "Record-breaking El Niño brings unprecedented snow to Chile",
+          "title": "Chile's ski resort extends season after heavy snowfall",
           "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQi1mS0JhS1AxTHdJbWtDc3R4dWxZb1VYTzQ0UDVBaTZJZ1pDclVwZmx2MG9jczc0T1Jucnl3dmZwZ1JCbmhDekxtQ1JIa01QRlJxbnFMcUl5YmVJSjhYZXVXWG1GZV9leks1d3pFb1hPZjNSX2xKTXRXLV9qMG1DVFpUbGdkRzVSNGplYlotQUdrSnhEelJXTmJvazBTdHZY?oc=5",
-          "summary": "Record-breaking El Niño brings unprecedented snow to Chile&nbsp;&nbsp;Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxObE5jY2NGdDFxSmtZYi1fNDJlSHdkUmd5UGVudzI5akQyellyZkhYc21rMUFIeHFkMTVveHM3Y01GQkVfZHJJcmNPMWNmdFdDekkwMWxnSHdBZ2VEdExaODdKVC0yZ2RRMkwxQmYzalpRZF9vbkR4VmQ2NkFkY1gyZmV6VUdaYjRVcnJKb1ZnMk1TR0VDV1prNVZkVjJXaDNDckJGdV9oSGFvRTRLSmdLa2RCd2JISU45OXlsaFZ5TXI3VlU?oc=5",
+          "summary": "Chile's ski resort extends season after heavy snowfall&nbsp;&nbsp;Reuters",
           "lang": "en",
           "translated": false,
-          "original_title": "Record-breaking El Niño brings unprecedented snow to Chile"
+          "original_title": "Chile's ski resort extends season after heavy snowfall"
         },
         {
           "title": "US Swaps Bets Backfire, Wiping Out Billions From Funds in Chile",
@@ -5910,15 +5898,6 @@
               "original_title": "[Webinar] Critical Employment Law Updates Before 2027"
             },
             {
-              "title": "New Ag Wage Increase Triggers Strong Backlash From Farm Grou…",
-              "desc": "New Ag Wage Increase Triggers Strong Backlash From Farm Groups&nbsp;&nbsp;The Packer",
-              "source": "The Packer",
-              "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObXRkcjlqazEtUlp6Qi00VEw2UlhpR0hqeEdBNGU3VUFMV01UMDZKNkpCNWMyRk9FbFZRSTBieFRfTzBjU2dJU0ZteFhOalJtelRQTTd5NElsemdYUE56cHhQdVNSVVRvSzVBUlVld2d2bHNOVkdzX3ByUU5HcFFqQTRfb2t1aW16NmNqR2QwWXZUZw?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "New Ag Wage Increase Triggers Strong Backlash From Farm Groups"
-            },
-            {
               "title": "DOL Scraps Plan to Eliminate 450+ FLSA Interpretive Regulati…",
               "desc": "DOL Scraps Plan to Eliminate 450+ FLSA Interpretive Regulations&nbsp;&nbsp;Jackson Lewis",
               "source": "Jackson Lewis",
@@ -5926,6 +5905,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "DOL Scraps Plan to Eliminate 450+ FLSA Interpretive Regulations"
+            },
+            {
+              "title": "New Ag Wage Increase Triggers Strong Backlash From Farm Grou…",
+              "desc": "New Ag Wage Increase Triggers Strong Backlash From Farm Groups&nbsp;&nbsp;The Packer",
+              "source": "The Packer",
+              "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxObXRkcjlqazEtUlp6Qi00VEw2UlhpR0hqeEdBNGU3VUFMV01UMDZKNkpCNWMyRk9FbFZRSTBieFRfTzBjU2dJU0ZteFhOalJtelRQTTd5NElsemdYUE56cHhQdVNSVVRvSzVBUlVld2d2bHNOVkdzX3ByUU5HcFFqQTRfb2t1aW16NmNqR2QwWXZUZw?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "New Ag Wage Increase Triggers Strong Backlash From Farm Groups"
             },
             {
               "title": "The Supreme Court and the last word",
@@ -5955,24 +5943,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "아스타나",
+        "capital": "데이터 확인 중",
         "population": "약 2,084만 명",
         "gdp": "약 3,062억 달러",
         "inflation": "11.4%",
         "unemployment": "4.8%",
         "min_wage": {
-          "display": "약 85,000텐게 / 월",
-          "note": "2025년 기준",
+          "display": "85,000텡게 / 월",
+          "note": "월 기준",
           "source": "ILO",
           "year": 2025
         },
-        "min_wage_note": "2025년 기준",
+        "min_wage_note": "월 기준",
         "indicators": {
           "capital": {
-            "value": "아스타나",
-            "display": "아스타나",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 20843754.0,
@@ -5999,15 +5987,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 3.0,
-        "change_pct": -2.68,
+        "change_pct": -2.67,
         "history_labels": [
           "11월",
           "12월",
@@ -6127,36 +6115,36 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "오타와",
-        "population": "약 4,100만 명",
-        "gdp": "약 2.24조 달러",
+        "capital": "데이터 확인 중",
+        "population": "데이터 확인 중",
+        "gdp": "데이터 확인 중",
         "inflation": "2.1%",
         "unemployment": "6.9%",
         "min_wage": {
-          "display": "약 CAD 17.75 / 시간",
-          "note": "연방부문 기준, 주(州)별로 상이",
-          "source": "ILO",
-          "year": 2026
+          "display": "17.20캐나다달러 / 시간",
+          "note": "온타리오주 기준",
+          "source": "Ontario Ministry of Labour",
+          "year": 2025
         },
-        "min_wage_note": "연방부문 기준, 주(州)별로 상이",
+        "min_wage_note": "온타리오주 기준",
         "indicators": {
           "capital": {
-            "value": "오타와",
-            "display": "오타와",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
-            "value": "약 4,100만 명",
-            "display": "약 4,100만 명",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "gdp": {
-            "value": "약 2.24조 달러",
-            "display": "약 2.24조 달러",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "inflation": {
             "value": 2.07232411149103,
@@ -6171,15 +6159,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 942.8,
-        "change_pct": 0.94,
+        "current_rate": 942.4,
+        "change_pct": 0.9,
         "history_labels": [
           "11월",
           "12월",
@@ -6206,7 +6194,7 @@
           1013.9,
           990.8,
           952.0,
-          942.8
+          942.4
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -6231,13 +6219,13 @@
           "original_title": "Carney 1812 post references British-Canadian forces routing US"
         },
         {
-          "title": "How the trade war with Canada is hitting US states—and could sway midterm elections",
-          "source": "Atlantic Council",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOczlGQU5QS29lR2ZmWVR3LWx1SmRaR21fclNwdVQ3NXpnMnZsNHY1eFRIazdPazZ5dVlUY1FSalpLQ3lVLWNjNk56cUYtaWc0dXRPSzUzNEhwUUNaZDQ0MWM1NFlzUkpuODJvS0pzQjZYMjhVUjcyVGNXcUFhT1laME5ZcDJyZ3B5bll6a0UweUFGbG51cHV3NllVblRVbGh5SWR6T0xKRlgyZ0xWNk9veGN6MDV2SGJOMFdkN1lFdG13NGhpd1pYRGRDYjZ4NVJVWEE?oc=5",
-          "summary": "How the trade war with Canada is hitting US states—and could sway midterm elections&nbsp;&…",
+          "title": "Canadians are staying away from Las Vegas — and it's becoming a Nevada election issue",
+          "source": "CBC",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUW05dm1ZOFFfcTBQZkFxUlJ1Q0xoQ2MwUHd1TkdDVVhuNnRMUWRxQWtJQy1IaGNxMnkzZm5CMjloa0VYV0MtVGxCM0Q3VTlBVUkyVXdqMkFodWxpd0NHajV3Wk9uYzk2WkhUQkhjNEZOSUgyUnNTQW50cU9JaVcxczF3US1WSXhSNVotekxB?oc=5",
+          "summary": "Canadians are staying away from Las Vegas — and it's becoming a Nevada election issue&nbsp…",
           "lang": "en",
           "translated": false,
-          "original_title": "How the trade war with Canada is hitting US states—and could sway midterm elections"
+          "original_title": "Canadians are staying away from Las Vegas — and it's becoming a Nevada election issue"
         }
       ],
       "hr_trends": [
@@ -6317,13 +6305,13 @@
               "original_title": "Earned wage access outpaces Canadian law, leaving employers exposed"
             },
             {
-              "title": "California Governor Signs Array of Employment Bills, Vetoes…",
-              "desc": "California Governor Signs Array of Employment Bills, Vetoes Menopause Protected Category B…",
-              "source": "Ogletree",
-              "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNWkR0MGRBdGJsMnNIVlFXT0tVSm5jS1hibDNSVjQySEVDcUV4NERKbnZjWUlUbGtfRzlzX2lRR2RXVjRIeFI4czUwVUJHLXlFdWNiRlpXcDZXUUF0RkVqMW8wdVkzU0tDVXNmSTVVMXJjU1o2YnJ5OFg5MTE0SEx0MHI5RHlsWnhuek9PR29BbFlEV0JueUZjM0hPbTdzekM0QTduX3RnYjI3WXQ0TnVTRk5mUmZZRzdlOUE3RWtZOWFBblpteGlhWThlREJoOVl5RVJYS2g0WnJJWlA0?oc=5",
+              "title": "FLSA Compliance Guide 2026: Wage and Hour Rules for HR",
+              "desc": "FLSA Compliance Guide 2026: Wage and Hour Rules for HR&nbsp;&nbsp;HRMorning",
+              "source": "HRMorning",
+              "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE01S1RSUUR5MVlFaXZZZ01uZkMzb09IalhHUFdTN05qdDUtenhKS0RrdWdTZ1VWUWh4OEVPQ3RkV29uNkU1LW1XNE90OTR0RXZic013S09rNjEwYXdsSnZZeDNhUjV4RVk?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "California Governor Signs Array of Employment Bills, Vetoes Menopause Protected Category Bill"
+              "original_title": "FLSA Compliance Guide 2026: Wage and Hour Rules for HR"
             }
           ]
         }
@@ -6344,24 +6332,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "보고타",
+        "capital": "데이터 확인 중",
         "population": "약 5,343만 명",
-        "gdp": "약 3,630억 달러",
-        "inflation": "5.2%",
+        "gdp": "데이터 확인 중",
+        "inflation": "데이터 확인 중",
         "unemployment": "8.3%",
         "min_wage": {
-          "display": "1,423,500페소 / 월",
-          "note": "2025년 기준",
+          "display": "1,750,905페소 / 월",
+          "note": "교통보조금 별도",
           "source": "ILO",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "2025년 기준",
+        "min_wage_note": "교통보조금 별도",
         "indicators": {
           "capital": {
-            "value": "보고타",
-            "display": "보고타",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 53425635.0,
@@ -6370,16 +6358,16 @@
             "year": 2025
           },
           "gdp": {
-            "value": "약 3,630억 달러",
-            "display": "약 3,630억 달러",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "inflation": {
-            "value": "5.2%",
-            "display": "5.2%",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "unemployment": {
             "value": 8.29,
@@ -6388,15 +6376,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 0.4,
-        "change_pct": 0.82,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -6500,31 +6488,31 @@
       "currency": "EUR",
       "flag": "hr",
       "offices": [
-        "Hankook Tire Croatia Sales Office (자그레브)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Croatia Sales Office (자그레브)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "자그레브",
+        "capital": "데이터 확인 중",
         "population": "약 388만 명",
         "gdp": "약 1,051억 달러",
         "inflation": "3.7%",
         "unemployment": "5.0%",
         "min_wage": {
-          "display": "약 €970 / 월",
-          "note": "2025.1 Eurostat 기준, 2023년부터 유로 사용",
+          "display": "1,050유로 / 월",
+          "note": "월 총액 기준",
           "source": "Eurostat",
-          "year": 2025
+          "year": 2026
         },
-        "min_wage_note": "2025.1 Eurostat 기준, 2023년부터 유로 사용",
+        "min_wage_note": "월 총액 기준",
         "indicators": {
           "capital": {
-            "value": "자그레브",
-            "display": "자그레브",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 3876200.0,
@@ -6551,15 +6539,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -6586,7 +6574,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -6670,24 +6658,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "방콕",
+        "capital": "데이터 확인 중",
         "population": "약 7,162만 명",
         "gdp": "약 5,770억 달러",
         "inflation": "-0.1%",
         "unemployment": "0.8%",
         "min_wage": {
-          "display": "1일 400바트",
-          "note": "2025년 기준, 지역별 상이",
+          "display": "400바트 / 일",
+          "note": "방콕 기준 (지역별 337~400바트)",
           "source": "ILO",
           "year": 2025
         },
-        "min_wage_note": "2025년 기준, 지역별 상이",
+        "min_wage_note": "방콕 기준 (지역별 337~400바트)",
         "indicators": {
           "capital": {
-            "value": "방콕",
-            "display": "방콕",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 71619863.0,
@@ -6714,15 +6702,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
         "current_rate": 39.9,
-        "change_pct": 0.7,
+        "change_pct": 0.66,
         "history_labels": [
           "11월",
           "12월",
@@ -6799,15 +6787,6 @@
               "original_title": ""
             },
             {
-              "title": "ERJ Tire Tracker",
-              "desc": "ERJ Tire Tracker - 2026&nbsp;&nbsp;European Rubber Journal",
-              "source": "European Rubber Journal",
-              "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWjZRVUxFNVZuTmpEaUdTVzVQMm5MX214X0I1QXdnUWlYSFUzbElvanUtdVhxbHkwSVpRaUNtOUJPcFJaT0s2SzZhNmtHMWlnaUlrY0RsVXJBMmZDNWp5VnhqU1BPcHluZ3EtcWtzYld3M2ROcy1wYTFTQ2hkUml6ajNDSXpSeTNvQUwySXI4YUpFS3JE?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "ERJ Tire Tracker"
-            },
-            {
               "title": "Performance Tires Market Forecast to 2035: EV-Driven Demand…",
               "desc": "Performance Tires Market Forecast to 2035: EV-Driven Demand Supports Growth - News and Sta…",
               "source": "IndexBox",
@@ -6815,6 +6794,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "Performance Tires Market Forecast to 2035: EV-Driven Demand Supports Growth"
+            },
+            {
+              "title": "ERJ Tire Tracker",
+              "desc": "ERJ Tire Tracker - 2026&nbsp;&nbsp;European Rubber Journal",
+              "source": "European Rubber Journal",
+              "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPWjZRVUxFNVZuTmpEaUdTVzVQMm5MX214X0I1QXdnUWlYSFUzbElvanUtdVhxbHkwSVpRaUNtOUJPcFJaT0s2SzZhNmtHMWlnaUlrY0RsVXJBMmZDNWp5VnhqU1BPcHluZ3EtcWtzYld3M2ROcy1wYTFTQ2hkUml6ajNDSXpSeTNvQUwySXI4YUpFS3JE?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "ERJ Tire Tracker"
             },
             {
               "title": "Toyota offers low-cost financing in Thailand to ward off che…",
@@ -6880,31 +6868,31 @@
       "currency": "TRY",
       "flag": "tr",
       "offices": [
-        "Hankook Tire Turkey Sales Corp. (이스탄불)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Turkey Sales Corp. (이스탄불)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "앙카라",
+        "capital": "데이터 확인 중",
         "population": "약 8,588만 명",
         "gdp": "약 1.60조 달러",
         "inflation": "34.9%",
         "unemployment": "8.5%",
         "min_wage": {
-          "display": "₺164.94 / 시간",
-          "note": "2026년 기준",
+          "display": "28,075.5리라 / 월",
+          "note": "순액 기준",
           "source": "Eurostat",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준",
+        "min_wage_note": "순액 기준",
         "indicators": {
           "capital": {
-            "value": "앙카라",
-            "display": "앙카라",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 85878556.0,
@@ -6931,15 +6919,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 27.1,
-        "change_pct": 0.4,
+        "current_rate": 27.2,
+        "change_pct": 0.42,
         "history_labels": [
           "11월",
           "12월",
@@ -6966,7 +6954,7 @@
           29.9,
           28.5,
           27.6,
-          27.1
+          27.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/TRYKRW=X"
@@ -6982,6 +6970,15 @@
           "original_title": "Case for Fall Turkey Hunting"
         },
         {
+          "title": "Deer and Turkey Archery Seasons Opening Soon, MyDNR",
+          "source": "Purdue University",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQUHBHSmRZMVBPbURMaFQ1N24tY0JtRG8zZkxzam5lX1ZtdGcyS0Jub2FyQ2pweUYzMnQteEpEVk1zYzBXUmM1UEZocU9tRFBWMnJoQjJGVHdtLWhWUGFCRkNHbjJ5UDVubTJnc0tMY18tWTRHR2dXS0FLOTF2bV8wRXlmMTF3d3hzNzBVRDJ5N09kZw?oc=5",
+          "summary": "Deer and Turkey Archery Seasons Opening Soon, MyDNR&nbsp;&nbsp;Purdue University",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Deer and Turkey Archery Seasons Opening Soon, MyDNR"
+        },
+        {
           "title": "Trump floats asking Turkey to join fight against Houthis in Yemen",
           "source": "Al-Monitor",
           "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUUEwV3FlNmZQVnE3bndpU0RBdDFBR01jSWNOWjBZU0x4WEUwQU0yb2REc3dhRzFmOGJERGtPdmhwT3BRSzRsNWgxalExQVJxeW5PRUZYQXdUelo3Z0RVSExOZ2tHcURYM182QW5TTV9RUkVpUWxBa1pCb05XZm1naExCSTM2SDNTOEtXVk5CTllvVUtEZ2c0V3NHcVBoSWZuaE9yUU0tOA?oc=5",
@@ -6989,15 +6986,6 @@
           "lang": "en",
           "translated": false,
           "original_title": "Trump floats asking Turkey to join fight against Houthis in Yemen"
-        },
-        {
-          "title": "City of Frederick to Distribute 1,200 Turkeys at Annual Harvest of Hope Event",
-          "source": "The City of Frederick, MD (.gov)",
-          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE84c1V5VWZ4TXdGU3lMT1VsMDNMbjJzTjJfS1Y3VzN5U1BfMU1PcmtHbVNncHFlNGhBd2ZoZjVURkhXc2VEVFVWVlF6U2lTUmI0d1RHcW1hN09yVVNTcUpaVUlmZ0JGT0lmWmpfbnJCMA?oc=5",
-          "summary": "City of Frederick to Distribute 1,200 Turkeys at Annual Harvest of Hope Event&nbsp;&nbsp;T…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "City of Frederick to Distribute 1,200 Turkeys at Annual Harvest of Hope Event"
         }
       ],
       "hr_trends": [
@@ -7095,24 +7083,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "파나마시티",
+        "capital": "데이터 확인 중",
         "population": "약 457만 명",
         "gdp": "약 905억 달러",
         "inflation": "-0.2%",
         "unemployment": "8.4%",
         "min_wage": {
-          "display": "업종별 상이",
-          "note": "참고치, 업종·지역별 세분화된 고시",
+          "display": "데이터 확인 중",
+          "note": "",
           "source": "ILO",
-          "year": 2026
+          "year": "-"
         },
-        "min_wage_note": "참고치, 업종·지역별 세분화된 고시",
+        "min_wage_note": "",
         "indicators": {
           "capital": {
-            "value": "파나마시티",
-            "display": "파나마시티",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 4571189.0,
@@ -7139,8 +7127,8 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
@@ -7251,31 +7239,31 @@
       "currency": "PLN",
       "flag": "pl",
       "offices": [
-        "Hankook Tire Polska Sp. z o.o. (바르샤바)"
+        "공식 거점 정보 확인 중"
       ],
       "hubs": [
-        "Hankook Tire Polska Sp. z o.o. (바르샤바)"
+        "공식 거점 정보 확인 중"
       ],
-      "offices_source": "내부 메타데이터",
+      "offices_source": "확인 중",
       "profile": {
-        "capital": "바르샤바",
+        "capital": "데이터 확인 중",
         "population": "약 3,644만 명",
         "gdp": "약 1.04조 달러",
         "inflation": "3.8%",
         "unemployment": "3.0%",
         "min_wage": {
-          "display": "zł31.4 / 시간",
-          "note": "2026년 기준",
+          "display": "4,806즈워티 / 월",
+          "note": "월 총액 기준",
           "source": "Eurostat",
           "year": 2026
         },
-        "min_wage_note": "2026년 기준",
+        "min_wage_note": "월 총액 기준",
         "indicators": {
           "capital": {
-            "value": "바르샤바",
-            "display": "바르샤바",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 36435861.0,
@@ -7302,15 +7290,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 343.6,
-        "change_pct": 1.16,
+        "current_rate": 343.5,
+        "change_pct": 1.14,
         "history_labels": [
           "11월",
           "12월",
@@ -7337,7 +7325,7 @@
           380.3,
           367.9,
           350.9,
-          343.6
+          343.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -7466,24 +7454,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "파리",
+        "capital": "데이터 확인 중",
         "population": "약 6,872만 명",
         "gdp": "약 3.37조 달러",
         "inflation": "0.9%",
         "unemployment": "7.5%",
         "min_wage": {
-          "display": "€12.02 / 시간",
-          "note": "SMIC 기준",
+          "display": "12.02유로 / 시간",
+          "note": "SMIC",
           "source": "Eurostat",
           "year": 2026
         },
-        "min_wage_note": "SMIC 기준",
+        "min_wage_note": "SMIC",
         "indicators": {
           "capital": {
-            "value": "파리",
-            "display": "파리",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 68720337.0,
@@ -7510,15 +7498,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1500.5,
-        "change_pct": 0.83,
+        "current_rate": 1500.0,
+        "change_pct": 0.8,
         "history_labels": [
           "11월",
           "12월",
@@ -7545,7 +7533,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1500.5
+          1500.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -7595,15 +7583,6 @@
               "original_title": ""
             },
             {
-              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
-              "desc": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도&nbsp;&nbsp;위클리서울",
-              "source": "위클리서울",
-              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
-            },
-            {
               "title": "한국타이어 라우펜, 다치아 '산데로'에 신차용 타이어 공급",
               "desc": "한국타이어 라우펜, 다치아 '산데로'에 신차용 타이어 공급 - 머니투데이&nbsp;&nbsp;머니투데이",
               "source": "머니투데이",
@@ -7617,6 +7596,15 @@
               "desc": "유럽서 29만대 팔린 ‘산데로’…한국타이어 ‘라우펜’ 장착&nbsp;&nbsp;디지털데일리",
               "source": "디지털데일리",
               "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVQ19oLTNSaVVTVFhjajNucWtHX1JlWEdueFNzem1jZTBkLW9XRTBjTDVHX1RuczUtd3BidDJzRWFPbjVnSFhQbEpjNXZpR3dHZEhzaDhnVEo3SVJWaEIzdDlaMm4?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": ""
+            },
+            {
+              "title": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급",
+              "desc": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급&nbsp;&nbsp;빅데이터뉴스",
+              "source": "빅데이터뉴스",
+              "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wNnBXTlk0M01FLWhrdUZ1cmlGRXdZRkxyZXhaMHROTXc2TS1QcHc4SFJCeklsQTZFZWUtTEFKVFRhYlRMUXhZMTFYODRNMzlCQUtkbno5VzRBMldiOHBHanE1UVFLcGNVUUZDNjI5RWotS0x5WWRWaXFrZE8?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -7665,24 +7653,24 @@
       ],
       "offices_source": "Hankook Tire 공식 홈페이지",
       "profile": {
-        "capital": "캔버라",
+        "capital": "데이터 확인 중",
         "population": "약 2,761만 명",
         "gdp": "약 1.80조 달러",
         "inflation": "2.9%",
         "unemployment": "4.1%",
         "min_wage": {
-          "display": "A$26.44 / 시간",
-          "note": "2025~26년 기준",
-          "source": "ILO",
+          "display": "24.95호주달러 / 시간",
+          "note": "전국 최저임금",
+          "source": "Fair Work Commission",
           "year": 2025
         },
-        "min_wage_note": "2025~26년 기준",
+        "min_wage_note": "전국 최저임금",
         "indicators": {
           "capital": {
-            "value": "캔버라",
-            "display": "캔버라",
-            "source": "내부 메타데이터(정적 값)",
-            "year": 2026
+            "value": null,
+            "display": "데이터 확인 중",
+            "source": "-",
+            "year": "-"
           },
           "population": {
             "value": 27614411.0,
@@ -7709,15 +7697,15 @@
             "year": 2025
           }
         },
-        "stats_source": "내부 메타데이터(정적 값) · World Bank",
-        "stats_year": 2026,
+        "stats_source": "World Bank",
+        "stats_year": 2025,
         "stats_asof": "2026-10-14"
       },
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 936.2,
-        "change_pct": 0.9,
+        "current_rate": 935.7,
+        "change_pct": 0.85,
         "history_labels": [
           "11월",
           "12월",
@@ -7744,7 +7732,7 @@
           998.1,
           986.1,
           944.2,
-          936.2
+          935.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/AUDKRW=X"
@@ -7846,15 +7834,6 @@
               "original_title": "New Minimum Wage in 2027: California Wage Floor Rises to $17.40 Per Hour"
             },
             {
-              "title": "Business travel is turning short trips into tax and visa tra…",
-              "desc": "Business travel is turning short trips into tax and visa traps&nbsp;&nbsp;Human Resources…",
-              "source": "Human Resources Director",
-              "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd2I2RTVaUDE5RnpTdFQ0RkFRVTVnb2tvZ2tUNnFlakdFc21ucVJmVGZTSTY2aVh3bmwxem9kMXhGMDdRdGpzVkhzR0pNX01kTHNsbEdIRXRpVkxWaDJiQTlYa1NtN2N5MzM2LWs0TGNyTlBMclZ5VGFRcXZBSGZKLVUtMEpnRkhGb25wOWFsU1dCOUdxYzBwVGZNUHh1UHVfc0NLejM0TEExOHdmbU56bnpBU2FmTUd1M1hsM1FHU0xQNm8?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Business travel is turning short trips into tax and visa traps"
-            },
-            {
               "title": "From World War I to 1968: The institutionalization of unions…",
               "desc": "From World War I to 1968: The institutionalization of unions and collective bargaining&nbs…",
               "source": "Britannica",
@@ -7862,6 +7841,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "From World War I to 1968: The institutionalization of unions and collective bargaining"
+            },
+            {
+              "title": "Business travel is turning short trips into tax and visa tra…",
+              "desc": "Business travel is turning short trips into tax and visa traps&nbsp;&nbsp;Human Resources…",
+              "source": "Human Resources Director",
+              "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNd2I2RTVaUDE5RnpTdFQ0RkFRVTVnb2tvZ2tUNnFlakdFc21ucVJmVGZTSTY2aVh3bmwxem9kMXhGMDdRdGpzVkhzR0pNX01kTHNsbEdIRXRpVkxWaDJiQTlYa1NtN2N5MzM2LWs0TGNyTlBMclZ5VGFRcXZBSGZKLVUtMEpnRkhGb25wOWFsU1dCOUdxYzBwVGZNUHh1UHVfc0NLejM0TEExOHdmbU56bnpBU2FmTUd1M1hsM1FHU0xQNm8?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Business travel is turning short trips into tax and visa traps"
             }
           ]
         }

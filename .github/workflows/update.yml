@@ -1,9 +1,15 @@
-name: Update Daily Brief
+name: Update Global Daily News
 
 on:
   schedule:
-    - cron: "0 21 * * *"   # 매일 KST 06:00
-  workflow_dispatch:
+    - cron: '0 21 * * *'   # 매일 KST 06:00 (UTC 21:00)
+  workflow_dispatch:        # 수동 실행 (Actions 탭 > Run workflow)
+  push:
+    branches: [main]
+    paths-ignore:           # 결과물 커밋으로 무한 반복되는 것을 방지
+      - 'docs/**'
+      - 'data/**'
+      - 'README.md'
 
 permissions:
   contents: write
@@ -15,21 +21,24 @@ concurrency:
 jobs:
   update-and-build:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 30
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
-          ref: main
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-          cache: pip
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       - name: Collect data
         run: python src/collector.py
@@ -40,16 +49,26 @@ jobs:
       - name: Commit and push changes
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A data docs
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A docs data
+
           if git diff --cached --quiet; then
-            echo "변경사항 없음"
+            echo "변경 사항이 없어 커밋을 건너뜁니다."
             exit 0
           fi
-          git commit -m "chore: auto-update daily brief data [$(TZ=Asia/Seoul date +%F)]"
+
+          git commit -m "chore: daily update $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M KST')"
+
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
-            echo "push 재시도 ($i/5)"
-            sleep 5
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              echo "push 성공 (시도 ${i}회)"
+              exit 0
+            fi
+            echo "push 실패, 재시도 ${i}/5"
+            sleep $((i * 3))
           done
+
+          echo "push 5회 모두 실패"
           exit 1

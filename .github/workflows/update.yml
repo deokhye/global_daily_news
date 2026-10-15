@@ -1,14 +1,17 @@
-name: Update Global Daily News
+name: Daily Global Brief Update
 
 on:
-  schedule:
-    - cron: '0 21 * * *'   # 매일 KST 06:00 (UTC 21:00)
-  workflow_dispatch:        # 수동 실행 (Actions 탭 > Run workflow)
   push:
-    branches: [main]
+    branches:
+      - main
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -17,54 +20,48 @@ concurrency:
 jobs:
   update-and-build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-          cache: 'pip'
+          python-version: "3.10"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Collect data
-        run: python src/collector.py
+      - name: Run Collector
+        run: |
+          python src/collector.py
 
-      - name: Build site
-        run: python src/build_site.py
+      - name: Build Site
+        run: |
+          python src/build_site.py
 
       - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update daily brief data [$(date +'%Y-%m-%d')]" && git push)
 
-          git add -A docs data
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "docs/"
 
-          if git diff --cached --quiet; then
-            echo "변경 사항이 없어 커밋을 건너뜁니다."
-            exit 0
-          fi
-
-          git commit -m "chore: daily update $(TZ=Asia/Seoul date +'%Y-%m-%d %H:%M KST')"
-
-          for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
-            if git push origin "HEAD:${GITHUB_REF_NAME}"; then
-              echo "push 성공 (시도 ${i}회)"
-              exit 0
-            fi
-            echo "push 실패, 재시도 ${i}/5"
-            sleep $((i * 3))
-          done
-
-          echo "push 5회 모두 실패"
-          exit 1
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: update-and-build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

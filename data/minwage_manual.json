@@ -1,5 +1,5 @@
 {
-  "_comment": "OECD 에 없는 국가의 최저임금 수동 보완 테이블. display/note/year/basis 를 직접 수정할 수 있습니다.",
+  "_comment": "OECD 에 없거나 OECD 값이 오래된 국가의 최저임금 수동 보완 테이블. display/note/year/basis 를 직접 수정할 수 있습니다. 국가 코드는 ISO alpha-2(영국=GB)를 사용합니다.",
   "countries": {
     "KR": {
       "display": "10,320원 / 시간",
@@ -37,7 +37,7 @@
       "year": 2026,
       "basis": "Eurostat"
     },
-    "UK": {
+    "GB": {
       "display": "12.71파운드 / 시간",
       "note": "21세 이상 National Living Wage",
       "year": 2026,
@@ -215,6 +215,24 @@
       "display": "-",
       "note": "단체협약(CBA)으로 결정",
       "year": 2025,
+      "basis": "수동 보완"
+    },
+    "MA": {
+      "display": "17.07디르함 / 시간",
+      "note": "SMIG 참고치 · 공식 고시 확인 필요",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "RS": {
+      "display": "308디나르 / 시간",
+      "note": "참고치 · 공식 고시 확인 필요",
+      "year": 2025,
+      "basis": "수동 보완"
+    },
+    "PA": {
+      "display": "업종·지역별 상이",
+      "note": "업종·지역별 차등 고시",
+      "year": 2026,
       "basis": "수동 보완"
     }
   }

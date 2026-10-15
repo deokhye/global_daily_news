@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T08:33:01.423050+09:00",
-  "generated_at_display": "2026-10-15 08:33 KST",
+  "generated_at": "2026-10-15T09:15:36.973137+09:00",
+  "generated_at_display": "2026-10-15 09:15 KST",
   "as_of_display": "2026-10-15 06:00 KST 기준",
   "regions": [
     {
@@ -128,22 +128,22 @@
           "translated": false
         },
         {
-          "title": "새 비서실장, 정무형보다 정책 실무형…대통령 국정 장악력 세질 듯",
-          "source": "한겨레",
-          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6SFYzdUpGWUJQM0ZBa05UY0hqNjhacWtkSGRmM2poYnotcGY3R1dlYTNkTTlQelRDTUIyVU91alNOR2lUdVpSWFRmNzIzUmY3Qm10ODY2dy1XcTJGYlpXVEZjZW9PMGhQclpz?oc=5",
-          "summary": "새 비서실장, 정무형보다 정책 실무형…대통령 국정 장악력 세질 듯&nbsp;&nbsp;한겨레임광현 처남은 ‘대장동·대북송금’ 변호인&nbsp;&nbsp;조선일보신…",
-          "original_title": "새 비서실장, 정무형보다 정책 실무형…대통령 국정 장악력 세질 듯",
+          "title": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"",
+          "source": "YTN",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE16RFAwdGMyaVA1QUV5RDhkNTJkaE5PTG1iZk9NVkp6QldrZmZNSFYtV0dPaElNbHB5WjRGNmpZbHlMLUJvRDluQUpxT2pYcU5KdHJiZmVHOUJGNmFUNEE?oc=5",
+          "summary": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"&nbsp;&nbsp;YTN북한 \"어제 동해서 2종 잠수함발사 전략순항미사일 시험발사\"&nbsp;&nbsp…",
+          "original_title": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"",
           "original_lang": "ko",
           "is_translated": false,
           "lang": "ko",
           "translated": false
         },
         {
-          "title": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"",
-          "source": "YTN",
-          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE16RFAwdGMyaVA1QUV5RDhkNTJkaE5PTG1iZk9NVkp6QldrZmZNSFYtV0dPaElNbHB5WjRGNmpZbHlMLUJvRDluQUpxT2pYcU5KdHJiZmVHOUJGNmFUNEE?oc=5",
-          "summary": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"&nbsp;&nbsp;YTN북한 \"어제 동해서 2종 잠수함발사 전략순항미사일 시험발사\"&nbsp;&nbsp…",
-          "original_title": "북 \"어제 동해서 잠수함 발사 전략순항미사일 시험 발사\"",
+          "title": "“비겁하다” 질타 쏟아진 김지용 중수청장 청문회···행안위, 15일 청문보고서 채택키로",
+          "source": "경향신문",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBWcWV5M2FhUjBGQ0VmWUNWVlFWdjZLRXdFTEFuUHRDNlh5eDR2WDZackhqSGlSQ0N6V2R0bHpyNks3QkUyVnlrSklpdDdad1pDVnRIcU9DcEh0Z9IBX0FVX3lxTE1VTjUtU3NZWVNTZUhjV3pCdnpPc2k5U2xJTFNENFdRbkZPRVUyVGVJazRqUDA5WUVzSnpnR2ttVkZWcVdIUWU1UFpWeEhPNkluNEJyc2dlQzFFTHhFLWRn?oc=5",
+          "summary": "“비겁하다” 질타 쏟아진 김지용 중수청장 청문회···행안위, 15일 청문보고서 채택키로&nbsp;&nbsp;경향신문민주, 김지용 ‘적격’ 의견...15일 청문보고…",
+          "original_title": "“비겁하다” 질타 쏟아진 김지용 중수청장 청문회···행안위, 15일 청문보고서 채택키로",
           "original_lang": "ko",
           "is_translated": false,
           "lang": "ko",
@@ -324,8 +324,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1341.2,
-        "change_pct": 0.06,
+        "current_rate": 1342.7,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -352,7 +352,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1341.2
+          1342.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -568,8 +568,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -596,7 +596,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -625,11 +625,11 @@
           "translated": false
         },
         {
-          "title": "Germany's AfD and leftist BSW call for end to help for Ukraine",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdkNsRTQ1VkVKSWlkOWQ5U2pFQnNrbnZFLS02YmxfUzFzRF90S09UX3Nkay1UeGNzU2lvY2NFcHpKTDNfckZFM3pUOUtRdWhLQ2NTOWl3UERRTFJPR0JiLUJoYnVlQUhhNEF0ZDA1VENkVEhmWl9ibV9ESTJxTGdONlRzeVFzNDhtdEMtLTlvV0d0Zw?oc=5",
-          "summary": "Germany's AfD and leftist BSW call for end to help for Ukraine&nbsp;&nbsp;Reuters",
-          "original_title": "Germany's AfD and leftist BSW call for end to help for Ukraine",
+          "title": "German police launch investigation after robot allegedly gropes teenage girl",
+          "source": "CNN",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNR0JiX2NneVZncDZ3OE1pbHh0Uml2NWtSa0RTN3JBNVl2WFI1THFFa1N0WmVFUE9PTUVyb2R6UzA2OHBGclVGd1FHaDI2aDA5cWtDb3V6Zmk4NG9UQjVEYVpCMk03ZzdyZ2NEYU9ZT2xkS0o5SnhFMFdCbEtHZUlTTDU4ajc?oc=5",
+          "summary": "German police launch investigation after robot allegedly gropes teenage girl&nbsp;&nbsp;CN…",
+          "original_title": "German police launch investigation after robot allegedly gropes teenage girl",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -834,8 +834,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 200.4,
-        "change_pct": 0.06,
+        "current_rate": 200.8,
+        "change_pct": 0.24,
         "history_labels": [
           "11월",
           "12월",
@@ -862,7 +862,7 @@
           210.3,
           204.7,
           201.5,
-          200.4
+          200.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -1079,7 +1079,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.1,
-        "change_pct": -0.15,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -1135,11 +1135,11 @@
           "translated": false
         },
         {
-          "title": "Hungary repeals anti-propaganda law",
-          "source": "ILGA-Europe",
-          "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBPblp1TXA1QkpFYWNvQWtLdzN0Y1FCMkVQUmVwN0lMNnRHcEZKdGtubzlCLUZSczlFZ3h2YVYzN0ZVdVVRZWRtb0hfaVlBTXdHcjZhMW5LLTZsNGtLblpoUjIxNGt1QWRaYzQ0eTUxQlhsTHREQWlWYg?oc=5",
-          "summary": "Hungary repeals anti-propaganda law&nbsp;&nbsp;ILGA-Europe",
-          "original_title": "Hungary repeals anti-propaganda law",
+          "title": "Exclusive: Hungary, Bulgaria, water down ambition on Ukraine's EU membership bid — again",
+          "source": "The Kyiv Independent",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT0xsVjFsc0pMUElsVjExZnRlemYtNzNyZG1UQjdtLUE2dmxBNzRyRnY5TVc0MUxaal9MMnRpd0MzU1Jud1RpU1FCY09xcEw3ZmJGQ0dvbEF6czRsNFJKRVNtUlAxelN0TmVDVHRzU25MdTFsVC1KZ3hTRUVyVVpxSGVGTDdXYzNfYnBxRGdFODF5NU1iOWN5LXRoZ3dMQU5JOVJEVnJpU3dObHFqaGdweA?oc=5",
+          "summary": "Exclusive: Hungary, Bulgaria, water down ambition on Ukraine's EU membership bid — again&n…",
+          "original_title": "Exclusive: Hungary, Bulgaria, water down ambition on Ukraine's EU membership bid — again",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -1348,11 +1348,11 @@
           "translated": false
         },
         {
-          "title": "Solar imports from India, Indonesia, Laos to be tariffed beginning in November",
-          "source": "Solar Power World",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxONzY5UTRDX3VBaU43LWpaZG1wc29ESkJneDZsa3hIMFBKQ3Z1NnJKSW1hcHhra210anRROExVWjNfTV9CQUp4N3otU2VtUzA3SjloOVBwWjYyVTNsWmZ0dTBuMk42Y2RnVGJIb0JabFVhZ3UzcGg5NjE5M0t2bkRwWkEtZ2xiT3B4NmlXOFFub1ZrSm1IaW5IdlE2Y0dTOHF0WkFuMXVnanNqUzRNSGE0Tk9zaTA4S0twZXBiNF9VMnQ?oc=5",
-          "summary": "Solar imports from India, Indonesia, Laos to be tariffed beginning in November&nbsp;&nbsp;…",
-          "original_title": "Solar imports from India, Indonesia, Laos to be tariffed beginning in November",
+          "title": "A thick orange haze blanketed Indonesia on Wednesday, as ongoing forest fires continue to burn. The haze caused a spike in respiratory illnesses in the country as well as a decline in air quality across the region.",
+          "source": "Facebook",
+          "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNTmxsckFUYUxpYy1ia1JROTI1ak54ckQ0NG9UZFg2UkE3VC1IcmRuZVR0LVFkUFFocmlhNFRfc3MwVmxyM25OcnA1NldnNElfYlpOaGRKeHV3Q1AtQTFxQksyY2FqaFRPMzBBckk2NVkydUtFQlRIeUR4emtiWGNkM2M3TGdIcy1LUDROZHN5TTNDV01QdWFjazkxS2xhVFVfWjNRU3RzcmJPZW1pTkJZVTAzLURDSXFTbXN6dm5WSFY5TDVKQlA5QXVVbXl3N3RQdmU5OUJqOGFNYlUx?oc=5",
+          "summary": "A thick orange haze blanketed Indonesia on Wednesday, as ongoing forest fires continue to…",
+          "original_title": "A thick orange haze blanketed Indonesia on Wednesday, as ongoing forest fires continue to burn. The haze caused a spike in respiratory illnesses in the country as well as a decline in air quality across the region.",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -1535,8 +1535,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -1563,7 +1563,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -1743,8 +1743,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 41.6,
-        "change_pct": -0.21,
+        "current_rate": 41.7,
+        "change_pct": -0.16,
         "history_labels": [
           "11월",
           "12월",
@@ -1771,7 +1771,7 @@
           43.8,
           43.5,
           42.4,
-          41.6
+          41.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/TWDKRW=X"
@@ -1988,7 +1988,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 15.9,
-        "change_pct": 0.06,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -2022,11 +2022,11 @@
       },
       "headlines": [
         {
-          "title": "The Russia-Ukraine War Report Card, Oct. 14, 2026",
-          "source": "Russia Matters",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdm85VlZLcUlneV9Za0NWRWVDbElTeWhjUnlEckVjNTBGTk9zejMwMExyRGlqWGJ2YWlLREgzalJiZ0tpQWlWQ3ptNFNubU5JM2t1UVNGZ0ZTOUZqLXFPb29sWGhhNWJIbW9OaGplelNEWmRMZFk3dGZKdk5iY19HWm1DNjRPbjlrc3VvSDJrUFdIeW9NdHc3WVpWQWd4SGN3d1dHOEpUazJGRU5y?oc=5",
-          "summary": "The Russia-Ukraine War Report Card, Oct. 14, 2026&nbsp;&nbsp;Russia Matters",
-          "original_title": "The Russia-Ukraine War Report Card, Oct. 14, 2026",
+          "title": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates",
+          "source": "The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNXdEMlRSTDR5bVVYU1RhR1ljMjB3RU5iaFZYZmdndGg5UWdtdjVLOEdibVlXLUtRSVB3S3RGYXhkZnJWY2dNQjlwMWZaSnJ3NTliaTZrQ0p6X2RWYm9CSEZiTmFDWEJVNnZjeGsyMUlPdkVCajIya2tXWWlNeFFTcVBn?oc=5",
+          "summary": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates&nbsp;&nbsp;Th…",
+          "original_title": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -2220,8 +2220,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 281.2,
-        "change_pct": -0.14,
+        "current_rate": 281.8,
+        "change_pct": 0.06,
         "history_labels": [
           "11월",
           "12월",
@@ -2248,7 +2248,7 @@
           312.4,
           303.8,
           290.5,
-          281.2
+          281.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -2409,8 +2409,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 328.1,
-        "change_pct": 0.45,
+        "current_rate": 328.8,
+        "change_pct": 0.23,
         "history_labels": [
           "11월",
           "12월",
@@ -2437,7 +2437,7 @@
           348.6,
           342.1,
           330.9,
-          328.1
+          328.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/MYRKRW=X"
@@ -2653,8 +2653,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 72.6,
-        "change_pct": -0.46,
+        "current_rate": 73.1,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -2681,7 +2681,7 @@
           81.9,
           80.9,
           74.8,
-          72.6
+          73.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MXNKRW=X"
@@ -2801,6 +2801,17 @@
               "is_translated": false
             },
             {
+              "title": "Ogletree Adds 8 Labor, Employment Attys From Fisher Phillips",
+              "desc": "Ogletree Adds 8 Labor, Employment Attys From Fisher Phillips&nbsp;&nbsp;Law360",
+              "source": "Law360",
+              "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQUjN2cmJtRzBuX3BPRFpkelhOTW9jTzBYZlVmT0JGZnJkSzJTZHJaeG9fVUk1M2REd21INGVWejNiMEt0ejBIcHZsTHBSYWRVRXFYYVVyamliZ2VVUnNzbm1kbjhFVlFBbUkwYnh6X28yWFhoNzFUQmJ1RnpONDNQQ2xDTUlWNTh1NDNmWGJqYmVKemR6MDk2WVRyakNEejFoSlEtODZjNVlQNEhWcVJNWjZoTUU0dEJVaU55cTZYVDlRMzNw0gFyQVVfeXFMUFBvcUVJbmVYZmdzbTBSRTlUd0hCUmJXSFlRaWFPYWZUVm56V1Z4ZXVtX1Y0T3FySFNpbFMta1JVdm4zZlFEMEdzaWF1bDVqYkhBLURQSGVUZENVcmVKQ0xIaTlrdldTVEQxTWVfZ3NjUkxn?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Ogletree Adds 8 Labor, Employment Attys From Fisher Phillips",
+              "original_lang": "en",
+              "is_translated": false
+            },
+            {
               "title": "Half of Mexican Workers Get Job Messages in Their Free Time",
               "desc": "Half of Mexican Workers Get Job Messages in Their Free Time&nbsp;&nbsp;Mexico Business New…",
               "source": "Mexico Business News",
@@ -2808,17 +2819,6 @@
               "lang": "en",
               "translated": false,
               "original_title": "Half of Mexican Workers Get Job Messages in Their Free Time",
-              "original_lang": "en",
-              "is_translated": false
-            },
-            {
-              "title": "Sibling Attys Fighting Over $1.1M Comp Want Suit In NY",
-              "desc": "Sibling Attys Fighting Over $1.1M Comp Want Suit In NY&nbsp;&nbsp;Law360",
-              "source": "Law360",
-              "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdFZLVWp4d0lTZGxoLVJVcDlGZUxCQ3Q4MjNCZHFMazBKZ3VuTUJRckthaXVsQ2Q4RW94c2xRdXdsWGREYmJmbkc1Yi1lYVlCYS1adXVMQ0d2UXFvUzNQc2c2d2E3TkxKQnlEYzZiRl9QSVQzTFpYOWRtZHluZEZVZG1xaTM1dFVGVkZkLW5CamZRNEJhQVdBZ1drUHZtWDNsQU1TNkU5Nm5yTjZ3bUViMnNZSUpjcVoyOFpEelpsN042d9IBckFVX3lxTE1BYjN6UF9mSmgyOTJTSnZ4WTQ1RmVfWUtlelZIUTIwUFNoN2xQTEtIOWQ3Y3ZQWkFJTENQbHdjZ1kxSDdnbkUtd05tZ2JOOE5Zbzhsa0VCNVM3MHBrZDdVaTRmUWd0OVJxZ01FeEkyMVBBdw?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Sibling Attys Fighting Over $1.1M Comp Want Suit In NY",
               "original_lang": "en",
               "is_translated": false
             }
@@ -2897,8 +2897,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 136.1,
-        "change_pct": -1.07,
+        "current_rate": 136.4,
+        "change_pct": -0.9,
         "history_labels": [
           "11월",
           "12월",
@@ -2925,7 +2925,7 @@
           151.4,
           153.1,
           143.9,
-          136.1
+          136.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -2943,22 +2943,22 @@
           "translated": false
         },
         {
-          "title": "Education unions turn collective action into results through the Go Public! Campaign in Egypt, Iraq, Lebanon, and Morocco",
-          "source": "Education International",
-          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQanhSelduM3NCNjlUU1FQdldFTkt6VzVfNHF3aVdOcXhBX0oyc29qQVhQLW1qdU9BbjZ6djFXVFc1MWhlRTNObkFTSjdXUjlyUmFOU21NbFpscGFPOEhiU1VFczhTXzJqZVRRcVYxaHZFMkZpM04xWnJlckZMRkVaVGFabTZ2SWJ6U2xnREs5QUZ5MTJaWVhnMDlvcVpvZkF1LU5BMk95NTJZYThPdHNFaDRiQnhEcGpNYXA0R3lLb0tUUjFvMk5QOTdFYko0UnNWQlZFYzRDVWtEaE9hTVh1NkhYYWtRcjJ6?oc=5",
-          "summary": "Education unions turn collective action into results through the Go Public! Campaign in Eg…",
-          "original_title": "Education unions turn collective action into results through the Go Public! Campaign in Egypt, Iraq, Lebanon, and Morocco",
+          "title": "Morocco enhances cybersecurity with focus on proactive defense and AI",
+          "source": "MSSP Alert",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQd0NTdzdHaWZidDAtU29rUGtHV0FKMm94Um1qeEhVMzBIajRqWG9TM2I3ZzBKOURyVERUeVd2U0oyck1xcmV6MTRuZmJEZkRuNFB4cEdSdjNpeTBua19QWWREdUhwVGtkdzREbjc5bXE0SlhEdkJpOExHdTJlV2NPRTZqRXdiMFBkdHpXMU1JMmxjQWsyTFlzbGc1Zkwyd1hIOTFJ?oc=5",
+          "summary": "Morocco enhances cybersecurity with focus on proactive defense and AI&nbsp;&nbsp;MSSP Aler…",
+          "original_title": "Morocco enhances cybersecurity with focus on proactive defense and AI",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
           "translated": false
         },
         {
-          "title": "Morocco enhances cybersecurity with focus on proactive defense and AI",
-          "source": "MSSP Alert",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQd0NTdzdHaWZidDAtU29rUGtHV0FKMm94Um1qeEhVMzBIajRqWG9TM2I3ZzBKOURyVERUeVd2U0oyck1xcmV6MTRuZmJEZkRuNFB4cEdSdjNpeTBua19QWWREdUhwVGtkdzREbjc5bXE0SlhEdkJpOExHdTJlV2NPRTZqRXdiMFBkdHpXMU1JMmxjQWsyTFlzbGc1Zkwyd1hIOTFJ?oc=5",
-          "summary": "Morocco enhances cybersecurity with focus on proactive defense and AI&nbsp;&nbsp;MSSP Aler…",
-          "original_title": "Morocco enhances cybersecurity with focus on proactive defense and AI",
+          "title": "Education unions turn collective action into results through the Go Public! Campaign in Egypt, Iraq, Lebanon, and Morocco",
+          "source": "Education International",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQanhSelduM3NCNjlUU1FQdldFTkt6VzVfNHF3aVdOcXhBX0oyc29qQVhQLW1qdU9BbjZ6djFXVFc1MWhlRTNObkFTSjdXUjlyUmFOU21NbFpscGFPOEhiU1VFczhTXzJqZVRRcVYxaHZFMkZpM04xWnJlckZMRkVaVGFabTZ2SWJ6U2xnREs5QUZ5MTJaWVhnMDlvcVpvZkF1LU5BMk95NTJZYThPdHNFaDRiQnhEcGpNYXA0R3lLb0tUUjFvMk5QOTdFYko0UnNWQlZFYzRDVWtEaE9hTVh1NkhYYWtRcjJ6?oc=5",
+          "summary": "Education unions turn collective action into results through the Go Public! Campaign in Eg…",
+          "original_title": "Education unions turn collective action into results through the Go Public! Campaign in Egypt, Iraq, Lebanon, and Morocco",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -3074,7 +3074,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "change_pct": 0.07,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -3306,8 +3306,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 266.9,
-        "change_pct": 0.06,
+        "current_rate": 267.2,
+        "change_pct": 0.19,
         "history_labels": [
           "11월",
           "12월",
@@ -3334,7 +3334,7 @@
           279.8,
           265.3,
           259.6,
-          266.9
+          267.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/BRLKRW=X"
@@ -3414,14 +3414,14 @@
               "is_translated": false
             },
             {
-              "title": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인",
-              "desc": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
-              "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNai11QWc4OTF2Qkh2R3F2Q21neEROcDZTRzZyMW9qWk9vRENLNko2TGJuVEM3VW83NzBNakRCZEVSdGlLR1ljN2NySFBNbkktRzZGUXdtSjhSTGRzQ01uRVFCTHU3U045VnMtZFBySHlrazEwaENDWktJd0lUMkMta1E3bGU1a09hU0VXMXpjSnFoYXN6MG1ialIyMWd3YWREQ1NuaURDY0J4anNaX2htbUE0QzA3SVpfX1UxQ3Zhb2hMU2s1S2RxOWtWakY?oc=5",
-              "lang": "ko",
+              "title": "Carolina Wagner, VP of Marketing, Kumho Tire, Inspires Us wi…",
+              "desc": "Carolina Wagner, VP of Marketing, Kumho Tire, Inspires Us with How to Achieve Career Dream…",
+              "source": "A Girls Guide to Cars",
+              "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5PZ0JkUUszNTBHQ25lcG9JX1lGLUlZMUk0RXk1SnpjVkVzTmx6V3dBbGhlUTFJQnJfRnBQTUpaSDEwcnJoS09EbzFZZ0JoOEMweDYwQVVTS2w3anF0V3djQ0JaTk9tZ1k?oc=5",
+              "lang": "en",
               "translated": false,
-              "original_title": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인",
-              "original_lang": "ko",
+              "original_title": "Carolina Wagner, VP of Marketing, Kumho Tire, Inspires Us with How to Achieve Career Dreams",
+              "original_lang": "en",
               "is_translated": false
             }
           ]
@@ -3517,8 +3517,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 357.3,
-        "change_pct": -2.92,
+        "current_rate": 357.8,
+        "change_pct": -2.8,
         "history_labels": [
           "11월",
           "12월",
@@ -3545,7 +3545,7 @@
           378.3,
           376.0,
           370.8,
-          357.3
+          357.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
@@ -3762,7 +3762,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 12.9,
-        "change_pct": 0.07,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -3937,8 +3937,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 134.1,
-        "change_pct": -0.3,
+        "current_rate": 134.5,
+        "change_pct": -0.02,
         "history_labels": [
           "11월",
           "12월",
@@ -3965,29 +3965,29 @@
           148.9,
           143.4,
           135.2,
-          134.1
+          134.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SEKKRW=X"
       },
       "headlines": [
         {
-          "title": "The Nordic Formula for Prospering in a Dangerous, Fragmented World",
-          "source": "WSJ",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNHlWMlNVa2FMb2I0LTdOWFhvbGYtRlRzS1c3WHRJcnJzSWtIS01jbVlQNHhva1Y5MzU0WExpWXFLRHBOMjRpLThwaEZ3RWVRUDR2eTZRWER6c0N2WV9TYXJpdEg3ZTRWVXc2emRobXM1ZGdfU0xlMndtN3ZLdkZ1d05NTWFPbnJrZmpjMmRKREtsZVdJejVqSFJGTzZGc0VSRERLMFBPS1E0Mnc?oc=5",
-          "summary": "The Nordic Formula for Prospering in a Dangerous, Fragmented World&nbsp;&nbsp;WSJ",
-          "original_title": "The Nordic Formula for Prospering in a Dangerous, Fragmented World",
+          "title": "Sweden’s centre-left leader fails in second bid to form government",
+          "source": "Al Jazeera",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWFhKS1E1TzNDWEkwMzNzVnNMNHI2R3VDU1dBeHIwdHNQRi0yZEp6Y2NqRWJhNkFlVTRaYVR5RXhhZWdBbjB5ME44ME11ajlKQW9LSnZ3SUgwZVY5eUc3TWs2cnp1OE1QZzQ4MGJRckhBX2V2MHYxZl9tMklvQTJKX3E0bjFsczZZVGE5Y05lSTYxTGlQd1FQRkV3a2N1aGhtTVF6YmlfSHRxdzTSAbABQVVfeXFMTnAwTHpxY2tYTWM1Z0pNdWYyQWY5XzhCcjluTlNNU1k4aGZHb1ExMEVfc25RWjZ5dFRSdlBabWQ5WVR2U013TFhhTEUxS3doR2NKRmNnMzVJeE9RY3pWVVhzZUVBWW1MWHU5QmR5aTBweTU2bkpvQ3hldDlZR2o3akdKOXNPbzZXeGtvRTBtXzhrQ0RHdERtdldMQ0dBX2Jid0p6Y3E3eElvTk1fcy1IdGk?oc=5",
+          "summary": "Sweden’s centre-left leader fails in second bid to form government&nbsp;&nbsp;Al Jazeera",
+          "original_title": "Sweden’s centre-left leader fails in second bid to form government",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
           "translated": false
         },
         {
-          "title": "Sweden’s centre-left leader fails in second bid to form government",
-          "source": "Al Jazeera",
-          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWFhKS1E1TzNDWEkwMzNzVnNMNHI2R3VDU1dBeHIwdHNQRi0yZEp6Y2NqRWJhNkFlVTRaYVR5RXhhZWdBbjB5ME44ME11ajlKQW9LSnZ3SUgwZVY5eUc3TWs2cnp1OE1QZzQ4MGJRckhBX2V2MHYxZl9tMklvQTJKX3E0bjFsczZZVGE5Y05lSTYxTGlQd1FQRkV3a2N1aGhtTVF6YmlfSHRxdzTSAbABQVVfeXFMTnAwTHpxY2tYTWM1Z0pNdWYyQWY5XzhCcjluTlNNU1k4aGZHb1ExMEVfc25RWjZ5dFRSdlBabWQ5WVR2U013TFhhTEUxS3doR2NKRmNnMzVJeE9RY3pWVVhzZUVBWW1MWHU5QmR5aTBweTU2bkpvQ3hldDlZR2o3akdKOXNPbzZXeGtvRTBtXzhrQ0RHdERtdldMQ0dBX2Jid0p6Y3E3eElvTk1fcy1IdGk?oc=5",
-          "summary": "Sweden’s centre-left leader fails in second bid to form government&nbsp;&nbsp;Al Jazeera",
-          "original_title": "Sweden’s centre-left leader fails in second bid to form government",
+          "title": "The Nordic Formula for Prospering in a Dangerous, Fragmented World",
+          "source": "WSJ",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQNHlWMlNVa2FMb2I0LTdOWFhvbGYtRlRzS1c3WHRJcnJzSWtIS01jbVlQNHhva1Y5MzU0WExpWXFLRHBOMjRpLThwaEZ3RWVRUDR2eTZRWER6c0N2WV9TYXJpdEg3ZTRWVXc2emRobXM1ZGdfU0xlMndtN3ZLdkZ1d05NTWFPbnJrZmpjMmRKREtsZVdJejVqSFJGTzZGc0VSRERLMFBPS1E0Mnc?oc=5",
+          "summary": "The Nordic Formula for Prospering in a Dangerous, Fragmented World&nbsp;&nbsp;WSJ",
+          "original_title": "The Nordic Formula for Prospering in a Dangerous, Fragmented World",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -4159,8 +4159,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -4187,7 +4187,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -4394,8 +4394,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1044.2,
-        "change_pct": -0.3,
+        "current_rate": 1045.6,
+        "change_pct": -0.16,
         "history_labels": [
           "11월",
           "12월",
@@ -4422,7 +4422,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1044.2
+          1045.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -4638,8 +4638,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 365.2,
-        "change_pct": 0.04,
+        "current_rate": 365.7,
+        "change_pct": 0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -4666,12 +4666,23 @@
           386.9,
           375.1,
           367.8,
-          365.2
+          365.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
       },
       "headlines": [
+        {
+          "title": "Insurance demand rises in UAE as risks rise",
+          "source": "www.businessinsurance.com",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRFFLdFZQTERkR0stVk5ScnZQRmtFbEswSkF5a01FSmEtV0JiU25QWFN3RHYxOG5xenhuM0VfUnJLUlhQb05jQzdjOFdzdWhOYV92Y2prWHZuLXhxcW8zd0RvSHNSY1h2bTlrRFNpT2hwZG5odnliYnRjdlY0ODNnMldmVEo?oc=5",
+          "summary": "Insurance demand rises in UAE as risks rise&nbsp;&nbsp;www.businessinsurance.com",
+          "original_title": "Insurance demand rises in UAE as risks rise",
+          "original_lang": "en",
+          "is_translated": false,
+          "lang": "en",
+          "translated": false
+        },
         {
           "title": "UAE oil production surged to records in September, IEA says",
           "source": "Transport Topics",
@@ -4689,17 +4700,6 @@
           "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQa3B5WlN6TnVKbFlEY2YxSGdKcU1xZDRMSnFFMUtfVzl0LXFiXzhZTFg3TFVSaExwVmxJR0ttQnR5NkVuNTZxY3FqcHQ0Q0lvT2RaVXVYRmZkcHpTaEowVXFKNGZYX0VKcm0yanpsZmNUa3NxdE1ueWhmYm1VMTZfM1VRS3p6X1lTSFhHbDNxc2h6UFNXV1hRSHNPay1JWXlLSGZNN0xPUDhZUnJFcEdTRWlSRmxXalZqR1Ftc2tkQWxjamJfd0NiR3RR?oc=5",
           "summary": "Prime ministers, billions in UAE investment: the Manchester City cheating scandal turns po…",
           "original_title": "Prime ministers, billions in UAE investment: the Manchester City cheating scandal turns political",
-          "original_lang": "en",
-          "is_translated": false,
-          "lang": "en",
-          "translated": false
-        },
-        {
-          "title": "UAE Oil Production Surged to Records in September, IEA Says",
-          "source": "Bloomberg.com",
-          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOdVl4MldieWhvSjFNTkFXYjVRLWRkME1XYkU2WXpPUWVyR1JWM0p2SEhGMVRiaEt4S0hxbmVNZUhKSmxoQzRwV25FR001TTBrSlZGQ05JTXFEam5HYU5qTDNiUFJkRnBCTTJPTkk5NUNLd1dtN09SRXBmM1lnWl9kMEZ5ek80Yl9yM09BLWFmLUhNMU5vb2dHTEpzZjdKSm1LclROcTV5V193cnNvdGc?oc=5",
-          "summary": "UAE Oil Production Surged to Records in September, IEA Says&nbsp;&nbsp;Bloomberg.com",
-          "original_title": "UAE Oil Production Surged to Records in September, IEA Says",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -4746,13 +4746,13 @@
               "is_translated": false
             },
             {
-              "title": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인",
-              "desc": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
+              "title": "Bps 압력 센서 시장 2035년 전망: 산업용 사물인터넷과 자동차 의무화가 성장 견인",
+              "desc": "Bps 압력 센서 시장 2035년 전망: 산업용 사물인터넷과 자동차 의무화가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNai11QWc4OTF2Qkh2R3F2Q21neEROcDZTRzZyMW9qWk9vRENLNko2TGJuVEM3VW83NzBNakRCZEVSdGlLR1ljN2NySFBNbkktRzZGUXdtSjhSTGRzQ01uRVFCTHU3U045VnMtZFBySHlrazEwaENDWktJd0lUMkMta1E3bGU1a09hU0VXMXpjSnFoYXN6MG1ialIyMWd3YWREQ1NuaURDY0J4anNaX2htbUE0QzA3SVpfX1UxQ3Zhb2hMU2s1S2RxOWtWakY?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeVRDLVRSb3g5RllqRVpDTEdxOHRmUHBRZTBSTDl2ZDNSRF9kc200NHl2OUl5cWtCRVJOVUtub2p1RGdoY3J0dG85Q2h0ZEg0Y2tLS3Q1ZVA1R3FmeHNzcUR3eXIyYVd0OXd3S3pheG1sMHkyTGF3ODhub1ZpczJoQlVxMWtuRFB4ZUw3Sm0zM2VPS2U4V1RLYldudUFYalpCTGVBUFQ5WEdpMWRJeU5SY2VHcFdtTkNIcFI5UklSb0FfQUppLTIwa01QT00?oc=5",
               "lang": "ko",
               "translated": false,
-              "original_title": "2035년 자동차용 압력 센서 시장: 전동화와 배기가스 규제가 성장 견인",
+              "original_title": "Bps 압력 센서 시장 2035년 전망: 산업용 사물인터넷과 자동차 의무화가 성장 견인",
               "original_lang": "ko",
               "is_translated": false
             }
@@ -4882,8 +4882,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1770.3,
-        "change_pct": -0.36,
+        "current_rate": 1774.1,
+        "change_pct": -0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -4910,7 +4910,7 @@
           1912.2,
           1864.7,
           1787.6,
-          1770.3
+          1774.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/GBPKRW=X"
@@ -5019,17 +5019,6 @@
               "is_translated": false
             },
             {
-              "title": "UK Employment law: the latest updates",
-              "desc": "UK Employment law: the latest updates&nbsp;&nbsp;Fox Williams",
-              "source": "Fox Williams",
-              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaU5QMVRYV2QyLUJQM1hXeU12TXBoRHNrUUdNd0hGZ01BcmZ0Q2o4ajEtRGowWXNwTkdzTm9XeGFhXy1LbnhsTGs0TWJzRjh1UTh5dEFjS3dTVXMyTjE2aVJoNWZ6cnBZZ3p6ZUdwQTFiNG96bHJZQlA5UHAzUmE4bWdn?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "UK Employment law: the latest updates",
-              "original_lang": "en",
-              "is_translated": false
-            },
-            {
               "title": "Georgia Courts See Surge in Wage, Hour Claims Against FedEx",
               "desc": "Georgia Courts See Surge in Wage, Hour Claims Against FedEx&nbsp;&nbsp;Law.com",
               "source": "Law.com",
@@ -5041,13 +5030,24 @@
               "is_translated": false
             },
             {
-              "title": "Government announces plans to limit non-competes in new legi…",
-              "desc": "Government announces plans to limit non-competes in new legislation&nbsp;&nbsp;Lewis Silki…",
-              "source": "Lewis Silkin",
-              "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPdnBmWlFIcnpNWnVhakNsSGxNZTZKWWdrR3lNRW1MXzBCdFpLWmZXTUk0eUFoeFVuWTQ0UmZqNk5maXFJX2syQVp0ejh0dzBiTXNpMy1INm1fdG85SXBxcURLTktXVmtlNWoyWTRqS0FSRW91WlI4TFVLaU9uV3NpdFUzMlF0cG9wb29HTnF3aVdyVkZleG5yRG0tLWVBZ2tzelVDeFFSX2E1SGl4bDdiMGM1bk9TZw?oc=5",
+              "title": "UK Employment law: the latest updates",
+              "desc": "UK Employment law: the latest updates&nbsp;&nbsp;Fox Williams",
+              "source": "Fox Williams",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOaU5QMVRYV2QyLUJQM1hXeU12TXBoRHNrUUdNd0hGZ01BcmZ0Q2o4ajEtRGowWXNwTkdzTm9XeGFhXy1LbnhsTGs0TWJzRjh1UTh5dEFjS3dTVXMyTjE2aVJoNWZ6cnBZZ3p6ZUdwQTFiNG96bHJZQlA5UHAzUmE4bWdn?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Government announces plans to limit non-competes in new legislation",
+              "original_title": "UK Employment law: the latest updates",
+              "original_lang": "en",
+              "is_translated": false
+            },
+            {
+              "title": "UK right to work check changes: what businesses need to know",
+              "desc": "UK right to work check changes: what businesses need to know&nbsp;&nbsp;People Management",
+              "source": "People Management",
+              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTHpvcXkwTXVxNUJJWUhlM1N6UHZaV290UEYzWlJ3X3VLa0NtOGF4UmpPVnFkZjVITzl1RmNCZXpXZ2tTcHBKTXBPSndsc3lOY2JydC1ZaENQZTNxb3U1ck9pdkVoUmtPT0F0UkwwR0NIX2ZITVlJSmxoVWtXV1FDLTBxbExsTUdqcF9kX2sySEFKUjNGcmMtei1BMllMWDM5?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "UK right to work check changes: what businesses need to know",
               "original_lang": "en",
               "is_translated": false
             }
@@ -5126,8 +5126,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -5154,7 +5154,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -5318,7 +5318,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.7,
-        "change_pct": 0.08,
+        "change_pct": 0.19,
         "history_labels": [
           "11월",
           "12월",
@@ -5352,11 +5352,11 @@
       },
       "headlines": [
         {
-          "title": "Sudden Starlink limits sap Ukraine drone power as Kyiv fears U.S. intelligence squeeze",
-          "source": "PBS",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPb3pjYWhKOU4xWmJfT040ckJEMDBZMEhfMV81eHJUb3ctOWNsQ25TUHBZbGF1NzM5NV9ZYlluWXdUcW5JVXZPa0Y2NEh6TUM1MGF1UWM1SzVNWHBIbVV3eFFMR016cXlYcjhHS05RT3lpbjBPam5QR2dJM0JKVjhKQ1laQ2sxWGZVOWxULTl6R0tUa29Ec3BfNTFLbkQxLU5zelF1Ty1MY2lQWVBwc3ZiRThZZTlUc3BHUWVfLdIBwgFBVV95cUxObURJSHdGWDRDVVh6TUlNNkRmQ3BPUGF6Z1pEV0ZaaEc4RndsaDlsUFlWNV94U0JKTVU2S0UwSFlwR0gzaFhESl93YnJveUI4cGR5RTlhOUg2WHA0TlhJV0FBRkx4c092NXN2Q282Qk0zTEE5MzEydHhiTE1QYWRRYjBRV29zMmFjWHdqR3ItQVpxWlprdDdCR1VlZy0wLV8xSks1R2dCSFEzeEpEUTV4cFRPQlViMmlFVXpxdFk2UDZsUQ?oc=5",
-          "summary": "Sudden Starlink limits sap Ukraine drone power as Kyiv fears U.S. intelligence squeeze&nbs…",
-          "original_title": "Sudden Starlink limits sap Ukraine drone power as Kyiv fears U.S. intelligence squeeze",
+          "title": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates",
+          "source": "The New York Times",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPNXdEMlRSTDR5bVVYU1RhR1ljMjB3RU5iaFZYZmdndGg5UWdtdjVLOEdibVlXLUtRSVB3S3RGYXhkZnJWY2dNQjlwMWZaSnJ3NTliaTZrQ0p6X2RWYm9CSEZiTmFDWEJVNnZjeGsyMUlPdkVCajIya2tXWWlNeFFTcVBn?oc=5",
+          "summary": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates&nbsp;&nbsp;Th…",
+          "original_title": "Ukraine’s Exposure Grows as Satellite Use Is Restricted and Russia Escalates",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -5530,8 +5530,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 25.4,
-        "change_pct": 0.07,
+        "current_rate": 25.5,
+        "change_pct": 0.21,
         "history_labels": [
           "11월",
           "12월",
@@ -5558,7 +5558,7 @@
           27.8,
           27.7,
           26.0,
-          25.4
+          25.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/EGPKRW=X"
@@ -5741,8 +5741,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -5769,7 +5769,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -5954,8 +5954,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 846.3,
-        "change_pct": -0.03,
+        "current_rate": 848.3,
+        "change_pct": 0.21,
         "history_labels": [
           "11월",
           "12월",
@@ -5982,7 +5982,7 @@
           886.8,
           860.1,
           858.3,
-          846.3
+          848.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/JPYKRW=X"
@@ -6011,11 +6011,11 @@
           "translated": false
         },
         {
-          "title": "Student Reflection: 2025 International Staff Ride to Japan",
-          "source": "American Grand Strategy",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOYnJxZ3FzRGFOMTg2UXVMUlplakZ6c2hoNDYwQ2VPa2FXQ1FaLUdEelIzOHFPaDNCS3FBcTZEWXFnYnM3Q1o2OUlpdjFLcTNDTXRXeDNuTzV1am1BUURtX1BZQWlTcmNvSHQ4THdOTXVDeHFmTm5tU0liQnNleTNCRVJhNmFxZ1Y2TU1IeUlYMEZCU1V1?oc=5",
-          "summary": "Student Reflection: 2025 International Staff Ride to Japan&nbsp;&nbsp;American Grand Strat…",
-          "original_title": "Student Reflection: 2025 International Staff Ride to Japan",
+          "title": "Russia arrests Japanese journalist on allegations of spying",
+          "source": "The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQOE5ncXNMLThRdTVhOThCN1NiNzB0WGJTRHdjOE1xZ1RXdnFvTDE2M3JGT2dzNGV3OVlZT3M0OFFfMUJVQUVlb19iZU9yNnB6TzZ1ekxpRUZxZzRudDR5RVF3a3l1TFFZb0tuTnNRTUJqS2syWUh6M2RVVWZDbWJ0ZTBYYXRPR1d4WlN1NEM5MC1qLTlkb2hRdTR4M1FhZw?oc=5",
+          "summary": "Russia arrests Japanese journalist on allegations of spying&nbsp;&nbsp;The Guardian",
+          "original_title": "Russia arrests Japanese journalist on allegations of spying",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -6040,24 +6040,13 @@
               "is_translated": false
             },
             {
-              "title": "현대차 넥쏘, 일본 수소전기차 시장 점유율 11%…택시 공략",
-              "desc": "현대차 넥쏘, 일본 수소전기차 시장 점유율 11%…택시 공략&nbsp;&nbsp;지디넷코리아",
-              "source": "지디넷코리아",
-              "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5oVnRnVzZRbi1vaEZPTXRremkzUHdIVDRYdnVnRVpWajZJcHRYRkxrdDlaUUFhVUlBWGdSeExjVnRaVEVyWkxSWEJwYTRkckhQQ0NsMnBB?oc=5",
+              "title": "현대차 넥쏘, 日 수소차 시장 점유율 11%…택시업계가 먼저 찾았다",
+              "desc": "현대차 넥쏘, 日 수소차 시장 점유율 11%…택시업계가 먼저 찾았다&nbsp;&nbsp;대한경제",
+              "source": "대한경제",
+              "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQNnpIMUtSNGJvOTRENC1DOWhIT3p1Z3lXOTNrOHN5UmFDZHFhaGxsaFJ2SE9paWJUUzFCOTdzR2VWdExlSktxSEVZYVh2Ykx3cDVIck14MDdyOE55THp4cmVyNmZ6ZDdrUmRkWTVjMTVRRWxrR0ZDVUxaQ1RjVUdKcDdFdHA5bkU?oc=5",
               "lang": "ko",
               "translated": false,
-              "original_title": "현대차 넥쏘, 일본 수소전기차 시장 점유율 11%…택시 공략",
-              "original_lang": "ko",
-              "is_translated": false
-            },
-            {
-              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
-              "desc": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도&nbsp;&nbsp;위클리서울",
-              "source": "위클리서울",
-              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "original_title": "현대차 넥쏘, 日 수소차 시장 점유율 11%…택시업계가 먼저 찾았다",
               "original_lang": "ko",
               "is_translated": false
             },
@@ -6069,6 +6058,17 @@
               "lang": "ko",
               "translated": false,
               "original_title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
+              "original_lang": "ko",
+              "is_translated": false
+            },
+            {
+              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "desc": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도&nbsp;&nbsp;위클리서울",
+              "source": "위클리서울",
+              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
+              "lang": "ko",
+              "translated": false,
+              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
               "original_lang": "ko",
               "is_translated": false
             }
@@ -6198,8 +6198,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 61.6,
-        "change_pct": -0.13,
+        "current_rate": 61.7,
+        "change_pct": 0.03,
         "history_labels": [
           "11월",
           "12월",
@@ -6226,7 +6226,7 @@
           67.7,
           66.2,
           62.8,
-          61.6
+          61.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CZKKRW=X"
@@ -6397,7 +6397,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1.4,
-        "change_pct": -0.23,
+        "change_pct": -0.12,
         "history_labels": [
           "11월",
           "12월",
@@ -6619,7 +6619,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 3.0,
-        "change_pct": -3.99,
+        "change_pct": -3.88,
         "history_labels": [
           "11월",
           "12월",
@@ -6794,8 +6794,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 943.2,
-        "change_pct": 0.05,
+        "current_rate": 944.7,
+        "change_pct": 0.22,
         "history_labels": [
           "11월",
           "12월",
@@ -6822,7 +6822,7 @@
           1013.9,
           990.8,
           952.0,
-          943.2
+          944.7
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -6902,13 +6902,13 @@
               "is_translated": false
             },
             {
-              "title": "Best Tire Brands, Tested and Ranked",
-              "desc": "Best Tire Brands, Tested and Ranked&nbsp;&nbsp;Consumer Reports",
-              "source": "Consumer Reports",
-              "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBocnNBajJ4c3pEcDM2V0Z6Y3hIRGtIT2tTOGRVeF9hLVMyYXJVbEZFQ3ZMQ05DQzVWYU5HUHo0WVd1ejhZeFUxZHJvSWdpYmhfM01jMmhNQUxUaHQzdHhhY2ZDYVgxUEtPNHhOdlFoNzI5SjVjaTR6Uk01d2o?oc=5",
+              "title": "Tubeless Tires Market to Reach USD 257.192 Billion by 2035 a…",
+              "desc": "Tubeless Tires Market to Reach USD 257.192 Billion by 2035 as OEM Fitment, Two-Wheeler Con…",
+              "source": "PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMiugJBVV95cUxPanBLNDNPVGVCek9ZQXhkMHo2RXVSdkJiQndEWmVJa05wSm90NFQwWnN0WW9HN0RSUlhtbE04cnZ1Y0hRUE9xY05Ud1dJODI0U3B0M21DUHI4cUNNNWhESVlsQXBUbEhSLWpiYmtnUTlRV2ZBbUpHeXVkbmJCdlRXcFJENm9wOW9XeEZpdnJJZjBxQ29ja2hTajhGVmRVWVFibllVZFNUc3B2SENhSWM3TnIwVEVRbFZ1bzY2MGNXZnlTbTI0NzZ6bVlzWVJuTzZYQ0FEcWVOQUQ2Zm9yM3N3cnJrQ3liWTZncnVuc1VPODh0QkxHVVVFa0RET1l4SDI1ZVVMLXd6YzVsS09ERXZMbXRQa2ZyUTBHUDBBbzFtMWJmSkYxOFF1d05Vckg5TEhPbTJiUEtVSURoUQ?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Best Tire Brands, Tested and Ranked",
+              "original_title": "Tubeless Tires Market to Reach USD 257.192 Billion by 2035 as OEM Fitment, Two-Wheeler Conversion and Puncture-Safety Demand Accelerate, Reports Radial Insights",
               "original_lang": "en",
               "is_translated": false
             }
@@ -7039,7 +7039,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 0.4,
-        "change_pct": 0.07,
+        "change_pct": 0.46,
         "history_labels": [
           "11월",
           "12월",
@@ -7212,8 +7212,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -7240,7 +7240,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -7389,7 +7389,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 39.9,
-        "change_pct": -0.11,
+        "change_pct": 0.02,
         "history_labels": [
           "11월",
           "12월",
@@ -7434,22 +7434,22 @@
           "translated": false
         },
         {
-          "title": "Thailand can return to 3% growth within 2-3 years, central bank official says",
-          "source": "Reuters",
-          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTk1KX29Ga25TMjItcmFQTFRoUnpjTW5OTVlwYjZ6VFpsYXh6d1B6Zi1qVlZmNk9WLTJVcGlCMW9TU2N0VlFrUFBwSFhMbzZuYTdBbk1faEVHenBNT3RWcnl3dXUyVC1WSGFNQnhzYnd5UXdaMTBYTjBVVTI0RU9uYkpCbVpBMzBRMk5DaFdUczc5ZDdJdXRPTjRlVTZuRHhrTGtjT3JySGtIdTBQNWdqdWFZWENzSjdVdEVlcWwwYXRWMTV6WnVkdXl3?oc=5",
-          "summary": "Thailand can return to 3% growth within 2-3 years, central bank official says&nbsp;&nbsp;R…",
-          "original_title": "Thailand can return to 3% growth within 2-3 years, central bank official says",
+          "title": "Thailand Wants to Charge People to Exit the Country",
+          "source": "Fodors Travel Guide",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNjJYVlBWZU03UGt0QTlDWVdCendORlhEalJxMkdDSlZVNEJUbXRPRGJJRklWdXJodHVDZThHNk1XY1pKSEQtOThicnEwTktMbG1rMnNBMVdtWmt0bENZcEx5ZHJBSGEwYVJRSGZuOWtPQUtvWWo2SHhfRjE4YnpnbHNmdjBMTW1Lbl9PcjZ3NA?oc=5",
+          "summary": "Thailand Wants to Charge People to Exit the Country&nbsp;&nbsp;Fodors Travel Guide",
+          "original_title": "Thailand Wants to Charge People to Exit the Country",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
           "translated": false
         },
         {
-          "title": "Thailand Wants to Charge People to Exit the Country",
-          "source": "Fodors Travel Guide",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNjJYVlBWZU03UGt0QTlDWVdCendORlhEalJxMkdDSlZVNEJUbXRPRGJJRklWdXJodHVDZThHNk1XY1pKSEQtOThicnEwTktMbG1rMnNBMVdtWmt0bENZcEx5ZHJBSGEwYVJRSGZuOWtPQUtvWWo2SHhfRjE4YnpnbHNmdjBMTW1Lbl9PcjZ3NA?oc=5",
-          "summary": "Thailand Wants to Charge People to Exit the Country&nbsp;&nbsp;Fodors Travel Guide",
-          "original_title": "Thailand Wants to Charge People to Exit the Country",
+          "title": "Thailand can return to 3% growth within 2-3 years, central bank official says",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPTk1KX29Ga25TMjItcmFQTFRoUnpjTW5OTVlwYjZ6VFpsYXh6d1B6Zi1qVlZmNk9WLTJVcGlCMW9TU2N0VlFrUFBwSFhMbzZuYTdBbk1faEVHenBNT3RWcnl3dXUyVC1WSGFNQnhzYnd5UXdaMTBYTjBVVTI0RU9uYkpCbVpBMzBRMk5DaFdUczc5ZDdJdXRPTjRlVTZuRHhrTGtjT3JySGtIdTBQNWdqdWFZWENzSjdVdEVlcWwwYXRWMTV6WnVkdXl3?oc=5",
+          "summary": "Thailand can return to 3% growth within 2-3 years, central bank official says&nbsp;&nbsp;R…",
+          "original_title": "Thailand can return to 3% growth within 2-3 years, central bank official says",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -7632,8 +7632,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 27.1,
-        "change_pct": -0.05,
+        "current_rate": 27.2,
+        "change_pct": 0.07,
         "history_labels": [
           "11월",
           "12월",
@@ -7660,7 +7660,7 @@
           29.9,
           28.5,
           27.6,
-          27.1
+          27.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/TRYKRW=X"
@@ -7865,8 +7865,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1341.3,
-        "change_pct": -2.19,
+        "current_rate": 1342.9,
+        "change_pct": -2.07,
         "history_labels": [
           "11월",
           "12월",
@@ -7893,7 +7893,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1341.3
+          1342.9
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -7922,11 +7922,11 @@
           "translated": false
         },
         {
-          "title": "How to earn the US Army’s Jungle tab in Panama — and lose 10lbs",
-          "source": "Military Times",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWnVpSXJuSTg5ZUlpWlZYdV94ZXlQOEpfTHRoOHB0OUZNWXNKVGtTRlQyeU56QnJZSGdOTzNlMlNESE9vM3UyMzBuUkQ0dGhGSGY1NHJMN0hhMzBtQnUxMEFhdzcySlFMcmZWUldOQWsyTFBBcUFmUDRXMy1kYnlZVHBqMXR5bFMzdm80UHNFejBSYUFrbnRIMGg0M0J6QXlXOEpwQ1ZJR1NBWHNCVTJBd1JWeEkzV0ZlX2xRanFR?oc=5",
-          "summary": "How to earn the US Army’s Jungle tab in Panama — and lose 10lbs&nbsp;&nbsp;Military Times",
-          "original_title": "How to earn the US Army’s Jungle tab in Panama — and lose 10lbs",
+          "title": "Influencer Gracie Bon Addresses Backlash for Posing in Front of Panama Earthquake Rubble",
+          "source": "People.com",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUzZpOE1hTTRJcWxQSnpib0hTVHdTU2xmcldxOWQ3bTQ0bndLUFhDcE42ei1HN1EtSV9XZFFFNmFIcUdvLVhGRjU2RDh2NGRLOXVZMjhKa2VfcF9GYjVaZUdxczRsekJvS29Vck1Od3oweVcxckdxMDBteVpxSkFCSHk5WXlDT2ZFUHRORDFIZTdaamVkZ1JEQWtCck1ucnVUanhpSlE4WXhWUDNFektuTTdkeFVndWs?oc=5",
+          "summary": "Influencer Gracie Bon Addresses Backlash for Posing in Front of Panama Earthquake Rubble&n…",
+          "original_title": "Influencer Gracie Bon Addresses Backlash for Posing in Front of Panama Earthquake Rubble",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -8043,8 +8043,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 343.3,
-        "change_pct": -0.09,
+        "current_rate": 344.0,
+        "change_pct": 0.12,
         "history_labels": [
           "11월",
           "12월",
@@ -8071,7 +8071,7 @@
           380.3,
           367.9,
           350.9,
-          343.3
+          344.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -8287,8 +8287,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1498.9,
-        "change_pct": -0.07,
+        "current_rate": 1502.1,
+        "change_pct": 0.15,
         "history_labels": [
           "11월",
           "12월",
@@ -8315,7 +8315,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1498.9
+          1502.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -8344,11 +8344,11 @@
           "translated": false
         },
         {
-          "title": "Nashville International Airport® and Air France Celebrate the Official Announcement of New Nonstop Paris Service",
-          "source": "Nashville International Airport",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQLW9uZGc4RWdrdE4ySVUxaWl1MHFkN09DOVZoQXVkMG0xdjB0a092bVo5RU1hZkFoc2xKZ21JVUp2QV9pWjk1NHMxS1BjVG5lTTM0MVNWRFRzWWFVa3NFVnFDWWpIbVZuUmZKRnd5b0xnRmJGOTRPcEhuY3Ixei1sQWNZSWhfMmdicmc?oc=5",
-          "summary": "Nashville International Airport® and Air France Celebrate the Official Announcement of New…",
-          "original_title": "Nashville International Airport® and Air France Celebrate the Official Announcement of New Nonstop Paris Service",
+          "title": "Kristi Lenn France Obituary Oct 14, 2026",
+          "source": "Miller Funeral Home",
+          "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9rOGZiZHdYamE4NHdXSG5GcWZ1NGZmQnpaSDBrdG80MldGR1Fmdlc3X1I0U0c4bWlPbFR0Y21rbXNNVUpJMU9wSzZrc05QMHdBNTJ4OTllRXg4U1pBX2c?oc=5",
+          "summary": "Kristi Lenn France Obituary Oct 14, 2026&nbsp;&nbsp;Miller Funeral Home",
+          "original_title": "Kristi Lenn France Obituary Oct 14, 2026",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",
@@ -8509,8 +8509,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 935.7,
-        "change_pct": -0.04,
+        "current_rate": 936.2,
+        "change_pct": 0.02,
         "history_labels": [
           "11월",
           "12월",
@@ -8537,12 +8537,23 @@
           998.1,
           986.1,
           944.2,
-          935.7
+          936.2
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/AUDKRW=X"
       },
       "headlines": [
+        {
+          "title": "Scientists reveal 93% of Australia's Indigenous population was lost in just 73 years",
+          "source": "Science Daily",
+          "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5tV1BUS29HYTk0MFRraWE4a3JsY0I0bEVFNWVubU11RV9uVkpYV2lCVm4zeUhRcEZMZEtqRVQwNHZpSnQzOGlhQnBZRlNRQ0k4VVVrYXdRdEo1bnZhODZpMFlvbHNBSGtiNXZtQ1BmYw?oc=5",
+          "summary": "Scientists reveal 93% of Australia's Indigenous population was lost in just 73 years&nbsp;…",
+          "original_title": "Scientists reveal 93% of Australia's Indigenous population was lost in just 73 years",
+          "original_lang": "en",
+          "is_translated": false,
+          "lang": "en",
+          "translated": false
+        },
         {
           "title": "Ten South Australian restaurants win a Michelin star – with one double winner",
           "source": "The Guardian",
@@ -8560,17 +8571,6 @@
           "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQajZOeXpnM0t5bjhvd2Rhc3E0cTE4WUFEeTFlX2ZpUTlRT3A2eENCWXI0UGpsZGk2OVZYbVdKbFdWZHVVSlZlOWZuTHVtVjFGZFZfVzgySWNLaDBiZGgtYlJ5Q3J3Sml4SEc2ZEdxTWFxWGJwUUtXTTdtNUN2ZzdTQVVNYlVadjJBZy1JQ0tDeHZXSldQdjYtMW8xSXhjRzhOWEMzX0Z6R2JCNDJWSHV4MGp4Zk9uVmJkVkE?oc=5",
           "summary": "New ASX boss wants to accelerate move to one-day settlement in Australia&nbsp;&nbsp;Reuter…",
           "original_title": "New ASX boss wants to accelerate move to one-day settlement in Australia",
-          "original_lang": "en",
-          "is_translated": false,
-          "lang": "en",
-          "translated": false
-        },
-        {
-          "title": "For Australia, Sovereign Doesn’t Have to Mean Alone",
-          "source": "AeroVironment",
-          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPeXJhY1YzUmRvN3JjMlFPUk1jSFpkV1JaRFdHVm9OLWJxcXliVC1zZjd6ZnRZRUNmbzU3Y0hXYXpQQ21tenNXRjVMcW02blphLVpnczFzTUxZemRhbTVDTlg2Rldmd0taVzJ3a1Juc0VaZmRPdms3eFVYVUpBa2pjbGtjdi0ydm9jUXRN?oc=5",
-          "summary": "For Australia, Sovereign Doesn’t Have to Mean Alone&nbsp;&nbsp;AeroVironment",
-          "original_title": "For Australia, Sovereign Doesn’t Have to Mean Alone",
           "original_lang": "en",
           "is_translated": false,
           "lang": "en",

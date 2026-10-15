@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-10-15T11:07:23.595071+09:00",
-  "generated_at_display": "2026-10-15 11:07 KST",
+  "generated_at": "2026-10-15T11:11:33.998356+09:00",
+  "generated_at_display": "2026-10-15 11:11 KST",
   "as_of_display": "2026-10-15 06:00 KST 기준",
   "regions": [
     {
@@ -67,7 +67,7 @@
           "note": "2026년 최저임금 · 기준: 고용노동부 고시",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:27.130404+09:00"
+          "last_updated": "2026-10-15T11:10:36.678975+09:00"
         },
         "min_wage_note": "2026년 최저임금 · 기준: 고용노동부 고시",
         "indicators": {
@@ -254,20 +254,6 @@
           "tag_class": "bg-sky-100 text-sky-700",
           "items": [
             {
-              "title": "[시사난장] 한국 정치, 어디로 가고 있는가",
-              "desc": "",
-              "summary": "",
-              "source": "국제신문",
-              "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd0hTdnZFTmpoQzBhbV9nTjJSZWdKUHJGcERVTzByWkRiX0RUUGt2NDJoSDJFUmF0WU5idU1QSXNCbWlVZ3NQNTRmRVdRdmNBZjlKSXF6a1Q4bXFCR1dRT01WY1diTFdEcW1nRFhuc2cxZGpEZGZ1WUszblVjeWNJRnZONndaUjRGNVpfU09B?oc=5",
-              "original_title": "[시사난장] 한국 정치, 어디로 가고 있는가",
-              "original_lang": "ko",
-              "original_lang_upper": "KO",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "ko",
-              "translated": false
-            },
-            {
               "title": "경제 정책 ‘잘못한다’ 47% ‘잘한다’ 35%…부정론 첫 역전 [갤럽]",
               "desc": "",
               "summary": "",
@@ -308,6 +294,20 @@
               "translate_label": "",
               "lang": "ko",
               "translated": false
+            },
+            {
+              "title": "[다음주 경제] 취업자 얼마나 늘었나…IMF, 韓성장률 전망 수정치 발표",
+              "desc": "",
+              "summary": "",
+              "source": "연합뉴스",
+              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PUDEzUWFOM2gyLWtGN1hBU0pIbGxpSy1iMFpQUnBxa0ltZjZrckhYOGFpVWdQaXRDRV9maEM2UkVRbndTVzhnYnRHNHRLZjlUZWVzX0kxQllIekHSAWBBVV95cUxPZUtIY0x0YmxsU0dFWFNuYkxPaktMaXJUUzFuRGd6NzZTN3VfQ2VRemJ2cWFqcFh0TUlMaE5KOE5ZdVJJLXNQYnNYQXZiS3MzQk5JVTMxQXVfWkR1dUlVMGk?oc=5",
+              "original_title": "[다음주 경제] 취업자 얼마나 늘었나…IMF, 韓성장률 전망 수정치 발표",
+              "original_lang": "ko",
+              "original_lang_upper": "KO",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "ko",
+              "translated": false
             }
           ]
         }
@@ -333,12 +333,12 @@
               "translated": false
             },
             {
-              "title": "유럽서 29만대 팔린 ‘산데로’…한국타이어 ‘라우펜’ 장착",
+              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
               "desc": "",
               "summary": "",
-              "source": "디지털데일리",
-              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVQ19oLTNSaVVTVFhjajNucWtHX1JlWEdueFNzem1jZTBkLW9XRTBjTDVHX1RuczUtd3BidDJzRWFPbjVnSFhQbEpjNXZpR3dHZEhzaDhnVEo3SVJWaEIzdDlaMm4?oc=5",
-              "original_title": "유럽서 29만대 팔린 ‘산데로’…한국타이어 ‘라우펜’ 장착",
+              "source": "위클리서울",
+              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
+              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
               "original_lang": "ko",
               "original_lang_upper": "KO",
               "is_translated": false,
@@ -347,12 +347,12 @@
               "translated": false
             },
             {
-              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "title": "유럽서 29만대 팔린 ‘산데로’…한국타이어 ‘라우펜’ 장착",
               "desc": "",
               "summary": "",
-              "source": "위클리서울",
-              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
-              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "source": "디지털데일리",
+              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBVQ19oLTNSaVVTVFhjajNucWtHX1JlWEdueFNzem1jZTBkLW9XRTBjTDVHX1RuczUtd3BidDJzRWFPbjVnSFhQbEpjNXZpR3dHZEhzaDhnVEo3SVJWaEIzdDlaMm4?oc=5",
+              "original_title": "유럽서 29만대 팔린 ‘산데로’…한국타이어 ‘라우펜’ 장착",
               "original_lang": "ko",
               "original_lang_upper": "KO",
               "is_translated": false,
@@ -409,12 +409,12 @@
           "category": "SOCIETY & CULTURE"
         },
         {
-          "title": "[시사난장] 한국 정치, 어디로 가고 있는가",
+          "title": "경제 정책 ‘잘못한다’ 47% ‘잘한다’ 35%…부정론 첫 역전 [갤럽]",
           "desc": "",
           "summary": "",
-          "source": "국제신문",
-          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOd0hTdnZFTmpoQzBhbV9nTjJSZWdKUHJGcERVTzByWkRiX0RUUGt2NDJoSDJFUmF0WU5idU1QSXNCbWlVZ3NQNTRmRVdRdmNBZjlKSXF6a1Q4bXFCR1dRT01WY1diTFdEcW1nRFhuc2cxZGpEZGZ1WUszblVjeWNJRnZONndaUjRGNVpfU09B?oc=5",
-          "original_title": "[시사난장] 한국 정치, 어디로 가고 있는가",
+          "source": "한겨레",
+          "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBBZlh3OGxFM2l3OG5EVzlBUmZVWGUtcUxGV3lBUVpBd095S1ZuZlBxbzVvRS03Q2FZRWpURk9ld0JTMWlrMXBHVW1tQTEtSnpOWGR1aTdYZ0lNMGtoRGNEOE90M001YnpyelZVbHA2OEJjMi1a?oc=5",
+          "original_title": "경제 정책 ‘잘못한다’ 47% ‘잘한다’ 35%…부정론 첫 역전 [갤럽]",
           "original_lang": "ko",
           "original_lang_upper": "KO",
           "is_translated": false,
@@ -500,9 +500,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1351.3,
-        "rate_per_unit": 1351.280029,
-        "change_pct": 0.82,
+        "current_rate": 1350.8,
+        "rate_per_unit": 1350.780029,
+        "change_pct": 0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -529,7 +529,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1351.3
+          1350.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -555,12 +555,12 @@
               "translated": false
             },
             {
-              "title": "New Labor Initiatives Under Evolving Policy Considerations",
+              "title": "News & Commentary: October 9",
               "desc": "",
               "summary": "",
               "source": "OnLabor",
-              "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQnZ4Q3dpbnItaUo1cmpkYW9YbnJaT1BLYzR4ZzJTQ1BNYS1JbThMajB3ejE0anVTcnZSazg2aVF6SGxLc2NPdW5JRWMzYlVJMEpvczNITkJzNmVTSzl0SUN6d2NGRTYyZU9BazR6LTd0bkJNZ2tXanpKOVk0ZngzMTFnOWd1QQ?oc=5",
-              "original_title": "New Labor Initiatives Under Evolving Policy Considerations",
+              "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5RX2RQLUdXNTdaQ3AzOE1yWGVsSWFZS29fYzlZRnVKekZQSUZGdVB4dG12Z1o4RjVvRkJmRkxfd2hfM0FhNEk0RlBiWQ?oc=5",
+              "original_title": "News & Commentary: October 9",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -867,7 +867,7 @@
           "note": "법정 최저임금 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:27.130592+09:00"
+          "last_updated": "2026-10-15T11:10:36.679196+09:00"
         },
         "min_wage_note": "법정 최저임금 · 기준: Eurostat",
         "indicators": {
@@ -913,9 +913,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -942,7 +942,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -996,12 +996,12 @@
               "translated": false
             },
             {
-              "title": "BASF would keep Evonik job guarantees in any deal, sources say",
+              "title": "Delivered! - The Courier Driver Business",
               "desc": "",
               "summary": "",
-              "source": "Reuters",
-              "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZGZEdjBJZzc1bzFNYW9QYjQwS2pYWG0tV0t1QXlPdmhKbXdrbUU4djlPamZua1RSaG43bzFrUXkwWFVoZjVsdEVrZnVBSWw3ZXkwNkFSWE5YNnBMVm5abHlpZEYzQ2QxM29YR0k5OHpBdXpobGdES0YwOWo1Q2ZWVXdFWXdPZjRfR05hSDlzZ3NtNWhYejFEVS1HNks3VU1BaFZfWDRvXzg5TmNEamVzTGY1NEM?oc=5",
-              "original_title": "BASF would keep Evonik job guarantees in any deal, sources say",
+              "source": "DW.com",
+              "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pcHg2NEg4dHJYVFJIdjFIZmlfMkxyRXRubWxOdUtEdElid3FYcG9RUVJWdnBRbHBkeDVWWnVyNVJDNncxMy1JT3BpWDd3V1Z5X2xZenpwYVJIdDBCZzBoalVIZ2hoc1hLV0ZYRVE0MlZfSjBQdkxxZVd3MzNSY00?oc=5",
+              "original_title": "Delivered! - The Courier Driver Business",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -1286,7 +1286,7 @@
           "note": "상하이시 기준 (지역별 상이) · 기준: 상하이시 인력자원사회보장국 고시 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:27.130620+09:00"
+          "last_updated": "2026-10-15T11:10:36.679234+09:00"
         },
         "min_wage_note": "상하이시 기준 (지역별 상이) · 기준: 상하이시 인력자원사회보장국 고시 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -1332,9 +1332,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 201.9,
-        "rate_per_unit": 201.939765,
-        "change_pct": 0.83,
+        "current_rate": 201.8,
+        "rate_per_unit": 201.835144,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -1361,7 +1361,7 @@
           210.3,
           204.7,
           201.5,
-          201.9
+          201.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -1450,12 +1450,12 @@
               "translated": false
             },
             {
-              "title": "Japan - International Relations, Trade, Security",
+              "title": "Chinamaxxing melting stereotypes",
               "desc": "",
               "summary": "",
-              "source": "Britannica",
-              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qU01SLUItUXVNMThuNVNoaklmeHd0eGZxQjVqejZDdEZqTUl0cHJRanJMdGZ3RS0tR3B2RTVoZ000ZHAtSk5fOFlvQ3E2VE9jd1h2RFFMUWdORUxkWnBZR1BSbHEzR3hqNk5Ja01zUQ?oc=5",
-              "original_title": "Japan - International Relations, Trade, Security",
+              "source": "China Daily",
+              "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Jb0lTN2UzaFlmV0pkaTJocHRJRE90N3ZaNWt5U0FZQUVLX3ZCVXBfZkJyNTkxaWswUkVodzZWckVUQTc1RENfODE1RENKUDJRY0xSdGZPU3lNV3ZnRndkZFcxenpPVDhoRWhXMEpiT3RielBhM0FSSFR4YUx4QQ?oc=5",
+              "original_title": "Chinamaxxing melting stereotypes",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -1464,12 +1464,12 @@
               "translated": false
             },
             {
-              "title": "Chinamaxxing melting stereotypes",
+              "title": "Japan - International Relations, Trade, Security",
               "desc": "",
               "summary": "",
-              "source": "China Daily",
-              "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9Jb0lTN2UzaFlmV0pkaTJocHRJRE90N3ZaNWt5U0FZQUVLX3ZCVXBfZkJyNTkxaWswUkVodzZWckVUQTc1RENfODE1RENKUDJRY0xSdGZPU3lNV3ZnRndkZFcxenpPVDhoRWhXMEpiT3RielBhM0FSSFR4YUx4QQ?oc=5",
-              "original_title": "Chinamaxxing melting stereotypes",
+              "source": "Britannica",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qU01SLUItUXVNMThuNVNoaklmeHd0eGZxQjVqejZDdEZqTUl0cHJRanJMdGZ3RS0tR3B2RTVoZ000ZHAtSk5fOFlvQ3E2VE9jd1h2RFFMUWdORUxkWnBZR1BSbHEzR3hqNk5Ja01zUQ?oc=5",
+              "original_title": "Japan - International Relations, Trade, Security",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -1697,7 +1697,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:27.130646+09:00"
+          "last_updated": "2026-10-15T11:10:36.679271+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -1744,8 +1744,8 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 416.7,
-        "rate_per_unit": 4.1669,
-        "change_pct": 0.92,
+        "rate_per_unit": 4.167299,
+        "change_pct": 0.93,
         "history_labels": [
           "11월",
           "12월",
@@ -2038,7 +2038,7 @@
           "note": "자카르타 주 최저임금(UMP) 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:27.130669+09:00"
+          "last_updated": "2026-10-15T11:10:36.679309+09:00"
         },
         "min_wage_note": "자카르타 주 최저임금(UMP) 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -2167,12 +2167,12 @@
               "translated": false
             },
             {
-              "title": "How the average US salary stacks up globally | lovemoney.com",
+              "title": "Indonesian teachers push for better pay in education bill",
               "desc": "",
               "summary": "",
-              "source": "lovemoney.com",
-              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYVlIVkg2blFOUWJMQ1RhYVFIYnpnV3paV1RFN3VHVk91SGJtTU5WQzhNX0s0SXNUTDVKMVNqalpKdzRBay1KZ1cxVGdaTVFZd2hOcTVFWE5Db0NEMlc3cDVwbFlRTUgxb1R2NTNtOW9yNTN2XzYwbmhDdzJtNEtpc0dqSFJaUGZEdTByV2NKaEF4eE5kNWfSAZYBQVVfeXFMTWFZSFZINm5RTlFiTENUYWFRSGJ6Z1d6WldURTd1R1ZPdUhibU1OVkM4TV9LNElzVEw1SjFTampaSnc0QWstSmdXMVRnWk1RWXdoTnE1RVhOQ29DRDJXN3A1cGxZUU1IMW9UdjUzbTlvcjUzdl82MG5oQ3cybTRLaXNHakhSWlBmRHUwcldjSmhBeHhOZDVn?oc=5",
-              "original_title": "How the average US salary stacks up globally | lovemoney.com",
+              "source": "Asia News Network",
+              "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc19JUzlPVjd2ejR5bFl4OHZfWHNTczVuTVZjel9Za2UzcnoxbFNydEMweUV4ckh5UmhwU0hYYy1HNEdGQkNWVmN4dlp3WlhYUHdDbHpRM3czRjI1b01qU1puRkl0VXRzRTRiUU9RTnlnYkhxcjRidE9TOE41NUVZcFpudEwwaW5seXRJ?oc=5",
+              "original_title": "Indonesian teachers push for better pay in education bill",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2187,20 +2187,6 @@
           "tag": "사회·문화",
           "tag_class": "bg-emerald-100 text-emerald-700",
           "items": [
-            {
-              "title": "Posthumous Indonesian novel newly translated into English critiques American culture and universal social constructs",
-              "desc": "",
-              "summary": "",
-              "source": "International Examiner",
-              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNb3hIdHpnMlBiY2FaQkV1RWpYYldiakdqS3dPT256dWFSSEg0TXdxcloyYzNmdzk3YlZJZk9Sa2tkMVVJMkxmekJQLUF1NXlET2U5aU1CUUFkcEJiM01rOUdGTFhmV19uRXFkU21rSjhic0puekI2aTBQUXMzdHhzVTdULUVaRm00OURZTkxwTmd1UVZTMVBOT2hONlNxaDFLMG5QMFB5OEduclh2ak1yZlp4UVZXRVBva0g4RFgtOGdsb1hNbnpOd2tMYmEtNWFPQmJydm5n?oc=5",
-              "original_title": "Posthumous Indonesian novel newly translated into English critiques American culture and universal social constructs",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
             {
               "title": "900 Indonesian Students Gather in Semarang to \"Make Some Noise\"",
               "desc": "",
@@ -2236,6 +2222,20 @@
               "source": "ANTARA News",
               "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcXpRZkZoa2VTN0l6eVNZYTFXNmRIOHBmVHFXYXNOQzVKc3VHYVdRS3hwSlpfb2tfNmJjaDJpdDktTW8wRmxoSWI2NHNzNGJYYlZZc20yR1g3UlN2NkY2VWM4RF9GejMxWVc0czBjMkc3cVY3d2I3NmpJWVN4UkhBTFRjV3lsOEpscElpRGNZTFlUV2J4azNqVXZId1ozVE1OM3hj0gGoAUFVX3lxTE5vX1VCVzJQeEplcEpOZVNydmhaV3lOQ2hWXzlvZzRFUVZqZFVFZk9fSTVHSWQwR3pzUEsyQi1abjYzSVdLcTF2N1BUYjZXSm9JdGJKSDdpOG5HN3VVekhXdTNEQ0UxV2thVlNZM1FGM3M2dkVPOEh5S2xQbHRJcjhKTk1RQ3BfeDVETUFYSU51UTFLSlRTNXJkQW01QkxMekRvRERzMEx5eg?oc=5",
               "original_title": "Tourism Ministry ensures safe, sustainable Sade Village recovery",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Indonesia Protected by Its Youth",
+              "desc": "",
+              "summary": "",
+              "source": "Kompas.id",
+              "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZHV2RmFWMU4zLUVVSlRYX0ktY3N1cEJvUS1INGR1dHViOHJ1MFNRbHRFLVF6OTBlT0tyWW5KOWRTMTItSU5xYzlHand4OFM0OXZjcF9CdjNqU0VGRklOajZIOHRsRXRlVVdhbThISXNLLUI4eGFMRXdheS1tTW84RFNDeGNaOXdneERN?oc=5",
+              "original_title": "Indonesia Protected by Its Youth",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2358,12 +2358,12 @@
               "translated": false
             },
             {
-              "title": "IIMS 2026 to be the stage for Bridgestone to celebrate 50 years of journey in Indonesia",
+              "title": "Green Eco Tires Market to Reach USD 87.515 Billion by 2035 as Tire-Label Rules, Sustainable Materials and EV Efficiency Drive Adoption, Reports Radial Insights",
               "desc": "",
               "summary": "",
-              "source": "VOI.ID",
-              "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFBFZ2tqbXNmcUhnUDhKQ3B5OWxkNDBCcl91LVNoVTNiWEZOU3lLMkxfaTJEN2xncUgtYU4zUnFxYXliTmNuYWRJ?oc=5",
-              "original_title": "IIMS 2026 to be the stage for Bridgestone to celebrate 50 years of journey in Indonesia",
+              "source": "PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNMWJRNFJnMXYxSXJvOTdZMFZqM1ZWVEI2ZHd4NlRDZklFT3pFTDV3US1HcHB2dF8yRmtWMmFZVmFqUmUzcHFFcnNFdVFyNHI5MWNndFREMnE4SWFzdlpNVEEwZlRhd3M2THlDQ1o5ZjNKVTkxSU9nbTVlR0stRlpZLUZGT3BNakxUVFpTUzlndTk1OHNvUWFsZElBY21uNGUtNV82eEsxRTJPVUR5MHVXaHVnVzh6dVRNeWNKUkJxYWNzN3dEX293SktmMlNGUmtrcnZ2X0RMczNaNUNvN1B5bTRGZDhIMDVNUG5FbEVzY2hfWjFwT2xadnBVdExvTWIzLXhRMkJYd1dyYXRSSXN5b0lBSUlkVWdWUFFKcVBIQTlaRmxjSUlHOEtQdjJQR3hYeW9lcDRFbUw?oc=5",
+              "original_title": "Green Eco Tires Market to Reach USD 87.515 Billion by 2035 as Tire-Label Rules, Sustainable Materials and EV Efficiency Drive Adoption, Reports Radial Insights",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2391,12 +2391,12 @@
           "category": "HR & LABOR"
         },
         {
-          "title": "Posthumous Indonesian novel newly translated into English critiques American culture and universal social constructs",
+          "title": "900 Indonesian Students Gather in Semarang to \"Make Some Noise\"",
           "desc": "",
           "summary": "",
-          "source": "International Examiner",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNb3hIdHpnMlBiY2FaQkV1RWpYYldiakdqS3dPT256dWFSSEg0TXdxcloyYzNmdzk3YlZJZk9Sa2tkMVVJMkxmekJQLUF1NXlET2U5aU1CUUFkcEJiM01rOUdGTFhmV19uRXFkU21rSjhic0puekI2aTBQUXMzdHhzVTdULUVaRm00OURZTkxwTmd1UVZTMVBOT2hONlNxaDFLMG5QMFB5OEduclh2ak1yZlp4UVZXRVBva0g4RFgtOGdsb1hNbnpOd2tMYmEtNWFPQmJydm5n?oc=5",
-          "original_title": "Posthumous Indonesian novel newly translated into English critiques American culture and universal social constructs",
+          "source": "Radio Veritas Asia",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWVkxT2gydlJWb19UVUpnWm1Uc1JlTUNHRTZKV0FQM2RUZi1hTUxZNG1xaGd6dVpjSkpkSXUxQXduNnN6ZG12aFh4TGFhN2NiN2pYMDdudnRTVnFNdXVVb1FmY2l3d0FvVjhyQzM1TlB4c1RJUEdDdTJnWWk5ZENHOTI5NlEtbFF4N2UzMVhvYTBrcDA?oc=5",
+          "original_title": "900 Indonesian Students Gather in Semarang to \"Make Some Noise\"",
           "original_lang": "en",
           "original_lang_upper": "EN",
           "is_translated": false,
@@ -2447,7 +2447,7 @@
           "note": "21세 이상 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:27.130694+09:00"
+          "last_updated": "2026-10-15T11:10:36.679347+09:00"
         },
         "min_wage_note": "21세 이상 · 기준: Eurostat",
         "indicators": {
@@ -2493,9 +2493,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -2522,7 +2522,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -2739,12 +2739,12 @@
               "translated": false
             },
             {
-              "title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars",
+              "title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
               "desc": "",
               "summary": "",
-              "source": "Republican Herald",
-              "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQlEtR1ViTDVZSk02TVo3LXE1SXNiTDd6Z1hyd29FRW01SFBBcEZkemxIZ3VJeWtKUm54bXVkby11cWF3bzJmdUt3VGRSZnU3bkdfSk5HeF9rVDBPMEE1X2Q0N0cxRUkwVTRZa2FrSDN0TWptM2RRUWdwWmdmRnA4NTZLcU9KNzhXd2hnWkliZ2QzWko2MFdrOUJwN0l5SExRUGszRzlUc29HRW8wcU1v?oc=5",
-              "original_title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars",
+              "source": "PR Newswire",
+              "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNbDdXV0ZaRTRDU0NqN0JFci1Cc2Fxc0RvLXAwSGM3S2lNYjY3UWNseFY1bVRaM0htWVVSNkxzZ3VEMnV4VXdITFdDMVJVamxrSHhvY1ZLbXAzcThXNWxjVndhUEJxcGVUaUI4SFJjNUtic2N3eXUzY1A4d1pIbnltSkVYREJKSDQ2UFRnRnBVenRkMWVnWVBrcTdEWUtDS2g4TmFMMjc5UHpUcUFPNVZVazcwLVktbFc1cm5Fc0ZyMXlCYkVFVzhmbGdVWUphV0ludkdCaUhETjhuaDBDdmh3TXFfTFh0S092S09vNUVMX04zaGp6TEI1VVVZbTJpYnpJVlZvYjFONWZieGNrLW1xR1JsTmFCWEZKbkVWSy1MbHJUUlZIbVV3elZoalFyWmFzc2ZKUmxQbw?oc=5",
+              "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2753,12 +2753,12 @@
               "translated": false
             },
             {
-              "title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
+              "title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars",
               "desc": "",
               "summary": "",
-              "source": "PR Newswire",
-              "link": "https://news.google.com/rss/articles/CBMitwJBVV95cUxNbDdXV0ZaRTRDU0NqN0JFci1Cc2Fxc0RvLXAwSGM3S2lNYjY3UWNseFY1bVRaM0htWVVSNkxzZ3VEMnV4VXdITFdDMVJVamxrSHhvY1ZLbXAzcThXNWxjVndhUEJxcGVUaUI4SFJjNUtic2N3eXUzY1A4d1pIbnltSkVYREJKSDQ2UFRnRnBVenRkMWVnWVBrcTdEWUtDS2g4TmFMMjc5UHpUcUFPNVZVazcwLVktbFc1cm5Fc0ZyMXlCYkVFVzhmbGdVWUphV0ludkdCaUhETjhuaDBDdmh3TXFfTFh0S092S09vNUVMX04zaGp6TEI1VVVZbTJpYnpJVlZvYjFONWZieGNrLW1xR1JsTmFCWEZKbkVWSy1MbHJUUlZIbVV3elZoalFyWmFzc2ZKUmxQbw?oc=5",
-              "original_title": "Military & Defense Vehicle Tires Market to Reach USD 5.24 Billion by 2035 as Defense Spending, Run-Flat and CTIS Adoption Drive Demand, Reports Radial Insights",
+              "source": "Republican Herald",
+              "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQlEtR1ViTDVZSk02TVo3LXE1SXNiTDd6Z1hyd29FRW01SFBBcEZkemxIZ3VJeWtKUm54bXVkby11cWF3bzJmdUt3VGRSZnU3bkdfSk5HeF9rVDBPMEE1X2Q0N0cxRUkwVTRZa2FrSDN0TWptM2RRUWdwWmdmRnA4NTZLcU9KNzhXd2hnWkliZ2QzWko2MFdrOUJwN0l5SExRUGszRzlUc29HRW8wcU1v?oc=5",
+              "original_title": "Dutch ‘car guys’ admire Mustangs, Studebakers at Jerry’s Classic Cars",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2856,7 +2856,7 @@
           "note": "시급 196대만달러 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:27.130713+09:00"
+          "last_updated": "2026-10-15T11:10:36.679382+09:00"
         },
         "min_wage_note": "시급 196대만달러 · 기준: ILO",
         "indicators": {
@@ -2901,8 +2901,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 41.8,
-        "rate_per_unit": 41.799,
-        "change_pct": 0.17,
+        "rate_per_unit": 41.813,
+        "change_pct": 0.2,
         "history_labels": [
           "11월",
           "12월",
@@ -3095,12 +3095,12 @@
               "translated": false
             },
             {
-              "title": "How to Explain Cross-strait Relations",
+              "title": "Trump's economic strategy resemble similar policies in East Asia",
               "desc": "",
               "summary": "",
-              "source": "Taiwan Insight",
-              "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHRhQTA1eDN4d1l3Tk9IajR5OThiRnJ3ZzRySjItRkczLUxhZ3lZUjRZeTYxXzFONDJKV2gzcFR5WjFFejJpNVFXX3dkMVJpSHhEUGIydGFsY2h0NHdSeWpyakljX25iOUI1M1l5UnFKYWxFMFAzYVpsbEhUaWljYQ?oc=5",
-              "original_title": "How to Explain Cross-strait Relations",
+              "source": "NPR",
+              "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU1VNMU94Qm1iLUpWdDIwUEVfM1NVLW9kX1JiZTNNRWlDRVVLMm5LRW54NlViQ3B5OEtGWXZoM3BKN2VrblRjZnhxWkpmZ0pzTG4tTFlTR1JUQmdpOU4yc1dnYjZBWGIxN1k0SzNIWFFvZGpOVlhkek9qaFk1cHdPZjRyR3FGMnlKeGxBWDFtbGFFeGpJYUJIREtQb2hEVHdJRjBjV2U0QmV6VXVt?oc=5",
+              "original_title": "Trump's economic strategy resemble similar policies in East Asia",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -3109,12 +3109,12 @@
               "translated": false
             },
             {
-              "title": "Trump's economic strategy resemble similar policies in East Asia",
+              "title": "How to Explain Cross-strait Relations",
               "desc": "",
               "summary": "",
-              "source": "NPR",
-              "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU1VNMU94Qm1iLUpWdDIwUEVfM1NVLW9kX1JiZTNNRWlDRVVLMm5LRW54NlViQ3B5OEtGWXZoM3BKN2VrblRjZnhxWkpmZ0pzTG4tTFlTR1JUQmdpOU4yc1dnYjZBWGIxN1k0SzNIWFFvZGpOVlhkek9qaFk1cHdPZjRyR3FGMnlKeGxBWDFtbGFFeGpJYUJIREtQb2hEVHdJRjBjV2U0QmV6VXVt?oc=5",
-              "original_title": "Trump's economic strategy resemble similar policies in East Asia",
+              "source": "Taiwan Insight",
+              "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMHRhQTA1eDN4d1l3Tk9IajR5OThiRnJ3ZzRySjItRkczLUxhZ3lZUjRZeTYxXzFONDJKV2gzcFR5WjFFejJpNVFXX3dkMVJpSHhEUGIydGFsY2h0NHdSeWpyakljX25iOUI1M1l5UnFKYWxFMFAzYVpsbEhUaWljYQ?oc=5",
+              "original_title": "How to Explain Cross-strait Relations",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -3178,7 +3178,7 @@
               "desc": "",
               "summary": "",
               "source": "비즈월드",
-              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9UZzBCcVNITmpNQVFMczY0SEhTcTlNaV80ZXJ2RVJHekE2dWlxWXBIR2xackVEcjVSWTRCQVhWaHZlMXJVdmlBc0c2MzZLOUF6LTBjMjdPY25US2xVeXJ3R1NQWFg4dnk0V0E?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YcUc5cHBUOGxDeEZwYUlUNS12d3Q4R24zS0IzR1ZpS250aHozc3hTRGwyN3RZazJwcFA0M245bHhSMWg4Y0hGVXV6ZVRUYTN1Q3otVDBrZTlHbFF5eVJKNm10ZlZ6TWdWTFFz?oc=5",
               "original_title": "한국타이어 ‘라우펜’, 유럽 1위 해치백 다치아 ‘산데로’에 신차용 타이어 공급",
               "original_lang": "ko",
               "original_lang_upper": "KO",
@@ -3263,7 +3263,7 @@
           "note": "법정 최저임금(MROT) · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753262+09:00"
+          "last_updated": "2026-10-15T11:10:38.510198+09:00"
         },
         "min_wage_note": "법정 최저임금(MROT) · 기준: ILO",
         "indicators": {
@@ -3310,8 +3310,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 16.0,
-        "rate_per_unit": 16.026826,
-        "change_pct": 0.83,
+        "rate_per_unit": 16.018524,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -3718,9 +3718,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 284.0,
-        "rate_per_unit": 284.019607,
-        "change_pct": 0.85,
+        "current_rate": 284.1,
+        "rate_per_unit": 284.066651,
+        "change_pct": 0.87,
         "history_labels": [
           "11월",
           "12월",
@@ -3747,7 +3747,7 @@
           312.4,
           303.8,
           290.5,
-          284.0
+          284.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -4011,7 +4011,7 @@
           "note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753548+09:00"
+          "last_updated": "2026-10-15T11:10:38.510520+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -4057,9 +4057,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 331.2,
-        "rate_per_unit": 331.230011,
-        "change_pct": 0.96,
+        "current_rate": 330.9,
+        "rate_per_unit": 330.920013,
+        "change_pct": 0.87,
         "history_labels": [
           "11월",
           "12월",
@@ -4086,7 +4086,7 @@
           348.6,
           342.1,
           330.9,
-          331.2
+          330.9
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/MYRKRW=X"
@@ -4392,7 +4392,7 @@
           "note": "일반 최저임금 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753576+09:00"
+          "last_updated": "2026-10-15T11:10:38.510559+09:00"
         },
         "min_wage_note": "일반 최저임금 · 기준: ILO",
         "indicators": {
@@ -4439,7 +4439,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 73.1,
-        "rate_per_unit": 73.123111,
+        "rate_per_unit": 73.119732,
         "change_pct": 0.24,
         "history_labels": [
           "11월",
@@ -4801,7 +4801,7 @@
           "note": "SMIG 참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753602+09:00"
+          "last_updated": "2026-10-15T11:10:38.510641+09:00"
         },
         "min_wage_note": "SMIG 참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -4847,9 +4847,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 137.4,
-        "rate_per_unit": 137.432751,
-        "change_pct": -0.12,
+        "current_rate": 137.3,
+        "rate_per_unit": 137.343794,
+        "change_pct": -0.18,
         "history_labels": [
           "11월",
           "12월",
@@ -4876,7 +4876,7 @@
           151.4,
           153.1,
           143.9,
-          137.4
+          137.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -5113,7 +5113,7 @@
           "note": "1지역 기준 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753628+09:00"
+          "last_updated": "2026-10-15T11:10:38.510688+09:00"
         },
         "min_wage_note": "1지역 기준 · 기준: ILO",
         "indicators": {
@@ -5160,8 +5160,8 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "rate_per_unit": 0.052147,
-        "change_pct": 0.82,
+        "rate_per_unit": 0.05212,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -5522,7 +5522,7 @@
           "note": "연방 최저임금 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753653+09:00"
+          "last_updated": "2026-10-15T11:10:38.510724+09:00"
         },
         "min_wage_note": "연방 최저임금 · 기준: ILO",
         "indicators": {
@@ -5568,9 +5568,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 268.9,
-        "rate_per_unit": 268.868624,
-        "change_pct": 0.82,
+        "current_rate": 268.8,
+        "rate_per_unit": 268.769137,
+        "change_pct": 0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -5597,7 +5597,7 @@
           279.8,
           265.3,
           259.6,
-          268.9
+          268.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/BRLKRW=X"
@@ -5889,7 +5889,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753678+09:00"
+          "last_updated": "2026-10-15T11:10:38.510759+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -5935,9 +5935,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 360.1,
-        "rate_per_unit": 360.053299,
-        "change_pct": -2.17,
+        "current_rate": 359.9,
+        "rate_per_unit": 359.866762,
+        "change_pct": -2.22,
         "history_labels": [
           "11월",
           "12월",
@@ -5964,7 +5964,7 @@
           378.3,
           376.0,
           370.8,
-          360.1
+          359.9
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
@@ -6298,7 +6298,7 @@
           "note": "참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753696+09:00"
+          "last_updated": "2026-10-15T11:10:38.510782+09:00"
         },
         "min_wage_note": "참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -6345,8 +6345,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 13.0,
-        "rate_per_unit": 12.957533,
-        "change_pct": 0.83,
+        "rate_per_unit": 12.950821,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -6581,7 +6581,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753719+09:00"
+          "last_updated": "2026-10-15T11:10:38.510819+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -6628,8 +6628,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 135.6,
-        "rate_per_unit": 135.558394,
-        "change_pct": 0.75,
+        "rate_per_unit": 135.563804,
+        "change_pct": 0.76,
         "history_labels": [
           "11월",
           "12월",
@@ -6682,12 +6682,12 @@
               "translated": false
             },
             {
-              "title": "New Labor Initiatives Under Evolving Policy Considerations",
+              "title": "Worker Misclassification Claims Continue to Challenge California Businesses",
               "desc": "",
               "summary": "",
-              "source": "OnLabor",
-              "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQnZ4Q3dpbnItaUo1cmpkYW9YbnJaT1BLYzR4ZzJTQ1BNYS1JbThMajB3ejE0anVTcnZSazg2aVF6SGxLc2NPdW5JRWMzYlVJMEpvczNITkJzNmVTSzl0SUN6d2NGRTYyZU9BazR6LTd0bkJNZ2tXanpKOVk0ZngzMTFnOWd1QQ?oc=5",
-              "original_title": "New Labor Initiatives Under Evolving Policy Considerations",
+              "source": "EIN Presswire",
+              "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaHBUTVZaNzJOTHJiV1FqRUFoWVI3a2RkUWkwSnV4S1FmWHNjNDVaZUJseHpkTHN6MVliRWIxcFcxY2NDNlhmeE85MUNIbnR5Q3ZXMFBBZ3R6X0hPdlBmSWtad3FlNk1KTlZ6a21tOUFQYkxST3RHbUU1eEppZUkzemdNUU9zTmJEQ0lfbnBRTG1NMEpQWmIydzVmcTVRT1JGOEx4dlpxa1lZRnFJdDVobHBNSVlUcFpnOEtUUkZsUQ?oc=5",
+              "original_title": "Worker Misclassification Claims Continue to Challenge California Businesses",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -6696,12 +6696,12 @@
               "translated": false
             },
             {
-              "title": "Worker Misclassification Claims Continue to Challenge California Businesses",
+              "title": "New Labor Initiatives Under Evolving Policy Considerations",
               "desc": "",
               "summary": "",
-              "source": "EIN Presswire",
-              "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaHBUTVZaNzJOTHJiV1FqRUFoWVI3a2RkUWkwSnV4S1FmWHNjNDVaZUJseHpkTHN6MVliRWIxcFcxY2NDNlhmeE85MUNIbnR5Q3ZXMFBBZ3R6X0hPdlBmSWtad3FlNk1KTlZ6a21tOUFQYkxST3RHbUU1eEppZUkzemdNUU9zTmJEQ0lfbnBRTG1NMEpQWmIydzVmcTVRT1JGOEx4dlpxa1lZRnFJdDVobHBNSVlUcFpnOEtUUkZsUQ?oc=5",
-              "original_title": "Worker Misclassification Claims Continue to Challenge California Businesses",
+              "source": "OnLabor",
+              "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQnZ4Q3dpbnItaUo1cmpkYW9YbnJaT1BLYzR4ZzJTQ1BNYS1JbThMajB3ejE0anVTcnZSazg2aVF6SGxLc2NPdW5JRWMzYlVJMEpvczNITkJzNmVTSzl0SUN6d2NGRTYyZU9BazR6LTd0bkJNZ2tXanpKOVk0ZngzMTFnOWd1QQ?oc=5",
+              "original_title": "New Labor Initiatives Under Evolving Policy Considerations",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -7008,9 +7008,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -7037,7 +7037,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -7189,6 +7189,20 @@
               "translated": false
             },
             {
+              "title": "Could a change of government in Spain have big implications on energy policy?",
+              "desc": "",
+              "summary": "",
+              "source": "Investing.com",
+              "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNclAwazA3bl9mMnBRTWdaMFdTcjZ6dUs1M0gweTZKVjJSbGNWR3EzRDhJcmFYNzFRdllGMUE2TGt4TjdiUThGVVBWVEM1NnM2Z1M4S1lGWW0zcEZPYWdtTXUtTURCdlNvUVVoQWZhWEFOMjRCZUx6WVRHZldFdjV1NXUxcmQxTWRfc1NJRkZ3OGRlZ0Y2dW1ILTdWVVVjY3NQWndQUDNEQ3l6bGxXcXZXSi1PSzIxV2xUNmV1UVpiWDFjanZFTkNF?oc=5",
+              "original_title": "Could a change of government in Spain have big implications on energy policy?",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
               "title": "Spain’s Transformation After a Decade of Fiscal Competition",
               "desc": "",
               "summary": "",
@@ -7215,20 +7229,6 @@
               "translate_label": "",
               "lang": "en",
               "translated": false
-            },
-            {
-              "title": "Protesters in France and Spain are angry at government failure—and demanding more government",
-              "desc": "",
-              "summary": "",
-              "source": "Reason Magazine",
-              "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNjhXTFRkRTdJcmdSNi1UZE05bFZSdmxLbElaeXV6b2VaVzRGTTdRRWVTSkdkWktpcGtkMkw3VVBHT1RCcDh6aFFBUDBRVkVpNVhNTGg2S3RneVRpM2JoU2pJQl9mMDAyZVRYU3BWREhadDBNeUVIYmE5ZjBiRGIxMUttU1J4OVdrTWJ1NlNfUk0yMUd2b0JQZG5uTHlfWWhtNllod1BsR050NkxWTVVNZ3huanZ1X3IyeGlHb0ZPM0w?oc=5",
-              "original_title": "Protesters in France and Spain are angry at government failure—and demanding more government",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
             }
           ]
         }
@@ -7239,20 +7239,6 @@
           "tag": "완성차·타이어 시장",
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
-            {
-              "title": "3 EU Auto Stocks Exposed To EV Tariffs And Made In Europe Rules",
-              "desc": "",
-              "summary": "",
-              "source": "Simply Wall Street",
-              "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRGNVVER0VGJpUlVmWlJNVlFDVGFtYWE5NVdEeFFCTF84NnJfeFI2UzdTdlREOU93ZkplVEE4bWN4VkU3cTBQTTNQdVNYUlk2VnN5S1MtcUVweG5BeUJ0d1k4YVhGakJMalVOMXg0dy1fWGpkQXl0THNXaUtFblkwTWdGWDVvSjJEQ0xrS3JMWkdwc1M2VzRMX0ZYdzNBVEJ1WTVWTTdxNTUxZFBreWFjRnRtdjdsUjhzUDJKVzZ5bGVvYWRCSlZxN194cXZqQzJtMzJuT1pyWkHSAd4BQVVfeXFMUHc5WmsyalBoc1Zic2NjdDZSeTVZd2JWM3k1dllERk9CUTc4dkFoQ1c3SUxWMDAyTGhlb0VOVF9OSU9sMTVSM0czX0ZCazNzazNtemVwSG9WQ1FYcU1jZVc3S3NHUFlEM0FoT0VOSUc2SGZpYzRoM09UM2szd0JvYnFVWnV5MWlfdmFjbjgtVU9IZ0VLZ0xLYmluQ1hZaVBQUF9tY2hORUVMaENsUjVfRE9jRGhRa1JBMlAycXVnS1l0WTRYakNYUmZsUU1QaEk0OV9fbjNzd3JvRHhfZWxR?oc=5",
-              "original_title": "3 EU Auto Stocks Exposed To EV Tariffs And Made In Europe Rules",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
             {
               "title": "“유럽 공략 착착”⋯ 한국타이어 라우펜, 다치아 산데로에 신차용 타이어 공급",
               "desc": "",
@@ -7371,7 +7357,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753763+09:00"
+          "last_updated": "2026-10-15T11:10:38.510882+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -7417,9 +7403,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1053.7,
-        "rate_per_unit": 1053.73999,
-        "change_pct": 0.61,
+        "current_rate": 1053.2,
+        "rate_per_unit": 1053.23999,
+        "change_pct": 0.56,
         "history_labels": [
           "11월",
           "12월",
@@ -7446,7 +7432,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1053.7
+          1053.2
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -7780,7 +7766,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753780+09:00"
+          "last_updated": "2026-10-15T11:10:38.510905+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -7827,8 +7813,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 367.9,
-        "rate_per_unit": 367.935517,
-        "change_pct": 0.79,
+        "rate_per_unit": 367.855102,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -8191,7 +8177,7 @@
           "note": "21세 이상 National Living Wage · 기준: GOV.UK (Low Pay Commission)",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753799+09:00"
+          "last_updated": "2026-10-15T11:10:38.510928+09:00"
         },
         "min_wage_note": "21세 이상 National Living Wage · 기준: GOV.UK (Low Pay Commission)",
         "indicators": {
@@ -8237,9 +8223,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1787.2,
-        "rate_per_unit": 1787.199951,
-        "change_pct": 0.59,
+        "current_rate": 1786.8,
+        "rate_per_unit": 1786.810059,
+        "change_pct": 0.57,
         "history_labels": [
           "11월",
           "12월",
@@ -8266,7 +8252,7 @@
           1912.2,
           1864.7,
           1787.6,
-          1787.2
+          1786.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/GBPKRW=X"
@@ -8600,7 +8586,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753824+09:00"
+          "last_updated": "2026-10-15T11:10:38.510962+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -8646,9 +8632,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -8675,7 +8661,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -8953,7 +8939,7 @@
           "note": "월 기준 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753843+09:00"
+          "last_updated": "2026-10-15T11:10:38.510985+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO",
         "indicators": {
@@ -9000,8 +8986,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.9,
-        "rate_per_unit": 30.896659,
-        "change_pct": 0.82,
+        "rate_per_unit": 30.880652,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -9320,7 +9306,7 @@
           "note": "민간 부문 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753867+09:00"
+          "last_updated": "2026-10-15T11:10:38.511018+09:00"
         },
         "min_wage_note": "민간 부문 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -9367,8 +9353,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 25.6,
-        "rate_per_unit": 25.613042,
-        "change_pct": 0.82,
+        "rate_per_unit": 25.60167,
+        "change_pct": 0.77,
         "history_labels": [
           "11월",
           "12월",
@@ -9547,12 +9533,12 @@
               "translated": false
             },
             {
-              "title": "President El-Sisi says 20 agreements, MOUs signed during Asia tour, highlight laudable stature Egypt enjoys globally",
+              "title": "President El-Sisi says 20 agreements, MOUs signed during his tour, highlight laudable stature Egypt enjoys globally",
               "desc": "",
               "summary": "",
               "source": "Egypt Today",
-              "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMkotaHhVNlBIRUFNV24yTE9HNTFGc0h5OENUV0ZBREIxWHlWeGhfUDRYV1lQTDVsZW5DWG9DQjBmV2VlQ0VyX1lEb0dfTnFkZjFqeUloODF2NHBzQkRWTFdOXzRRZUhJNno4Tld3NVVBRTI0bG42RnVZSnNydFFrdGZ6N2tsZ2FZcjhfYVVBQkFOMWc0d1VYRnRTaE9NQkNHckZtdmZSYw?oc=5",
-              "original_title": "President El-Sisi says 20 agreements, MOUs signed during Asia tour, highlight laudable stature Egypt enjoys globally",
+              "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQV1dHNXI0eUQ1VkY0N0FmcllmS3Ita0oxdklwUXVBQWxicmwtQlF4R2FrQnZPNFpoU3BaUVUzU2dLMmE3aFJzQUc4dzFqV0JXc2V2Q3RKWFBvWmkxRDVXaG0xalVtU1RJWDlveUhjdjdkcEdOZXNJeGsxMVA5QjBmWERwbUFfWk5oTmVZS2RFeUdrTExwQ2RaQWppejE5TV8yaFVua3dB?oc=5",
+              "original_title": "President El-Sisi says 20 agreements, MOUs signed during his tour, highlight laudable stature Egypt enjoys globally",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -9701,7 +9687,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753892+09:00"
+          "last_updated": "2026-10-15T11:10:38.511053+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -9747,9 +9733,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -9776,7 +9762,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -10130,9 +10116,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 854.8,
-        "rate_per_unit": 8.548,
-        "change_pct": 0.98,
+        "current_rate": 854.3,
+        "rate_per_unit": 8.543,
+        "change_pct": 0.92,
         "history_labels": [
           "11월",
           "12월",
@@ -10159,7 +10145,7 @@
           886.8,
           860.1,
           858.3,
-          854.8
+          854.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/JPYKRW=X"
@@ -10248,20 +10234,6 @@
               "translated": false
             },
             {
-              "title": "George Mason Students Explore Approaches to Leadership During Study Abroad Program in Japan",
-              "desc": "",
-              "summary": "",
-              "source": "George Mason University",
-              "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOWHNHOWRIbnRjenNOc2VFaGplNGZkc1Uwb3pWbWdiQkIyNDlnd3Y1MER4SjdNbGlwUklvS2g0djdpMW4xcVVwT3dKSTg4Q1RJcnhnVVd3NVZOSloxeXVzZ1RrMWRfU2xtWlRWbzhpOVA0YkM2bi1hclUxSzZVUlpxZ05QMzVkZ25hRkZOMkJrWWdMOERFUmptREFrS2VlRVhNVW1MSFhNNnF1Q0tsaVA0M2NpRms?oc=5",
-              "original_title": "George Mason Students Explore Approaches to Leadership During Study Abroad Program in Japan",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
               "title": "Netflix vies to be a cut above in TV production",
               "desc": "",
               "summary": "",
@@ -10282,6 +10254,20 @@
               "source": "Britannica",
               "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9CUU5nMGlqTmo4dm5ONjZCcFdUamtMNnBVcnNtR0YxQklaUXFwREpqdzlncmM1cHMwX0FyQUMtcWNEV25vMmd4N24wTUtDbDZTREhMRWZkNE4ydFk?oc=5",
               "original_title": "Japan - Arts, Culture, Traditions",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Japan - International Relations, Trade, Security",
+              "desc": "",
+              "summary": "",
+              "source": "Britannica",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qU01SLUItUXVNMThuNVNoaklmeHd0eGZxQjVqejZDdEZqTUl0cHJRanJMdGZ3RS0tR3B2RTVoZ000ZHAtSk5fOFlvQ3E2VE9jd1h2RFFMUWdORUxkWnBZR1BSbHEzR3hqNk5Ja01zUQ?oc=5",
+              "original_title": "Japan - International Relations, Trade, Security",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -10493,7 +10479,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.753939+09:00"
+          "last_updated": "2026-10-15T11:10:38.511125+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -10540,8 +10526,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 62.2,
-        "rate_per_unit": 62.201825,
-        "change_pct": 0.8,
+        "rate_per_unit": 62.224431,
+        "change_pct": 0.84,
         "history_labels": [
           "11월",
           "12월",
@@ -10615,6 +10601,20 @@
           "tag_class": "bg-emerald-100 text-emerald-700",
           "items": [
             {
+              "title": "Temporal dialogue. Stará hasička Cultural and Community Centre by Schwerpunkt",
+              "desc": "",
+              "summary": "",
+              "source": "Metalocus",
+              "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNDJla3JMSXkyRE9GaWZjc3R3YzR5WXhJQ3RDZDdkM0s1VDdYZ3hnRUJVQnVvT2NfLXljZHdXNEFmMGZTZERtSlFCa0hvU1RNVnhKdGJmcHhoSmJaRlB3c2VRVFNVUHh2bTVYbUJRdWtKRjR5dEo1Ty03dFhZSDJydjFPUzIzWEJCWlZ6b19nMHhpVWg2SkhKaW5DaUlfX2lrREw3NFRQS3N0Zw?oc=5",
+              "original_title": "Temporal dialogue. Stará hasička Cultural and Community Centre by Schwerpunkt",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
               "title": "Slovakia - Politics, Constitution, Regions",
               "desc": "",
               "summary": "",
@@ -10649,20 +10649,6 @@
               "source": "Dezeen",
               "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxORjdzZVdKVHVLeHIxNk1KRWZkdmxRMTBqc3pMZnRlemRjSnFXdHZvX25kZkFrNmY2WEgxZEZxUG14aDdXR0Z4VExwUWJORzJna1NpQXhSTml2Y2RPN0pTYzZVQlM0MVdNeVdkUGh2SENaaDVKYWtSMkZhUG4yUGdmTUpFblpJMmRJUEtZRnFncjlxYUE?oc=5",
               "original_title": "Acronym Collective Studio transforms former brewery in Czech Republic into community centre",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
-              "title": "Czech social affairs experts visit Leeds",
-              "desc": "",
-              "summary": "",
-              "source": "Ministerstvo zahraničních věcí",
-              "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbWtOaFE4YzZhME5YNU5va0JjdlNnTFdzai1xNzJOd2h6ckNiMEdyUDg4RzY2TFNZVm5PcXhPU29vZ2x4bFFxck91RmlFUjRkN19vdlhUMExVSWNPMGpzdlpWYWZ3UkdyNDRCb1d4NHZRdjdjNGV5SDgxSk9jeGM2SlV1TWFtUQ?oc=5",
-              "original_title": "Czech social affairs experts visit Leeds",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -10804,12 +10790,12 @@
           "category": "HR & LABOR"
         },
         {
-          "title": "Slovakia - Politics, Constitution, Regions",
+          "title": "Temporal dialogue. Stará hasička Cultural and Community Centre by Schwerpunkt",
           "desc": "",
           "summary": "",
-          "source": "Britannica",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZN1BvNGs4QzlUUDBVeGc5YWVzRDhfMFZWVFVtRkR6Szd2dG1hbWJsNWo1VnlObE5mVjVidm1MNUZIcHVtM1I2dFdfNXVsbkR0OGtFakx4M0REcFh6VWFQVVNpSEl0YTFhUUJYMzZqNmo2QQ?oc=5",
-          "original_title": "Slovakia - Politics, Constitution, Regions",
+          "source": "Metalocus",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNDJla3JMSXkyRE9GaWZjc3R3YzR5WXhJQ3RDZDdkM0s1VDdYZ3hnRUJVQnVvT2NfLXljZHdXNEFmMGZTZERtSlFCa0hvU1RNVnhKdGJmcHhoSmJaRlB3c2VRVFNVUHh2bTVYbUJRdWtKRjR5dEo1Ty03dFhZSDJydjFPUzIzWEJCWlZ6b19nMHhpVWg2SkhKaW5DaUlfX2lrREw3NFRQS3N0Zw?oc=5",
+          "original_title": "Temporal dialogue. Stará hasička Cultural and Community Centre by Schwerpunkt",
           "original_lang": "en",
           "original_lang_upper": "EN",
           "is_translated": false,
@@ -10906,9 +10892,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 137.2,
-        "rate_per_unit": 1.371935,
-        "change_pct": 0.51,
+        "current_rate": 137.1,
+        "rate_per_unit": 1.371346,
+        "change_pct": 0.47,
         "history_labels": [
           "11월",
           "12월",
@@ -10935,7 +10921,7 @@
           153.6,
           147.8,
           138.8,
-          137.2
+          137.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CLPKRW=X"
@@ -11200,7 +11186,7 @@
           "note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.753995+09:00"
+          "last_updated": "2026-10-15T11:10:38.511200+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -11246,9 +11232,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 299.1,
-        "rate_per_unit": 2.99077,
-        "change_pct": -3.39,
+        "current_rate": 299.0,
+        "rate_per_unit": 2.989929,
+        "change_pct": -3.42,
         "history_labels": [
           "11월",
           "12월",
@@ -11275,7 +11261,7 @@
           309.2,
           305.3,
           318.6,
-          299.1
+          299.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/KZTKRW=X"
@@ -11543,9 +11529,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 951.2,
-        "rate_per_unit": 951.200012,
-        "change_pct": 0.9,
+        "current_rate": 950.5,
+        "rate_per_unit": 950.51001,
+        "change_pct": 0.83,
         "history_labels": [
           "11월",
           "12월",
@@ -11572,7 +11558,7 @@
           1013.9,
           990.8,
           952.0,
-          951.2
+          950.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -11906,7 +11892,7 @@
           "note": "교통보조금 별도 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754059+09:00"
+          "last_updated": "2026-10-15T11:10:38.511270+09:00"
         },
         "min_wage_note": "교통보조금 별도 · 기준: ILO",
         "indicators": {
@@ -11953,8 +11939,8 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 42.5,
-        "rate_per_unit": 0.424856,
-        "change_pct": 1.08,
+        "rate_per_unit": 0.42473,
+        "change_pct": 1.05,
         "history_labels": [
           "11월",
           "12월",
@@ -12204,7 +12190,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754083+09:00"
+          "last_updated": "2026-10-15T11:10:38.511302+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -12250,9 +12236,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -12279,7 +12265,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -12311,20 +12297,6 @@
           "tag": "사회·문화",
           "tag_class": "bg-emerald-100 text-emerald-700",
           "items": [
-            {
-              "title": "Croatian Catholic Community invited to the Mass for All Nations in Melbourne",
-              "desc": "",
-              "summary": "",
-              "source": "Hrvatski Vjesnik",
-              "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMHBFeDhMckp1MmJVeWJzS05KYzJGdW9ZUGNFZ3ZxMWh6a0Rpck80VHRhZVZBN3ZwMGJUaWVGRVFIT2xJOGs0WVE3R1E2M2liR1NyLXgtSUxHNVFET1RSMHlfcDAtSC1TSV9wUE1Tdk1GYzVZWXJZQk42WElPcXVPZ2NQRlBZT2U3blVueEx3SnlaNXBBTVU1NE4tX3lJaGEwMjFBQUpTUDAyaURP?oc=5",
-              "original_title": "Croatian Catholic Community invited to the Mass for All Nations in Melbourne",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
             {
               "title": "[이슈/ 조정식 국회의장, 크로아티아 국회의장과 공동 기자회견] “천무 도입 넘어 산업·기술 협력으로”…한·크로아티아, 방산·항만·물류 협력 확대 모색",
               "desc": "",
@@ -12459,17 +12431,17 @@
           "category": "HR & LABOR"
         },
         {
-          "title": "Croatian Catholic Community invited to the Mass for All Nations in Melbourne",
+          "title": "[이슈/ 조정식 국회의장, 크로아티아 국회의장과 공동 기자회견] “천무 도입 넘어 산업·기술 협력으로”…한·크로아티아, 방산·항만·물류 협력 확대 모색",
           "desc": "",
           "summary": "",
-          "source": "Hrvatski Vjesnik",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNMHBFeDhMckp1MmJVeWJzS05KYzJGdW9ZUGNFZ3ZxMWh6a0Rpck80VHRhZVZBN3ZwMGJUaWVGRVFIT2xJOGs0WVE3R1E2M2liR1NyLXgtSUxHNVFET1RSMHlfcDAtSC1TSV9wUE1Tdk1GYzVZWXJZQk42WElPcXVPZ2NQRlBZT2U3blVueEx3SnlaNXBBTVU1NE4tX3lJaGEwMjFBQUpTUDAyaURP?oc=5",
-          "original_title": "Croatian Catholic Community invited to the Mass for All Nations in Melbourne",
-          "original_lang": "en",
-          "original_lang_upper": "EN",
+          "source": "코리아포스트 한글판",
+          "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBZVWUtTGRTNjVvd1VFc3hjMFpySlF5V0ttdFhud1JrMy1mWHFLdnQ5dFRQV1FScmQ0RGJQVWVtNWlxX1IyQU5mQUZCUHc5bGs3Rm4zTFdJbVdoT0J4VUg0VENTWGJHRVd3TTJhOXhn?oc=5",
+          "original_title": "[이슈/ 조정식 국회의장, 크로아티아 국회의장과 공동 기자회견] “천무 도입 넘어 산업·기술 협력으로”…한·크로아티아, 방산·항만·물류 협력 확대 모색",
+          "original_lang": "ko",
+          "original_lang_upper": "KO",
           "is_translated": false,
           "translate_label": "",
-          "lang": "en",
+          "lang": "ko",
           "translated": false,
           "category": "SOCIETY & CULTURE"
         },
@@ -12515,7 +12487,7 @@
           "note": "방콕 기준 (지역별 337~400바트) · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T11:06:28.754110+09:00"
+          "last_updated": "2026-10-15T11:10:38.511335+09:00"
         },
         "min_wage_note": "방콕 기준 (지역별 337~400바트) · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -12562,8 +12534,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 40.3,
-        "rate_per_unit": 40.283001,
-        "change_pct": 0.86,
+        "rate_per_unit": 40.256001,
+        "change_pct": 0.79,
         "history_labels": [
           "11월",
           "12월",
@@ -12793,6 +12765,20 @@
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
             {
+              "title": "ERJ Sustainability Tracker - 2026",
+              "desc": "",
+              "summary": "",
+              "source": "European Rubber Journal",
+              "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZU02REJHZ19YN0ZSR1FtemRmNUJhc3NGbW8yaGg0LW1kR3JzaEVNdjBaUXk5bDJQNEFjRUppcndxMTJTSGlqenNxMVFKczQ1TXB2dWVHU0E2eFV0REFuTnhZMFRJbmFzY1ZTelZSN0FGWGRid0NvUlliNU5MaGhzQXZjLVBmNUJkQV9yTlNfYVppd08tV1Vv?oc=5",
+              "original_title": "ERJ Sustainability Tracker - 2026",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
               "title": "Performance Tires Market Forecast to 2035: EV-Driven Demand Supports Growth - News and Statistics",
               "desc": "",
               "summary": "",
@@ -12827,20 +12813,6 @@
               "source": "Retail News Asia",
               "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNRXdWYkxTd2ZjUThTZGFsV1d4N0V4OVpTWmJ3UDRhZ3dzVVhOblhxRy10VVc5OTlkRlZybDQwMGtRWEF1QTNfd0c1MmNsTUk1Um12bmltOEgtMzdiWl9FeEhTYnFxZ3gtYWpjV0FlZUdtWVRrUXl3aU9ZczBMUWRfOF9sa3B4ZElCb3V3YVBHLWMxbE9Hc3pv?oc=5",
               "original_title": "Thai Car Plants Prepare to Restart as Flood Delays Ease in Chon Buri",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
-              "title": "Giti CarService's first in Vietnam - A milestone marking the beginning of a new journey for Giti.",
-              "desc": "",
-              "summary": "",
-              "source": "Vietnam.vn",
-              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxONUpLWHJpOTctMnJvT20wdU5vX0pxc0xKRVJzaDE4TmpoLW5rR1h3SzRSOUI0TDMxT3RpTldWZ1dmd1BSaDJXSC03WTMtR01KaDlwVk5xYkRFUHdNX2pSXy1GNlkyeXFXTm5QWUJ2ZDdfN0lfN0xzcTlyNU1fdnM2WGVmWnItaVNMMnBEMnhBazNDUVJFVDA3TnNSd1dDZVBTVTlR?oc=5",
-              "original_title": "Giti CarService's first in Vietnam - A milestone marking the beginning of a new journey for Giti.",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -12924,7 +12896,7 @@
           "note": "순액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754137+09:00"
+          "last_updated": "2026-10-15T11:10:38.511368+09:00"
         },
         "min_wage_note": "순액 기준 · 기준: Eurostat",
         "indicators": {
@@ -12970,9 +12942,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 27.4,
-        "rate_per_unit": 27.361747,
-        "change_pct": 0.73,
+        "current_rate": 27.3,
+        "rate_per_unit": 27.34003,
+        "change_pct": 0.65,
         "history_labels": [
           "11월",
           "12월",
@@ -12999,7 +12971,7 @@
           29.9,
           28.5,
           27.6,
-          27.4
+          27.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/TRYKRW=X"
@@ -13017,6 +12989,34 @@
               "source": "EIN Presswire",
               "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaHBUTVZaNzJOTHJiV1FqRUFoWVI3a2RkUWkwSnV4S1FmWHNjNDVaZUJseHpkTHN6MVliRWIxcFcxY2NDNlhmeE85MUNIbnR5Q3ZXMFBBZ3R6X0hPdlBmSWtad3FlNk1KTlZ6a21tOUFQYkxST3RHbUU1eEppZUkzemdNUU9zTmJEQ0lfbnBRTG1NMEpQWmIydzVmcTVRT1JGOEx4dlpxa1lZRnFJdDVobHBNSVlUcFpnOEtUUkZsUQ?oc=5",
               "original_title": "Worker Misclassification Claims Continue to Challenge California Businesses",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Delivered! - The Courier Driver Business",
+              "desc": "",
+              "summary": "",
+              "source": "DW.com",
+              "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pcHg2NEg4dHJYVFJIdjFIZmlfMkxyRXRubWxOdUtEdElid3FYcG9RUVJWdnBRbHBkeDVWWnVyNVJDNncxMy1JT3BpWDd3V1Z5X2xZenpwYVJIdDBCZzBoalVIZ2hoc1hLV0ZYRVE0MlZfSjBQdkxxZVd3MzNSY00?oc=5",
+              "original_title": "Delivered! - The Courier Driver Business",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Compatriots from the Fergana Valley begin work in the construction industry of Türkiye's Balıkesir Province",
+              "desc": "",
+              "summary": "",
+              "source": "Dunyo",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObDFscTJNNFUwbTlyY0d4ZmNQNXdkMFBpR19QLW8wNjZJRzJWd0lxYjkxQVdDVDE5RXpLQV8xdlBxRXd1RU9Sb0ZuWFRWblVhbVVNc0dubEFRQlY0dm5NRFB5bGc1VDVuYWdhckdwMl90WmJNZmhweE1oU242YkVsbXc3WWNNRzRZVV9tZjYyaHEyVVRRbnlpWmFRblJPNzd3akE?oc=5",
+              "original_title": "Compatriots from the Fergana Valley begin work in the construction industry of Türkiye's Balıkesir Province",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -13291,7 +13291,7 @@
           "note": "업종·지역별 차등 고시",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754161+09:00"
+          "last_updated": "2026-10-15T11:10:38.511401+09:00"
         },
         "min_wage_note": "업종·지역별 차등 고시",
         "indicators": {
@@ -13337,9 +13337,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1351.3,
-        "rate_per_unit": 1351.280029,
-        "change_pct": -1.46,
+        "current_rate": 1350.5,
+        "rate_per_unit": 1350.51001,
+        "change_pct": -1.52,
         "history_labels": [
           "11월",
           "12월",
@@ -13366,7 +13366,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1351.3
+          1350.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -13588,7 +13588,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754186+09:00"
+          "last_updated": "2026-10-15T11:10:38.511432+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -13634,9 +13634,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 346.7,
-        "rate_per_unit": 346.725858,
-        "change_pct": 0.91,
+        "current_rate": 346.9,
+        "rate_per_unit": 346.882025,
+        "change_pct": 0.96,
         "history_labels": [
           "11월",
           "12월",
@@ -13663,7 +13663,7 @@
           380.3,
           367.9,
           350.9,
-          346.7
+          346.9
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -13997,7 +13997,7 @@
           "note": "SMIC · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T11:06:28.754208+09:00"
+          "last_updated": "2026-10-15T11:10:38.511463+09:00"
         },
         "min_wage_note": "SMIC · 기준: Eurostat",
         "indicators": {
@@ -14043,9 +14043,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1514.7,
-        "rate_per_unit": 1514.699951,
-        "change_pct": 0.99,
+        "current_rate": 1514.5,
+        "rate_per_unit": 1514.5,
+        "change_pct": 0.97,
         "history_labels": [
           "11월",
           "12월",
@@ -14072,7 +14072,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1514.7
+          1514.5
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -14126,12 +14126,12 @@
               "translated": false
             },
             {
-              "title": "Singapore minimum wage and average salary 2026: PWM & pay",
+              "title": "Infosys fined €175,000 by French regulator for labor compliance gaps",
               "desc": "",
               "summary": "",
-              "source": "Expatica",
-              "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9pcFNXajIzbXBvUENzY3NTbWtONW55SnVqcHNjbU4tbElMTEI4V3YzSUNxZktxZEZiUi1wV284SXBKbjNwdVVLcV80dGNuNWFhaGZJbHpmLV9QY1lUWWZfRmxLTlgxTFdGSHZfM0d2blI1ZGE0STFJ?oc=5",
-              "original_title": "Singapore minimum wage and average salary 2026: PWM & pay",
+              "source": "scanx.trade",
+              "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQR0c3R0RyUGEzNll1N2RQbUhoMnM2a0ZpbmllUFdGOW5JZHVUVGtnZ0hkVEdwcWN2eXotMnZwbnN2M2wzVDVDcGw4bXlmemhET1ZFTnNMZk8yTExUSVlkVnRvWlpsNW5aTjM1aXpsNUZpeC1NOW1HR3R2R29xM1dlV1FLQ0RybmFXTTdWaDJ0b0pfdDRwd3hFVGZYdk1LNThFZmhPaWhOaEc5Yms0NWkzYS1Oa1VjeUFDTHJ3dExUdlBIQQ?oc=5",
+              "original_title": "Infosys fined €175,000 by French regulator for labor compliance gaps",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -14452,9 +14452,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 939.5,
-        "rate_per_unit": 939.539978,
-        "change_pct": 0.37,
+        "current_rate": 939.6,
+        "rate_per_unit": 939.609985,
+        "change_pct": 0.38,
         "history_labels": [
           "11월",
           "12월",
@@ -14481,7 +14481,7 @@
           998.1,
           986.1,
           944.2,
-          939.5
+          939.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/AUDKRW=X"

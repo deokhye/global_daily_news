@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Global Daily News</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Chart.js CDN for graph -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap');
         body {
-            font-family: 'Pretendard', sans-serif;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background-color: #F8F9FA;
         }
         .card {
@@ -97,25 +95,24 @@
         }
         .date-picker-wrap.loading { opacity: 0.6; pointer-events: none; }
 
-        /* 번역 표시 뱃지 (작고 은은하게) */
         .translated-badge {
             display: inline-flex;
             align-items: center;
+            gap: 2px;
             flex-shrink: 0;
-            font-size: 9px;
+            font-size: 10px;
             font-weight: 600;
             line-height: 1.4;
             color: #94A3B8;
-            background: #F8FAFC;
+            background: #F1F5F9;
             border: 1px solid #E2E8F0;
-            border-radius: 4px;
-            padding: 0 5px;
+            border-radius: 6px;
+            padding: 0 6px;
             margin-left: 6px;
             white-space: nowrap;
             vertical-align: middle;
         }
 
-        /* 지표 출처 각주 */
         .src-note {
             display: block;
             text-align: right;
@@ -124,6 +121,25 @@
             color: #A0AEC0;
             margin-top: 2px;
         }
+        .te-link {
+            color: #F27A18;
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(242,122,24,0.5);
+        }
+        .te-link:hover { color: #C25E0C; border-bottom-color: #C25E0C; }
+
+        .news-item {
+            display: block;
+            background: white;
+            border: 1px solid #F1F5F9;
+            border-radius: 0.85rem;
+            padding: 0.75rem;
+            transition: all .15s ease;
+        }
+        .news-item:hover { background: #FFF7EF; border-color: #FED7AA; }
+        .news-item.fallback { background: #F8FAFC; }
+        .news-item.fallback:hover { background: #F1F5F9; border-color: #E2E8F0; }
 
         .loading-dim { opacity: 0.45; pointer-events: none; transition: opacity .15s ease; }
         .calc-input {
@@ -142,7 +158,6 @@
             box-shadow: 0 0 0 3px rgba(242,122,24,0.15);
             background: white;
         }
-        /* 토스트 알림 */
         #toast-container {
             position: fixed;
             top: 1.25rem;
@@ -175,12 +190,10 @@
 </head>
 <body class="text-slate-800 min-h-screen antialiased">
 
-    <!-- 토스트 알림 컨테이너 -->
     <div id="toast-container"></div>
 
-    <!-- 데이터 로딩 완전 실패 시(초기 임베드 JSON 자체가 깨진 경우) 노출되는 오류 배너 -->
     <div id="fatal-error-banner" class="hidden bg-red-600 text-white text-sm font-semibold text-center py-2 px-4">
-        대시보드 데이터를 불러오지 못했습니다. data/countries_data.json 이 올바르게 생성되었는지 확인해주세요.
+        대시보드 데이터를 불러오지 못했습니다. 잠시 후 다시 확인해주세요.
     </div>
 
     <!-- 1. Header -->
@@ -198,7 +211,6 @@
                     </div>
                 </div>
 
-                <!-- Clean Date Picker: 과거 아카이브(docs/archive/YYYY-MM-DD.json) 조회 -->
                 <div class="flex flex-col items-end gap-1">
                     <div id="date-picker-wrap" class="date-picker-wrap" title="과거 날짜의 데이터를 조회합니다">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#F27A18]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -209,23 +221,22 @@
                                min="{{ archive_min_date }}"
                                max="{{ archive_max_date }}">
                     </div>
+                    <span id="header-asof" class="text-[10px] text-slate-400">{{ as_of_display }}</span>
                 </div>
             </div>
 
-            <!-- Region Nav -->
             <div id="region-nav" class="flex gap-2 scroll-row pb-1"></div>
-            <!-- Country Chips -->
             <div id="country-chips" class="flex flex-wrap gap-2 scroll-row pb-1"></div>
         </div>
     </header>
 
-    <!-- 2. Main Content -->
+    <!-- 2. Main -->
     <main id="main-content" class="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
 
         <!-- Top Banner -->
         <div class="card flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div class="flex items-center gap-4">
-                <div class="text-5xl font-bold p-2.5 bg-slate-50 rounded-2xl border border-slate-100 shadow-inner">
+                <div class="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 shadow-inner">
                     <img id="country-flag" src="" alt="flag" class="w-10 h-auto">
                 </div>
                 <div>
@@ -237,13 +248,11 @@
                 </div>
             </div>
             <div class="text-left md:text-right flex flex-col items-start md:items-end gap-1.5">
-                <div class="flex items-center gap-2 text-[11px] text-slate-400">
-                    <span id="sync-display-text">{{ as_of_display }}</span>
-                </div>
+                <span id="sync-display-text" class="text-[11px] text-slate-400">{{ as_of_display }}</span>
             </div>
         </div>
 
-        <!-- Cards Grid -->
+        <!-- Row 1: Profile / Exchange / Auto Market -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
             <!-- Card 1: Country Profile -->
@@ -258,7 +267,6 @@
                     <div class="space-y-3">
                         <div class="pb-2 border-b border-slate-100">
                             <div class="flex justify-between items-center"><span class="text-slate-500 text-sm">수도</span><span id="profile-capital" class="font-bold text-slate-800 text-sm text-right">-</span></div>
-                            <span id="profile-capital-src" class="src-note"></span>
                         </div>
                         <div class="pb-2 border-b border-slate-100">
                             <div class="flex justify-between items-center"><span class="text-slate-500 text-sm">총 인구</span><span id="profile-population" class="font-bold text-slate-800 text-sm text-right">-</span></div>
@@ -276,13 +284,13 @@
                             <div class="flex justify-between items-center"><span class="text-slate-500 text-sm">실업률</span><span id="profile-unemployment" class="font-bold text-slate-800 text-sm text-right">-</span></div>
                             <span id="profile-unemployment-src" class="src-note"></span>
                         </div>
-                        <div id="profile-minwage-row" class="pb-2 border-b border-slate-100 hidden">
+                        <div class="pb-2 border-b border-slate-100">
                             <div class="flex justify-between items-center gap-3"><span class="text-slate-500 text-sm whitespace-nowrap">최저임금</span><span id="profile-minwage" class="font-bold text-slate-800 text-sm text-right">-</span></div>
                             <span id="profile-minwage-note" class="src-note" style="color:#94A3B8;"></span>
                             <span id="profile-minwage-src" class="src-note"></span>
                         </div>
                         <div class="pt-2">
-                            <span class="text-sm block mb-1.5 font-bold text-[#F27A18] flex items-center gap-1">🏢 한국타이어 주요 거점</span>
+                            <span class="text-sm mb-1.5 font-bold text-[#F27A18] flex items-center gap-1">🏢 한국타이어 주요 거점</span>
                             <div class="bg-[#FFF0E6]/30 border border-[#F27A18]/15 rounded-xl p-3">
                                 <ul id="country-hubs" class="font-semibold text-slate-800 text-xs leading-relaxed space-y-1"><li>-</li></ul>
                             </div>
@@ -295,7 +303,7 @@
                 </div>
             </div>
 
-            <!-- Card 2: Exchange Rate with Graph + Calculator -->
+            <!-- Card 2: Exchange Rate -->
             <div class="card flex flex-col justify-between">
                 <div>
                     <div class="flex items-center gap-2.5 mb-2">
@@ -310,13 +318,12 @@
                         <div id="exchange-change-badge" class="mt-2 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold"></div>
                     </div>
                     <div id="exchange-chart-wrap">
-                         <p id="exchange-chart-caption" class="text-xs font-semibold text-slate-500 mb-2 text-center">최근 1년 환율 추이</p>
-                         <div class="w-full h-24 relative">
+                        <p id="exchange-chart-caption" class="text-xs font-semibold text-slate-500 mb-2 text-center">최근 1년 환율 추이</p>
+                        <div class="w-full h-24 relative">
                             <canvas id="exchangeRateChart"></canvas>
                         </div>
                     </div>
 
-                    <!-- 실시간 환율 계산기 (결과는 소수점 없이 원 단위 정수로 표기) -->
                     <div id="calculator-wrap" class="mt-5 pt-4 border-t border-slate-100">
                         <p class="text-xs font-semibold text-slate-500 mb-2">간편 환율 계산기</p>
                         <div class="flex items-center gap-2">
@@ -328,47 +335,54 @@
                     </div>
                 </div>
                 <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
-                     <span id="exchange-source-note">Yahoo Finance 기준</span>
+                    <a id="exchange-source-note" href="#" target="_blank" rel="noopener" class="hover:text-[#F27A18]">Yahoo Finance 기준</a>
                 </div>
             </div>
 
-            <!-- Card 3: Local Headlines -->
+            <!-- Card 3: AUTO MARKET -->
             <div class="card flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center gap-2.5 mb-5">
-                        <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>
+                    <div class="flex items-center justify-between mb-5">
+                        <div class="flex items-center gap-2.5">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-base text-slate-900">완성차·타이어 동향</h3>
+                                <p class="text-[10px] text-slate-400">AUTO MARKET · 최근 2주</p>
+                            </div>
                         </div>
-                        <h3 class="font-bold text-base text-slate-900">현지 주요 뉴스</h3>
+                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700">AUTO MARKET</span>
                     </div>
-                    <div id="headlines-list" class="space-y-3"></div>
+                    <div id="auto-market-list" class="space-y-2"></div>
                 </div>
                 <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
                     * 해외 기사는 자동 번역되며, 제목을 클릭하면 원문 기사로 이동합니다.
                 </div>
             </div>
+        </div>
 
-            <!-- Card 4: Industry & HR Trends -->
-            <div class="card lg:col-span-3">
-                <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-4">
-                    <div class="flex items-center gap-2.5">
-                        <div class="icon-wrapper">
-                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                        </div>
-                        <div>
-                            <h3 class="font-bold text-base text-slate-900">주요 산업 및 비즈니스 동향</h3>
-                            <p class="text-[10px] text-slate-400">완성차·타이어 시장 / 노동·인력 — 2대 핵심 분야 (분야별 최대 4건)</p>
-                        </div>
+        <!-- Row 2: Local News (3 Categories) -->
+        <div class="card">
+            <div class="flex items-center justify-between mb-5 border-b border-slate-100 pb-4 flex-wrap gap-3">
+                <div class="flex items-center gap-2.5">
+                    <div class="icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" /></svg>
                     </div>
-                    <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#FFF0E6] text-[#F27A18] border border-[#F27A18]/20">HR &amp; BIZ INTELLIGENCE</span>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-900">현지 주요 뉴스</h3>
+                        <p class="text-[10px] text-slate-400">HR·노동 / 사회·문화 / 정치·경제 — 3대 분야 일상 정세 모니터링 (분야별 최대 4건)</p>
+                    </div>
                 </div>
-                <div id="industry-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#FFF0E6] text-[#F27A18] border border-[#F27A18]/20">LOCAL NEWS BRIEF</span>
             </div>
-
+            <div id="news-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+            <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                * 해외 기사는 자동 번역되며(🌐 번역 표시), 제목을 클릭하면 원문 기사로 이동합니다.
+            </div>
         </div>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-white border-t border-slate-200 mt-12 py-6">
         <div class="max-w-[1600px] mx-auto px-6 text-center text-xs text-slate-400">
             <p>© Hankook Tire &amp; Technology - Global HR Team</p>
@@ -376,7 +390,6 @@
         </div>
     </footer>
 
-    <!-- 오늘자 39개국 데이터 (regions + countries + as_of_display) — 초기 렌더용 임베드 -->
     <!-- ⚠️ |safe 필수: 없으면 Jinja2 autoescape가 JSON의 큰따옴표를 HTML 엔티티로 바꿔 JSON.parse()가 깨진다 -->
     <script id="dashboard-data" type="application/json">{{ dashboard_json|safe }}</script>
 
@@ -397,16 +410,25 @@
         } catch (err) {
             console.error('대시보드 데이터 파싱 실패:', err);
             document.getElementById('fatal-error-banner').classList.remove('hidden');
-            return; // 잘못된 데이터로 이후 렌더링을 시도하지 않음
+            return;
         }
+
+        const PLACEHOLDER = '데이터 확인 중';
+        const FALLBACK_TEXT = '현지 산업 및 정책 모니터링 중';
+        const TE_SOURCE = 'Trading Economics';
+        const TE_DISPLAY = '최신 지표 확인';
+        const HIERARCHY = ['KR', 'US', 'DE', 'CN', 'HU', 'ID'];
+        const NEWS_SECTIONS = [
+            { key: 'HR & LABOR', icon: '👥', label: 'HR·노동', tagClass: 'bg-indigo-100 text-indigo-700' },
+            { key: 'SOCIETY & CULTURE', icon: '🏙️', label: '사회·문화', tagClass: 'bg-emerald-100 text-emerald-700' },
+            { key: 'POLITICS & ECONOMY', icon: '🏛️', label: '정치·경제', tagClass: 'bg-sky-100 text-sky-700' },
+        ];
 
         let currentRegion = 'ALL';
         let currentCode = (COUNTRIES.find(c => c.code === 'KR') || COUNTRIES[0]).code;
-        let currentDateStr = INITIAL_DATE;   // 날짜 피커 롤백용
+        let currentDateStr = INITIAL_DATE;
         let chartInstance = null;
-        let currentFx = null;                // 계산기가 참조하는 현재 국가의 환율 정보
-
-        const PLACEHOLDER = '데이터 확인 중';
+        let currentFx = null;
 
         // ---------------------------------------------------------------
         // 유틸
@@ -425,12 +447,33 @@
             return /^https?:\/\//i.test(u) ? u : '#';
         }
 
-        function sortByKoreanName(list, nameKey) {
-            return [...list].sort((a, b) => (a[nameKey] || '').localeCompare(b[nameKey] || '', 'ko-KR'));
+        function asText(value, fallback) {
+            if (value === null || value === undefined) return fallback;
+            if (typeof value === 'object') {
+                if (typeof value.display === 'string' && value.display.trim()) return value.display;
+                return fallback;
+            }
+            const s = String(value).trim();
+            if (!s || ['error', 'undefined', 'null', 'nan', '[object object]'].includes(s.toLowerCase())) return fallback;
+            return s;
         }
 
         // ---------------------------------------------------------------
-        // 토스트 알림
+        // 위계 정렬: 한국HQ → 미/독/중 본부 → 헝가리/인니 공장 → 기타 가나다순
+        // ---------------------------------------------------------------
+        function hierarchySort(list) {
+            return [...list].sort((a, b) => {
+                const ia = HIERARCHY.indexOf(a.code);
+                const ib = HIERARCHY.indexOf(b.code);
+                const ra = ia === -1 ? HIERARCHY.length : ia;
+                const rb = ib === -1 ? HIERARCHY.length : ib;
+                if (ra !== rb) return ra - rb;
+                return (a.name_kr || '').localeCompare(b.name_kr || '', 'ko-KR');
+            });
+        }
+
+        // ---------------------------------------------------------------
+        // 토스트
         // ---------------------------------------------------------------
         function showToast(message, duration) {
             duration = duration || 3600;
@@ -447,24 +490,23 @@
         }
 
         // ---------------------------------------------------------------
-        // 권역 탭 / 국가 칩 (한글 가나다순 정렬 적용)
+        // 권역 탭 / 국가 칩
         // ---------------------------------------------------------------
         function countriesInRegion(regionKey) {
             const list = regionKey === 'ALL' ? COUNTRIES : COUNTRIES.filter(c => c.region === regionKey);
-            return sortByKoreanName(list, 'name_kr');
+            return hierarchySort(list);
         }
 
-        function sortedRegionTabs() {
-            // '전체'는 항상 맨 앞 고정, 나머지 권역 라벨은 가나다순 정렬
+        function orderedRegionTabs() {
             const all = REGIONS.find(r => r.key === 'ALL');
-            const rest = sortByKoreanName(REGIONS.filter(r => r.key !== 'ALL'), 'label');
+            const rest = REGIONS.filter(r => r.key !== 'ALL');
             return all ? [all, ...rest] : rest;
         }
 
         function renderRegionTabs() {
             const el = document.getElementById('region-nav');
             el.innerHTML = '';
-            sortedRegionTabs().forEach(r => {
+            orderedRegionTabs().forEach(r => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'region-tab' + (r.key === currentRegion ? ' active' : '');
@@ -477,8 +519,7 @@
         function renderCountryChips() {
             const el = document.getElementById('country-chips');
             el.innerHTML = '';
-            const list = countriesInRegion(currentRegion);
-            list.forEach(c => {
+            countriesInRegion(currentRegion).forEach(c => {
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'country-chip' + (c.code === currentCode ? ' active' : '');
@@ -506,7 +547,7 @@
         }
 
         // ---------------------------------------------------------------
-        // 날짜 피커 → 아카이브 비동기 로드 (No-Reload)
+        // 날짜 피커 → 아카이브 비동기 로드
         // ---------------------------------------------------------------
         function setLoading(isLoading) {
             document.getElementById('date-picker-wrap').classList.toggle('loading', isLoading);
@@ -518,8 +559,9 @@
             COUNTRIES = dashboard.countries || [];
             currentDateStr = dateStr;
 
-            document.getElementById('sync-display-text').textContent =
-                dashboard.as_of_display || `${dateStr} 06:00 KST 기준`;
+            const asOf = dashboard.as_of_display || `${dateStr} 06:00 KST 기준`;
+            document.getElementById('sync-display-text').textContent = asOf;
+            document.getElementById('header-asof').textContent = asOf;
 
             if (!REGIONS.find(r => r.key === currentRegion)) currentRegion = 'ALL';
             const list = countriesInRegion(currentRegion);
@@ -534,9 +576,11 @@
 
         async function onDateChange(e) {
             const dateStr = e.target.value;
-
+            if (!dateStr) {
+                e.target.value = currentDateStr;
+                return;
+            }
             if (dateStr === INITIAL_DATE) {
-                // 오늘 날짜로 되돌아오는 경우 — 별도 네트워크 요청 없이 초기 임베드 데이터를 재사용
                 applyDataset(DASHBOARD, INITIAL_DATE);
                 return;
             }
@@ -554,7 +598,7 @@
                 console.error('아카이브 로드 실패:', err);
                 const startNote = ARCHIVE_MIN_DATE ? `(수집 시작일 ${ARCHIVE_MIN_DATE} 이후 데이터부터 조회 가능)` : '(수집 시작일 이후 데이터부터 조회 가능)';
                 showToast(`선택하신 일자(${dateStr})의 아카이브 데이터가 없습니다. ${startNote}`);
-                e.target.value = currentDateStr; // 선택을 이전 유효 날짜로 롤백
+                e.target.value = currentDateStr;
             } finally {
                 setLoading(false);
             }
@@ -563,16 +607,14 @@
         document.getElementById('briefDatePicker').addEventListener('change', onDateChange);
 
         // ---------------------------------------------------------------
-        // 원화 표기 포맷
+        // 원화 표기
         // ---------------------------------------------------------------
-        // 환율 카드 메인 숫자/차트 툴팁: 소수점 1자리 통일
         function fmtWon(v) {
             const n = Number(v);
             if (!isFinite(n)) return '0.0';
             return n.toLocaleString('ko-KR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
         }
 
-        // 계산기 결과: 소수점 완전 제거, 정수(콤마 표기)만 사용
         function fmtWonInteger(v) {
             const n = Number(v);
             if (!isFinite(n)) return '0';
@@ -580,21 +622,27 @@
         }
 
         // ---------------------------------------------------------------
-        // 실시간 환율 계산기
+        // 환율 계산기 (결과는 소수점 없이 정수 + 콤마)
         // ---------------------------------------------------------------
+        function perUnitRate(fx) {
+            if (!fx) return 0;
+            const direct = Number(fx.rate_per_unit);
+            if (isFinite(direct) && direct > 0) return direct;
+            const unitBase = Number(fx.unit_base) || 1;
+            const current = Number(fx.current_rate) || 0;
+            return current / unitBase;
+        }
+
         function updateCalculator(c) {
             const fx = c.exchange_rate || {};
             const wrap = document.getElementById('calculator-wrap');
-            const label = document.getElementById('calc-currency-label');
-            const input = document.getElementById('calcInput');
-
             if (fx.is_base) {
                 wrap.classList.add('hidden');
                 return;
             }
             wrap.classList.remove('hidden');
-            label.textContent = c.currency || '';
-            input.value = 1;
+            document.getElementById('calc-currency-label').textContent = c.currency || '';
+            document.getElementById('calcInput').value = 1;
             recalcCalculator();
         }
 
@@ -610,85 +658,92 @@
                 resultEl.textContent = '0 원';
                 return;
             }
-            const unitBase = fx.unit_base || 1;
-            const perUnitRate = (fx.current_rate || 0) / unitBase; // 1단위(또는 1 VND/JPY/IDR)당 원화 환산 단가
-            const result = amount * perUnitRate;
-            // 계산기 결과는 소수점 없이 정수(Math.round) + 천단위 콤마로만 표기
-            resultEl.textContent = fmtWonInteger(result) + ' 원';
+            resultEl.textContent = fmtWonInteger(amount * perUnitRate(fx)) + ' 원';
         }
 
         document.getElementById('calcInput').addEventListener('input', recalcCalculator);
 
         // ---------------------------------------------------------------
-        // 경제지표 출처 각주 ("World Bank, 2024")
+        // 경제지표 각주 / 링크
         // ---------------------------------------------------------------
         function sourceFootnote(entry) {
             if (!entry || typeof entry !== 'object') return '';
             const src = entry.source;
             const year = entry.year;
-            const hasSrc = src && src !== '-';
+            const hasSrc = src && src !== '-' && src !== '기본 정보';
             const hasYear = year !== undefined && year !== null && year !== '' && year !== '-';
             if (!hasSrc) return '';
             return hasYear ? `${src}, ${year}` : `${src}`;
+        }
+
+        function isTeLink(ind) {
+            return !!(ind && typeof ind === 'object' && ind.link &&
+                (ind.source === TE_SOURCE || ind.display === TE_DISPLAY));
         }
 
         function setIndicator(key, p) {
             const ind = (p.indicators && p.indicators[key]) || null;
             const valueEl = document.getElementById(`profile-${key}`);
             const srcEl = document.getElementById(`profile-${key}-src`);
-            const display = (ind && ind.display) ? ind.display : (p[key] || PLACEHOLDER);
+
+            if (isTeLink(ind)) {
+                valueEl.innerHTML = `<a class="te-link" href="${esc(safeUrl(ind.link))}" target="_blank" rel="noopener">최신 지표 확인 ↗</a>`;
+                if (srcEl) srcEl.textContent = TE_SOURCE;
+                return;
+            }
+
+            const display = asText(ind && ind.display, asText(p[key], PLACEHOLDER));
             valueEl.textContent = display;
-            srcEl.textContent = (display === PLACEHOLDER) ? '' : sourceFootnote(ind);
+            if (srcEl) srcEl.textContent = (display === PLACEHOLDER) ? '' : sourceFootnote(ind);
+        }
+
+        function renderCapital(p) {
+            const ind = (p.indicators && p.indicators.capital) || null;
+            document.getElementById('profile-capital').textContent =
+                asText(ind && ind.display, asText(p.capital, '-'));
         }
 
         function renderMinWage(p) {
-            const row = document.getElementById('profile-minwage-row');
             const valueEl = document.getElementById('profile-minwage');
             const noteEl = document.getElementById('profile-minwage-note');
             const srcEl = document.getElementById('profile-minwage-src');
             const mw = p.min_wage;
 
-            if (!mw) {
-                row.classList.add('hidden');
-                return;
-            }
-            row.classList.remove('hidden');
-
-            if (typeof mw === 'object') {
-                valueEl.textContent = mw.display || PLACEHOLDER;
-                noteEl.textContent = mw.note || p.min_wage_note || '';
-                srcEl.textContent = (mw.display === PLACEHOLDER) ? '' : sourceFootnote(mw);
+            if (mw && typeof mw === 'object') {
+                const display = asText(mw.display, '-');
+                valueEl.textContent = display;
+                noteEl.textContent = asText(mw.note, asText(p.min_wage_note, ''));
+                srcEl.textContent = (display === PLACEHOLDER || display === '-') && !mw.note ? '' : sourceFootnote(mw);
             } else {
-                // 구버전 문자열 형식 호환
-                valueEl.textContent = String(mw);
-                noteEl.textContent = p.min_wage_note || '';
+                valueEl.textContent = asText(mw, '-');
+                noteEl.textContent = asText(p.min_wage_note, '');
                 srcEl.textContent = '';
             }
         }
 
         // ---------------------------------------------------------------
-        // 카드 렌더링
+        // 카드 렌더링: 프로필
         // ---------------------------------------------------------------
         function renderProfile(c) {
-            document.getElementById('country-flag').src = `https://flagcdn.com/w80/${c.flag}.png`;
+            document.getElementById('country-flag').src = `https://flagcdn.com/w80/${encodeURIComponent(c.flag || '')}.png`;
             document.getElementById('country-name-en').textContent = (c.name_en || '-').toUpperCase();
             document.getElementById('country-currency').textContent = c.currency || '-';
             document.getElementById('country-name-kr').textContent = `${c.name_kr || '-'} (${c.name_en || '-'})`;
 
             const p = c.profile || {};
-            ['capital', 'population', 'gdp', 'inflation', 'unemployment'].forEach(k => setIndicator(k, p));
+            renderCapital(p);
+            ['population', 'gdp', 'inflation', 'unemployment'].forEach(k => setIndicator(k, p));
             renderMinWage(p);
 
-            // 한국타이어 공식 거점 (홈페이지 원문 "조직명 (도시명)" 그대로, 한 줄씩 표시)
             const hubsEl = document.getElementById('country-hubs');
-            const hubs = (c.offices && c.offices.length) ? c.offices : (c.hubs || []);
+            const hubs = (Array.isArray(c.offices) && c.offices.length) ? c.offices : (Array.isArray(c.hubs) ? c.hubs : []);
             hubsEl.innerHTML = '';
             if (!hubs.length) {
                 hubsEl.innerHTML = '<li>-</li>';
             } else {
                 hubs.forEach(h => {
                     const li = document.createElement('li');
-                    li.textContent = h;
+                    li.textContent = asText(h, '-');
                     hubsEl.appendChild(li);
                 });
             }
@@ -698,10 +753,41 @@
                 `* 경제지표는 각 항목 하단에 표기된 공식 출처 기준입니다.${asof}`;
         }
 
+        // ---------------------------------------------------------------
+        // 카드 렌더링: 환율 + 차트
+        // ---------------------------------------------------------------
+        function monthNumber(label) {
+            const m = String(label || '').match(/(\d{1,2})/);
+            return m ? parseInt(m[1], 10) : null;
+        }
+
+        function yearMonthLabels(labels, refDateStr) {
+            const ref = /^\d{4}-\d{2}-\d{2}$/.test(refDateStr || '') ? refDateStr : INITIAL_DATE;
+            const refYear = parseInt(String(ref).slice(0, 4), 10) || new Date().getFullYear();
+            const refMonth = parseInt(String(ref).slice(5, 7), 10) || (new Date().getMonth() + 1);
+            const out = new Array(labels.length);
+            if (!labels.length) return out;
+
+            const lastMonth = monthNumber(labels[labels.length - 1]);
+            let year = (lastMonth !== null && lastMonth > refMonth) ? refYear - 1 : refYear;
+            let prev = null;
+            for (let i = labels.length - 1; i >= 0; i--) {
+                const m = monthNumber(labels[i]);
+                if (m === null) {
+                    out[i] = String(labels[i]);
+                    continue;
+                }
+                if (prev !== null && m > prev) year -= 1;
+                out[i] = `${year}년 ${m}월`;
+                prev = m;
+            }
+            return out;
+        }
+
         function renderExchange(c) {
             const fx = c.exchange_rate || {};
             currentFx = fx;
-            const unitBase = fx.unit_base || 1;
+            const unitBase = Number(fx.unit_base) || 1;
             const title = document.getElementById('exchange-title');
             const unitLabel = document.getElementById('exchange-unit-label');
             const rateEl = document.getElementById('exchange-current-rate');
@@ -721,6 +807,7 @@
                 badge.textContent = '환산 불필요';
                 chartWrap.classList.add('hidden');
                 sourceNote.textContent = '원화(KRW)는 자국 통화이므로 별도 환율 정보가 없습니다.';
+                sourceNote.removeAttribute('href');
                 if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
                 updateCalculator(c);
                 return;
@@ -732,26 +819,30 @@
                 : `1 ${c.currency || ''} (${c.name_kr || ''} 통화) 기준`;
             rateEl.textContent = `${fmtWon(fx.current_rate || 0)} 원`;
 
-            const isUp = (fx.change_pct || 0) >= 0;
+            const pct = Number(fx.change_pct) || 0;
+            const isUp = pct >= 0;
             badge.className = 'mt-2 inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold ' +
                 (isUp ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-700');
-            badge.textContent = `${isUp ? '▲' : '▼'} 전일 대비 ${isUp ? '상승' : '하락'} (${isUp ? '+' : '-'}${Math.abs(fx.change_pct || 0).toFixed(2)}%)`;
+            badge.textContent = `${isUp ? '▲' : '▼'} 전일 대비 ${isUp ? '상승' : '하락'} (${isUp ? '+' : '-'}${Math.abs(pct).toFixed(2)}%)`;
 
             chartCaption.textContent = unitBase > 1
                 ? `최근 1년 환율 추이 (${unitBase} ${c.currency} 기준)`
                 : '최근 1년 환율 추이';
-            sourceNote.textContent = `${fx.source || 'Yahoo Finance'} 기준`;
+            sourceNote.textContent = `${fx.source || 'Yahoo Finance'} 기준 ↗`;
+            const url = safeUrl(fx.url);
+            if (url !== '#') sourceNote.setAttribute('href', url); else sourceNote.removeAttribute('href');
 
-            renderChart(fx.history_labels || [], fx.history_values || []);
+            const labels = Array.isArray(fx.history_labels) ? fx.history_labels : [];
+            const values = Array.isArray(fx.history_values) ? fx.history_values : [];
+            renderChart(labels, values, yearMonthLabels(labels, currentDateStr));
             updateCalculator(c);
         }
 
-        function renderChart(labels, values) {
+        function renderChart(labels, values, tooltipLabels) {
             const canvas = document.getElementById('exchangeRateChart');
             const ctx = canvas.getContext('2d');
             if (chartInstance) { chartInstance.destroy(); chartInstance = null; }
-
-            if (!labels.length || !values.length) return; // 데이터 없으면 빈 캔버스 유지 (에러 방지)
+            if (!labels.length || !values.length || typeof Chart === 'undefined') return;
 
             const gradient = ctx.createLinearGradient(0, 0, 0, 100);
             gradient.addColorStop(0, 'rgba(242, 122, 24, 0.15)');
@@ -789,110 +880,147 @@
                             cornerRadius: 8,
                             displayColors: false,
                             callbacks: {
-                                title: (items) => items[0].label,
+                                title: (items) => {
+                                    const i = items[0].dataIndex;
+                                    return (tooltipLabels && tooltipLabels[i]) || items[0].label;
+                                },
                                 label: (item) => `${fmtWon(item.parsed.y)} 원`,
                             }
                         }
                     },
-                    scales: {
-                        x: { display: false },
-                        y: { display: false }
-                    },
+                    scales: { x: { display: false }, y: { display: false } },
                     layout: { padding: { top: 5 } }
                 }
             });
         }
 
         // ---------------------------------------------------------------
-        // 번역 뱃지: is_translated === true 인 기사만 표시 (예: "EN → KR 번역")
+        // 기사 공통: 번역 뱃지 / 날짜
         // ---------------------------------------------------------------
         function isTranslated(item) {
             if (!item || typeof item !== 'object') return false;
             if (typeof item.is_translated === 'boolean') return item.is_translated;
-            return item.translated === true; // 구버전 아카이브 호환
+            return item.translated === true;
         }
 
         function translatedBadge(item) {
             if (!isTranslated(item)) return '';
-            const lang = String(item.original_lang || item.lang || 'en').toUpperCase().split('-')[0];
-            const original = item.original_title ? `원문: ${item.original_title}` : '자동 번역된 제목입니다';
-            return `<span class="translated-badge" title="${esc(original)}">${esc(lang)} → KR 번역</span>`;
-        }
-
-        function renderHeadlines(c) {
-            const el = document.getElementById('headlines-list');
-            el.innerHTML = '';
-            const list = c.headlines || [];
-            if (list.length === 0) {
-                el.innerHTML = '<p class="text-xs text-slate-400">수집된 뉴스가 없습니다.</p>';
-                return;
+            let label = item.translate_label;
+            if (!label) {
+                const lang = String(item.original_lang || item.lang || 'en').toUpperCase().split('-')[0];
+                label = `${lang} > KR 번역`;
             }
-            list.forEach(h => {
-                const a = document.createElement('a');
-                a.href = safeUrl(h.link);   // 항상 원문 기사 URL
-                a.target = '_blank';
-                a.rel = 'noopener';
-                a.className = 'block bg-slate-50 hover:bg-orange-50/50 p-3 rounded-lg transition duration-200 border border-slate-100 group';
-                a.innerHTML = `
-                    <div class="text-[10px] text-slate-400 mb-1">
-                        <span class="font-bold text-slate-500">${esc(h.source || 'Google News')}</span>
-                    </div>
-                    <p class="font-bold text-xs text-slate-800 leading-snug">${esc(h.title || '')}${translatedBadge(h)}</p>
-                    ${h.summary ? `<p class="text-[11px] text-slate-500 leading-snug mt-1">${esc(h.summary)}</p>` : ''}
-                `;
-                el.appendChild(a);
-            });
+            const tip = item.original_title ? `원문: ${item.original_title}` : '자동 번역된 제목입니다';
+            return `<span class="translated-badge" title="${esc(tip)}">🌐 ${esc(label)}</span>`;
         }
 
-        // 카테고리별 기사 목록 (신규 items 배열 / 구버전 단일 기사 모두 지원)
-        function trendItems(t) {
-            if (Array.isArray(t.items) && t.items.length) return t.items;
-            if (t.title && t.link) return [t];
+        function itemDate(item) {
+            const raw = item && (item.published_display || item.published || item.date);
+            if (raw) {
+                const d = new Date(raw);
+                if (!isNaN(d.getTime())) {
+                    const y = d.getFullYear();
+                    const m = String(d.getMonth() + 1).padStart(2, '0');
+                    const day = String(d.getDate()).padStart(2, '0');
+                    return `${y}-${m}-${day}`;
+                }
+                return String(raw);
+            }
+            return `수집 ${currentDateStr}`;
+        }
+
+        function isFallbackItem(item) {
+            return !!(item && (item.is_fallback || item.title === FALLBACK_TEXT));
+        }
+
+        function articleHtml(it) {
+            const fallback = isFallbackItem(it);
+            const desc = it.desc || it.summary || '';
+            const showDesc = desc && desc !== it.title;
+            return `
+                <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener" class="news-item ${fallback ? 'fallback' : ''}">
+                    <p class="font-bold text-[13px] ${fallback ? 'text-slate-500' : 'text-slate-900'} leading-snug">${esc(it.title || '')}${fallback ? '' : translatedBadge(it)}</p>
+                    ${showDesc ? `<p class="text-[11px] text-slate-500 leading-snug mt-1">${esc(desc)}</p>` : ''}
+                    <div class="flex items-center gap-1.5 text-[10px] text-slate-400 mt-1.5">
+                        <span class="font-semibold text-slate-500">${esc(it.source || 'Google News')}</span>
+                        ${fallback ? '' : `<span>·</span><span>${esc(itemDate(it))}</span>`}
+                    </div>
+                </a>`;
+        }
+
+        function categoryItems(cat) {
+            if (!cat || typeof cat !== 'object') return [];
+            if (Array.isArray(cat.items) && cat.items.length) return cat.items;
+            if (cat.title && cat.link) return [cat];
             return [];
         }
 
-        function renderIndustry(c) {
-            const el = document.getElementById('industry-grid');
-            el.innerHTML = '';
-            const list = c.hr_trends || [];
-            if (list.length === 0) {
-                el.innerHTML = '<p class="text-xs text-slate-400 md:col-span-2">수집된 동향이 없습니다.</p>';
-                return;
+        // ---------------------------------------------------------------
+        // 카드 렌더링: 현지 뉴스 3대 카테고리
+        // ---------------------------------------------------------------
+        function findNewsCategory(c, key) {
+            const cats = Array.isArray(c.news_categories) ? c.news_categories : [];
+            const hit = cats.find(t => t && t.category === key);
+            if (hit) return categoryItems(hit);
+
+            if (key === 'HR & LABOR') {
+                const legacy = (c.hr_trends || []).find(t => t && t.category === 'HR & LABOR');
+                if (legacy) return categoryItems(legacy);
             }
-            list.forEach(t => {
-                const items = trendItems(t).slice(0, 4);
+            if (key === 'POLITICS & ECONOMY' && !cats.length) {
+                return Array.isArray(c.headlines) ? c.headlines : [];
+            }
+            return [];
+        }
+
+        function renderNews(c) {
+            const el = document.getElementById('news-grid');
+            el.innerHTML = '';
+            NEWS_SECTIONS.forEach(sec => {
+                const items = findNewsCategory(c, sec.key).slice(0, 4);
                 const box = document.createElement('div');
-                box.className = 'bg-slate-50 border border-slate-100 rounded-2xl p-4';
-
+                box.className = 'bg-slate-50 border border-slate-100 rounded-2xl p-4 flex flex-col';
                 const head = `
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold ${esc(t.tag_class || 'bg-slate-100 text-slate-700')}">${esc(t.category || '')}</span>
-                        <span class="text-[10px] font-bold text-slate-400">${esc(t.tag || '')}</span>
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg leading-none">${sec.icon}</span>
+                            <span class="font-bold text-sm text-slate-900">${esc(sec.label)}</span>
+                        </div>
+                        <span class="inline-block px-2 py-0.5 rounded text-[9.5px] font-bold ${sec.tagClass}">${esc(sec.key)}</span>
                     </div>`;
-
-                const body = items.map(it => `
-                    <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener"
-                       class="block bg-white hover:bg-orange-50/50 border border-slate-100 hover:border-orange-200 rounded-xl p-3 transition-all">
-                        <h4 class="font-bold text-sm text-slate-900 leading-snug">${esc(it.title || '')}${translatedBadge(it)}</h4>
-                        ${it.desc ? `<p class="text-xs text-slate-600 leading-snug mt-1">${esc(it.desc)}</p>` : ''}
-                        <p class="text-[10px] text-slate-400 mt-1.5">${esc(it.source || '')}</p>
-                    </a>`).join('');
-
-                box.innerHTML = head + `<div class="space-y-2">${body || '<p class="text-xs text-slate-400">수집된 동향이 없습니다.</p>'}</div>`;
+                const body = items.length
+                    ? items.map(articleHtml).join('')
+                    : '<p class="text-xs text-slate-400">수집된 기사가 없습니다.</p>';
+                box.innerHTML = head + `<div class="space-y-2">${body}</div>`;
                 el.appendChild(box);
             });
+        }
+
+        // ---------------------------------------------------------------
+        // 카드 렌더링: AUTO MARKET
+        // ---------------------------------------------------------------
+        function renderAutoMarket(c) {
+            const el = document.getElementById('auto-market-list');
+            el.innerHTML = '';
+            const trends = Array.isArray(c.hr_trends) ? c.hr_trends : [];
+            const auto = trends.find(t => t && t.category === 'AUTO MARKET');
+            const items = categoryItems(auto).slice(0, 4);
+            if (!items.length) {
+                el.innerHTML = '<p class="text-xs text-slate-400">수집된 동향이 없습니다.</p>';
+                return;
+            }
+            el.innerHTML = items.map(articleHtml).join('');
         }
 
         function renderCountry(code) {
             const c = COUNTRIES.find(x => x.code === code);
             if (!c) return;
-            renderProfile(c);
-            renderExchange(c);   // 내부에서 currentFx 갱신 + updateCalculator 호출까지 수행
-            renderHeadlines(c);
-            renderIndustry(c);
+            try { renderProfile(c); } catch (e) { console.error('프로필 렌더 실패:', e); }
+            try { renderExchange(c); } catch (e) { console.error('환율 렌더 실패:', e); }
+            try { renderAutoMarket(c); } catch (e) { console.error('완성차 동향 렌더 실패:', e); }
+            try { renderNews(c); } catch (e) { console.error('뉴스 렌더 실패:', e); }
         }
 
-        // 초기 렌더
         renderRegionTabs();
         renderCountryChips();
         renderCountry(currentCode);

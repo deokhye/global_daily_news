@@ -25,6 +25,8 @@
             border-radius: 0.75rem;
             padding: 0.5rem;
         }
+
+        /* ---------- 권역 탭 ---------- */
         .region-tab {
             padding: 0.5rem 1.15rem;
             border-radius: 0.75rem;
@@ -44,37 +46,46 @@
             color: white;
             box-shadow: 0 2px 8px rgba(242,122,24,0.35);
         }
+        .tab-row { overflow-x: auto; scrollbar-width: thin; }
+        .tab-row::-webkit-scrollbar { height: 6px; }
+        .tab-row::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 999px; }
+
+        /* ---------- 국가 칩 (flex-wrap 자동 줄바꿈) ---------- */
+        #country-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            animation: fadeSlideIn .18s ease;
+        }
         .country-chip {
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            padding: 0.4rem 0.9rem;
+            padding: 0.38rem 0.85rem;
             border-radius: 999px;
             font-size: 0.75rem;
             font-weight: 600;
             white-space: nowrap;
-            border: 1px solid #E5E7EB;
-            color: #475569;
-            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            color: #64748B;
+            background: white;
             cursor: pointer;
             transition: all .15s ease;
         }
-        .country-chip:hover { border-color: #F27A18; color: #F27A18; transform: translateY(-1px); }
+        .country-chip:hover { border-color: #F27A18; color: #F27A18; }
         .country-chip.active {
             background: #1E293B;
             border-color: #1E293B;
             color: white;
             box-shadow: 0 2px 8px rgba(30,41,59,0.25);
         }
-        .country-chip img { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; }
-        .scroll-row { overflow-x: auto; scrollbar-width: thin; }
-        .scroll-row::-webkit-scrollbar { height: 6px; }
-        .scroll-row::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 999px; }
-        #country-chips { animation: fadeSlideIn .18s ease; }
+        .country-chip .chip-flag { font-size: 0.9rem; line-height: 1; }
         @keyframes fadeSlideIn {
             from { opacity: 0; transform: translateY(-4px); }
             to   { opacity: 1; transform: translateY(0); }
         }
+
+        /* ---------- 날짜 피커 ---------- */
         .date-picker-wrap {
             position: relative;
             display: inline-flex;
@@ -95,14 +106,43 @@
         }
         .date-picker-wrap.loading { opacity: 0.6; pointer-events: none; }
 
+        /* ---------- 프로필 상단 국가 아이덴티티 ---------- */
+        .country-hero {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 1rem;
+            margin-bottom: 1.25rem;
+            border-radius: 1.1rem;
+            background: linear-gradient(135deg, #FFF7EF 0%, #FFFFFF 70%);
+            border: 1px solid #FDE3CC;
+        }
+        .country-hero .hero-flag {
+            font-size: 2.75rem;
+            line-height: 1;
+            filter: drop-shadow(0 2px 3px rgba(0,0,0,0.12));
+        }
+        .country-hero .hero-code {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            color: #F27A18;
+            background: #FFF0E6;
+            border: 1px solid #FBD5B5;
+            border-radius: 0.4rem;
+            padding: 0.05rem 0.45rem;
+        }
+
+        /* ---------- 보조 정보(10px, 연한 회색) ---------- */
         .translated-badge {
             display: inline-flex;
             align-items: center;
             gap: 2px;
             flex-shrink: 0;
             font-size: 10px;
-            font-weight: 600;
-            line-height: 1.4;
+            font-weight: 500;
+            line-height: 1.5;
             color: #94A3B8;
             background: #F1F5F9;
             border: 1px solid #E2E8F0;
@@ -112,14 +152,18 @@
             white-space: nowrap;
             vertical-align: middle;
         }
-
         .src-note {
             display: block;
             text-align: right;
-            font-size: 9.5px;
-            line-height: 1.3;
+            font-size: 10px;
+            line-height: 1.4;
             color: #A0AEC0;
-            margin-top: 2px;
+            margin-top: 3px;
+        }
+        .meta-line {
+            font-size: 10px;
+            line-height: 1.4;
+            color: #A0AEC0;
         }
         .te-link {
             color: #F27A18;
@@ -129,17 +173,60 @@
         }
         .te-link:hover { color: #C25E0C; border-bottom-color: #C25E0C; }
 
-        .news-item {
-            display: block;
-            background: white;
-            border: 1px solid #F1F5F9;
-            border-radius: 0.85rem;
-            padding: 0.75rem;
-            transition: all .15s ease;
+        /* ---------- 카테고리 색상 태그 ---------- */
+        .cat-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.03em;
+            border-radius: 0.45rem;
+            padding: 0.15rem 0.55rem;
+            white-space: nowrap;
         }
-        .news-item:hover { background: #FFF7EF; border-color: #FED7AA; }
-        .news-item.fallback { background: #F8FAFC; }
-        .news-item.fallback:hover { background: #F1F5F9; border-color: #E2E8F0; }
+        .cat-auto     { background: #FFEDD5; color: #C2410C; }
+        .cat-hr       { background: #DBEAFE; color: #1D4ED8; }
+        .cat-society  { background: #DCFCE7; color: #15803D; }
+        .cat-politics { background: #EDE9FE; color: #6D28D9; }
+
+        .cat-panel {
+            border-radius: 1.1rem;
+            border: 1px solid #F1F5F9;
+            background: #FCFCFD;
+            padding: 1rem 1.1rem 0.4rem;
+            border-top-width: 3px;
+        }
+        .cat-panel.cat-auto-border     { border-top-color: #FB923C; }
+        .cat-panel.cat-hr-border       { border-top-color: #60A5FA; }
+        .cat-panel.cat-society-border  { border-top-color: #4ADE80; }
+        .cat-panel.cat-politics-border { border-top-color: #A78BFA; }
+
+        /* ---------- 기사 리스트 (구분선 + 넓은 줄간격) ---------- */
+        .article-list > .article-item + .article-item { border-top: 1px solid #EEF2F6; }
+        .article-item {
+            display: block;
+            padding: 0.85rem 0.25rem;
+            text-decoration: none;
+            transition: background .15s ease;
+            border-radius: 0.5rem;
+        }
+        .article-item:hover { background: #FFF7EF; }
+        .article-item .article-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #0F172A;
+            line-height: 1.6;
+        }
+        .article-item:hover .article-title { color: #C2410C; }
+        .article-item .article-desc {
+            font-size: 12px;
+            color: #64748B;
+            line-height: 1.65;
+            margin-top: 0.25rem;
+        }
+        .article-item.fallback .article-title { color: #94A3B8; font-weight: 600; }
+        .article-item.fallback:hover { background: #F8FAFC; }
 
         .loading-dim { opacity: 0.45; pointer-events: none; transition: opacity .15s ease; }
         .calc-input {
@@ -198,7 +285,7 @@
 
     <!-- 1. Header -->
     <header class="bg-white border-b border-slate-200/80 sticky top-0 z-50">
-        <div class="max-w-[1600px] mx-auto px-6 py-4 flex flex-col gap-4">
+        <div class="max-w-[1600px] mx-auto px-6 py-4 flex flex-col gap-3.5">
             <div class="flex justify-between items-center flex-wrap gap-3">
                 <div class="flex items-center gap-3.5">
                     <div class="px-3 py-2 bg-[#FFF0E6] text-[#F27A18] rounded-xl font-extrabold flex items-center justify-center tracking-wide text-xs">
@@ -221,36 +308,17 @@
                                min="{{ archive_min_date }}"
                                max="{{ archive_max_date }}">
                     </div>
-                    <span id="header-asof" class="text-[10px] text-slate-400">{{ as_of_display }}</span>
+                    <span id="header-asof" class="meta-line">{{ as_of_display }}</span>
                 </div>
             </div>
 
-            <div id="region-nav" class="flex gap-2 scroll-row pb-1"></div>
-            <div id="country-chips" class="flex flex-wrap gap-2 scroll-row pb-1"></div>
+            <div id="region-nav" class="flex gap-2 tab-row pb-1"></div>
+            <div id="country-chips"></div>
         </div>
     </header>
 
     <!-- 2. Main -->
     <main id="main-content" class="max-w-[1600px] mx-auto px-6 py-6 space-y-6">
-
-        <!-- Top Banner -->
-        <div class="card flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div class="flex items-center gap-4">
-                <div class="p-2.5 bg-slate-50 rounded-2xl border border-slate-100 shadow-inner">
-                    <img id="country-flag" src="" alt="flag" class="w-10 h-auto">
-                </div>
-                <div>
-                    <div class="flex items-center gap-2">
-                        <span id="country-name-en" class="text-xs font-bold text-[#F27A18] bg-[#FFF0E6] px-2.5 py-0.5 rounded-md">-</span>
-                        <span id="country-currency" class="text-xs font-semibold text-slate-400">-</span>
-                    </div>
-                    <h2 id="country-name-kr" class="text-2xl font-black text-slate-900 mt-1 tracking-tight">-</h2>
-                </div>
-            </div>
-            <div class="text-left md:text-right flex flex-col items-start md:items-end gap-1.5">
-                <span id="sync-display-text" class="text-[11px] text-slate-400">{{ as_of_display }}</span>
-            </div>
-        </div>
 
         <!-- Row 1: Profile / Exchange / Auto Market -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -258,7 +326,22 @@
             <!-- Card 1: Country Profile -->
             <div class="card flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center gap-2.5 mb-5">
+                    <div class="country-hero">
+                        <span id="hero-flag" class="hero-flag" aria-hidden="true">🏳️</span>
+                        <div class="min-w-0">
+                            <div class="flex items-center gap-2 flex-wrap">
+                                <h2 id="hero-name-kr" class="text-2xl font-black text-slate-900 tracking-tight leading-tight">-</h2>
+                                <span id="hero-code" class="hero-code">-</span>
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1 truncate">
+                                <span id="hero-name-en">-</span>
+                                <span class="text-slate-300 mx-1">·</span>
+                                <span id="hero-currency">-</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-2.5 mb-4">
                         <div class="icon-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
                         </div>
@@ -286,7 +369,7 @@
                         </div>
                         <div class="pb-2 border-b border-slate-100">
                             <div class="flex justify-between items-center gap-3"><span class="text-slate-500 text-sm whitespace-nowrap">최저임금</span><span id="profile-minwage" class="font-bold text-slate-800 text-sm text-right">-</span></div>
-                            <span id="profile-minwage-note" class="src-note" style="color:#94A3B8;"></span>
+                            <span id="profile-minwage-note" class="src-note"></span>
                             <span id="profile-minwage-src" class="src-note"></span>
                         </div>
                         <div class="pt-2">
@@ -298,7 +381,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="profile-stats-source" class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                <div id="profile-stats-source" class="mt-4 pt-3 border-t border-slate-100 meta-line">
                     * 경제지표는 각 항목 하단에 표기된 공식 출처 기준입니다.
                 </div>
             </div>
@@ -334,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                <div class="mt-4 pt-3 border-t border-slate-100 meta-line">
                     <a id="exchange-source-note" href="#" target="_blank" rel="noopener" class="hover:text-[#F27A18]">Yahoo Finance 기준</a>
                 </div>
             </div>
@@ -342,21 +425,23 @@
             <!-- Card 3: AUTO MARKET -->
             <div class="card flex flex-col justify-between">
                 <div>
-                    <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center justify-between mb-4 gap-2">
                         <div class="flex items-center gap-2.5">
                             <div class="icon-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                             </div>
                             <div>
                                 <h3 class="font-bold text-base text-slate-900">완성차·타이어 동향</h3>
-                                <p class="text-[10px] text-slate-400">AUTO MARKET · 최근 2주</p>
+                                <p class="meta-line">최근 2주 주요 기사</p>
                             </div>
                         </div>
-                        <span class="inline-block px-2 py-0.5 rounded text-[10px] font-bold bg-rose-100 text-rose-700">AUTO MARKET</span>
+                        <span class="cat-tag cat-auto">🚗 AUTO MARKET</span>
                     </div>
-                    <div id="auto-market-list" class="space-y-2"></div>
+                    <div class="cat-panel cat-auto-border">
+                        <div id="auto-market-list" class="article-list"></div>
+                    </div>
                 </div>
-                <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+                <div class="mt-4 pt-3 border-t border-slate-100 meta-line">
                     * 해외 기사는 자동 번역되며, 제목을 클릭하면 원문 기사로 이동합니다.
                 </div>
             </div>
@@ -371,13 +456,17 @@
                     </div>
                     <div>
                         <h3 class="font-bold text-base text-slate-900">현지 주요 뉴스</h3>
-                        <p class="text-[10px] text-slate-400">HR·노동 / 사회·문화 / 정치·경제 — 3대 분야 일상 정세 모니터링 (분야별 최대 4건)</p>
+                        <p class="meta-line">HR·노동 / 사회·문화 / 정치·경제 — 3대 분야 일상 정세 모니터링 (분야별 최대 4건)</p>
                     </div>
                 </div>
-                <span class="px-2.5 py-1 rounded-lg text-xs font-bold bg-[#FFF0E6] text-[#F27A18] border border-[#F27A18]/20">LOCAL NEWS BRIEF</span>
+                <div class="flex items-center gap-1.5 flex-wrap">
+                    <span class="cat-tag cat-hr">👥 HR·노동</span>
+                    <span class="cat-tag cat-society">🏙️ 사회·문화</span>
+                    <span class="cat-tag cat-politics">🏛️ 정치·경제</span>
+                </div>
             </div>
             <div id="news-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
-            <div class="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400">
+            <div class="mt-4 pt-3 border-t border-slate-100 meta-line">
                 * 해외 기사는 자동 번역되며(🌐 번역 표시), 제목을 클릭하면 원문 기사로 이동합니다.
             </div>
         </div>
@@ -419,9 +508,9 @@
         const TE_DISPLAY = '최신 지표 확인';
         const HIERARCHY = ['KR', 'US', 'DE', 'CN', 'HU', 'ID'];
         const NEWS_SECTIONS = [
-            { key: 'HR & LABOR', icon: '👥', label: 'HR·노동', tagClass: 'bg-indigo-100 text-indigo-700' },
-            { key: 'SOCIETY & CULTURE', icon: '🏙️', label: '사회·문화', tagClass: 'bg-emerald-100 text-emerald-700' },
-            { key: 'POLITICS & ECONOMY', icon: '🏛️', label: '정치·경제', tagClass: 'bg-sky-100 text-sky-700' },
+            { key: 'HR & LABOR', icon: '👥', label: 'HR·노동', cls: 'hr' },
+            { key: 'SOCIETY & CULTURE', icon: '🏙️', label: '사회·문화', cls: 'society' },
+            { key: 'POLITICS & ECONOMY', icon: '🏛️', label: '정치·경제', cls: 'politics' },
         ];
 
         let currentRegion = 'ALL';
@@ -456,6 +545,12 @@
             const s = String(value).trim();
             if (!s || ['error', 'undefined', 'null', 'nan', '[object object]'].includes(s.toLowerCase())) return fallback;
             return s;
+        }
+
+        function flagEmoji(code) {
+            const c = String(code || '').toUpperCase() === 'UK' ? 'GB' : String(code || '').toUpperCase();
+            if (!/^[A-Z]{2}$/.test(c)) return '🏳️';
+            return String.fromCodePoint(...[...c].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65));
         }
 
         // ---------------------------------------------------------------
@@ -523,7 +618,8 @@
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = 'country-chip' + (c.code === currentCode ? ' active' : '');
-                btn.innerHTML = `<img src="https://flagcdn.com/w40/${esc(c.flag)}.png" alt="${esc(c.code)}"><span>${esc(c.name_kr)}</span>`;
+                btn.innerHTML = `<span class="chip-flag">${flagEmoji(c.code)}</span><span>${esc(c.name_kr)}</span>`;
+                btn.title = `${c.name_en || ''} (${c.code || ''})`;
                 btn.onclick = () => selectCountry(c.code);
                 el.appendChild(btn);
             });
@@ -559,9 +655,7 @@
             COUNTRIES = dashboard.countries || [];
             currentDateStr = dateStr;
 
-            const asOf = dashboard.as_of_display || `${dateStr} 06:00 KST 기준`;
-            document.getElementById('sync-display-text').textContent = asOf;
-            document.getElementById('header-asof').textContent = asOf;
+            document.getElementById('header-asof').textContent = dashboard.as_of_display || `${dateStr} 06:00 KST 기준`;
 
             if (!REGIONS.find(r => r.key === currentRegion)) currentRegion = 'ALL';
             const list = countriesInRegion(currentRegion);
@@ -725,10 +819,11 @@
         // 카드 렌더링: 프로필
         // ---------------------------------------------------------------
         function renderProfile(c) {
-            document.getElementById('country-flag').src = `https://flagcdn.com/w80/${encodeURIComponent(c.flag || '')}.png`;
-            document.getElementById('country-name-en').textContent = (c.name_en || '-').toUpperCase();
-            document.getElementById('country-currency').textContent = c.currency || '-';
-            document.getElementById('country-name-kr').textContent = `${c.name_kr || '-'} (${c.name_en || '-'})`;
+            document.getElementById('hero-flag').textContent = flagEmoji(c.code);
+            document.getElementById('hero-name-kr').textContent = c.name_kr || '-';
+            document.getElementById('hero-code').textContent = c.code || '-';
+            document.getElementById('hero-name-en').textContent = c.name_en || '-';
+            document.getElementById('hero-currency').textContent = c.currency || '-';
 
             const p = c.profile || {};
             renderCapital(p);
@@ -938,11 +1033,11 @@
             const desc = it.desc || it.summary || '';
             const showDesc = desc && desc !== it.title;
             return `
-                <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener" class="news-item ${fallback ? 'fallback' : ''}">
-                    <p class="font-bold text-[13px] ${fallback ? 'text-slate-500' : 'text-slate-900'} leading-snug">${esc(it.title || '')}${fallback ? '' : translatedBadge(it)}</p>
-                    ${showDesc ? `<p class="text-[11px] text-slate-500 leading-snug mt-1">${esc(desc)}</p>` : ''}
-                    <div class="flex items-center gap-1.5 text-[10px] text-slate-400 mt-1.5">
-                        <span class="font-semibold text-slate-500">${esc(it.source || 'Google News')}</span>
+                <a href="${esc(safeUrl(it.link))}" target="_blank" rel="noopener" class="article-item ${fallback ? 'fallback' : ''}">
+                    <p class="article-title">${esc(it.title || '')}${fallback ? '' : translatedBadge(it)}</p>
+                    ${showDesc ? `<p class="article-desc">${esc(desc)}</p>` : ''}
+                    <div class="meta-line flex items-center gap-1.5 mt-1.5">
+                        <span>${esc(it.source || 'Google News')}</span>
                         ${fallback ? '' : `<span>·</span><span>${esc(itemDate(it))}</span>`}
                     </div>
                 </a>`;
@@ -979,19 +1074,16 @@
             NEWS_SECTIONS.forEach(sec => {
                 const items = findNewsCategory(c, sec.key).slice(0, 4);
                 const box = document.createElement('div');
-                box.className = 'bg-slate-50 border border-slate-100 rounded-2xl p-4 flex flex-col';
+                box.className = `cat-panel cat-${sec.cls}-border flex flex-col`;
                 const head = `
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center gap-2">
-                            <span class="text-lg leading-none">${sec.icon}</span>
-                            <span class="font-bold text-sm text-slate-900">${esc(sec.label)}</span>
-                        </div>
-                        <span class="inline-block px-2 py-0.5 rounded text-[9.5px] font-bold ${sec.tagClass}">${esc(sec.key)}</span>
+                    <div class="flex items-center justify-between mb-1 gap-2">
+                        <span class="cat-tag cat-${sec.cls}">${sec.icon} ${esc(sec.label)}</span>
+                        <span class="meta-line">${esc(sec.key)}</span>
                     </div>`;
                 const body = items.length
                     ? items.map(articleHtml).join('')
-                    : '<p class="text-xs text-slate-400">수집된 기사가 없습니다.</p>';
-                box.innerHTML = head + `<div class="space-y-2">${body}</div>`;
+                    : '<p class="meta-line py-3">수집된 기사가 없습니다.</p>';
+                box.innerHTML = head + `<div class="article-list">${body}</div>`;
                 el.appendChild(box);
             });
         }
@@ -1006,7 +1098,7 @@
             const auto = trends.find(t => t && t.category === 'AUTO MARKET');
             const items = categoryItems(auto).slice(0, 4);
             if (!items.length) {
-                el.innerHTML = '<p class="text-xs text-slate-400">수집된 동향이 없습니다.</p>';
+                el.innerHTML = '<p class="meta-line py-3">수집된 동향이 없습니다.</p>';
                 return;
             }
             el.innerHTML = items.map(articleHtml).join('');

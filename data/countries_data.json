@@ -1,7 +1,7 @@
 {
   "schema_version": 3,
-  "generated_at": "2026-10-15T11:00:39.759488+09:00",
-  "generated_at_display": "2026-10-15 11:00 KST",
+  "generated_at": "2026-10-15T11:04:27.696479+09:00",
+  "generated_at_display": "2026-10-15 11:04 KST",
   "as_of_display": "2026-10-15 06:00 KST 기준",
   "regions": [
     {
@@ -67,7 +67,7 @@
           "note": "2026년 최저임금 · 기준: 고용노동부 고시",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:44.701268+09:00"
+          "last_updated": "2026-10-15T11:03:32.375996+09:00"
         },
         "min_wage_note": "2026년 최저임금 · 기준: 고용노동부 고시",
         "indicators": {
@@ -347,12 +347,12 @@
               "translated": false
             },
             {
-              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "title": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급",
               "desc": "",
               "summary": "",
-              "source": "위클리서울",
-              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
-              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
+              "source": "오토뷰",
+              "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1CRWhrSU5SZVdOcjlLSkJKSElQOHJpc0J6S09ROVhaRUQ0Y1dSbHhlLTdqbDhLaUZETVFiX3F0ODVQSDRnb0FGTUdhYkpoNndZckJHc3AwaTdKcHVV?oc=5",
+              "original_title": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급",
               "original_lang": "ko",
               "original_lang_upper": "KO",
               "is_translated": false,
@@ -361,12 +361,12 @@
               "translated": false
             },
             {
-              "title": "한국타이어 라우펜, 다치아 산데로에 OE 공급…유럽 완성차 협력 확대",
+              "title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
               "desc": "",
               "summary": "",
-              "source": "FETV",
-              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE16MTdrMmM0Nm5MUzN3VllCUVg3Q1JLelFDazRMWmJfT2xNOXlOT09ucVE1ZUVQZTMwWktUVEhlWmlCUWJhMkI3T3h1SjVlQmN3cjAwdEs3MUhCaGFjV1BYdzV0NzVPaUps?oc=5",
-              "original_title": "한국타이어 라우펜, 다치아 산데로에 OE 공급…유럽 완성차 협력 확대",
+              "source": "위클리서울",
+              "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5UU1hwTnBQSEhEWUhzOFZRY0IwU21jTzVtRzhVZWFVVTZuQm1GMGNMaV93OU1FT294RXlOTzBCYzFjQk5kVy1VcmN5SHlNYl85NmdCUWJyU2NxbjRTSmVUVjVBT1YzZERrbWdCeUxn?oc=5",
+              "original_title": "한국타이어 라우펜, 유럽 완성차 공급처 다변화 속도",
               "original_lang": "ko",
               "original_lang_upper": "KO",
               "is_translated": false,
@@ -500,9 +500,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1351.4,
-        "rate_per_unit": 1351.380005,
-        "change_pct": 0.83,
+        "current_rate": 1352.2,
+        "rate_per_unit": 1352.180054,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -529,7 +529,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1351.4
+          1352.2
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -867,7 +867,7 @@
           "note": "법정 최저임금 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:44.701518+09:00"
+          "last_updated": "2026-10-15T11:03:32.376156+09:00"
         },
         "min_wage_note": "법정 최저임금 · 기준: Eurostat",
         "indicators": {
@@ -1286,7 +1286,7 @@
           "note": "상하이시 기준 (지역별 상이) · 기준: 상하이시 인력자원사회보장국 고시 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:44.701561+09:00"
+          "last_updated": "2026-10-15T11:03:32.376182+09:00"
         },
         "min_wage_note": "상하이시 기준 (지역별 상이) · 기준: 상하이시 인력자원사회보장국 고시 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -1332,9 +1332,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 202.0,
-        "rate_per_unit": 201.954706,
-        "change_pct": 0.83,
+        "current_rate": 202.1,
+        "rate_per_unit": 202.074268,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -1361,7 +1361,7 @@
           210.3,
           204.7,
           201.5,
-          202.0
+          202.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -1697,7 +1697,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:44.701599+09:00"
+          "last_updated": "2026-10-15T11:03:32.376207+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -1743,9 +1743,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 416.5,
-        "rate_per_unit": 4.165449,
-        "change_pct": 0.88,
+        "current_rate": 416.8,
+        "rate_per_unit": 4.167735,
+        "change_pct": 0.94,
         "history_labels": [
           "11월",
           "12월",
@@ -1772,7 +1772,7 @@
           452.0,
           437.5,
           417.9,
-          416.5
+          416.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/HUFKRW=X"
@@ -2038,7 +2038,7 @@
           "note": "자카르타 주 최저임금(UMP) 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:44.701646+09:00"
+          "last_updated": "2026-10-15T11:03:32.376231+09:00"
         },
         "min_wage_note": "자카르타 주 최저임금(UMP) 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -2167,12 +2167,12 @@
               "translated": false
             },
             {
-              "title": "How the average US salary stacks up globally | lovemoney.com",
+              "title": "Indonesian teachers push for better pay in education bill",
               "desc": "",
               "summary": "",
-              "source": "lovemoney.com",
-              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYVlIVkg2blFOUWJMQ1RhYVFIYnpnV3paV1RFN3VHVk91SGJtTU5WQzhNX0s0SXNUTDVKMVNqalpKdzRBay1KZ1cxVGdaTVFZd2hOcTVFWE5Db0NEMlc3cDVwbFlRTUgxb1R2NTNtOW9yNTN2XzYwbmhDdzJtNEtpc0dqSFJaUGZEdTByV2NKaEF4eE5kNWfSAZYBQVVfeXFMTWFZSFZINm5RTlFiTENUYWFRSGJ6Z1d6WldURTd1R1ZPdUhibU1OVkM4TV9LNElzVEw1SjFTampaSnc0QWstSmdXMVRnWk1RWXdoTnE1RVhOQ29DRDJXN3A1cGxZUU1IMW9UdjUzbTlvcjUzdl82MG5oQ3cybTRLaXNHakhSWlBmRHUwcldjSmhBeHhOZDVn?oc=5",
-              "original_title": "How the average US salary stacks up globally | lovemoney.com",
+              "source": "Asia News Network",
+              "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOc19JUzlPVjd2ejR5bFl4OHZfWHNTczVuTVZjel9Za2UzcnoxbFNydEMweUV4ckh5UmhwU0hYYy1HNEdGQkNWVmN4dlp3WlhYUHdDbHpRM3czRjI1b01qU1puRkl0VXRzRTRiUU9RTnlnYkhxcjRidE9TOE41NUVZcFpudEwwaW5seXRJ?oc=5",
+              "original_title": "Indonesian teachers push for better pay in education bill",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2447,7 +2447,7 @@
           "note": "21세 이상 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:44.701682+09:00"
+          "last_updated": "2026-10-15T11:03:32.376264+09:00"
         },
         "min_wage_note": "21세 이상 · 기준: Eurostat",
         "indicators": {
@@ -2674,12 +2674,12 @@
               "translated": false
             },
             {
-              "title": "MPs Visit Leiden University To Discuss Quantum's Impact On Society",
+              "title": "Belgium - Post-WWII, Economy, Politics",
               "desc": "",
               "summary": "",
-              "source": "Quantum Zeitgeist",
-              "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSmR5YUZsRW1hbndqTUxkQVJSdmYtWHc1YUtaSnBDVTVjMTYxajdlVi0wT3dUOUhjUGhycXNwaHBrb05pSjhiRWcxSVpOdmpmc3E1RzZUWFoycGk0Y3JfbUl1TDk1a2hXQ05POFpHbTNmNmxWTDVZVU9YT1E2R1dpcg?oc=5",
-              "original_title": "MPs Visit Leiden University To Discuss Quantum's Impact On Society",
+              "source": "Britannica",
+              "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96bVBNV3Y0ZEI1UlV6OHFrYm42MjI3dHkybVJnRFNhbjhmX19MN3FRdkVwT0VmQndHNWpPaEl1dWRXT2Z6T0RiTU9WNllTUl9lVWFJbXRwYU03aEQ1bzJoWl9lMmU2TTFKWS1jTXJrVjVSbkg1Unc?oc=5",
+              "original_title": "Belgium - Post-WWII, Economy, Politics",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2688,12 +2688,12 @@
               "translated": false
             },
             {
-              "title": "Belgium - Post-WWII, Economy, Politics",
+              "title": "MPs Visit Leiden University To Discuss Quantum's Impact On Society",
               "desc": "",
               "summary": "",
-              "source": "Britannica",
-              "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE96bVBNV3Y0ZEI1UlV6OHFrYm42MjI3dHkybVJnRFNhbjhmX19MN3FRdkVwT0VmQndHNWpPaEl1dWRXT2Z6T0RiTU9WNllTUl9lVWFJbXRwYU03aEQ1bzJoWl9lMmU2TTFKWS1jTXJrVjVSbkg1Unc?oc=5",
-              "original_title": "Belgium - Post-WWII, Economy, Politics",
+              "source": "Quantum Zeitgeist",
+              "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQSmR5YUZsRW1hbndqTUxkQVJSdmYtWHc1YUtaSnBDVTVjMTYxajdlVi0wT3dUOUhjUGhycXNwaHBrb05pSjhiRWcxSVpOdmpmc3E1RzZUWFoycGk0Y3JfbUl1TDk1a2hXQ05POFpHbTNmNmxWTDVZVU9YT1E2R1dpcg?oc=5",
+              "original_title": "MPs Visit Leiden University To Discuss Quantum's Impact On Society",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -2856,7 +2856,7 @@
           "note": "시급 196대만달러 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:44.701710+09:00"
+          "last_updated": "2026-10-15T11:03:32.376284+09:00"
         },
         "min_wage_note": "시급 196대만달러 · 기준: ILO",
         "indicators": {
@@ -3263,7 +3263,7 @@
           "note": "법정 최저임금(MROT) · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.749288+09:00"
+          "last_updated": "2026-10-15T11:03:34.460809+09:00"
         },
         "min_wage_note": "법정 최저임금(MROT) · 기준: ILO",
         "indicators": {
@@ -3310,8 +3310,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 16.0,
-        "rate_per_unit": 16.02564,
-        "change_pct": 0.82,
+        "rate_per_unit": 16.035483,
+        "change_pct": 0.88,
         "history_labels": [
           "11월",
           "12월",
@@ -3718,9 +3718,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 283.9,
-        "rate_per_unit": 283.855399,
-        "change_pct": 0.8,
+        "current_rate": 284.1,
+        "rate_per_unit": 284.056703,
+        "change_pct": 0.87,
         "history_labels": [
           "11월",
           "12월",
@@ -3747,7 +3747,7 @@
           312.4,
           303.8,
           290.5,
-          283.9
+          284.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -4011,7 +4011,7 @@
           "note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749637+09:00"
+          "last_updated": "2026-10-15T11:03:34.461076+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -4392,7 +4392,7 @@
           "note": "일반 최저임금 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.749676+09:00"
+          "last_updated": "2026-10-15T11:03:34.461105+09:00"
         },
         "min_wage_note": "일반 최저임금 · 기준: ILO",
         "indicators": {
@@ -4438,9 +4438,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 73.1,
-        "rate_per_unit": 73.097572,
-        "change_pct": 0.21,
+        "current_rate": 73.2,
+        "rate_per_unit": 73.155931,
+        "change_pct": 0.29,
         "history_labels": [
           "11월",
           "12월",
@@ -4467,7 +4467,7 @@
           81.9,
           80.9,
           74.8,
-          73.1
+          73.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MXNKRW=X"
@@ -4801,7 +4801,7 @@
           "note": "SMIG 참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749713+09:00"
+          "last_updated": "2026-10-15T11:03:34.461133+09:00"
         },
         "min_wage_note": "SMIG 참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -4847,9 +4847,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 137.3,
-        "rate_per_unit": 137.314434,
-        "change_pct": -0.2,
+        "current_rate": 137.4,
+        "rate_per_unit": 137.399918,
+        "change_pct": -0.14,
         "history_labels": [
           "11월",
           "12월",
@@ -4876,7 +4876,7 @@
           151.4,
           153.1,
           143.9,
-          137.3
+          137.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -5113,7 +5113,7 @@
           "note": "1지역 기준 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.749752+09:00"
+          "last_updated": "2026-10-15T11:03:34.461161+09:00"
         },
         "min_wage_note": "1지역 기준 · 기준: ILO",
         "indicators": {
@@ -5160,8 +5160,8 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.2,
-        "rate_per_unit": 0.052151,
-        "change_pct": 0.83,
+        "rate_per_unit": 0.052185,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -5522,7 +5522,7 @@
           "note": "연방 최저임금 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.749787+09:00"
+          "last_updated": "2026-10-15T11:03:34.461189+09:00"
         },
         "min_wage_note": "연방 최저임금 · 기준: ILO",
         "indicators": {
@@ -5568,9 +5568,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 268.8,
-        "rate_per_unit": 268.848731,
-        "change_pct": 0.81,
+        "current_rate": 269.0,
+        "rate_per_unit": 269.047705,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -5597,7 +5597,7 @@
           279.8,
           265.3,
           259.6,
-          268.8
+          269.0
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/BRLKRW=X"
@@ -5889,7 +5889,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749821+09:00"
+          "last_updated": "2026-10-15T11:03:34.461215+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -5935,9 +5935,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 360.1,
-        "rate_per_unit": 360.079938,
-        "change_pct": -2.17,
+        "current_rate": 360.3,
+        "rate_per_unit": 360.293114,
+        "change_pct": -2.11,
         "history_labels": [
           "11월",
           "12월",
@@ -5964,7 +5964,7 @@
           378.3,
           376.0,
           370.8,
-          360.1
+          360.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
@@ -6298,7 +6298,7 @@
           "note": "참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749846+09:00"
+          "last_updated": "2026-10-15T11:03:34.461233+09:00"
         },
         "min_wage_note": "참고치 · 공식 고시 확인 필요 · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -6345,8 +6345,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 13.0,
-        "rate_per_unit": 12.956574,
-        "change_pct": 0.82,
+        "rate_per_unit": 12.964532,
+        "change_pct": 0.88,
         "history_labels": [
           "11월",
           "12월",
@@ -6581,7 +6581,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749881+09:00"
+          "last_updated": "2026-10-15T11:03:34.461258+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -6627,9 +6627,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 135.5,
-        "rate_per_unit": 135.482315,
-        "change_pct": 0.7,
+        "current_rate": 135.6,
+        "rate_per_unit": 135.595913,
+        "change_pct": 0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -6656,7 +6656,7 @@
           148.9,
           143.4,
           135.2,
-          135.5
+          135.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SEKKRW=X"
@@ -7175,12 +7175,12 @@
           "tag_class": "bg-sky-100 text-sky-700",
           "items": [
             {
-              "title": "Quo Vadis, Hispania? Part V - American Enterprise Institute",
-              "desc": "Quo Vadis, Hispania? Part V",
-              "summary": "Quo Vadis, Hispania? Part V",
-              "source": "American Enterprise Institute - AEI",
-              "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE94c3MyMktHMHcydVVYNkdTNTRmZ1JXWVNwQ2ZMUDVvaWxWWlpiWk5WazNPZXNGU054cDRVZmtwbEh2S1MtYmFiWHhwMVRlYVFGUTVaMmktUERGZGNZd0lMMjBDazRLeFpyS2NFa0VuN09OZFJPZjJad2RxMzVUdw?oc=5",
-              "original_title": "Quo Vadis, Hispania? Part V - American Enterprise Institute",
+              "title": "Spanish government to press on with tighter data centre rules before election",
+              "desc": "",
+              "summary": "",
+              "source": "Reuters",
+              "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOUJMOFFnREk5Z2gwNnJTZW14TE92MHlCTkFxUVpfODVOcmc5emRSQWdSXzd4MllKN3ZtQS1lREFoengwVzdiRmVWd1B2VV9DT1c1ZXp5TElOMldRRXV4TVNLTVAwSk45RVlDT01PU3FjRC1JaHNtbHAwMi1fOEc3dFBqSU9EbmhWZXhYT0Jxd1pfenhmQVpNVGdnZnhoc21VTmNNSUZ4Yk9wX1dFYm1NR2ExQmhtZ0U?oc=5",
+              "original_title": "Spanish government to press on with tighter data centre rules before election",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -7189,26 +7189,12 @@
               "translated": false
             },
             {
-              "title": "Spain’s Transformation After a Decade of Fiscal Competition",
+              "title": "Puerto Rico - Liberal Reforms, Regional Turmoil",
               "desc": "",
               "summary": "",
-              "source": "Tax Foundation",
-              "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE01M2VOSjhkcjRvMjdFY3lZYlFNUDJ0bV9YcHRCN1UtM05CMGhqel84X3FneVJaSXVUQU9KamlscFZLa19xcWZWeW55bVlXcjNTQVZZeU1hTHZfUTNrMXNKOGRGS3B0LWVrMGdLa2szR0ZQWklVNzBGSw?oc=5",
-              "original_title": "Spain’s Transformation After a Decade of Fiscal Competition",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
-              "title": "Spain’s election: European failures and Sanchez’s calculation",
-              "desc": "",
-              "summary": "",
-              "source": "Daily Sabah",
-              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNTEwxaWtGbXlDZklEMnlocm0yS1JUdFVOc2FVU3U1V2pkUXhVOUR4cldvaTBqNzVUbkhQTGJlTTVWd2xrR1lvOTdBa2ZCYjlDWFZfV2ZlUU1ZQkRwdHNMaExDaHluZXBOMUhFU1JRcThOdktFVlg2Z0hTdlJDRzF2SDRwbV9Vb3QwaDdaQk5CckNZaFhObzhmNkdTb2E0N3pR?oc=5",
-              "original_title": "Spain’s election: European failures and Sanchez’s calculation",
+              "source": "Britannica",
+              "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPV2Z0U3RxNllNdzVUV3g5YnU5bzYya3dhZG1COFFMbXpXbFIwNTNBUHlmN3pIaTBNQzI0Y19DM0Qza20yRFI0Z1Z4eEpNR2tZYTJuaTN3em5QMU1FUTNOODZkdjE5Q2JvbFo3TXh4UWRURm9SWTZDZEFScjYzNGhxMmJQTktsM0hC?oc=5",
+              "original_title": "Puerto Rico - Liberal Reforms, Regional Turmoil",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -7223,6 +7209,20 @@
               "source": "Reason Magazine",
               "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNjhXTFRkRTdJcmdSNi1UZE05bFZSdmxLbElaeXV6b2VaVzRGTTdRRWVTSkdkWktpcGtkMkw3VVBHT1RCcDh6aFFBUDBRVkVpNVhNTGg2S3RneVRpM2JoU2pJQl9mMDAyZVRYU3BWREhadDBNeUVIYmE5ZjBiRGIxMUttU1J4OVdrTWJ1NlNfUk0yMUd2b0JQZG5uTHlfWWhtNllod1BsR050NkxWTVVNZ3huanZ1X3IyeGlHb0ZPM0w?oc=5",
               "original_title": "Protesters in France and Spain are angry at government failure—and demanding more government",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Euro depreciates amid regional financial, political turmoil",
+              "desc": "",
+              "summary": "",
+              "source": "Anadolu Ajansı",
+              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPbUtxQmFFUTdqYTZiNTNuaWhWYUVRVmJZY3BoWHhmdHh1cFl3MDczMmxjY2FJYXk4UkhYSjdfT2NzMndwWjFkZVcwZ0dIZFA1UGZsYk1VYXdCY3A2TEdTdGdWS2ZLdUlucVJvTG1SZHZkaWluWHlBVkhBRXNGdXJ5UUUyQThySUNvWlZmTnk1MHp6MHBSX2Itb016U2tuWVkt?oc=5",
+              "original_title": "Euro depreciates amid regional financial, political turmoil",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -7330,12 +7330,12 @@
           "category": "SOCIETY & CULTURE"
         },
         {
-          "title": "Quo Vadis, Hispania? Part V - American Enterprise Institute",
-          "desc": "Quo Vadis, Hispania? Part V",
-          "summary": "Quo Vadis, Hispania? Part V",
-          "source": "American Enterprise Institute - AEI",
-          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE94c3MyMktHMHcydVVYNkdTNTRmZ1JXWVNwQ2ZMUDVvaWxWWlpiWk5WazNPZXNGU054cDRVZmtwbEh2S1MtYmFiWHhwMVRlYVFGUTVaMmktUERGZGNZd0lMMjBDazRLeFpyS2NFa0VuN09OZFJPZjJad2RxMzVUdw?oc=5",
-          "original_title": "Quo Vadis, Hispania? Part V - American Enterprise Institute",
+          "title": "Spanish government to press on with tighter data centre rules before election",
+          "desc": "",
+          "summary": "",
+          "source": "Reuters",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQOUJMOFFnREk5Z2gwNnJTZW14TE92MHlCTkFxUVpfODVOcmc5emRSQWdSXzd4MllKN3ZtQS1lREFoengwVzdiRmVWd1B2VV9DT1c1ZXp5TElOMldRRXV4TVNLTVAwSk45RVlDT01PU3FjRC1JaHNtbHAwMi1fOEc3dFBqSU9EbmhWZXhYT0Jxd1pfenhmQVpNVGdnZnhoc21VTmNNSUZ4Yk9wX1dFYm1NR2ExQmhtZ0U?oc=5",
+          "original_title": "Spanish government to press on with tighter data centre rules before election",
           "original_lang": "en",
           "original_lang_upper": "EN",
           "is_translated": false,
@@ -7371,7 +7371,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749943+09:00"
+          "last_updated": "2026-10-15T11:03:34.461302+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -7780,7 +7780,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.749965+09:00"
+          "last_updated": "2026-10-15T11:03:34.461319+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -7826,9 +7826,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 367.9,
-        "rate_per_unit": 367.908295,
-        "change_pct": 0.78,
+        "current_rate": 368.2,
+        "rate_per_unit": 368.15151,
+        "change_pct": 0.85,
         "history_labels": [
           "11월",
           "12월",
@@ -7855,7 +7855,7 @@
           386.9,
           375.1,
           367.8,
-          367.9
+          368.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
@@ -8191,7 +8191,7 @@
           "note": "21세 이상 National Living Wage · 기준: GOV.UK (Low Pay Commission)",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.749990+09:00"
+          "last_updated": "2026-10-15T11:03:34.461337+09:00"
         },
         "min_wage_note": "21세 이상 National Living Wage · 기준: GOV.UK (Low Pay Commission)",
         "indicators": {
@@ -8600,7 +8600,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.750024+09:00"
+          "last_updated": "2026-10-15T11:03:34.461360+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -8953,7 +8953,7 @@
           "note": "월 기준 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750050+09:00"
+          "last_updated": "2026-10-15T11:03:34.461380+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO",
         "indicators": {
@@ -9000,8 +9000,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 30.9,
-        "rate_per_unit": 30.898945,
-        "change_pct": 0.83,
+        "rate_per_unit": 30.917238,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -9320,7 +9320,7 @@
           "note": "민간 부문 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.750084+09:00"
+          "last_updated": "2026-10-15T11:03:34.461403+09:00"
         },
         "min_wage_note": "민간 부문 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -9367,8 +9367,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 25.6,
-        "rate_per_unit": 25.611147,
-        "change_pct": 0.81,
+        "rate_per_unit": 25.631997,
+        "change_pct": 0.89,
         "history_labels": [
           "11월",
           "12월",
@@ -9701,7 +9701,7 @@
           "note": "단체협약(CBA)으로 결정",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.750120+09:00"
+          "last_updated": "2026-10-15T11:03:34.461426+09:00"
         },
         "min_wage_note": "단체협약(CBA)으로 결정",
         "indicators": {
@@ -10493,7 +10493,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750187+09:00"
+          "last_updated": "2026-10-15T11:03:34.461471+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -10540,8 +10540,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 62.2,
-        "rate_per_unit": 62.194707,
-        "change_pct": 0.79,
+        "rate_per_unit": 62.209217,
+        "change_pct": 0.81,
         "history_labels": [
           "11월",
           "12월",
@@ -10906,9 +10906,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 137.2,
-        "rate_per_unit": 1.371955,
-        "change_pct": 0.51,
+        "current_rate": 137.3,
+        "rate_per_unit": 1.372798,
+        "change_pct": 0.57,
         "history_labels": [
           "11월",
           "12월",
@@ -10935,7 +10935,7 @@
           153.6,
           147.8,
           138.8,
-          137.2
+          137.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CLPKRW=X"
@@ -11200,7 +11200,7 @@
           "note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.750278+09:00"
+          "last_updated": "2026-10-15T11:03:34.461541+09:00"
         },
         "min_wage_note": "월 기준 · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -11246,9 +11246,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 299.1,
-        "rate_per_unit": 2.990594,
-        "change_pct": -3.39,
+        "current_rate": 299.3,
+        "rate_per_unit": 2.992652,
+        "change_pct": -3.33,
         "history_labels": [
           "11월",
           "12월",
@@ -11275,7 +11275,7 @@
           309.2,
           305.3,
           318.6,
-          299.1
+          299.3
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/KZTKRW=X"
@@ -11906,7 +11906,7 @@
           "note": "교통보조금 별도 · 기준: ILO",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750354+09:00"
+          "last_updated": "2026-10-15T11:03:34.461604+09:00"
         },
         "min_wage_note": "교통보조금 별도 · 기준: ILO",
         "indicators": {
@@ -11953,8 +11953,8 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 42.5,
-        "rate_per_unit": 0.424856,
-        "change_pct": 1.08,
+        "rate_per_unit": 0.425108,
+        "change_pct": 1.14,
         "history_labels": [
           "11월",
           "12월",
@@ -12204,7 +12204,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750387+09:00"
+          "last_updated": "2026-10-15T11:03:34.461629+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -12515,7 +12515,7 @@
           "note": "방콕 기준 (지역별 337~400바트) · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
           "source": "수동 보완",
           "year": 2025,
-          "last_updated": "2026-10-15T10:59:46.750419+09:00"
+          "last_updated": "2026-10-15T11:03:34.461654+09:00"
         },
         "min_wage_note": "방콕 기준 (지역별 337~400바트) · 기준: ILO · 2025년 적용분 (당해년도 고시 미반영)",
         "indicators": {
@@ -12924,7 +12924,7 @@
           "note": "순액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750453+09:00"
+          "last_updated": "2026-10-15T11:03:34.461678+09:00"
         },
         "min_wage_note": "순액 기준 · 기준: Eurostat",
         "indicators": {
@@ -12971,8 +12971,8 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 27.4,
-        "rate_per_unit": 27.360622,
-        "change_pct": 0.73,
+        "rate_per_unit": 27.375736,
+        "change_pct": 0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -13188,12 +13188,12 @@
               "translated": false
             },
             {
-              "title": "Brisa Bridgestone Sabancı strengthens board and governance structure with international expertise",
+              "title": "Spotted: Audi’s New 1,000 HP Supercar Testing at Lamborghini’s Factory",
               "desc": "",
               "summary": "",
-              "source": "The Globe and Mail",
-              "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPZ2dpak5SUTdVTW84UXJEemNOaTJaQjB1SXliUHowMEtkcnl4SEh5b0hTUU1ETTJIZFRNZmtzN01Cb29mLXRqNHFkVFJuVmFpUTBmTEtFSmEzalFFMVhjMXVRXzI5WmRGWnNGZlB6cXlQM0xCdVJ4WUVWXzJzTkZ3LTVBX2FZR0NxbWt6N0d5V3Z3U3ZhTHJCRzRnN0hCR0ZvR3dsSVN1THNuTXZ5aXd4WWRhZzdNcjJNMVkxWlRfRjN1SERYWDJzWmoxZkdFUXktWFRnMjQwbVhEbC11N3JwNU4wTURKSnFRVldacDdaakEyUHZxZVZqU0prSF9udDl3bGNsMnc4RlRLUQ?oc=5",
-              "original_title": "Brisa Bridgestone Sabancı strengthens board and governance structure with international expertise",
+              "source": "Tires & Parts News",
+              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUdDVDdOdkdpV1hXdkdvNEIxSXFucTRkbHg0a3VJUHlYNlFHVHdrR05PTnIwdVp0dUcwSzktS1drUnBTRk5PRUdXei1CNHhfQ1ZpZzhrVndlZVo0RUVWRm9lYzg5LW5UZEFjN0dXVTBtZFFGR0lXVkhBN0FjTW5iRnhrd2dreENzeXRzTEFONlRQeGpVekJuSXZKaF9uNk5Nc09WaUF3OUdrbVU?oc=5",
+              "original_title": "Spotted: Audi’s New 1,000 HP Supercar Testing at Lamborghini’s Factory",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -13202,12 +13202,12 @@
               "translated": false
             },
             {
-              "title": "Spotted: Audi’s New 1,000 HP Supercar Testing at Lamborghini’s Factory",
+              "title": "Brisa Bridgestone Sabancı strengthens board and governance structure with international expertise",
               "desc": "",
               "summary": "",
-              "source": "Tires & Parts News",
-              "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdUdDVDdOdkdpV1hXdkdvNEIxSXFucTRkbHg0a3VJUHlYNlFHVHdrR05PTnIwdVp0dUcwSzktS1drUnBTRk5PRUdXei1CNHhfQ1ZpZzhrVndlZVo0RUVWRm9lYzg5LW5UZEFjN0dXVTBtZFFGR0lXVkhBN0FjTW5iRnhrd2dreENzeXRzTEFONlRQeGpVekJuSXZKaF9uNk5Nc09WaUF3OUdrbVU?oc=5",
-              "original_title": "Spotted: Audi’s New 1,000 HP Supercar Testing at Lamborghini’s Factory",
+              "source": "The Globe and Mail",
+              "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPZ2dpak5SUTdVTW84UXJEemNOaTJaQjB1SXliUHowMEtkcnl4SEh5b0hTUU1ETTJIZFRNZmtzN01Cb29mLXRqNHFkVFJuVmFpUTBmTEtFSmEzalFFMVhjMXVRXzI5WmRGWnNGZlB6cXlQM0xCdVJ4WUVWXzJzTkZ3LTVBX2FZR0NxbWt6N0d5V3Z3U3ZhTHJCRzRnN0hCR0ZvR3dsSVN1THNuTXZ5aXd4WWRhZzdNcjJNMVkxWlRfRjN1SERYWDJzWmoxZkdFUXktWFRnMjQwbVhEbC11N3JwNU4wTURKSnFRVldacDdaakEyUHZxZVZqU0prSF9udDl3bGNsMnc4RlRLUQ?oc=5",
+              "original_title": "Brisa Bridgestone Sabancı strengthens board and governance structure with international expertise",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -13305,7 +13305,7 @@
           "note": "업종·지역별 차등 고시",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750485+09:00"
+          "last_updated": "2026-10-15T11:03:34.461704+09:00"
         },
         "min_wage_note": "업종·지역별 차등 고시",
         "indicators": {
@@ -13351,9 +13351,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1351.4,
-        "rate_per_unit": 1351.380005,
-        "change_pct": -1.45,
+        "current_rate": 1352.1,
+        "rate_per_unit": 1352.079956,
+        "change_pct": -1.4,
         "history_labels": [
           "11월",
           "12월",
@@ -13380,7 +13380,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1351.4
+          1352.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -13448,20 +13448,6 @@
           "tag_class": "bg-sky-100 text-sky-700",
           "items": [
             {
-              "title": "CPV Central Committee’s fourth plenum seeks to unlock resources for rapid, sustainable growth",
-              "desc": "",
-              "summary": "",
-              "source": "vietnamnews.vn",
-              "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVWpKS1JyZjNwQzlnVzl6RTYwTmIzTk5lRGF4WGJqSEtLOV9yVnFIWk5rTkkteUJLQWQ3MXVXb2otQWZ0SWpMY3JlMXVnTi15UzAyNkJaX1NETk5qMU1WMGY2TnRpakE4U0d4a1lOZWZNeXEwZWFZaERjUldodTBMZzg2a3RteE5zQVhnWnpvVDZRTW1wMFE4RHcyYkNyT2pKUnhkSnBTSDdScThPSy01Q2xIM3JDOXk1SnJMbTh3YVhIcGI3M1otUWpnR3VpY0xHQl9vcDYxNUFnQQ?oc=5",
-              "original_title": "CPV Central Committee’s fourth plenum seeks to unlock resources for rapid, sustainable growth",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
               "title": "The path to economic success for Panama",
               "desc": "",
               "summary": "",
@@ -13496,6 +13482,20 @@
               "source": "Demócrata",
               "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSEZjbjdTRktqcHozTS1reks3TkVGalMyMXhSYkJMQkQ3TDdOOTJXSjgtdjhqVldsdWxPR01icmhBVmpkemtvWU5TTnQ4d0E4Rmc4cmo3MDVpakt0VFl5ODlGamI0LVdJSTNLRlVXM25YX3NVWVJDYlkxYlExemZLVjhiSXdjVF9WQzNrb3JzUnNKTS00cXlHZjJRNHdaVEZqMENuM19aQ0Z0UDZvSkQwVtIBtgFBVV95cUxNWUNWVEZ5ajZ1M1p5dmJMbjZQYVR0ZVpSbnBxSHN5NTk5RVdqcjg1MkRuaHhMSkZUQXJYa2tQa0MzNFRFa0NveWRqWDZOYllRTmt2bmR6THUwOV9YX2dFdWJ4cndKb3p2cGk3OXdTTmhLQTk1ZWh6Ri1fYU85YnJFNGdhczhzQlIzRDljNFBQX0M2eHR4Q2pQLVJ1ZGk5WnRQelVQTnctQXVEbGFKdU1kbzk0eEhuQQ?oc=5",
               "original_title": "Earthquake in Panama: 27 injured and more than 400 buildings affected",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "7.6 magnitude earthquake jolts Panama, people evacuate buildings as tsunami threat looms over Pacific coas",
+              "desc": "",
+              "summary": "",
+              "source": "The Economic Times",
+              "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxQeXdISUNBakItNGRmR3hvMFVHQXkwcUhaUGJuR0xFYkIzS25IYXU1cFBuc2puU2FIdjlPaW85VkI0WmctOE5ZWVUybFpRbGNKRlFTNTdEZktlR3k4TVRUYndkSzFYRlRKNjljSGZZdlloMUJOOTczdTVQSFFSQ0VERlNVVDZsd2JKWUFMeDEzUVRMMXNqUG5hNllrRkc1RXJCVm9oR3lIeXE2OThDeW5IRnczWVdQZzFyRG9qLVVqNVhadGZpX3FmRkRBVlVXeTM5MDJRdWdSLXI1MUVFdUxkX0VRMnppQmJIUnkwY3ZCZWZ3U1lEc0xkY0N1Y2VJRnlsVk1iSWdxTFpqUjgzMEwtWmlVR0RaTEdqOUHSAZ8CQVVfeXFMTVM2WWNBWlVEaG1UcVd3a0RVZERLZEs2RE9mak1rWm9jM3h5NzJFOHFhQzB2eTc2UWUxN3JhRTRwOFhxRDlwbG5jXzh4dFNRQzctRDdyQlVwLWo1VDF2clpHc3h2ejZoX1UyZlhNTVJYT3dPdFJjNjFTdkN1bVBydGhseHZneVIyNTlJQldqY0VnSXp0V2UtNUZHcUFFSUE2Z0Z3SjBZbVMtTFVqcVlzYkhBQ0VOWDRxckNpUkFtdDBNUXU0dks5Qm9xc1lIdkRTOUpWNFRyQTY3UXhyLWlCTmFQUkpYQlNpd3hlX0ZvSHFRZEFTWWo5NWJMOGE2a3pfUlhtWEUyV1VrcWNJWGNYVEhWUmpFRUhYTXM1M254VlE?oc=5",
+              "original_title": "7.6 magnitude earthquake jolts Panama, people evacuate buildings as tsunami threat looms over Pacific coas",
               "original_lang": "en",
               "original_lang_upper": "EN",
               "is_translated": false,
@@ -13561,12 +13561,12 @@
           "category": "SOCIETY & CULTURE"
         },
         {
-          "title": "CPV Central Committee’s fourth plenum seeks to unlock resources for rapid, sustainable growth",
+          "title": "The path to economic success for Panama",
           "desc": "",
           "summary": "",
-          "source": "vietnamnews.vn",
-          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVWpKS1JyZjNwQzlnVzl6RTYwTmIzTk5lRGF4WGJqSEtLOV9yVnFIWk5rTkkteUJLQWQ3MXVXb2otQWZ0SWpMY3JlMXVnTi15UzAyNkJaX1NETk5qMU1WMGY2TnRpakE4U0d4a1lOZWZNeXEwZWFZaERjUldodTBMZzg2a3RteE5zQVhnWnpvVDZRTW1wMFE4RHcyYkNyT2pKUnhkSnBTSDdScThPSy01Q2xIM3JDOXk1SnJMbTh3YVhIcGI3M1otUWpnR3VpY0xHQl9vcDYxNUFnQQ?oc=5",
-          "original_title": "CPV Central Committee’s fourth plenum seeks to unlock resources for rapid, sustainable growth",
+          "source": "Vietnam.vn",
+          "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5lakh2a2FqeDJpd2l2Z0w4cTdKakR5NVQwMGJtUmRxcm9uaWtWWklwZDlpSEFjamhCalRxZ25zdF9OLXl2SG5RdHZySkp3VFJzNjRFWVlzWUh2c1RXRDVJZzFFMkdkNkZkS1o1ZENldFpPU00?oc=5",
+          "original_title": "The path to economic success for Panama",
           "original_lang": "en",
           "original_lang_upper": "EN",
           "is_translated": false,
@@ -13602,7 +13602,7 @@
           "note": "월 총액 기준 · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750538+09:00"
+          "last_updated": "2026-10-15T11:03:34.461727+09:00"
         },
         "min_wage_note": "월 총액 기준 · 기준: Eurostat",
         "indicators": {
@@ -13648,9 +13648,9 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 346.4,
-        "rate_per_unit": 346.435743,
-        "change_pct": 0.83,
+        "current_rate": 346.8,
+        "rate_per_unit": 346.795662,
+        "change_pct": 0.93,
         "history_labels": [
           "11월",
           "12월",
@@ -13677,7 +13677,7 @@
           380.3,
           367.9,
           350.9,
-          346.4
+          346.8
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -13752,6 +13752,48 @@
           "tag_class": "bg-emerald-100 text-emerald-700",
           "items": [
             {
+              "title": "Community members raise funds, celebrate culture at Taste of Poland dinner",
+              "desc": "",
+              "summary": "",
+              "source": "WJET/WFXP/YourErie.com",
+              "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQTltRU9YQVVheXhhNUt6SnI1YTBMaS1qRVhOSVpRSmZmV3YtTHN6OE1PWlVjZHhQRldVb3J6cXlhdEt6YWkyQ0ZqRFNaNlR0V0F4RzVLeHVidndYN2hqSnZJc2ZoYWpzTEUtMy1tRUktckFmQm0xMlVTSC12Q2dhbU96VUJkZG0wbHl6RWk1VVZBVndRd1NqdUYxQkgyOWZDOGpYY1E4X19PU3ozTy1HU3drN0ZFd9IBuwFBVV95cUxOT1lnM0pTNWtLMThxd0x0X1BlR0I2TjhBSzVJN3d1MlFaQ1V5RkxNU3RyWnNPLXdNRVZMY0ZhaWtOWVNMUUc0aV81aElDYmFlbkdndUV2VFZHZUthaDNpOWkwMTU0SzVJclpsNkwzWk05cVhSUk9TUzBUdl95VVRLTkJOUnI2ZW9oRl9uT05vbkZRbUlDRmJLamp6eGJpRUhXQzFSZVM0cmJTc29pMWhtdk1NS3ZPTU0zdHdR?oc=5",
+              "original_title": "Community members raise funds, celebrate culture at Taste of Poland dinner",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Stefan Żeromski",
+              "desc": "",
+              "summary": "",
+              "source": "Britannica",
+              "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5pWklLSzBwSTFMakNVbG1jVWVOQmVnZjRnbmpBTGliY3EwN2J5UG55eGZaaU52SlhsYnZuZTNXclpublBWYlB3N3Rsb1VTY1pEUk43b0VvSGZUZTBTQTZCWGNR?oc=5",
+              "original_title": "Stefan Żeromski",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
+              "title": "Funding Available to Increase Participation in Arts and Culture (Poland) - fundsforNGOs",
+              "desc": "Funding Available to Increase Participation in Arts and Culture (Poland)",
+              "summary": "Funding Available to Increase Participation in Arts and Culture (Poland)",
+              "source": "fundsforNGOs - Grants and Resources for Sustainability",
+              "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZU5POTczRUZfYXFNY1JseHhUaUc5Y2tRb1RrM3Q3VHNzSWx2elJDU2JUYjJLTGp6b1dPUUxwZVQ4M2w2alVPZ2ljQjNqVW1WcHk2WHZCZU9HNlJrOEljX0U1VndSRHVNaWR4azBwT0t3TW1JV0YwSWpGWEFqNnVpZy1EZVZIWDFmQnpmRFg1MWthOWpES25MMFllSWR2ZjRJUnRkWml4dXA1NTVpX1hjT1ln0gG3AUFVX3lxTE51ajJYbW91RTdLcks0MGVRVUxIR2F5aVoxRUVJc0kzMTZIaUlLMjVrQ3hYMHo5OUotcDA2VlFteEd4cEVBY2FuZmlDNy0xaGJEaWY4M3h1WXpabzFmUHhnZjNMcEVkTlM4TkpxbGUwenlvMl9jVEl2V29kOWJUQTJwaUEwVlFaVDhWRWZnQTJxMm1xal9UcFpscjZnVlh2aXpISUw5Q1dPTXROcjViTlJQU1kzbUJaNA?oc=5",
+              "original_title": "Funding Available to Increase Participation in Arts and Culture (Poland) - fundsforNGOs",
+              "original_lang": "en",
+              "original_lang_upper": "EN",
+              "is_translated": false,
+              "translate_label": "",
+              "lang": "en",
+              "translated": false
+            },
+            {
               "title": "Defend AgoraEU: Invest in European Citizens’ Future",
               "desc": "",
               "summary": "",
@@ -13763,48 +13805,6 @@
               "is_translated": false,
               "translate_label": "",
               "lang": "en",
-              "translated": false
-            },
-            {
-              "title": "History of Germany - Germany from 1871 to 1918",
-              "desc": "",
-              "summary": "",
-              "source": "Britannica",
-              "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNRkx3dkwxSjRoeG0zQzhUTmF4SU5lMXk0VWxyNnR5X0dLWUg5VFl6NC1WZjdKOWRkSmdFTGxnR1RUTmtfSDlWM0pOOTdyaXNkMTVOYWVoQm5CZ3RCd0k4SXBKaXhhTXBXTDFZTk13SnVLS21wOG1UNGtsOGJzemVFb2EzSQ?oc=5",
-              "original_title": "History of Germany - Germany from 1871 to 1918",
-              "original_lang": "en",
-              "original_lang_upper": "EN",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "en",
-              "translated": false
-            },
-            {
-              "title": "신상진 성남시장, 폴란드서 K-문화외교…카이스트 AI 대기업 열기",
-              "desc": "",
-              "summary": "",
-              "source": "인천일보",
-              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBUSlo0SjFkZ2hGNGpPX0hHcFVsbHloZ2dkOHN5Y29rMFBYZUR5Ujc2ekthb2xURzdZeGExLWY5M0VRUlBOa1U5WGJreEdETnlNdnVSRTRrMFN1b2JHbzEwX1VGOVgteF94WmVzRFV4NHg?oc=5",
-              "original_title": "신상진 성남시장, 폴란드서 K-문화외교…카이스트 AI 대기업 열기",
-              "original_lang": "ko",
-              "original_lang_upper": "KO",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "ko",
-              "translated": false
-            },
-            {
-              "title": "성남시립국악단 폴란드서 공연…“문화 교류”",
-              "desc": "",
-              "summary": "",
-              "source": "KBS 뉴스",
-              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE51NzQ2RWFfY2J2MVZRYXNhbTZNYzgzZlZLaUh3LVNfbWo2c2NnSzBNNFgxM3NoaXNoRkw2VlVXOTZWUUZSX1FCYW8yd1pwMU9kTjJiZ0xFMFdPdmc?oc=5",
-              "original_title": "성남시립국악단 폴란드서 공연…“문화 교류”",
-              "original_lang": "ko",
-              "original_lang_upper": "KO",
-              "is_translated": false,
-              "translate_label": "",
-              "lang": "ko",
               "translated": false
             }
           ]
@@ -13955,12 +13955,12 @@
           "category": "HR & LABOR"
         },
         {
-          "title": "Defend AgoraEU: Invest in European Citizens’ Future",
+          "title": "Community members raise funds, celebrate culture at Taste of Poland dinner",
           "desc": "",
           "summary": "",
-          "source": "European Federation of Journalists",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQalEzV3h3TFVzMkZmUEdZWFMwSkxxVUk5TG4yQk1kOFg0UXBtNzM4S05hSUltbDJ5c0lTemVHTW55UTZucmFGNG9FVW5XOXQ0eDI3VldfeWZwdG5pWUg3UUoyN1FNT095UUh6cjJqeWJZSzdzcVdfeWpCbkF6c3lwelN5OG1FTXBOV0wyMzIyTnduZ01fY0VJc1ZhdWxaNms?oc=5",
-          "original_title": "Defend AgoraEU: Invest in European Citizens’ Future",
+          "source": "WJET/WFXP/YourErie.com",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQQTltRU9YQVVheXhhNUt6SnI1YTBMaS1qRVhOSVpRSmZmV3YtTHN6OE1PWlVjZHhQRldVb3J6cXlhdEt6YWkyQ0ZqRFNaNlR0V0F4RzVLeHVidndYN2hqSnZJc2ZoYWpzTEUtMy1tRUktckFmQm0xMlVTSC12Q2dhbU96VUJkZG0wbHl6RWk1VVZBVndRd1NqdUYxQkgyOWZDOGpYY1E4X19PU3ozTy1HU3drN0ZFd9IBuwFBVV95cUxOT1lnM0pTNWtLMThxd0x0X1BlR0I2TjhBSzVJN3d1MlFaQ1V5RkxNU3RyWnNPLXdNRVZMY0ZhaWtOWVNMUUc0aV81aElDYmFlbkdndUV2VFZHZUthaDNpOWkwMTU0SzVJclpsNkwzWk05cVhSUk9TUzBUdl95VVRLTkJOUnI2ZW9oRl9uT05vbkZRbUlDRmJLamp6eGJpRUhXQzFSZVM0cmJTc29pMWhtdk1NS3ZPTU0zdHdR?oc=5",
+          "original_title": "Community members raise funds, celebrate culture at Taste of Poland dinner",
           "original_lang": "en",
           "original_lang_upper": "EN",
           "is_translated": false,
@@ -14011,7 +14011,7 @@
           "note": "SMIC · 기준: Eurostat",
           "source": "수동 보완",
           "year": 2026,
-          "last_updated": "2026-10-15T10:59:46.750571+09:00"
+          "last_updated": "2026-10-15T11:03:34.461753+09:00"
         },
         "min_wage_note": "SMIC · 기준: Eurostat",
         "indicators": {

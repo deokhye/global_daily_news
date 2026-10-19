@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 21 * * *"
+  - cron: "17 20 * * *"   # KST 05:17 (지연돼도 대부분 7시 전 완료)
   workflow_dispatch:
 
 permissions:

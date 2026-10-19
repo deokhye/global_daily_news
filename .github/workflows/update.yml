@@ -7,11 +7,6 @@ on:
   schedule:
     - cron: "0 21 * * *"
   workflow_dispatch:
-    inputs:
-      target_date:
-        description: '2026-10-13'
-        required: false
-        default: ''
 
 permissions:
   contents: write
@@ -41,8 +36,6 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Collector
-        env:
-          TARGET_DATE: ${{ github.event.inputs.target_date }}
         run: |
           python src/collector.py
 

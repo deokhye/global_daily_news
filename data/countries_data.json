@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-19T11:29:57.798857+09:00",
-  "generated_at_display": "2026-10-19 11:29 KST",
+  "generated_at": "2026-10-19T11:33:24.471840+09:00",
+  "generated_at_display": "2026-10-19 11:33 KST",
   "as_of_display": "2026-10-19 06:00 KST 기준",
   "regions": [
     {
@@ -179,15 +179,6 @@
               "original_title": "Case: Wage & Hour/Meal Breaks Pay (C.D. Cal.)"
             },
             {
-              "title": "Minimum Salary Changes Announced",
-              "desc": "Minimum Salary Changes Announced&nbsp;&nbsp;Fragomen",
-              "source": "Fragomen",
-              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE80UnB1R0JGS05lRXlqSTlJVEIzZnhwc3AxWTlwaU8yVERVM0UzV2s0WTRlVnVTLXVUazVfdHB1Yi1UWS1TZloyTWVFSFJxaTl4bXQ0S3RwX3VpMXBEU0xydlpYOUN3YW5wbHV4dHE5NkExZm9IN1ZrZTJfdw?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Minimum Salary Changes Announced"
-            },
-            {
               "title": "Former Bank of Korea Governor Rhee Criticizes 52-Hour Workweek System",
               "desc": "Former Bank of Korea Governor Rhee Criticizes 52-Hour Workweek System&nbsp;&nbsp;조선일보",
               "source": "조선일보",
@@ -195,6 +186,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "Former Bank of Korea Governor Rhee Criticizes 52-Hour Workweek System"
+            },
+            {
+              "title": "Samsung Biologics union seeks direct talks with Samsung Electronics",
+              "desc": "Samsung Biologics union seeks direct talks with Samsung Electronics&nbsp;&nbsp;The Korea H…",
+              "source": "The Korea Herald",
+              "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9pTGs0S29WVXpyZ2xNdUZCb0QyenljYk5RMjRKOGxnQi1RbERGZFNHV1ZpTXBrWng5NF9VeE90Tmo4VUxlS19ReV82aHNvbVA3TFE0OUN4QQ?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Samsung Biologics union seeks direct talks with Samsung Electronics"
             }
           ]
         }
@@ -234,8 +234,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1330.3,
-        "change_pct": -0.8,
+        "current_rate": 1330.4,
+        "change_pct": -0.79,
         "history_labels": [
           "11월",
           "12월",
@@ -262,7 +262,7 @@
           1420.6,
           1377.1,
           1350.5,
-          1330.3
+          1330.4
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/USDKRW=X"
@@ -419,8 +419,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -447,7 +447,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -610,8 +610,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 199.1,
-        "change_pct": -0.67,
+        "current_rate": 199.4,
+        "change_pct": -0.49,
         "history_labels": [
           "11월",
           "12월",
@@ -638,7 +638,7 @@
           210.3,
           204.7,
           201.5,
-          199.1
+          199.4
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/CNYKRW=X"
@@ -794,7 +794,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 4.1,
-        "change_pct": -0.5,
+        "change_pct": -0.53,
         "history_labels": [
           "11월",
           "12월",
@@ -950,7 +950,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 7.4,
-        "change_pct": -0.42,
+        "change_pct": -0.32,
         "history_labels": [
           "11월",
           "12월",
@@ -993,13 +993,13 @@
           "original_title": "Frail Indonesian markets reel after MSCI shock warning"
         },
         {
-          "title": "Indonesia chokes under wildfire haze",
-          "source": "DW.com",
-          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNVXVQN3NWdUFxSGg5aGxvQWZyak1ET05aU1Baa1pISjlPUWNtTWNXSmJfQXVEamkxc3pmSnphc1lGR0J3VFFBdjJGUXFVY294ZHc3VjVHVHgwSXRxUDBibXJDM01RQWJ5VW1uLWtKUzRNR0J6TThzWWR3UER1bHBLT1RlWFY2Z19qWnc?oc=5",
-          "summary": "Indonesia chokes under wildfire haze&nbsp;&nbsp;DW.com",
+          "title": "BBC visits Indonesia's wildfire ground blanketed by toxic haze",
+          "source": "BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5NTTBZSndKR1VOV1daVkQyYURNY3FtbnV1YVhaR3RkZjVQVE5vMUszamNfUnNWakxVS0Y5ZTltZmw4VlZJRzhEaTJSTGx0ZjFsZG9wd25oS0U?oc=5",
+          "summary": "BBC visits Indonesia's wildfire ground blanketed by toxic haze&nbsp;&nbsp;BBC",
           "lang": "en",
           "translated": false,
-          "original_title": "Indonesia chokes under wildfire haze"
+          "original_title": "BBC visits Indonesia's wildfire ground blanketed by toxic haze"
         },
         {
           "title": "Months-long Indonesia wildfires spew toxic haze across Southeast Asia",
@@ -1130,8 +1130,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -1158,7 +1158,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -1311,8 +1311,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 40.8,
-        "change_pct": -1.46,
+        "current_rate": 40.9,
+        "change_pct": -1.39,
         "history_labels": [
           "11월",
           "12월",
@@ -1339,7 +1339,7 @@
           43.8,
           43.5,
           42.4,
-          40.8
+          40.9
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/TWDKRW=X"
@@ -1414,13 +1414,13 @@
               "original_title": "From Hours to Capability: Mexico’s 2027 Labor Reset"
             },
             {
-              "title": "Labor Solicitor Doubles Down on Bypassing Unionized Workplaces",
-              "desc": "Labor Solicitor Doubles Down on Bypassing Unionized Workplaces&nbsp;&nbsp;Bloomberg Law Ne…",
+              "title": "Case: Wage & Hour/Meal Breaks Pay (C.D. Cal.)",
+              "desc": "Case: Wage & Hour/Meal Breaks Pay (C.D. Cal.)&nbsp;&nbsp;Bloomberg Law News",
               "source": "Bloomberg Law News",
-              "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPMHRWZUIxMmVBcVRUSy1aVVVnMDJMU3N1V0VkNDJ3T0ZRb2JpQXlrOUM2cFIyczQtRzJ6cWdIOC1faDlKSTVtcC0yV0dKV3BaTTRGS0xzOHVCV3B6VlMxRUhfb2FLVUlleEFLb01lNTBKcl90cWVON0N5NXlkVmhqdzBMVkl4bWFnQ3BGRy1SblgyUkY5ODRNWmxxbm4yYWt3T0lJSE5LMmZ3U0ZHRXh6LQ?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV3VnVGtZcWpxc1B6UktjWTNzMEE5c3pFZW90Z2ZOVTUxa2pfZ1JLVmhTRWRPQWVxU0VjSXYwSXBWQ2FPbXVEUzRzQ0xtVkEwb3UwcF80Q1VaVlE4YTJwX0xkYzNoN2FrdmtHSEdZektpYXdDcDktMWNrNGdCelZYdVpjdGFvc1pQM3g1LUdsZzNHRm8?oc=5",
               "lang": "en",
               "translated": false,
-              "original_title": "Labor Solicitor Doubles Down on Bypassing Unionized Workplaces"
+              "original_title": "Case: Wage & Hour/Meal Breaks Pay (C.D. Cal.)"
             },
             {
               "title": "Earned Wage Access: A Popular Payroll Perk, an Employer’s Liability",
@@ -1637,7 +1637,7 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 280.6,
+        "current_rate": 280.5,
         "change_pct": -0.58,
         "history_labels": [
           "11월",
@@ -1665,7 +1665,7 @@
           312.4,
           303.8,
           290.5,
-          280.6
+          280.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/RONKRW=X"
@@ -1738,6 +1738,15 @@
               "lang": "en",
               "translated": false,
               "original_title": "House Bill for $25 Minimum Wage Nears Deadline—Here’s How It Would Work"
+            },
+            {
+              "title": "The CJEU says teachers’ holiday pay must also include income from a se…",
+              "desc": "The CJEU says teachers’ holiday pay must also include income from a second contract&nbsp;&…",
+              "source": "Informat.ro",
+              "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXBPSmtsaV9TcldTcG43V1ZjNFN0a050Y1RJM1pMUlpHMDVXSlVxUUdjNGh2ME9DVEdPOGplSVVKc05yRnJNNVdGa1RxSXlSM1BqWldKZWh5XzlrNGM5QlVnYVcwNVA5QzBlOExrUDJrNUFldUN4V1V5TVpqWUxoSDNISWo3LXJNUnJ5TVcydU9OdGhQVFpoeGJoZWd1d3RJVTd3?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "The CJEU says teachers’ holiday pay must also include income from a second contract"
             }
           ]
         }
@@ -1773,8 +1782,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 325.8,
-        "change_pct": -0.79,
+        "current_rate": 326.1,
+        "change_pct": -0.69,
         "history_labels": [
           "11월",
           "12월",
@@ -1801,7 +1810,7 @@
           348.6,
           342.1,
           330.9,
-          325.8
+          326.1
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/MYRKRW=X"
@@ -1955,7 +1964,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 72.1,
-        "change_pct": -0.82,
+        "change_pct": -0.84,
         "history_labels": [
           "11월",
           "12월",
@@ -2135,8 +2144,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 136.7,
-        "change_pct": -3.25,
+        "current_rate": 136.6,
+        "change_pct": -3.26,
         "history_labels": [
           "11월",
           "12월",
@@ -2163,7 +2172,7 @@
           151.4,
           153.1,
           143.9,
-          136.7
+          136.6
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/MADKRW=X"
@@ -2263,7 +2272,7 @@
         "is_base": false,
         "unit_base": 100,
         "current_rate": 5.1,
-        "change_pct": -0.84,
+        "change_pct": -0.85,
         "history_labels": [
           "11월",
           "12월",
@@ -2444,7 +2453,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 262.7,
-        "change_pct": -0.17,
+        "change_pct": -0.16,
         "history_labels": [
           "11월",
           "12월",
@@ -2539,10 +2548,10 @@
               "original_title": ""
             },
             {
-              "title": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인",
-              "desc": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인&nbsp;&nbsp;IndexBox",
+              "title": "타이어 장착 트럭·차량 시장 2035년 전망: 화물 수요와 차량 교체가 성장 견인",
+              "desc": "타이어 장착 트럭·차량 시장 2035년 전망: 화물 수요와 차량 교체가 성장 견인&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSFRZNkp4RnV1aGZxOThZLXI3RzBnOFppMFA0cDc2Tl9LV3I2WmZaVnJNaV83VTRkUUxRdXl0d0NUS3ljaGRZdUh2TldMR2dUN2l0MDV5cTEyeGVwOEU4WXREM2VIa2FjLUhLLUI3d2poSXZfSUpSNWEyVlNsUmEzV3dWS0JUQmtYQ0FfeVJJazBIeEdMMGMtdEVGd2l1dURBdTFpb0h2N0VpNGJMYmtBdV8zLU1RMG5fWnprdkNHQ1ctMzhSZVpsc3hOdE9TdDJzZTZsVDNJOUJTb1huM1ZZRQ?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQblg2Vzh5T2FWN29ucXM2TTloaWlVMmhrYW5mc1J1Y0lrcHdzTEJwU2d1Y2ZEcS1qU2lJY01ka1B5bElVa0VyUzI0QV9lWW96MkF6eW5iQXVmdmVOaWpDSlR3OFFNTjN3b2hsLVZvYXo1ZkVra1pmSlV4bzZEVmowTURINVRKcGIzVnQ3MjU1WDNIN0pVMERQY2E5NTFibHRzMGJ4Ql81NnRfWDVramNEbTQwQjlSX2RJQUxncjJ3UjI2V2ZPeW9MX1VrSQ?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -2624,8 +2633,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 354.6,
-        "change_pct": -3.86,
+        "current_rate": 354.5,
+        "change_pct": -3.87,
         "history_labels": [
           "11월",
           "12월",
@@ -2652,7 +2661,7 @@
           378.3,
           376.0,
           370.8,
-          354.6
+          354.5
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/SARKRW=X"
@@ -2720,10 +2729,10 @@
               "original_title": ""
             },
             {
-              "title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
-              "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
+              "title": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인",
+              "desc": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQOTBfUkM5eU1MUFAzTXlXY19lTm9jZHNRTWo4TnR2cVhudnZQZHh2ZzZ0c0JJaTN4ekM1dFoyLVExNGVuTW5vcTdMYndpcXlTQlNId2UwQTNvdmZHQ1dVYzFPVHRyU1p6MEZOWVpIWVVHWmdmaUJPMkpzWnZGRDJIUkJfTDJ4Q19jd0hpZlNSMTNfMVYzVUFldG8tbFZ6dllwVFBLYlJZUkhmSHBUQWRjanlIREVxbzYxUTBhRWQtb1BhVnBmTGF2aEZLNUNGZHFobjB4SHJweWdBOEk?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSFRZNkp4RnV1aGZxOThZLXI3RzBnOFppMFA0cDc2Tl9LV3I2WmZaVnJNaV83VTRkUUxRdXl0d0NUS3ljaGRZdUh2TldMR2dUN2l0MDV5cTEyeGVwOEU4WXREM2VIa2FjLUhLLUI3d2poSXZfSUpSNWEyVlNsUmEzV3dWS0JUQmtYQ0FfeVJJazBIeEdMMGMtdEVGd2l1dURBdTFpb0h2N0VpNGJMYmtBdV8zLU1RMG5fWnprdkNHQ1ctMzhSZVpsc3hOdE9TdDJzZTZsVDNJOUJTb1huM1ZZRQ?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -2906,15 +2915,6 @@
               "lang": "en",
               "translated": false,
               "original_title": "Minimum Salary Changes Announced"
-            },
-            {
-              "title": "Press freedom in Serbia: Nova.rs editorial staff rebels",
-              "desc": "Press freedom in Serbia: Nova.rs editorial staff rebels&nbsp;&nbsp;BALK Magazin",
-              "source": "BALK Magazin",
-              "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5jSWpXX2Q1Tm9oYXNndzdrbEtkNFRuOGFnVGZRTXRFUmJpZEdJMExNNUtFMlYyM3c2dFVsa2NiWjdSenVWQ002eVUxVk4xR1FJS29kdTNaa3loZUEwOW9nWXVBOWxRcFhJMzVyN1FZNjVRaWpE?oc=5",
-              "lang": "en",
-              "translated": false,
-              "original_title": "Press freedom in Serbia: Nova.rs editorial staff rebels"
             }
           ]
         }
@@ -2951,7 +2951,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 134.2,
-        "change_pct": -0.38,
+        "change_pct": -0.39,
         "history_labels": [
           "11월",
           "12월",
@@ -3113,8 +3113,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -3141,7 +3141,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -3285,8 +3285,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1039.0,
-        "change_pct": -0.64,
+        "current_rate": 1040.0,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -3313,7 +3313,7 @@
           1108.0,
           1080.4,
           1057.3,
-          1039.0
+          1040.0
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/SGDKRW=X"
@@ -3466,8 +3466,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 362.3,
-        "change_pct": -0.8,
+        "current_rate": 362.2,
+        "change_pct": -0.84,
         "history_labels": [
           "11월",
           "12월",
@@ -3494,7 +3494,7 @@
           386.9,
           375.1,
           367.8,
-          362.3
+          362.2
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/AEDKRW=X"
@@ -3502,21 +3502,12 @@
       "headlines": [
         {
           "title": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026",
-          "source": "ae.usembassy.gov",
+          "source": "https://ae.usembassy.gov/",
           "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPZ3VlN0FyTDg3SjJObVFhVGJGUG10YVByWlhEd29mbGJ0dE85alBkSHRXbExOZHJPdVhmaGtGVUhpODE0dmVXbjdEQ0xqa3FESmItLTNDMFdmbTF6MWhZVzBVSjdkR3N1REhwX1EtSUhkczUxYUhLZm5JdEJDa1J2T05vOHZ0NUdXZTZTRmwzbHdIdkU?oc=5",
-          "summary": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026&nbsp;&nbsp;ae.usembas…",
+          "summary": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026&nbsp;&nbsp;https://ae…",
           "lang": "en",
           "translated": false,
           "original_title": "Security Alert: U.S. Mission United Arab Emirates – October 18, 2026"
-        },
-        {
-          "title": "Ibarra air quality map",
-          "source": "IQAir",
-          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLX2k5OHR4STVYX1g1ejJ5S3JTVXdWa3p3czcySnh6VDgxV19vR0VRYWMwTUZOaWlzSFVmR2dEVlpvQUVCQVRNdXRUbEgyX3ZSd3FQU3V5aW11M0xRdW9iSTdnYXFfcDg4YnlxTXpUX1dOQQ?oc=5",
-          "summary": "Ibarra air quality map&nbsp;&nbsp;IQAir",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Ibarra air quality map"
         },
         {
           "title": "Netanyahu: Israel will allow UAE to enter designated Gaza area for construction",
@@ -3526,6 +3517,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "Netanyahu: Israel will allow UAE to enter designated Gaza area for construction"
+        },
+        {
+          "title": "Ibarra air quality map",
+          "source": "IQAir",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBLX2k5OHR4STVYX1g1ejJ5S3JTVXdWa3p3czcySnh6VDgxV19vR0VRYWMwTUZOaWlzSFVmR2dEVlpvQUVCQVRNdXRUbEgyX3ZSd3FQU3V5aW11M0xRdW9iSTdnYXFfcDg4YnlxTXpUX1dOQQ?oc=5",
+          "summary": "Ibarra air quality map&nbsp;&nbsp;IQAir",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Ibarra air quality map"
         }
       ],
       "hr_trends": [
@@ -3647,8 +3647,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1770.3,
-        "change_pct": -0.51,
+        "current_rate": 1771.8,
+        "change_pct": -0.43,
         "history_labels": [
           "11월",
           "12월",
@@ -3675,7 +3675,7 @@
           1912.2,
           1864.7,
           1787.6,
-          1770.3
+          1771.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/GBPKRW=X"
@@ -3700,13 +3700,13 @@
           "original_title": "Harry and Meghan have been back in England for over a month, but it hasn't gone the way they expected"
         },
         {
-          "title": "Ibarra Air Quality Index (AQI) and Ecuador Air Pollution | IQAir United Kingdom",
-          "source": "IQAir",
-          "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5OUW5tdUlIN2ViWWZqNm1lS3NQZ2ZVbUd5OWY1NEpwQUxwYmRYajEwY190MlVBcHAxeUktU0xiaDQwOUFDUXBtczJSU21yRjY1N2NkTjlxS0otSVd6Wmh5Y05ucC1jNFB5QVpybA?oc=5",
-          "summary": "Ibarra Air Quality Index (AQI) and Ecuador Air Pollution | IQAir United Kingdom&nbsp;&nbsp…",
+          "title": "Prince Harry, Meghan Markle change kids' school in UK over security concerns",
+          "source": "ABC News - Breaking News, Latest News and Videos",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNZHVtY0hoQnQwRVFTRVM1YnZ5OTUtV21vZHBvV09MN2dhYmZFbHRDcE1RbF9CdUQxSm9GVUNvSGtINWlnNTVlQnItVHBzUjlTTUZCelZxVXVJalItU0E0OXpxWkNmUWVvZ2U3dHVad2tzTEI2NHhGRmcwUEVNWk16dkpCTTktb0lza3ZaRnE0ZndBRVJ3bDRCREVGWFlEMXhmcGI40gGoAUFVX3lxTE1Ec3I4NEhLeGFzUlZYRmlCX25GZkZLcUhzMk4wZWdvS281UEZTRkNzMFlKMzNQNHBaYWg2N2EwSE5VaDNSbldKb0R4WHJ3NXNQam5LMVNDRDY3NTJzVFl5TU0ydWxFTURjUWJRWVAyRnVFYmpIbE81QzJkdEpGdWhrR0hncmFkTGE5ZHR0ZzVuTjdCaVhVQ05oR1FOd2s1emJmNHU4TkQ4RA?oc=5",
+          "summary": "Prince Harry, Meghan Markle change kids' school in UK over security concerns&nbsp;&nbsp;AB…",
           "lang": "en",
           "translated": false,
-          "original_title": "Ibarra Air Quality Index (AQI) and Ecuador Air Pollution | IQAir United Kingdom"
+          "original_title": "Prince Harry, Meghan Markle change kids' school in UK over security concerns"
         }
       ],
       "hr_trends": [
@@ -3828,8 +3828,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -3856,7 +3856,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -3881,13 +3881,13 @@
           "original_title": "Ground broken for Austria’s first temple"
         },
         {
-          "title": "Austria is Switching to the Digital Vignette",
-          "source": "b2b.austria.info",
-          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBsVUJzMERqSHpUR29ra3owSDBUZWdHY0ZnMHFqcEhjV0NROG90eWpYQnhFczhJaFpZdHh2SWduVXhLMDlyZDc2eVhZSkNfT0pncHl2b1BGWUZWZXVuNmhkWDRMRmdXMWZJZWFoOC05ekU?oc=5",
-          "summary": "Austria is Switching to the Digital Vignette&nbsp;&nbsp;b2b.austria.info",
+          "title": "Why the Austrian Grand Prix is special",
+          "source": "Formula 1",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZlU2dFcwS0diemNvdjctU29Ia19TMWN6MXJiUWQxZmZpUUItUG01eG41RDJJenVWX3R3dXFub2JiN3R2dUZDSnduUDQwVEFkYnhpOURsQ0luRHN5SllISFZXc3o5OTE1dVRGR2RDeUI2VEpNS1p6czVBMUVodDFrNkUzcXpjcjIzdldWS2ZmOG5QTlNQRDhrNmxZODlURVFRel9iZ3phbW0tTGJVRWEzU0VQcGNGRXkwSjZvejhMeklKbmtDMVNzdDNjcFdSQlU?oc=5",
+          "summary": "Why the Austrian Grand Prix is special&nbsp;&nbsp;Formula 1",
           "lang": "en",
           "translated": false,
-          "original_title": "Austria is Switching to the Digital Vignette"
+          "original_title": "Why the Austrian Grand Prix is special"
         }
       ],
       "hr_trends": [
@@ -3992,7 +3992,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 29.6,
-        "change_pct": -3.89,
+        "change_pct": -3.93,
         "history_labels": [
           "11월",
           "12월",
@@ -4035,15 +4035,6 @@
           "original_title": "U.S. taking Putin’s side would be a ‘historic mistake,’ says Zelenskyy"
         },
         {
-          "title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
-          "source": "NPR",
-          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSUdIaFdYWUQ2TldwS3dEdHpfQWZNRTF4cng2dGROLUJZNkg0Q0hTU3dxcGw4V3dqY1c2OVBNbDlTYWtDNEd0Tk9XTW1ZZU5peHZMTUdQTGNoWk9ERXMwRUtTNm9vbE5NNXNQRW5taE5hYm9fd0x0aVFkYzgyZWNybVhwSC1iVmtRUkNCeUl5cDJkMThibWo0ejBR?oc=5",
-          "summary": "Ukraine and the U.S. are at odds over Starshield. Here's what to know&nbsp;&nbsp;NPR",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know"
-        },
-        {
           "title": "Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says",
           "source": "Al Jazeera",
           "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNMDQ3Mmh0T2tYUGJXakxFbkI3QWlLTGd3eHBla2lqX3pLQS1EUWMwU0x1V0ZvaTNzQ3YyTEs0MVVfVVdxUG50dEg0dWkxN1FuYkJoOWs0N2daYmxZZ3ByVTBfRUdtNElQX3JBbV9VaU1KcGllaVRYeUUtc21MWUpCbVFueEhpOG1RdFVPaFExaVhGcnU2ZGppaGtmaW45UTZEdjVaMEkxYUvSAa4BQVVfeXFMUHJkRW1Ec0ExdGM0TDNTR0VLUEZRZkpic1JWM1Y0SHlhM01KQTAyRzdJaHhsM2Jjd1Y3R21yeF9jQm1TZUN3WFdsUTMxMzh3Z09tMkZ5Wm5tS2N6MnBra0NfWEJtdW0tX2xoR0owb1NPV0JJVVdvbmlwY1hNOW1wYjBsZUNyc3Itc0VFMEVZYTBfajZrU1hEem1OeEZuZ2pBS1FqUUtmWi0tVVI5bWxB?oc=5",
@@ -4051,6 +4042,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "Russia’s war on Ukraine ‘must be brought to an end’, Zelenskyy says"
+        },
+        {
+          "title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know",
+          "source": "NPR",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNSUdIaFdYWUQ2TldwS3dEdHpfQWZNRTF4cng2dGROLUJZNkg0Q0hTU3dxcGw4V3dqY1c2OVBNbDlTYWtDNEd0Tk9XTW1ZZU5peHZMTUdQTGNoWk9ERXMwRUtTNm9vbE5NNXNQRW5taE5hYm9fd0x0aVFkYzgyZWNybVhwSC1iVmtRUkNCeUl5cDJkMThibWo0ejBR?oc=5",
+          "summary": "Ukraine and the U.S. are at odds over Starshield. Here's what to know&nbsp;&nbsp;NPR",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Ukraine and the U.S. are at odds over Starshield. Here's what to know"
         }
       ],
       "hr_trends": [
@@ -4137,7 +4137,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 24.9,
-        "change_pct": -0.97,
+        "change_pct": -0.99,
         "history_labels": [
           "11월",
           "12월",
@@ -4317,8 +4317,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -4345,12 +4345,21 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
       },
       "headlines": [
+        {
+          "title": "USA, Italy and Japan set the early standard in Rotterdam",
+          "source": "International Gymnast Magazine Online",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbFlIT0NnXzFKTUxJV21aTlYxSDd5TzRWSUZzckF2eTFubEtpVG9QM2NfOE5EVEU5Z18yVzJZamhHb1U5QXNrZWg3TDdIS2xXUWd2QmloVDk3T3ZoS09adjRqWmFzbzhEOW9UWHJCcFUtV3F6M0UzMXVpLXctU0VBdEtnX3NlcTZqRkFIZmdlbml2X2s?oc=5",
+          "summary": "USA, Italy and Japan set the early standard in Rotterdam&nbsp;&nbsp;International Gymnast…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "USA, Italy and Japan set the early standard in Rotterdam"
+        },
         {
           "title": "Meloni backs police after cost-of-living protests turn violent in Italian cities",
           "source": "DW.com",
@@ -4368,15 +4377,6 @@
           "lang": "en",
           "translated": false,
           "original_title": "Meloni condemns ‘gangs of thugs’ after protests turned violent across Italy"
-        },
-        {
-          "title": "USA, Italy and Japan set the early standard in Rotterdam",
-          "source": "International Gymnast Magazine Online",
-          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQbFlIT0NnXzFKTUxJV21aTlYxSDd5TzRWSUZzckF2eTFubEtpVG9QM2NfOE5EVEU5Z18yVzJZamhHb1U5QXNrZWg3TDdIS2xXUWd2QmloVDk3T3ZoS09adjRqWmFzbzhEOW9UWHJCcFUtV3F6M0UzMXVpLXctU0VBdEtnX3NlcTZqRkFIZmdlbml2X2s?oc=5",
-          "summary": "USA, Italy and Japan set the early standard in Rotterdam&nbsp;&nbsp;International Gymnast…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "USA, Italy and Japan set the early standard in Rotterdam"
         }
       ],
       "hr_trends": [
@@ -4480,8 +4480,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 100,
-        "current_rate": 839.6,
-        "change_pct": -0.96,
+        "current_rate": 840.4,
+        "change_pct": -0.87,
         "history_labels": [
           "11월",
           "12월",
@@ -4508,7 +4508,7 @@
           886.8,
           860.1,
           858.3,
-          839.6
+          840.4
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/JPYKRW=X"
@@ -4662,7 +4662,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 61.4,
-        "change_pct": -0.65,
+        "change_pct": -0.69,
         "history_labels": [
           "11월",
           "12월",
@@ -4716,7 +4716,7 @@
         {
           "title": "Babiš suffers crushing Senate election defeat in Czech Republic",
           "source": "TVP World",
-          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSnJOMXRHX1ltMlAwQ1RyTV9OYlFkcjBTQUdIQTd2OV9Lbk1aZC1uU3NnU3Nibk9JVU1OOW5KSGJpQ1BYRjdxR2pQN1U3dnMzZ0ZOajZzNE0zYy12R3VHTTh0Tm9xN0FqME8xd0NheXFhMTRadmg5dU9HWHR1VmJCc29ZLTAtdzFMZWJfLWxaOA?oc=5",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNWGdubmlMbzd5Ulh1dWlRSzJtSzBFcnNneWdTTU45cHZsX0pES1Y4ZHZJbEVZakFwRzkyQ091V19YaTVpNDhZS2FiQ2pFelNROUJJb3RjMTdBUUhhSkM4UnZIeUVqaGVvbkhMUGZyVjNCSHpFZU9KZlpoTTF4Q3Q5TElxNjdCT05IVEphdktLNjQ5NGRmYWNV?oc=5",
           "summary": "Babiš suffers crushing Senate election defeat in Czech Republic&nbsp;&nbsp;TVP World",
           "lang": "en",
           "translated": false,
@@ -4843,7 +4843,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 1.4,
-        "change_pct": -0.79,
+        "change_pct": -0.81,
         "history_labels": [
           "11월",
           "12월",
@@ -5024,7 +5024,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 2.9,
-        "change_pct": -4.18,
+        "change_pct": -4.21,
         "history_labels": [
           "11월",
           "12월",
@@ -5168,8 +5168,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 941.8,
-        "change_pct": -0.29,
+        "current_rate": 942.6,
+        "change_pct": -0.21,
         "history_labels": [
           "11월",
           "12월",
@@ -5196,7 +5196,7 @@
           1013.9,
           990.8,
           952.0,
-          941.8
+          942.6
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/CADKRW=X"
@@ -5246,15 +5246,6 @@
               "original_title": ""
             },
             {
-              "title": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인",
-              "desc": "2035년 타이어 재생 장비 시장 전망: 순환경제 규제와 차량 총소유비용 부담이 채택 견인&nbsp;&nbsp;IndexBox",
-              "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPSFRZNkp4RnV1aGZxOThZLXI3RzBnOFppMFA0cDc2Tl9LV3I2WmZaVnJNaV83VTRkUUxRdXl0d0NUS3ljaGRZdUh2TldMR2dUN2l0MDV5cTEyeGVwOEU4WXREM2VIa2FjLUhLLUI3d2poSXZfSUpSNWEyVlNsUmEzV3dWS0JUQmtYQ0FfeVJJazBIeEdMMGMtdEVGd2l1dURBdTFpb0h2N0VpNGJMYmtBdV8zLU1RMG5fWnprdkNHQ1ctMzhSZVpsc3hOdE9TdDJzZTZsVDNJOUJTb1huM1ZZRQ?oc=5",
-              "lang": "ko",
-              "translated": false,
-              "original_title": ""
-            },
-            {
               "title": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속",
               "desc": "타이어 체인 시장 2035년 전망: 겨울철 안전 규제와 상업용 차량 증가로 수요 가속&nbsp;&nbsp;IndexBox",
               "source": "IndexBox",
@@ -5271,6 +5262,15 @@
               "lang": "ko",
               "translated": false,
               "original_title": ""
+            },
+            {
+              "title": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Premium OEM F…",
+              "desc": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Premium OEM Fitments, EU Tire-Lab…",
+              "source": "Yahoo Finance",
+              "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdE9NNkltYnVIUTZNTFlVMENfT3lZRXRXUkZNVmNOUEo5cm5uMUR4QU5rTjdaUTJqaGxMbjlwS0dCemJyZUxCMWFpWnNHRi1CYnFjY0dfTmpnZG5CT1lrVmhPSHg2TnpqUmQwcmhQd0cwRXlIb3FBcU9qbGZqOU5CMk5TRXFqR1FKb0RocXVjZzJuNW1SS044Q0FB?oc=5",
+              "lang": "en",
+              "translated": false,
+              "original_title": "Germany Tire Market to Reach USD 6.54 Billion by 2035 as Premium OEM Fitments, EU Tire-Label Reform and EV Adoption Support High-Value Demand, Reports Radial Insights"
             }
           ]
         },
@@ -5350,7 +5350,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 0.4,
-        "change_pct": -0.66,
+        "change_pct": -0.68,
         "history_labels": [
           "11월",
           "12월",
@@ -5503,8 +5503,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -5531,7 +5531,7 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
@@ -5630,8 +5630,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 39.7,
-        "change_pct": -0.7,
+        "current_rate": 39.8,
+        "change_pct": -0.6,
         "history_labels": [
           "11월",
           "12월",
@@ -5658,7 +5658,7 @@
           42.5,
           41.6,
           40.3,
-          39.7
+          39.8
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/THBKRW=X"
@@ -5674,15 +5674,6 @@
           "original_title": "Israeli man killed in motorcycle accident in southern Thailand, Foreign Ministry confirms"
         },
         {
-          "title": "China's embassy issues fresh Thailand travel alert over kidnappings, job scams",
-          "source": "The Korea Times",
-          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZkx5TFhWbVlXX3FSTzBsVzdESVlDeG53Zk04c2liN241cUlnSkNyX3h0VnpQQnZ3QmtKemdmbkZGSDAzU0JYT2RLTnhUZDdZelNNQzQ1U0dhZE9haGVJSUsyVHBYUkFqUUtaZk5fVnItdXFHQkl1Mll6TkNRelR2WWlhWUJiMk9aQnl2Z2M3WC16cGhSUFdpZTFzWTRiaVNCUmpXMXB5R2tLeHN6VjhOaXVMMlg1TThQdFJiQk9WQVFpZ9IBwgFBVV95cUxPZkx5TFhWbVlXX3FSTzBsVzdESVlDeG53Zk04c2liN241cUlnSkNyX3h0VnpQQnZ3QmtKemdmbkZGSDAzU0JYT2RLTnhUZDdZelNNQzQ1U0dhZE9haGVJSUsyVHBYUkFqUUtaZk5fVnItdXFHQkl1Mll6TkNRelR2WWlhWUJiMk9aQnl2Z2M3WC16cGhSUFdpZTFzWTRiaVNCUmpXMXB5R2tLeHN6VjhOaXVMMlg1TThQdFJiQk9WQVFpZw?oc=5",
-          "summary": "China's embassy issues fresh Thailand travel alert over kidnappings, job scams&nbsp;&nbsp;…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "China's embassy issues fresh Thailand travel alert over kidnappings, job scams"
-        },
-        {
           "title": "In Thailand, a nearly 16-foot black king cobra turns up inside a home as rain drives snakes in",
           "source": "Yahoo",
           "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPV2dic2hJOGJEejVYclA0Sm9HbWgyQkFRRi1VRkNIT3l4cWtiYUQwMHFyOHRFbUlQZkJwS3pjaEtJTmV3YzEtRHU2YkExMW8tVzRaR0ZpWnFKX0o5WkEtT0NIRVBTUncyWVg3RVNtUFFFdTAwUmU2dXNGOUR2cXZXYjRpUy14bDVrNEdzbUZhZzBEUWpoQ1F0VQ?oc=5",
@@ -5690,6 +5681,15 @@
           "lang": "en",
           "translated": false,
           "original_title": "In Thailand, a nearly 16-foot black king cobra turns up inside a home as rain drives snakes in"
+        },
+        {
+          "title": "Chinese embassy issues fresh Thailand travel alert over kidnappings, job scams",
+          "source": "South China Morning Post",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQM01GQmg4cUptWjB0akJwMUJYVTUzV01jV1dtVEQtVE9VQ2lNWHcyQ2ljdndiZkNsOC13Nmw3Tjd1UGlYbmcyYU50Z1l5T05EaHEwcjRlTXZxM2d0S3I2RFFVSTNURVJCczBzRk84WjRGcDBjVU9Balh3MUM5UE85Sm45X1BQcXFicS11OGZySGc4ZTNjdk1TVXVFS1hjOVVwX0dUX1F4QlFGZlhyanlVR3VpanJmMUlGYVo5dk5pT3R3aUlHem9MQ3pJV2pjS1hmX2fSAdIBQVVfeXFMTzRjc0RPNVVCWHNpUmkzUmlOLTNoV2N0NDY4ZmFJMEhKWVNXLVM3RDZJR0ViQjFSb1JzTWdTN3dUNUVpNi1MTDJKY2pIU24teHNrTnc2TVdnQlVPejRmMnVoYnJ4Y3k4U2QwZEl1SEZVd2R1dlo1ay16M0tJeDdoRExnLUhEWHo1WWg0ZjREZmZHXzVmUzRkaDdmWHRQRTVvUDV5MVd4VW1lVWJJd3k1MHgzd3BXSXVrczRRWFVtSmNfVEpGTDVFSk14ZWIxRVpQTmhR?oc=5",
+          "summary": "Chinese embassy issues fresh Thailand travel alert over kidnappings, job scams&nbsp;&nbsp;…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "Chinese embassy issues fresh Thailand travel alert over kidnappings, job scams"
         }
       ],
       "hr_trends": [
@@ -5812,7 +5812,7 @@
         "is_base": false,
         "unit_base": 1,
         "current_rate": 26.9,
-        "change_pct": -0.8,
+        "change_pct": -0.82,
         "history_labels": [
           "11월",
           "12월",
@@ -5992,8 +5992,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1330.5,
-        "change_pct": -3.03,
+        "current_rate": 1330.1,
+        "change_pct": -3.05,
         "history_labels": [
           "11월",
           "12월",
@@ -6020,7 +6020,7 @@
           1452.0,
           1399.6,
           1380.7,
-          1330.5
+          1330.1
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PABKRW=X"
@@ -6119,8 +6119,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 341.8,
-        "change_pct": -0.74,
+        "current_rate": 341.7,
+        "change_pct": -0.78,
         "history_labels": [
           "11월",
           "12월",
@@ -6147,7 +6147,7 @@
           380.3,
           367.9,
           350.9,
-          341.8
+          341.7
         ],
         "source": "Yahoo Finance (USD 교차 환산)",
         "url": "https://finance.yahoo.com/quote/PLNKRW=X"
@@ -6188,19 +6188,19 @@
           "tag_class": "bg-rose-100 text-rose-700",
           "items": [
             {
-              "title": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’",
-              "desc": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’&nbsp;&nbsp;매일일보",
-              "source": "매일일보",
-              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yVlY3Yk1lck9hT1o0bDFVdDAtZ2gxdWh5aVU3eGVEa3BNOXdQQUJLd2QycklLQVppZHFvMmdMeG1CbWJfWXhuM05QWFFBNGEySmtSdWVvR2FjQkNKai0wbExRdXA?oc=5",
+              "title": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인",
+              "desc": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
+              "source": "IndexBox",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1pxa3VGZDFPOXBGMWszSHNOeWk4VHpGVDJhRkN0T05reGEwWmZCcGw0cHRPVVRiUklwazh4c2NaMU5XeXdHSDhVbzBWMEZsUmd2Y25Vd3Zkb2cydmlfR0piR3FnSUxUcHZGa3p1T015TnFlbG94ZEQtU1VNQnVVaWJZM19tYm5QOFZJLVFJMXdBRzF2YXc0LXpJUHg1T3ZrWUFrc0dmMkhJT1ktVXc0S2EwMjJMd3luenQ0?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
             },
             {
-              "title": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인",
-              "desc": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
-              "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1pxa3VGZDFPOXBGMWszSHNOeWk4VHpGVDJhRkN0T05reGEwWmZCcGw0cHRPVVRiUklwazh4c2NaMU5XeXdHSDhVbzBWMEZsUmd2Y25Vd3Zkb2cydmlfR0piR3FnSUxUcHZGa3p1T015TnFlbG94ZEQtU1VNQnVVaWJZM19tYm5QOFZJLVFJMXdBRzF2YXc0LXpJUHg1T3ZrWUFrc0dmMkhJT1ktVXc0S2EwMjJMd3luenQ0?oc=5",
+              "title": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’",
+              "desc": "유럽에 뿌리내리는 K-타이어…4조 매출 기반 ‘성장축 강화’&nbsp;&nbsp;매일일보",
+              "source": "매일일보",
+              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yVlY3Yk1lck9hT1o0bDFVdDAtZ2gxdWh5aVU3eGVEa3BNOXdQQUJLd2QycklLQVppZHFvMmdMeG1CbWJfWXhuM05QWFFBNGEySmtSdWVvR2FjQkNKai0wbExRdXA?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -6300,8 +6300,8 @@
       "exchange_rate": {
         "is_base": false,
         "unit_base": 1,
-        "current_rate": 1492.1,
-        "change_pct": -0.62,
+        "current_rate": 1493.3,
+        "change_pct": -0.54,
         "history_labels": [
           "11월",
           "12월",
@@ -6328,12 +6328,21 @@
           1636.7,
           1580.0,
           1531.4,
-          1492.1
+          1493.3
         ],
         "source": "Yahoo Finance",
         "url": "https://finance.yahoo.com/quote/EURKRW=X"
       },
       "headlines": [
+        {
+          "title": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire",
+          "source": "CNBC",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOVBCR2pxVVBkT0ZtQVUwNS1Yd1JOalVhcHdwLWg0eHFVdEhRZ1FRWk1peHRiRFJWT3R3aDBTbFF0N2NoTTV3T3M0YkpvbU1Sdk9HU3lkQ2RyYzZmOGZtQ2RCSkJRS1U1ekpEdV9SNXk4bE5XWUdUUG1fTV9XcXNhVXJPZmlFSG9CUUHSAY8BQVVfeXFMT0JKRVd4dkdGZjU0bFJhZko5UUI5R3dlU1dyeXdORU9QRlhKbUpqTzNRQ2N6d0E5RUJxXy14WkVJRXYxX3NMeHZfMlhOTm5hOTNLMmdHNzN1Z3NqX1ZwbzBuMTZWaTJPM2NBb2JoZk5lNkgxdE12ZkNkbW1fb29XVm9NaXlJa1hRSXc4U2VxdUU?oc=5",
+          "summary": "France hit by worst unrest in years as attempts to rein in government spending meet citize…",
+          "lang": "en",
+          "translated": false,
+          "original_title": "France hit by worst unrest in years as attempts to rein in government spending meet citizen ire"
+        },
         {
           "title": "Opinion | Why France Is Burning",
           "source": "WSJ",
@@ -6351,15 +6360,6 @@
           "lang": "en",
           "translated": false,
           "original_title": "France in Shock After Protests Turn Into Riots, Damaging Buildings and Shops"
-        },
-        {
-          "title": "Macron Voices ‘Anger And Shame’ As Violent Protests Roil France: What To Know",
-          "source": "Forbes",
-          "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcjFWZ21HYm93dk9CN1lwZVh0b0IzTUFFaVhSLXRNM09FdEpvV0QxOHpGSGFaSU0tMGVwVU9ON2JEbEdNd1ZzY2J5M2tWb1h5X2txbGQtTV9TR1VOWXdPTndLWVdqdVhibVdvUDBfRjVIaVlZNkpoZnNFTHRMdnN2M2RFdWRlQl83Y282QVNCTVJ2dnYza3QtMUpMdS1kX3lscjdFa0tucUxqRGFEeVRHUWkxelNRUVVQY0d4MmJMOHJLV053TkE?oc=5",
-          "summary": "Macron Voices ‘Anger And Shame’ As Violent Protests Roil France: What To Know&nbsp;&nbsp;F…",
-          "lang": "en",
-          "translated": false,
-          "original_title": "Macron Voices ‘Anger And Shame’ As Violent Protests Roil France: What To Know"
         }
       ],
       "hr_trends": [
@@ -6378,10 +6378,10 @@
               "original_title": ""
             },
             {
-              "title": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인",
-              "desc": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
-              "source": "IndexBox",
-              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1pxa3VGZDFPOXBGMWszSHNOeWk4VHpGVDJhRkN0T05reGEwWmZCcGw0cHRPVVRiUklwazh4c2NaMU5XeXdHSDhVbzBWMEZsUmd2Y25Vd3Zkb2cydmlfR0piR3FnSUxUcHZGa3p1T015TnFlbG94ZEQtU1VNQnVVaWJZM19tYm5QOFZJLVFJMXdBRzF2YXc0LXpJUHg1T3ZrWUFrc0dmMkhJT1ktVXc0S2EwMjJMd3luenQ0?oc=5",
+              "title": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급",
+              "desc": "한국타이어 라우펜, 다치아 ‘산데로’에 신차용 타이어 공급&nbsp;&nbsp;빅데이터뉴스",
+              "source": "빅데이터뉴스",
+              "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0wNnBXTlk0M01FLWhrdUZ1cmlGRXdZRkxyZXhaMHROTXc2TS1QcHc4SFJCeklsQTZFZWUtTEFKVFRhYlRMUXhZMTFYODRNMzlCQUtkbno5VzRBMldiOHBHanE1UVFLcGNVUUZDNjI5RWotS0x5WWRWaXFrZE8?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
@@ -6396,10 +6396,10 @@
               "original_title": ""
             },
             {
-              "title": "한국타이어 라우펜, 르노 다치아 '산데로'에 OE 공급…유럽 공략 확대",
-              "desc": "한국타이어 라우펜, 르노 다치아 '산데로'에 OE 공급…유럽 공략 확대&nbsp;&nbsp;매일일보",
-              "source": "매일일보",
-              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBSbXVJZlg1R0JnRFpid1FvSGRjTEZzX1BSMkV0b1kwN0E2bk42Q3FDdnJsalc5YkRVSEp3a3JSMUZ6RGdsWEpMd240NDIyNUJueGJOampzVHNPRkNndm1wOVZRcVQ?oc=5",
+              "title": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인",
+              "desc": "퍼포먼스 타이어 시장 2035년 전망: 전기차 수요가 성장 견인 - 뉴스 및 통계&nbsp;&nbsp;IndexBox",
+              "source": "IndexBox",
+              "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPM1pxa3VGZDFPOXBGMWszSHNOeWk4VHpGVDJhRkN0T05reGEwWmZCcGw0cHRPVVRiUklwazh4c2NaMU5XeXdHSDhVbzBWMEZsUmd2Y25Vd3Zkb2cydmlfR0piR3FnSUxUcHZGa3p1T015TnFlbG94ZEQtU1VNQnVVaWJZM19tYm5QOFZJLVFJMXdBRzF2YXc0LXpJUHg1T3ZrWUFrc0dmMkhJT1ktVXc0S2EwMjJMd3luenQ0?oc=5",
               "lang": "ko",
               "translated": false,
               "original_title": ""
